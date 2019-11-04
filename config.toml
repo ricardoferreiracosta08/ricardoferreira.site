@@ -30,7 +30,7 @@ canonifyurls = "true"
 # Pagination
 paginate = 6 #(default = 10)
 
-disqusShortname = "ricardoferreiracosta"
+disqusShortname = "ricardoferreira"
 googleAnalytics = "UA-21994328-3"
 
 [taxonomies]
