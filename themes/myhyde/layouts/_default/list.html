@@ -1,0 +1,16 @@
+{{ define "main" -}}
+
+<h1>{{humanize .Title }}</h1>
+<hr/>
+
+<ul class="posts">
+{{ range .Data.Pages -}}
+  <li>
+    <span>
+       <a style="font-size: 1.5rem" href="{{ .Permalink }}">{{ .Title }}</a> <br/>
+       {{ partial "post_meta" .}}
+    </span>
+  </li>
+{{- end }}
+</ul>
+{{- end }}

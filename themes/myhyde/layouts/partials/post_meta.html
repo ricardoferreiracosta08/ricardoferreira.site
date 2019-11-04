@@ -1,0 +1,15 @@
+<small style="color: #9a9a9a;">
+
+     {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+     {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+     <time datetime="{{ $dateTime }}">
+       <i class="fas fa-calendar"></i> {{ .PublishDate.Format $dateFormat }}
+     </time>
+     &nbsp; &nbsp;
+     {{ if .IsTranslated }}
+        {{ range .Translations }}
+        <a hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}"><img style="display: inline-block; margin: 0" src="{{ .Site.BaseURL }}images/{{ .Language.Lang }}32.png" /> {{ .Title }} </a>
+        {{ end }}
+     {{ end }}
+
+</small>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on Ricardo Ferreira</title>
+    <link>https://ricardoferreiracosta.netlify.com/tags/security/</link>
+    <description>Recent content in security on Ricardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 12 May 2016 18:23:58 -0300</lastBuildDate>
+    
+	<atom:link href="https://ricardoferreiracosta.netlify.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>10 Regras do Firewall IPTables que todo sysadmin Linux deve conhecer</title>
+      <link>https://ricardoferreiracosta.netlify.com/posts/10-regras-do-firewall-iptables-que-todo-sysadmin-linux-deve-conhecer/</link>
+      <pubDate>Thu, 12 May 2016 18:23:58 -0300</pubDate>
+      
+      <guid>https://ricardoferreiracosta.netlify.com/posts/10-regras-do-firewall-iptables-que-todo-sysadmin-linux-deve-conhecer/</guid>
+      <description>5 Erros que todo usuário Linux cometeu ao começar aprender Linux Se ainda os comete, reveja-os Fonte: Pexels
+$ goaccess -f /var/log/apache2/access.log É importante aprender novas habilidades ao longo de sua vida — isso mantém sua mente ágil e o torna mais competitivo no mercado de trabalho.
+Mas algumas habilidades são** mais difíceis** de aprender do que outras, especialmente aquelas que pequenos erros podem custar muito tempo e causar problemas inconvenientes quando você ainda está tentando aprender.</description>
+    </item>
+    
+    <item>
+      <title>10 Regras do Firewall IPTables que todo sysadmin Linux deve conhecer</title>
+      <link>https://ricardoferreiracosta.netlify.com/posts/10-regras-do-firewall-iptables-que-todo-sysadmin-linux-deve-conhecer/</link>
+      <pubDate>Thu, 12 May 2016 18:23:58 -0300</pubDate>
+      
+      <guid>https://ricardoferreiracosta.netlify.com/posts/10-regras-do-firewall-iptables-que-todo-sysadmin-linux-deve-conhecer/</guid>
+      <description>5 Erros que todo usuário Linux cometeu ao começar aprender Linux Se ainda os comete, reveja-os Fonte: Pexels
+$ goaccess -f /var/log/apache2/access.log É importante aprender novas habilidades ao longo de sua vida — isso mantém sua mente ágil e o torna mais competitivo no mercado de trabalho.
+Mas algumas habilidades são** mais difíceis** de aprender do que outras, especialmente aquelas que pequenos erros podem custar muito tempo e causar problemas inconvenientes quando você ainda está tentando aprender.</description>
+    </item>
+    
+    <item>
+      <title>10 Regras do Firewall IPTables que todo sysadmin Linux deve conhecer | Teste</title>
+      <link>https://ricardoferreiracosta.netlify.com/posts/10-regras-do-firewall-iptables-que-todo-sysadmin-linux-deve-conhecer/</link>
+      <pubDate>Thu, 12 May 2016 18:23:58 -0300</pubDate>
+      
+      <guid>https://ricardoferreiracosta.netlify.com/posts/10-regras-do-firewall-iptables-que-todo-sysadmin-linux-deve-conhecer/</guid>
+      <description>My compact summary</description>
+    </item>
+    
+  </channel>
+</rss>

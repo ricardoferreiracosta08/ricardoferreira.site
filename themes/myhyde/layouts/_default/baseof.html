@@ -1,0 +1,13 @@
+{{ partial "head.html" . }}
+  <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
+  {{ partial "sidebar.html" . }}
+<!--   MY CODE - REMOVING CONTAINER CLASS BECAUSE BOOTSTRAP
+      <main class="content container"> 
+-->
+    <main class="content">
+    {{ block "main" . -}}{{- end }}
+    </main>
+
+    {{ template "_internal/google_analytics_async.html" . }}
+  </body>
+</html>

@@ -1,0 +1,54 @@
+{{ define "main" }}
+
+{{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+{{ range $pag.Pages }}
+
+<article style="padding-top: 40px; padding-bottom: 40px; border-bottom: 1px solid #eee;">
+    {{ if .Params.tags }}
+    <div>
+        {{ range .Params.tags }}
+        <a href="/tags/{{ . }}">#{{ . }}</a>&nbsp;
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <h2 class="post-title"> 
+        <a hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+
+    <p id="post-date">
+      {{ partial "post_meta.html" . }}
+    </p>
+
+<!--
+    {{ if .Params.subtitle }}
+    <h4 class="post-subtitle">
+       {{ .Params.subtitle }}
+    </h4>
+    {{ end }}
+-->
+<!--    
+    {{ if .Params.image }}
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-title" />
+    {{ end }}    
+-->
+
+    <div class="post-entry">
+        {{ .Summary }}
+        <a href="{{ .Permalink }}" class="post-read-more">[Leia mais]</a>
+    </div>
+
+</article>
+
+{{ end }}
+
+{{ partial "pagination.html" .}}
+<!-- {{ template "_internal/pagination.html" . }}-->
+
+{{ if .Site.Params.fixed_ads }}
+	<div class="fixed notmobile">
+		<i class="fas fa-rocket"></i> <a href="#" target="_blank">[DOCKER] Sabe a diferença entra as instruções ENTRYPOINT e CMD?</a>
+	</div>
+{{ end }}
+
+{{ end }}

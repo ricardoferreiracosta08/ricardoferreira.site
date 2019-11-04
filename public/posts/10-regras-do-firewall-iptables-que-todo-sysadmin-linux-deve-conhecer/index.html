@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+    
+
+  <script src="https://kit.fontawesome.com/6bdad52ee2.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ricardoferreiracosta.netlify.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://ricardoferreiracosta.netlify.com/favicon.png">
+
+  
+
+  <meta name="generator" content="Hugo 0.59.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+    
+
+ <meta name="keywords" content="sysadmin, networking, virtualization, webserver, monitoring, databasebase, linux">
+
+
+<meta name="robots" content="index,follow" /> 
+<meta name="googlebot" content="index,follow" />
+
+
+
+<title itemprop="name">10 Regras do Firewall IPTables que todo sysadmin Linux deve conhecer | Ricardo Ferreira</title>
+  <meta property="og:title" content="10 Regras do Firewall IPTables que todo sysadmin Linux deve conhecer | Ricardo Ferreira" />
+  <meta name="twitter:title" content="10 Regras do Firewall IPTables que todo sysadmin Linux deve conhecer | Ricardo Ferreira" />
+  <meta itemprop="name" content="10 Regras do Firewall IPTables que todo sysadmin Linux deve conhecer | Ricardo Ferreira" />
+  <meta name="application-name" content="10 Regras do Firewall IPTables que todo sysadmin Linux deve conhecer | Ricardo Ferreira" />
+
+  <meta property="og:site_name" content="Ricardo Ferreira" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@rferreira_tec">
+  <meta name="twitter:domain" content="Ricardo Ferreira">
+
+
+
+<meta name="description" content="O Firewall IPTables é um firewall de nível de pacotes, ou seja, usa parâmetros, como porta/endereço de origem/destino, estado da conexão, e outros para fazer a filtragem e segurança na rede. Em suma, o IPTables tem inúmeras possibilidades de controle oferecidas pelos recursos de filtragem. " />
+  <meta itemprop="description" content="O Firewall IPTables é um firewall de nível de pacotes, ou seja, usa parâmetros, como porta/endereço de origem/destino, estado da conexão, e outros para fazer a filtragem e segurança na rede. Em suma, o IPTables tem inúmeras possibilidades de controle oferecidas pelos recursos de filtragem. " />
+  <meta property="og:description" content="O Firewall IPTables é um firewall de nível de pacotes, ou seja, usa parâmetros, como porta/endereço de origem/destino, estado da conexão, e outros para fazer a filtragem e segurança na rede. Em suma, o IPTables tem inúmeras possibilidades de controle oferecidas pelos recursos de filtragem. " />
+  <meta name="twitter:description" content="O Firewall IPTables é um firewall de nível de pacotes, ou seja, usa parâmetros, como porta/endereço de origem/destino, estado da conexão, e outros para fazer a filtragem e segurança na rede. Em suma, o IPTables tem inúmeras possibilidades de controle oferecidas pelos recursos de filtragem. " />
+
+
+
+<base href="https://ricardoferreiracosta.netlify.com/posts/10-regras-do-firewall-iptables-que-todo-sysadmin-linux-deve-conhecer/">
+<link rel="canonical" href="https://ricardoferreiracosta.netlify.com/posts/10-regras-do-firewall-iptables-que-todo-sysadmin-linux-deve-conhecer/" itemprop="url" /> 
+<meta name="url" content="https://ricardoferreiracosta.netlify.com/posts/10-regras-do-firewall-iptables-que-todo-sysadmin-linux-deve-conhecer/" />
+<meta name="twitter:url" content="https://ricardoferreiracosta.netlify.com/posts/10-regras-do-firewall-iptables-que-todo-sysadmin-linux-deve-conhecer/" /> 
+<meta property="og:url" content="https://ricardoferreiracosta.netlify.com/posts/10-regras-do-firewall-iptables-que-todo-sysadmin-linux-deve-conhecer/" />
+
+
+
+<meta property="og:locale" content="pt-br">
+<meta name="language" content="">
+
+
+
+
+ 
+  <meta itemprop="image" content="https://ricardoferreiracosta.netlify.com/images/Regras-IPtables-conhecer.png" />
+  <meta property="og:image" content="https://ricardoferreiracosta.netlify.com/images/Regras-IPtables-conhecer.png" /> 
+  <meta name="twitter:image" content="https://ricardoferreiracosta.netlify.com/images/Regras-IPtables-conhecer.png" />
+  <meta name="twitter:image:src" content="https://ricardoferreiracosta.netlify.com/images/Regras-IPtables-conhecer.png" /> 
+
+
+
+<meta property="og:updated_time" content=2016-05-12T18:23:58-0300 />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreiracosta.netlify.com/sitemap.xml" /> 
+
+
+
+
+
+
+  
+  <meta property="og:type" content="article" />
+  <meta property="article:publisher" content="https://www.facebook.com/Sysadmin_LD-151689688562160/" /> 
+  <meta property="og:article:published_time" content=2016-05-12T18:23:58-0300 /> 
+  <meta property="article:published_time" content=2016-05-12T18:23:58-0300 />
+  
+   
+    <meta property="og:article:author" content="Ricardo ferreira" />
+    <meta property="article:author" content="Ricardo ferreira" /> 
+    <meta name="author" content="Ricardo ferreira" /> 
+  
+  
+  
+
+  
+
+
+
+  
+  <link type="text/css" rel="stylesheet" href="https://ricardoferreiracosta.netlify.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ricardoferreiracosta.netlify.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://ricardoferreiracosta.netlify.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://ricardoferreiracosta.netlify.com/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+
+    
+     <center>
+	<img src="images/perfil-02.jpeg" style="filter: grayscale(100%);" />
+     </center>
+    
+ 
+    <div class="sidebar-about">
+      <a href="https://ricardoferreiracosta.netlify.com/"><h1>Ricardo Ferreira</h1></a>
+      <p class="lead">
+       Linux SysAdmin | Infrastructure | Palestrante | Professor 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://ricardoferreiracosta.netlify.com/">Home</a> </li>
+        <li><a href="https://ricardoferreiracosta.netlify.com/categories/database"> Database </a></li><li><a href="https://ricardoferreiracosta.netlify.com/categories/webserver"> Webserver </a></li>
+      </ul>
+    </nav>
+
+    
+      <a href="https://twitter.com/sysadm_ld" target="_blank" alt="Twitter"><i class="fa-2x fab fa-twitter"></i></a>
+    
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>10 Regras do Firewall IPTables que todo sysadmin Linux deve conhecer</h1>
+  <time datetime=2016-05-12T18:23:58-0300 class="post-date">Thu, May 12, 2016</time>
+  
+
+<h3 id="5-erros-que-todo-usuário-linux-cometeu-ao-começar-aprender-linux">5 Erros que todo usuário Linux cometeu ao começar aprender Linux</h3>
+
+<h4 id="se-ainda-os-comete-reveja-os">Se ainda os comete, reveja-os</h4>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*iN8tYvSfWYCBZbr_8-Ikmw.jpeg" alt="" />
+<span class="figcaption_hack">Fonte: Pexels</span></p>
+
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ goaccess -f /var/log/apache2/access.log</code></pre></div>
+
+<p>É importante <strong>aprender novas habilidades</strong> ao longo de sua vida — isso mantém
+sua mente ágil e o torna mais competitivo no mercado de trabalho.</p>
+
+<p>Mas algumas habilidades são** mais difíceis** de aprender do que outras,
+especialmente aquelas que pequenos erros podem custar muito tempo e causar
+problemas inconvenientes quando você ainda está tentando aprender.</p>
+
+<p>Inclusive, esse erro pode ser determinante para você “largar tudo” e “deixar
+para depois”, <strong>desistindo de aprender Linux</strong>.</p>
+
+<h3 id="aprender-linux">APRENDER LINUX</h3>
+
+<p>Erros sempre irão ser cometidos. Faz parte do <strong>processo de aprendizagem</strong>,
+independente em qual curva do conhecimento esteja. Por exemplo, se você está
+acostumado a trabalhar em uma <strong>interface gráfica</strong> do Windows ou MacOS, mudar
+para o Linux, com seus <a href="https://www.linuxdescomplicado.com.br/2017/01/algumas-ferramentas-de-terminal-que-podem-ser-mais-praticas-do-que-os-aplicativos-graficos.html">comandos não
+familiares</a>
+digitados em um terminal, pode ter uma grande <strong>complexidade para você</strong>.</p>
+
+<blockquote>
+<p><strong>RECOMENDO QUE LEIA</strong><br>  → <a href="https://www.linuxdescomplicado.com.br/2017/09/10-coisas-que-voce-deve-saber-caso-esteja-comecando-com-o-linux.html">10 coisas que você deve saber caso esteja
+começando com o
+Linux</a><br>
+→ <a href="https://www.linuxdescomplicado.com.br/2016/05/saiba-como-aprender-20-comandos-linux-em-apenas-alguns-minutos.html">Saiba como aprender 20 comandos Linux em apenas alguns
+minutos</a><br>
+→ <a href="https://www.linuxdescomplicado.com.br/2017/01/algumas-ferramentas-de-terminal-que-podem-ser-mais-praticas-do-que-os-aplicativos-graficos.html">Algumas ferramentas de terminal que podem ser mais práticas do que os
+aplicativos
+gráficos</a></p>
+</blockquote>
+
+<p>Mas, <strong>se não desiste</strong> nesses pequenos obstáculos, as recompensas valerão a
+pena. Pois, muitas outras pessoas tiveram as mesmas ou outras dificuldades antes
+de você, e provavelmente, estão usando o Linux de alguma maneira, seja no
+trabalho ou no cotidiano.</p>
+
+<p>Diante disso, digo que o percurso não será fácil e nem impossível, pois são dos
+erros que você deve ter convicção que o aprendizado está sendo provado.
+Portanto, compartilho com você alguns <strong>erros mais comuns que todo usuário Linux
+cometeu ao começar aprender Linux</strong>. Espero que ajude :)</p>
+
+<h3 id="erros-mais-comuns">ERROS MAIS COMUNS</h3>
+
+<h3 id="1-executar-comandos-sem-conhecê-los">1. Executar comandos sem conhecê-los</h3>
+
+<p>Além do risco de comprometer parte do sistema ou perder algum
+arquivo/configuração importante, você tende a ficar frustado com a falta de
+êxito ao tentar executar o comando.</p>
+
+<p>Imagine você tentando uma busca textual no sistema usando o <a href="https://www.linuxdescomplicado.com.br/2013/07/comandos-linux-encontre-tudo-que.html">comando
+find</a>!
+Por não ter noção completa da estrutura do comando, você, provavelmente, não
+terá o resultado esperado, colocando em dúvida o comando executado e ainda
+ficará relutante com alternativas, sejam gráficas ou via terminal.</p>
+
+<blockquote>
+<p><strong>RECOMENDO QUE LEIA</strong><br>  → <a href="https://www.linuxdescomplicado.com.br/2013/07/comandos-linux-encontre-tudo-que.html">Comandos Linux: Encontre tudo que procura
+dominando o comando
+find</a></p>
+</blockquote>
+
+<p>Daí, também, vem o <strong>preconceito que o terminal é difícil</strong>. Pois, se você
+atropela o processo de aprendizado tudo fica mais complexo :/</p>
+
+<h3 id="2-copiar-colar-e-executar-comandos-sem-devidos-cuidados">2. Copiar, colar e executar comandos sem devidos cuidados</h3>
+
+<p>Pegando gancho com o primeiro erro, esse se <strong>resume aos “apressados de
+plantão”</strong> — é proativo, pesquisa em fóruns e encontra o que precisa. Contudo,
+não verifica a estrutura básica do comando e tem o risco de algo dar errado.</p>
+
+<p>Por isso, <strong>leia o comando primeiro</strong> e pelo menos tenha uma compreensão geral
+das ações que estão prestes a serem executadas. Especialmente se houver um
+<strong>comando de pipe</strong>. Se houver mais de um, existem muitos comandos “perigosos”
+que parecem inofensivos até você perceber o que eles podem fazer (por exemplo,
+rm , dd ) :/</p>
+
+<blockquote>
+<p><strong>RECOMENDO QUE LEIA</strong><br>  → <a href="https://www.linuxdescomplicado.com.br/2014/04/nao-sabe-o-que-um-comando-linux-faz.html">Não sabe o que um determinado comando Linux faz?!
+Deixa que o ExplainShell explica pra
+você</a></p>
+</blockquote>
+
+<p>Por isso, não conhecer o comando que você deseja executar <strong>culmina numa cadeia
+de problemas</strong>, mesmo para um usuário dito “avançado” — desde a frustração ao
+erro comprometedor.</p>
+
+<h3 id="3-não-se-preocupar-com-a-dependência-de-pacotes-e-suas-fontes">3. Não se preocupar com a dependência de pacotes e suas fontes</h3>
+
+<p>Quem nunca removeu um pacote do sistema e não verificou de que outros pacotes
+ele dependia? Apenas remover o que vem selecionado, por padrão, acaba fazendo
+com que alguns dos seus programas importantes falhem e fiquem indisponíveis.</p>
+
+<p><strong>Quando se estar começando</strong>, instalar, remover e atualizar pacotes é uma**
+tarefa desapercebida**, pois os grandes gerenciadores de pacotes existentes nos
+sistemas Linux, como
+<a href="https://www.diolinux.com.br/2016/06/qual-diferenca-entre-apt-e-apt-get.html">apt</a>,
+yum, pacman, dnf e outros; atendem muito bem suas “obrigações”. Contudo, eles
+não conhecem suas necessidades. Por isso, é fundamental que a <strong>mensagem
+informativa</strong>, com todos os pacotes que serão afetados, na instalação, remoção
+ou atualização, <strong>seja lida com cuidado</strong>; antes de confirmar (y/N) a operação.</p>
+
+<h3 id="4-usar-o-modo-super-usuário-para-tudo">4. Usar o modo super-usuário “para tudo”</h3>
+
+<p>Para quem faz isso, <strong>parece evitar o retrabalho</strong> de informar o “sudo” e suas
+credencias toda vez que precisar. Tem gente que aumenta o tempo para ele
+solicitar a senha, dado uma vez informada no passado.</p>
+
+<p>Contudo, <strong>esses mecanismos</strong> de mudança de modos de usuários são o <strong>segredo do
+sucesso</strong> dos sistemas Linux. O risco para se executar tudo em modo
+super-usuário (sudo), ou como root, é altíssimo. Para quem está começando,
+executar um comando nesses modos <strong>causam super exposições do sistema</strong>, podendo
+remover ou alterar um arquivo importante, sem ser alertado do risco, por
+exemplo.</p>
+
+<blockquote>
+<p><strong>RECOMENDO QUE LEIA</strong><br>  → <a href="https://www.linuxdescomplicado.com.br/2017/02/por-que-usuarios-linux-devem-se-preocupar-com-riscos-em-seguranca-e-o-que-pode-ser-feito-para-se-proteger.html">Por que usuários Linux devem se preocupar com
+riscos em segurança e o que pode ser feito para se
+proteger</a></p>
+</blockquote>
+
+<h3 id="5-conceder-permissão-completa-para-tudo-e-todos">5. Conceder permissão completa “para tudo e todos”</h3>
+
+<p>Depois que se aprende as <strong>permissões em sistema de arquivos Linux</strong>, parece que
+o descuido aumenta. Quem nunca teve um problema e encontrou na internet como
+solução sendo “problema de permissão”? Daí, você concede a famosa permissão
+“777” :/</p>
+
+<p>Primeiro, não existe “problema de permissão”. <strong>O controle de acesso via
+permissões é uma solução</strong>. O que acontece é o uso das permissões erradas no
+arquivo, em questão. Por isso, o correto é encontrar permissões adequadas para
+aquele arquivo ou pasta.</p>
+
+<p>Existem permissões que deve ser concedidas somente para o dono do arquivo.
+Outras para o grupo e outros, e permissões somente de execução e não de escrita.
+Cada nuance dessas <a href="https://www.linuxdescomplicado.com.br/2017/02/por-que-usuarios-linux-devem-se-preocupar-com-riscos-em-seguranca-e-o-que-pode-ser-feito-para-se-proteger.html">põe em risco a segurança do seu
+sistema</a>,
+principalmente se feito em um recurso protegido pelo modo super-usuário :/</p>
+
+<hr />
+
+<blockquote>
+<p>**Publicado originalmente em:
+**<a href="https://www.linuxdescomplicado.com.br/2019/08/erros-que-todo-usuario-linux-cometeu-ao-comecar-aprender-linux.html">https://www.linuxdescomplicado.com.br/2019/08/erros-que-todo-usuario-linux-cometeu-ao-comecar-aprender-linux.html</a></p>
+</blockquote>
+
+</div>
+
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sysadminlinuxdescomplicado" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-21994328-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
