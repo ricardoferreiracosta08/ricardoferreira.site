@@ -28,10 +28,13 @@
     </nav>
 
     <!-- MY CODE - SOCIAL -->
-      <a href="{{ .Site.Params.linkedin }}" target="_blank" alt="Likendin"><i class="fa-2x fab fa-linkedin"></i></a>
-      <a href="{{ .Site.Params.github }}" target="_blank" alt="GitHub"><i class="fa-2x fab fa-github"></i></a>
-      <a href="{{ .Site.Params.twitter }}" target="_blank" alt="Twitter"><i class="fa-2x fab fa-twitter"></i></a>
-      <a href="{{ .Site.Params.instagram }}" target="_blank" alt="Instagram"><i class="fa-2x fab fa-instagram"></i></a>
+      {{ if .Site.Params.linkedin }} <a style="padding-right: 8px;" href="{{ .Site.Params.linkedin }}" target="_blank" alt="Likendin"><i class="fa-2x fab fa-linkedin"></i></a> {{ end }}
+      {{ if .Site.Params.github }} <a style="padding-right: 8px;" href="{{ .Site.Params.github }}" target="_blank" alt="GitHub"><i class="fa-2x fab fa-github"></i></a> {{ end }}
+      {{ if .Site.Params.serverfault }} <a style="padding-right: 8px;" href="{{ .Site.Params.serverfault }}" target="_blank" alt="ServerFault"><i class="fa-2x fab fa-stack-exchange"></i></a> {{ end }}
+      {{ if .Site.Params.twitter }} <a style="padding-right: 8px;" href="{{ .Site.Params.twitter }}" target="_blank" alt="Twitter"><i class="fa-2x fab fa-twitter"></i></a> {{ end }}
+      {{ if .Site.Params.instagram }} <a style="padding-right: 8px;" href="{{ .Site.Params.instagram }}" target="_blank" alt="Instagram"><i class="fa-2x fab fa-instagram"></i></a> {{ end }}
+      {{ if .Site.Params.facebook }} <a style="padding-right: 8px;" href="{{ .Site.Params.facebook }}" target="_blank" alt="Facebook"><i class="fa-2x fab fa-facebook"></i></a> {{ end }}
+      {{ if .Site.Params.youtube }} <a style="padding-right: 8px;" href="{{ .Site.Params.youtube }}" target="_blank" alt="YouTube"><i class="fa-2x fab fa-youtube"></i></a> {{ end }}
     <!-- MY CODE - END -->
 
     <p style="margin-top: 25px"><small>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}</small></p>
