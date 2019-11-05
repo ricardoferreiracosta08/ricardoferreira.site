@@ -42,9 +42,9 @@ googleAnalytics = "UA-21994328-3"
 
 [Menus]
   main = [
-      {Name = "Sobre mim", URL = "/categories/database"},
+      {Name = "About me", URL = "/sobre"},
       {Name = "Meus Cursos", URL = "https://www.udemy.com/user/ricardo-ferreira-costa-2/"},
-      {Name = "Palestras", URL = "/categories/webserver"}
+      {Name = "Palestras", URL = "#"}
   ]
 
 [params]
