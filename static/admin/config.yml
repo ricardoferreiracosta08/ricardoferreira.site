@@ -18,6 +18,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields each document in this collection have
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "SubTitle", name: "subtitle", widget: "string"}
       - {label: "Summary", name: "summary", widget: "string"}
