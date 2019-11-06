@@ -37,6 +37,10 @@ paginate = 6 #(default = 10)
 [permalinks]
 	post = "/:year/:month/:title/"
 
+# opens external links absolute links in a new window or tab. 
+[Blackfriday]
+  hrefTargetBlank = true
+
 [Menus]
   main = [
       {Name = "About me", URL = "/sobre"},
