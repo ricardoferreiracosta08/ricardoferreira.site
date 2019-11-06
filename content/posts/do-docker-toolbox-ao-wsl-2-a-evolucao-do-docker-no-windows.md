@@ -2,6 +2,8 @@
 draft: false
 title: Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows
 subtitle: Um breve histórico
+description: >-
+  Breve histórico do Docker no Windows. Do Docker ToolBox ao WSL 2
 summary: >-
   Depois do anúncio do Windows Subystem for Linux (WSL) em 2016, a Microsoft
   divulga, em 2019, nova versão do subsistema que permite rodar um Kernel Linux
