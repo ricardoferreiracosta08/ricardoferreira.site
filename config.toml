@@ -48,7 +48,7 @@ googleAnalytics = "UA-21994328-3"
   ]
 
 [params]
-        fixed_ads = true
+        fixed_ads = false
         copyright = "Built using Hugo v0.59.0. Content managed with Netlify CMS. Hosted by Netlify. Theme adapted from Hyde"
         description = "Graduated with bachelor degree in Computer Science. Speaker, instructor and professor by vocation. Infrastructure Linux SysAdmin by training. Passion for Linux."
         #Linux SysAdmin | Infrastructure | Palestrante | Professor"
