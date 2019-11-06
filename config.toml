@@ -30,9 +30,6 @@ canonifyurls = "true"
 # Pagination
 paginate = 6 #(default = 10)
 
-disqusShortname = "ricardoferreira"
-googleAnalytics = "UA-151634076-1"
-
 [taxonomies]
   category = "categories"
   tag = "tags"
@@ -49,8 +46,10 @@ googleAnalytics = "UA-151634076-1"
 
 [params]
         fixed_ads = false
+        disqusShortname = "ricardoferreira"
+        googleAnalytics = "UA-151634076-1"
         copyright = "Built using Hugo v0.59.0. Content managed with Netlify CMS. Hosted by Netlify. Theme adapted from Hyde"
-        description = "Graduated with bachelor degree in Computer Science. Speaker, instructor and professor by vocation. Infrastructure Linux SysAdmin by training. Passion for Linux."
+        description = "Ciência da Computação por formação. Palestrante, instrutor e professor por vocação. SysAdmin Linux Infrastructure por ofício. Linux como paixão."
         #Linux SysAdmin | Infrastructure | Palestrante | Professor"
         sitename = "Ricardo Ferreira"
 	ogimage = ""

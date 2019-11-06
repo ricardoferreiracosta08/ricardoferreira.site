@@ -30,8 +30,9 @@
 
 </div>
 
-{{ if .Site.DisqusShortname -}}
-<h2>Comments</h2>
-{{ template "_internal/disqus.html" . }}
+{{ if .Site.Params.DisqusShortname -}}
+<h2>Deixe seu comentário</h2>
+{{ partial "disqus.html" . }}
 {{- end }}
 {{- end }}
+
