@@ -1,19 +1,29 @@
-+++
-author = "Ricardo Ferreira"
-date = 2019-11-05T20:29:33-03:00
-title = "Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows"
-subtitle = "Um breve histórico"
-summary = "Depois do anúncio do Windows Subystem for Linux (WSL) em 2016, a Microsoft divulga, em 2019, nova versão do subsistema que permite rodar um Kernel Linux direto no Windows, sem recursos de virtualização. E isso impacta direto como containers Docker rodarão no Windows 10."
-description = "Um breve histórico da evolução do Docker no Windows. Do Docker Toolbox ao WSL 2"
-image = ""
-categories = ["docker", "windows"]
-keywords = ["wsl", "container", "windows"]
-slug = "do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows"
-tags = ["wsl", "container"]
-+++
+---
+draft: false
+title: Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows
+subtitle: Um breve histórico
+summary: >-
+  Depois do anúncio do Windows Subystem for Linux (WSL) em 2016, a Microsoft
+  divulga, em 2019, nova versão do subsistema que permite rodar um Kernel Linux
+  direto no Windows, sem recursos de virtualização. E isso impacta direto como
+  containers Docker rodarão no Windows 10.
+slug: do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows
+date: 2019-11-05T23:29:33.000Z
+image: /images/windows-10-docker.jpg
+categories:
+  - docker
+  - windows
+tags:
+  - wsl
+  - container
+keywords:
+  - wsl
+  - container
+  - windows
+---
 
 
-Depois do anúncio do Windows Subystem for Linux (WSL) em 2016, a Microsoft divulga, em 2019, nova versão do subsistema que permite rodar um Kernel Linux direto no Windows, sem recursos de virtualização. E isso impacta direto como [containers Docker](https://click.linksynergy.com/deeplink?id=/rNXZOKZPuM&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fdocker-introducao-a-administracao-de-containers%2F) rodarão no Windows 10.
+Depois do anúncio do Windows Subystem for Linux (WSL) em 2016, a Microsoft divulga, em 2019, nova versão do subsistema que permite rodar um Kernel Linux direto no Windows, sem recursos de virtualização. E isso impacta direto como **containers Docker** rodarão no Windows 10.
 
 ### Contextualizando
 
@@ -32,7 +42,7 @@ Então, chegamos ao WSL 2, lançado em junho de 2019 na versão Preview Build 18
 
 Para a Docker, conforme [publicação oficial](https://engineering.docker.com/2019/06/docker-hearts-wsl-2/), essa abordagem é arquitetonicamente muito próxima do que é feito com o LinuxKit e o Hyper-V hoje, com o benefício adicional de ser mais leve e mais integrado ao Windows do que o Docker pode fornecer sozinho.
 
-[![wsl2_2_smaller](https://s.profissionaisti.com.br/wp-content/uploads/2019/07/wsl2_2_smaller.gif)](https://engineering.docker.com/2019/06/docker-hearts-wsl-2/)
+[![wsl2_2_smaller](../images/wsl2_2_smaller.gif)](https://engineering.docker.com/2019/06/docker-hearts-wsl-2/)
 
 Para eles, o WSL 2 veio facilitar a intraoperabilidade do Docker com o Windows, deixar o desenvolvimento e a execução de [containers Docker](https://click.linksynergy.com/deeplink?id=/rNXZOKZPuM&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fdocker-introducao-a-administracao-de-containers%2F) mais rápidos.
 
@@ -45,7 +55,7 @@ Como o WSL 2 ainda está em preview, a Docker já planeja substituir a VM do Hyp
 
 Além disso, com a **integração do WSL 2**, você ainda terá interação maior com programas Linux em execução no WSL. Isso tem um grande impacto para os desenvolvedores que trabalham em projetos voltados para um ambiente Linux.
 
-![runwsl-1024x876](https://s.profissionaisti.com.br/wp-content/uploads/2019/07/runwsl-1024x876.gif)
+![runwsl-1024x876](../images/runwsl-1024x876.gif)
 
 Por fim, usuários do Windows poderão colocar seus arquivos de aplicações diretamente no sistema de arquivos Linux para aproveitar os benefícios de desempenho de arquivos. Isso muda completamente a maneira como era feito antes; já que eles deviam ser salvos em sua unidade C ao usar o WSL.
 
