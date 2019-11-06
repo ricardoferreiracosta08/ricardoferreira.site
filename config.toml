@@ -67,7 +67,7 @@ googleAnalytics = "UA-21994328-3"
 	usertwitter = "@rferreira_tec"
 #	tagline = "Por Ricardo Ferreira"
 #	defaultDescription = "Linux Descomplicado para Sysadmin's"
-	defaultKeywords = "sysadmin, networking, virtualization, webserver, monitoring, databasebase, linux"
+	defaultKeywords = "sysadmin, networking, virtualization, webserver, monitoring, database, linux, docker"
 
 # Built using Hugo v0.59.0. Content managed with Netlify CMS. Hosted by Netlify.
 
