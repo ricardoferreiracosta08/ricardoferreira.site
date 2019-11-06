@@ -139,6 +139,7 @@ a.sidebar-nav-item:focus {
   padding-bottom: 4rem;
   /* MY CODE */
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 48em) {
