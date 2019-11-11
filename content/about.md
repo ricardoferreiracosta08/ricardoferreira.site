@@ -17,7 +17,7 @@ uma base sólida de conhecimento.
 
 ### Mas, quem sou mesmo?
 
-Meu nome é **Ricardo Ferreira Costa**. Nasci em São Luís/MA e trabalho atualmente na Universidade Federal do Maranhão (UFMA). Já tive a oportunidade de conhecer algumas cidades, como o Rio de Janeiro e Fortaleza. **No estado do Ceará**, tive a oportunidade de trabalhar na capital cearense, por 2 anos, e no Pólo Tecnológico do Sertão Central, em Quixadá, por igual período.
+Meu nome é **Ricardo Ferreira Costa**. Nasci em São Luís/MA e trabalho atualmente na Universidade Federal do Maranhão (UFMA). **No estado do Ceará**, tive a oportunidade de trabalhar na capital cearense, por 2 anos, e no Pólo Tecnológico do Sertão Central, em Quixadá, por igual período.
 
 Acredito que, no momento atual, quanto mais competências (não somente habilidades técnicas) desenvolvermos, mais preparados e resilientes seremos. **O que não se sabe, se aprende**. Por isso, trago comigo um espírito empreendedor que busca constantemente pelo conhecimento e na solução de problemas. E, **ensinar ainda é a melhor maneira de aprender!** Por isso, sempre que posso compartilho meu conhecimento aqui ou no [**Linux Descomplicado**](https://www.linuxdescomplicado.com.br) 
 
