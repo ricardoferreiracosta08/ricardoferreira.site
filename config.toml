@@ -34,8 +34,9 @@ paginate = 6 #(default = 10)
   category = "categories"
   tag = "tags"
 
+# posts - it should rename to same name of content folder
 [permalinks]
-	post = "/:year/:month/:title/"
+  posts = "/:year/:month/:slug/"
 
 # opens external links absolute links in a new window or tab. 
 [Blackfriday]
