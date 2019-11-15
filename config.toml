@@ -25,7 +25,7 @@ pygmentsStyle = "native"
 # SEO
 enableRobotsTXT = true
 canonifyurls = "true"
-#uglyURLs = "true"
+uglyurls = true
 
 # Pagination
 paginate = 6 #(default = 10)
