@@ -61,7 +61,7 @@ paginate = 6 #(default = 10)
         author = "Ricardo Ferreira"   
 	perfil = "images/perfil-02.jpeg"
 	hideReadingTime = "true"
-	youtube = ""
+	youtube = "https://www.youtube.com/channel/UCNzijOvZv4zKbwojY9LmheQ"
 	facebook = ""
 	github = "https://github.com/ricardoferreiracosta08/"
 	serverFault = "https://serverfault.com/users/547400/ricardo-ferreira"
