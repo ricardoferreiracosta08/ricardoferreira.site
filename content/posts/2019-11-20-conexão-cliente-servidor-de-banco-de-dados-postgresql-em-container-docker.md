@@ -2,11 +2,7 @@
 draft: false
 title: Conexão cliente/servidor de banco de dados PostgreSQL em container Docker
 subtitle: PostgreSQL no Docker
-description: >-
-  Nesse vídeo eu mostro um servidor PostgreSQL em container Docker, em modo de
-  conexão default bridge. Depois, através de um único cliente psql, usar outro
-  container para acessar o container servidor e criar um banco de dados de
-  "teste". Por fim, através do cliente desktop pgAdmin, validar esse teste.
+description: Servidor PostgreSQL em container Docker
 summary: >-
   Nesse vídeo eu mostro um servidor PostgreSQL em container Docker, em modo de
   conexão default bridge. Depois, através de um único cliente psql, usar outro
