@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Conexão cliente/servidor de banco de dados PostgreSQL em container Docker
 subtitle: PostgreSQL no Docker
 description: >-
