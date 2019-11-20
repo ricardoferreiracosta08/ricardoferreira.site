@@ -17,11 +17,13 @@ categories:
   - windows
 tags:
   - wsl
-  - container
+  - docker
+  - windows
 keywords:
   - wsl
   - container
   - windows
+  - docker
 ---
 Depois do anúncio do Windows Subystem for Linux (WSL) em 2016, a Microsoft divulga, em 2019, nova versão do subsistema que permite rodar um Kernel Linux direto no Windows, sem recursos de virtualização. E isso impacta direto como [**containers Docker**](https://www.udemy.com/course/docker-introducao-a-administracao-de-containers/) rodarão no Windows 10.
 

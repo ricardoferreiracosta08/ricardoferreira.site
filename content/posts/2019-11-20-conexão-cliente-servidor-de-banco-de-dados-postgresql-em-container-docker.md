@@ -28,8 +28,8 @@ keywords:
   - archlinux
   - pgadmin
 ---
-Nesse vídeo eu mostro um servidor PostgreSQL em container Docker, em modo de conexão default bridge. Depois, através de um único cliente psql, usar outro container para acessar o container servidor e criar um banco de dados de "teste". Por fim, através do cliente desktop pgAdmin, validar esse teste.
+Nesse vídeo eu mostro um servidor PostgreSQL em container Docker, em modo de conexão default bridge. Depois, através de um único cliente psql, usar outro container para acessar o container servidor e criar um banco de dados de "teste". 
 
+Por fim, através do cliente desktop pgAdmin, validar esse teste.
 
-
-<center><iframe width="960" height="515" src="https://www.youtube.com/embed/uJG7wLotfq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<iframe width="960" height="515" src="https://www.youtube.com/embed/uJG7wLotfq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

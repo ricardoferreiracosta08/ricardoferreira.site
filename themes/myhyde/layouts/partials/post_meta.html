@@ -4,7 +4,7 @@
        {{ $dateTime := .PublishDate.Format "2006-01-02" }}
        {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
        <time datetime="{{ $dateTime }}">
-        <i class="fas fa-calendar"></i> {{ .PublishDate.Format $dateFormat }}
+        <i class="fas fa-calendar"></i> &nbsp; {{ .PublishDate.Format $dateFormat }}
        </time>
        &nbsp; &nbsp;
      {{ end }}
