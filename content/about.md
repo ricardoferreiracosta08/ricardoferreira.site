@@ -28,4 +28,4 @@ Você pode entrar em contato comigo através de qualquer uma das minhas redes so
 + Twitter: [**@rferreira_tec**](http://twitter.com/rferreira_tec)
 + Instagram: [**@ricardoferreira.tec**](https://instagram.com/ricardoferreira.tec)
 + Linkedin: [**Ricardo Ferreira Costa**](https://www.linkedin.com/in/ricardo-ferreira-costa)
-
++ YouTuBe: [**Meu canal de vídeos**] (https://www.youtube.com/channel/UCNzijOvZv4zKbwojY9LmheQ)
