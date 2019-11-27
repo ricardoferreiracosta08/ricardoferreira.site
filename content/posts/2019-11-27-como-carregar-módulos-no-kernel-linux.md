@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: 'Como carregar módulos no Kernel Linux '
 subtitle: 'uso do lsmod, modprobe e /procfs'
 description: >-
