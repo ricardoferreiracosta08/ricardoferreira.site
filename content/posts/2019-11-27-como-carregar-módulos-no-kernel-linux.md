@@ -20,7 +20,7 @@ categories:
 tags:
   - Linux
 keywords:
-  - Linux
+  - linux
   - kernel
   - modprobe
   - lsmod
