@@ -16,7 +16,7 @@ slug: como-carregar-modulos-no-kernel-linux
 date: 2019-11-27T15:16:22.052Z
 image: /images/kernel-modulos-linux.png
 categories:
-  - Linux Descomplicado
+  - LinuxDescomplicado
 tags:
   - Linux
 keywords:
