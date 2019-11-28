@@ -12,13 +12,12 @@ slug: conexao-cliente-servidor-de-banco-de-dados-postgresql-em-container-docker
 date: 2019-11-20T15:18:27.123Z
 image: /images/thum-video.jpg
 categories:
-  - docker
-  - linux
-  - postgresql
+  - Docker
+  - PostgreSQL
 tags:
-  - docker
-  - linux
-  - postgresql
+  - pgadmin
+  - cliente
+  - servidor
 keywords:
   - docker
   - linux

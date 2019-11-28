@@ -1,7 +1,7 @@
 ---
 draft: false
 title: 'Como carregar módulos no Kernel Linux '
-subtitle: 'uso do lsmod, modprobe e /procfs'
+subtitle: 'Uso do lsmod, modprobe e /procfs'
 description: >-
   Usando o lsmod e a leitura do /proc/filesystems, capturo os módulos carregados
   no sistema. Com o modprobe carrego o módulo isofs (iso9660), previamente
@@ -18,7 +18,9 @@ image: /images/kernel-modulos-linux.png
 categories:
   - LinuxDescomplicado
 tags:
-  - Linux
+  - kernel
+  - lsmod
+  - modprobe
 keywords:
   - linux
   - kernel

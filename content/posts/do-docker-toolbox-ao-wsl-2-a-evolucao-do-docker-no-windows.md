@@ -13,12 +13,10 @@ slug: do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows
 date: 2019-11-05T23:29:33.000Z
 image: /images/windows-10-docker.jpg
 categories:
-  - docker
-  - windows
+  - Docker
+  - Windows
 tags:
   - wsl
-  - docker
-  - windows
 keywords:
   - wsl
   - container
