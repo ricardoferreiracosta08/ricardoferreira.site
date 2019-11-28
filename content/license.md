@@ -1,10 +1,10 @@
 +++
-categories = []
-date = "2016-04-11T03:12:10-03:00"
 description = ""
 keywords = []
 title = "Licenciamento"
 slug = "license"
+type = "page"
+layout = "simple-static"
 +++
 
 Este site está sob licença **Creative Commons BY-NC-SA 4.0**.
