@@ -24,7 +24,8 @@ pygmentsStyle = "native"
 # SEO
 enableRobotsTXT = true
 canonifyurls = "true"
-uglyurls = true
+# pages with .html
+# uglyurls = true
 
 # Pagination
 paginate = 6 #(default = 10)
@@ -43,10 +44,10 @@ paginate = 6 #(default = 10)
 
 [Menus]
   main = [
-      {Name = "About me", URL = "/sobre"},
+      {Name = "Sobre", URL = "/sobre"},
       {Name = "Linux Descomplicado", URL = "/categories/LinuxDescomplicado"},
       {Name = "Meus Cursos", URL = "/cursos"},
-      {Name = "Palestras", URL = "#"}
+      {Name = "Minhas Palestras", URL = "#"}
   ]
 
 [params]

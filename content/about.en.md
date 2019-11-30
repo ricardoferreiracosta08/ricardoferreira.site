@@ -15,8 +15,6 @@ uma base sólida de conhecimento.
 
 **Especialidades:** Sistemas Linux, Infraestrutura de redes, Sistemas distribuídos, Segurança da informação.
 
-### Mas, quem sou mesmo?
-
 Meu nome é **Ricardo Ferreira Costa**. Nasci em São Luís/MA e trabalho atualmente na Universidade Federal do Maranhão (UFMA). **No estado do Ceará**, tive a oportunidade de trabalhar na capital cearense, por 2 anos, e no Pólo Tecnológico do Sertão Central, em Quixadá, por igual período.
 
 Acredito que, no momento atual, quanto mais competências (não somente habilidades técnicas) desenvolvermos, mais preparados e resilientes seremos. **O que não se sabe, se aprende**. Por isso, trago comigo um espírito empreendedor que busca constantemente pelo conhecimento e na solução de problemas. E, **ensinar ainda é a melhor maneira de aprender!** Por isso, sempre que posso compartilho meu conhecimento aqui ou no [**Linux Descomplicado**](https://www.linuxdescomplicado.com.br) 
@@ -28,4 +26,4 @@ Você pode entrar em contato comigo através de qualquer uma das minhas redes so
 + Twitter: [**@rferreira_tec**](http://twitter.com/rferreira_tec)
 + Instagram: [**@ricardoferreira.tec**](https://instagram.com/ricardoferreira.tec)
 + Linkedin: [**Ricardo Ferreira Costa**](https://www.linkedin.com/in/ricardo-ferreira-costa)
-
++ YouTube: [**Meu canal de vídeos**] (https://www.youtube.com/channel/UCNzijOvZv4zKbwojY9LmheQ)
