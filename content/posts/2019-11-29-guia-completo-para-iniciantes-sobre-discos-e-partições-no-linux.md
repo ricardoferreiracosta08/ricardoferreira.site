@@ -1,7 +1,7 @@
 ---
 draft: true
 title: Guia completo para iniciantes sobre discos e partições no Linux
-subtitle: Didático pra quem não entende bem ou está iniciando
+subtitle: 'Desmistificando alguns conceitos '
 description: >-
   Manipulação de discos ou partições são muito comuns, principalmente quando
   decide-se ter mais de um sistema instalado na máquina ou criar "espaço
@@ -22,6 +22,10 @@ keywords:
   - linux
   - discos
   - partição
+  - mbr
+  - gpt
+  - sistema de arquivos
+  - swap
 ---
 Manipulação de discos ou partições são muito comuns, principalmente quando decide-se ter mais de um sistema instalado na máquina ou criar "espaço reservado" para determinados arquivos.
 
