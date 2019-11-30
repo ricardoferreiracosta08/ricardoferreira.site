@@ -36,7 +36,11 @@ Sendo assim, resolvi escrever um artigo que "deixasse de lado" termos, altamente
 ## **Antes de começar...**
 
 Primeiramente, saiba que **toda operação com partições de discos é perigosa**, pois há o risco de perda ou corrompimento dos dados. Tenha sempre um backup (cópia de segurança) de seus arquivos. Ou, prefira realizar testes dessa natureza em ambientes isolados ou que não afetem dados críticos do seu cotidiano. Por exemplo, sugiro o **[uso de máquinas virtuais](https://www.linuxdescomplicado.com.br/2011/06/5-motivos-pelos-quais-voce-deve-usar-o-2.html)** para esse cenário :)
+
+<!--
 **RECOMENDO QUE LEIA** [Gnome Boxes – uma alternativa simples para criar e usar máquinas virtuais no Linux](https://www.linuxdescomplicado.com.br/2017/01/gnome-boxes-uma-alternativa-simples-para-criar-e-usar-maquinas-virtuais-no-linux.html)
+-->
+
 Diante disso, apresento alguns conceitos importantes para uma boa compreensão:
 
 ## **Discos e partições no Linux**
@@ -58,7 +62,11 @@ Para **instalar um sistema operacional em um disco rígido**, ele deve primeiro 
 As **partições são divisões lógicas** existentes no disco rígido, indicando onde começa e onde termina uma região do disco. Um disco rígido (HD) pode ser dividido em várias partições, e cada partição será tratada com se fosse um dispositivo à parte.
 
 Dessa forma, podemos instalar mais de um sistema operacional num mesmo HD, bem como salvar arquivos em uma partição separada, de modo a não perder os dados numa eventual corrupção do sistema. Uma partição de disco **não interfere em outras partições existentes**, por este motivo é possível usar o Windows, Linux e qualquer outro sistema operacional no mesmo disco. Mas, **quando se apaga uma partição**, você estará apagando TODOS os arquivos existentes nela!
+
+<!-- 
 **RECOMENDO QUE LEIA** [Dentre diversos sistemas de arquivos Linux existentes, qual eu devo usar?](https://www.linuxdescomplicado.com.br/2017/03/dentre-diversos-sistemas-de-arquivos-linux-existentes-qual-eu-devo-usar.html) [Saiba como criar uma partição segura para seus arquivos pessoais em um sistema Linux já instalado](https://www.linuxdescomplicado.com.br/2013/09/saiba-como-criar-uma-particao-segura.html)
+-->
+
 ![particoes-numericas-linux](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/09/particoes-numericas-linux.jpg)
 
 Se você observar a imagem, você verá que, ao contrário dos discos rígidos, os números de partição começam de 1, não 0 (zero). Ou seja, se tivermos 2 partições, elas serão representadas por sda1 e sda2 :)
@@ -82,7 +90,10 @@ Contudo, conforme a **tabela de partições de cada disco**, características im
 Uma tabela de partição descreve o **"layout" (aparência) das partições de um disco rígido** . Atualmente, existem dois padrões de tabela de partição de disco: **MBR (Master Boot Record)** e **GPT (GUID Partition Table)** . **MBR**, também conhecido como **ms-dos**, e é o padrão mais comum e antigo - suportado pela BIOS. Já o **GPT** veio depois - suportado pela interface UEFI, presente computadores modernos.
 
 O **esquema de particionamento MBR** é o que você encontrará em computadores mais antigos. Computadores mais recentes suportam ambos os esquemas (MBR e GPT), por isso ainda é possível usar um esquema de partição **MBR** nesses computadores. As **principais limitações do MBR** levaram ao desenvolvimento da **GPT** . Essas limitações são:
+
+<!--
 **RECOMENDO QUE LEIA** [Saiba como fazer o backup da partição MBR](https://www.linuxdescomplicado.com.br/2015/05/fazer-o-backup-da-particao-mbr.html)
+-->
 
 * Não permite a configuração de mais de 4 partições primárias (GPT suporta até 128 partições primárias)
 * As partições de disco (cada fatia da pizza) são limitadas a 2 TB, ou seja, um disco com capacidade superior não será compreendido com sua capacidade máxima (GPT suporta partições acima dos 2 TB e um máximo de 1 ZB a depender do **[sistema de arquivos usado](https://www.linuxdescomplicado.com.br/2017/03/dentre-diversos-sistemas-de-arquivos-linux-existentes-qual-eu-devo-usar.html)**)
@@ -103,7 +114,11 @@ Como visto existem 7 partições, todas primárias. Assim, o **conceito de parti
 Antes que uma **partição de disco** possa ser usada para armazenar dados, primeiro ela deve **ser formatada** . O processo de formatação inclui "carimbá-lo" com um **sistema de arquivos** .
 **SAIBA MAIS** Um sistema de arquivos é um conjunto de estruturas lógicas e de rotinas, que permitem ao sistema operacional controlar o acesso ao disco rígido. Diferentes sistemas operacionais usam diferentes sistemas de arquivos. Conforme cresce a capacidade dos discos e aumenta o volume de arquivos e acessos, esta tarefa torna-se mais e mais complicada, exigindo o uso de sistemas de arquivos cada vez mais complexos e robustos – via [Hardware.com.br](http://www.hardware.com.br/termos/sistema-de-arquivos)
 O **sistema de arquivos no Windows é NTFS** (New Technology File System). Já no Linux, **existem mais de um sistema de arquivos disponível** . Na verdade, existem pelo menos duas dúzias :)
+
+<!--
 **RECOMENDO QUE LEIA** [Dentre diversos sistemas de arquivos Linux existentes, qual eu devo usar?](https://www.linuxdescomplicado.com.br/2017/03/dentre-diversos-sistemas-de-arquivos-linux-existentes-qual-eu-devo-usar.html)
+-->
+
 A imagem abaixo mostra, como opção para instalação, o sistema de arquivo Ext4, que é uma versão aprimorada do Ext3, é o padrão mais usado em lançamentos recentes das distribuições Linux:
 
 ![](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/03/particoes.png)
@@ -119,13 +134,24 @@ A imagem acima mostra o tipo de **partição swap** . É uma pequena seção de 
 **5. PONTO DE MONTAGEM**
 
 No Linux, para acessar um dispositivo de disco é necessário antes **"montá-lo" em um diretório do sistema** . O processo de montagem consiste em **tornar o dispositivo acessível** para o usuário. Em outras palavras, é preciso informar em qual diretório do sistema determinada partição será "configurada" :)
+
+<!--
 **RECOMENDO QUE LEIA** [Saiba como montar partições e dispositivos de armazenamento no Linux usando o comando mount](https://www.linuxdescomplicado.com.br/2017/01/saiba-como-montar-particoes-e-dispositivos-de-armazenamento-no-linux-usando-o-comando-mount.html) [Saiba como resolver um problema comum de erro de pontos montagens no boot de sistemas Linux](https://www.linuxdescomplicado.com.br/2017/06/como-resolver-erro-de-pontos-montagens-fstab-linux.html) [Alguns exemplos de que o comando dd pode ser considerado umas das ferramentas mais versáteis do Linux](https://www.linuxdescomplicado.com.br/2016/11/alguns-exemplos-de-que-o-comando-dd-pode-ser-considerado-umas-das-ferramentas-mais-versateis-do-linux.html)
+-->
+
 **Atribuir um ponto de montagem a uma partição** é uma das coisas que vem com a formatação, além de incluir um sistema de arquivos. No Linux, uma partição pode ser montada em um dos vários pontos de montagem tradicionais. Em um sistema Linux, os pontos de montagem mais usados são /, /boot, /home e swap. '/' é o equivalente Linux da **unidade Windows :C** .
 
 ![ponto-montagem-linux](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/09/ponto-montagem-linux.jpg)
+
+<!--
 **RECOMENDO QUE LEIA** [Conheça todos os elementos que formam a estrutura do sistema Linux](https://www.linuxdescomplicado.com.br/2016/09/muito-alem-do-kernel-conheca-todos-os-elementos-que-formam-a-estrutura-do-sistema-linux.html) [Desvendando as principais siglas e acrônimos do universo Linux](https://www.linuxdescomplicado.com.br/2017/01/muito-do-alem-do-kernel-desvendando-as-principais-siglas-e-acronimos-do-universo-linux.html) [10 coisas que você deve saber caso esteja começando com o Linux](https://www.linuxdescomplicado.com.br/2017/09/10-coisas-que-voce-deve-saber-caso-esteja-comecando-com-o-linux.html)
+-->
 
 ***
 
 Via | [LinuxBSDOS](http://linuxbsdos.com/2014/11/08/a-beginners-guide-to-disks-and-disk-partitions-in-linux/)
-**MAIS INFORMAÇÕES** [FUNDAMENTOS DO SISTEMA LINUX: DISCOS E PARTIÇÕES](https://www.vivaolinux.com.br/artigos/impressora.php?codigo=4858) [Guia Foca GNU/Linux | Capítulo 5 - Discos e Partições](http://www.guiafoca.org/cgs/guia/intermediario/ch-disc.html)
+
+**MAIS INFORMAÇÕES** 
+
+* [Fundamentos do Sistema Linux: Discos e Partições](https://www.vivaolinux.com.br/artigos/impressora.php?codigo=4858) 
+* [Guia Foca GNU/Linux | Capítulo 5 - Discos e Partições](http://www.guiafoca.org/cgs/guia/intermediario/ch-disc.html)
