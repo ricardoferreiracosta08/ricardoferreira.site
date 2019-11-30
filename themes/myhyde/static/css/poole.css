@@ -464,7 +464,7 @@ a.pagination-item:hover {
 .profile_img {
    filter: grayscale(100%);
    width: auto;
-   height: 250px;
+   height: 150px;
    margin-top: 15px;
 }
 
