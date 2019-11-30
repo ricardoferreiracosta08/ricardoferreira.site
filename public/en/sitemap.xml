@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ricardoferreira.site/en/about.html</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://ricardoferreira.site/sobre/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ricardoferreira.site/en/about.html"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/en/categories.html</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://ricardoferreira.site/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ricardoferreira.site/en/categories.html"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://ricardoferreira.site/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ricardoferreira.site/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/en/tags.html</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://ricardoferreira.site/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ricardoferreira.site/en/tags.html"
+                />
+  </url>
+  
+</urlset>

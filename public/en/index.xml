@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ricardo Ferreira</title>
+    <link>https://ricardoferreira.site/en/</link>
+    <description>Recent content on Ricardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    
+	<atom:link href="https://ricardoferreira.site/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About me</title>
+      <link>https://ricardoferreira.site/en/about.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/en/about.html</guid>
+      <description>Entusiasta por novas tecnologias. Infrastructure SysAdmin, palestrante e professor de ofício. Linux como paixão e fundador do Linux Descomplicado - um dos maiores sites de Linux do Brasil que nasceu de forma despretenciosa; e hoje possui mais de 20 mil seguidores. IaC e CaaS como nova era.
+Graduado em Ciência da Computação e Especialista em implementação de redes LAN e WAN, possui mais de 10 anos de experiência com administração de servidores/serviços Linux.</description>
+    </item>
+    
+  </channel>
+</rss>
