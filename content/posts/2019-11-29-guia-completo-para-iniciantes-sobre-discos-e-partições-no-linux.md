@@ -112,7 +112,12 @@ Como visto existem 7 partições, todas primárias. Assim, o **conceito de parti
 **4. SISTEMA DE ARQUIVOS**
 
 Antes que uma **partição de disco** possa ser usada para armazenar dados, primeiro ela deve **ser formatada** . O processo de formatação inclui "carimbá-lo" com um **sistema de arquivos** .
-**SAIBA MAIS** Um sistema de arquivos é um conjunto de estruturas lógicas e de rotinas, que permitem ao sistema operacional controlar o acesso ao disco rígido. Diferentes sistemas operacionais usam diferentes sistemas de arquivos. Conforme cresce a capacidade dos discos e aumenta o volume de arquivos e acessos, esta tarefa torna-se mais e mais complicada, exigindo o uso de sistemas de arquivos cada vez mais complexos e robustos – via [Hardware.com.br](http://www.hardware.com.br/termos/sistema-de-arquivos)
+
+**SAIBA MAIS** 
+***
+Um sistema de arquivos é um conjunto de estruturas lógicas e de rotinas, que permitem ao sistema operacional controlar o acesso ao disco rígido. Diferentes sistemas operacionais usam diferentes sistemas de arquivos. Conforme cresce a capacidade dos discos e aumenta o volume de arquivos e acessos, esta tarefa torna-se mais e mais complicada, exigindo o uso de sistemas de arquivos cada vez mais complexos e robustos – via [Hardware.com.br](http://www.hardware.com.br/termos/sistema-de-arquivos)
+***
+
 O **sistema de arquivos no Windows é NTFS** (New Technology File System). Já no Linux, **existem mais de um sistema de arquivos disponível** . Na verdade, existem pelo menos duas dúzias :)
 
 <!--
@@ -130,7 +135,12 @@ Ele é visto como o **sistema de arquivos da próxima geração** para usuários
 ![tipo-swap-particao-linux](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/09/tipo-swap-particao-linux.jpg)
 
 A imagem acima mostra o tipo de **partição swap** . É uma pequena seção de disco rígido sem formatação que o Linux e outros sistemas operacionais **usam como memória virtual** . A grosso modo, é um método para aumentar a quantidade de RAM total (RAM física física + memória virtual).
-**SAIBA MAIS** A memória virtual é um recurso que utiliza o disco rígido para armazenar dados não utilizados na memória RAM, liberando-a para receber mais dados. Isso torna o sistema mais estável e evita que ele se torne excessivamente lento quando muitas aplicações são executadas simultaneamente.
+
+**SAIBA MAIS** 
+***
+A memória virtual é um recurso que utiliza o disco rígido para armazenar dados não utilizados na memória RAM, liberando-a para receber mais dados. Isso torna o sistema mais estável e evita que ele se torne excessivamente lento quando muitas aplicações são executadas simultaneamente.
+***
+
 **5. PONTO DE MONTAGEM**
 
 No Linux, para acessar um dispositivo de disco é necessário antes **"montá-lo" em um diretório do sistema** . O processo de montagem consiste em **tornar o dispositivo acessível** para o usuário. Em outras palavras, é preciso informar em qual diretório do sistema determinada partição será "configurada" :)
