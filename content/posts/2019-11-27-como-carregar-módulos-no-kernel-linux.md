@@ -28,12 +28,12 @@ keywords:
   - lsmod
   - proc
 ---
+<div class="youtube">
+<iframe class="video" src="https://www.youtube.com/embed/wFwOplqkKAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Nesse vídeo, eu mostro um exemplo prático de como manipular (load e unload) módulos no Kernel Linux. 
 
 Usando o lsmod e a leitura do /proc/filesystems, capturo os módulos carregados no sistema. Com o modprobe carrego o módulo isofs (iso9660), previamente suportado, no meu Kernel LTS 4.19.84-1, disponibilizado no diretório /lib/modules/$(uname -r)/kernel/fs/isofs/. 
 
 Por fim, removo o módulo usando o "modprobe -r" 
-
-<div class="youtube">
-<iframe class="video" src="https://www.youtube.com/embed/wFwOplqkKAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
