@@ -554,7 +554,7 @@ https://stackoverflow.com/questions/33858426/only-fill-60-percent-star-using-css
 <![endif]-->
 
 /* RESPONSIVE YOUTUBE IFRAME */
-.iframe {
+.youtube {
     position: relative;
     width: 100%;
     height: 0;
