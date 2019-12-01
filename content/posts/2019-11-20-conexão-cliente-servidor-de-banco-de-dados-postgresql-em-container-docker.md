@@ -34,5 +34,5 @@ Depois, através de um único cliente psql, usar outro container para acessar o 
 Por fim, através do cliente desktop pgAdmin, validar esse teste.
 
 <div class="iframe">
-<iframe class="video" width="960" height="515" src="https://www.youtube.com/embed/uJG7wLotfq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video"  src="https://www.youtube.com/embed/uJG7wLotfq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
