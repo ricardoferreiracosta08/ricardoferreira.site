@@ -319,6 +319,34 @@ tbody tr:nth-child(odd) th {
   margin-bottom: 4em;
 }
 
+/* MY CODE - create style for h2,h3 in post */
+.post h2:after{
+    content:'';
+    display: block;
+    left:0;
+    right:0;
+    top:50%;
+
+    /* draw the line */
+    background-color:#555;
+    height:.1em;
+
+    margin-bottom: 15px;
+
+    /* ensure the line is visible in case .1em < 1px */
+    min-height:1px;
+
+    /* make bottom layer */
+    z-index:-2;
+}
+.post h4{
+ text-transform: uppercase;
+ font-weight: bold;
+ margin-bottom: 15px;
+ color: darkred;
+}
+/* END MY CODE */
+
 /* Blog post or page title */
 .page-title,
 .post-title,
@@ -524,3 +552,18 @@ https://stackoverflow.com/questions/33858426/only-fill-60-percent-star-using-css
     color: #ECBE24;
   }
 <![endif]-->
+
+/* RESPONSIVE YOUTUBE IFRAME */
+.iframe {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

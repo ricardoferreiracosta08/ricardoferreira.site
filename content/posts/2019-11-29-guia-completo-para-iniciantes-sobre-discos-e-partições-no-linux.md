@@ -45,17 +45,17 @@ Diante disso, apresento alguns conceitos importantes para uma boa compreensão:
 
 ## **Discos e partições no Linux**
 
-**1. NOMENCLATURA DOS DISCOS**
+#### 1. NOMENCLATURA DOS DISCOS
 
 Diferentemente de sistemas Windows, não existe **nenhuma unidade C ou D** no Linux. Uma referência a um disco rígido no Linux, normalmente, você verá algo como arquivos /dev/sda, /dev/sdb, /dev/sdc, etc.
 
-![discos-windows-linux](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/09/discos-windows-linux.jpg)
+![discos-windows-linux](../../../images/discos-windows-linux.jpg)
 
 O nome e pasta **"dev" é a tradução de dispositivo** e, neste caso, representa um dispositivo de armazenamento em bloco. **O prefixo "sd"**, do arquivo contido na pasta "dev", é a tradução para o driver de armazenamento em massa SCSI (Small Computer System Interface). **Os discos SCSI** são unidades que podem ser HDs (pendrives), unidades de CD-RW e gravadoras de DVD. E a 'letra', sufixo de 'sd', indica o número do disco (sda).
 
 De acordo **com a imagem acima**, é mostrado como os discos rígidos são representados no Windows e num sistema Linux. O Windows, no caso, vê um **disco na unidade C:** e outro na **unidade D:** . Já no caso do Linux, ele assume uma abordagem diferente. O primeiro disco rígido detectado por um sistema Linux possui o **rótulo sda** . Em termos numéricos, é o disco rígido 0 (zero, a contagem começa de 0, não 1). O **segundo disco rígido é sdb**, e uma possível terceira unidade, sdc, e assim por diante.
 
-**2. PARTIÇÕES**
+#### 2. PARTIÇÕES
 
 Para **instalar um sistema operacional em um disco rígido**, ele deve primeiro ser subdividido em unidades de armazenamento distintas. Em outras palavras, um disco precisa ser particionado (ter partições). Analogamente, a uma pizza com respectivos pedaços :)
 
@@ -67,7 +67,7 @@ Dessa forma, podemos instalar mais de um sistema operacional num mesmo HD, bem c
 **RECOMENDO QUE LEIA** [Dentre diversos sistemas de arquivos Linux existentes, qual eu devo usar?](https://www.linuxdescomplicado.com.br/2017/03/dentre-diversos-sistemas-de-arquivos-linux-existentes-qual-eu-devo-usar.html) [Saiba como criar uma partição segura para seus arquivos pessoais em um sistema Linux já instalado](https://www.linuxdescomplicado.com.br/2013/09/saiba-como-criar-uma-particao-segura.html)
 -->
 
-![particoes-numericas-linux](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/09/particoes-numericas-linux.jpg)
+![particoes-numericas-linux](../../../images/particoes-numericas-linux.jpg)
 
 Se você observar a imagem, você verá que, ao contrário dos discos rígidos, os números de partição começam de 1, não 0 (zero). Ou seja, se tivermos 2 partições, elas serão representadas por sda1 e sda2 :)
 
@@ -77,7 +77,7 @@ Em **relação aos tipos**, as partições subdividas em **Primárias, Estendida
 * **Estendidas:** partições primárias especiais, que ao invés de receber um sistema de arquivos "abrigam" outras partições lógicas.
 * **Lógicas:** são as partições criadas dentro das partições estendidas. Essas partições, assim como as primárias, recebem sistemas de arquivos.
 
-![tipos-particoes-linux-mbr](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/09/tipos-particoes-linux-mbr.jpg)
+![tipos-particoes-linux-mbr](../../../images/tipos-particoes-linux-mbr.jpg)
 
 Na imagem acima, vemos o uso de partições primárias, estendidas e lógicas. Ao marcar uma partição como uma **partição estendida**, é possível criar muitas mais partições debaixo dela. Essas partições são chamadas de **partições lógicas** .
 
@@ -85,7 +85,7 @@ Ainda na imagem anterior, você pode ver que **existem 3 partições primárias*
 
 Contudo, conforme a **tabela de partições de cada disco**, características importantes das partições podem mudar :)
 
-**3. TABELA DE PARTIÇÕES**
+#### 3. TABELA DE PARTIÇÕES
 
 Uma tabela de partição descreve o **"layout" (aparência) das partições de um disco rígido** . Atualmente, existem dois padrões de tabela de partição de disco: **MBR (Master Boot Record)** e **GPT (GUID Partition Table)** . **MBR**, também conhecido como **ms-dos**, e é o padrão mais comum e antigo - suportado pela BIOS. Já o **GPT** veio depois - suportado pela interface UEFI, presente computadores modernos.
 
@@ -99,23 +99,23 @@ O **esquema de particionamento MBR** é o que você encontrará em computadores 
 * As partições de disco (cada fatia da pizza) são limitadas a 2 TB, ou seja, um disco com capacidade superior não será compreendido com sua capacidade máxima (GPT suporta partições acima dos 2 TB e um máximo de 1 ZB a depender do **[sistema de arquivos usado](https://www.linuxdescomplicado.com.br/2017/03/dentre-diversos-sistemas-de-arquivos-linux-existentes-qual-eu-devo-usar.html)**)
 * Computadores mais recentes vêm com um firmware de substituição para o **antigo sistema BIOS** chamado UEFI (interface Unified Extensible Firmware), e o **GPT faz parte do padrão UEFI**. Se você comprou um computador com Windows 7/8 recentemente, é garantido que ele está instalado em um esquema de particionamento GPT.
 
-![disco-gpt-ubuntu](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/09/disco-gpt-ubuntu.jpg)
+![disco-gpt-ubuntu](../../../images/disco-gpt-ubuntu.jpg)
 
 A figura acima mostra o resultado do comando "sudo fdisk -l", a partir de uma distribuição **[Ubuntu Linux](https://www.linuxdescomplicado.com.br/category/distribuicoes/ubuntu)** . O ' **Disklabel Type**' confirma que o GPT está em uso. Caso fosse o esquema de partição de disco fosse o MBR, o ' **Disklabel Type**' seria representado por **dos** :)
 
 No **esquema de particionamento GPT**, como dito anteriormente, "supera" duas limitações do esquema MBR - máximo de quatro partições primárias e o limite de 2 TB para os tamanhos de partição. A imagem abaixo mostra um disco sob o **esquema de particionamento GPT**:
 
-![particionamento-gpt-instalador](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/09/particionamento-gpt-instalador.jpg)
+![particionamento-gpt-instalador](../../../images/particionamento-gpt-instalador.jpg)
 
 Como visto existem 7 partições, todas primárias. Assim, o **conceito de partições estendidas e lógicas** é "irrelevante" ao GPT :)
 
-**4. SISTEMA DE ARQUIVOS**
+#### 4. SISTEMA DE ARQUIVOS
 
 Antes que uma **partição de disco** possa ser usada para armazenar dados, primeiro ela deve **ser formatada** . O processo de formatação inclui "carimbá-lo" com um **sistema de arquivos** .
 
 **SAIBA MAIS** 
 ***
-Um sistema de arquivos é um conjunto de estruturas lógicas e de rotinas, que permitem ao sistema operacional controlar o acesso ao disco rígido. Diferentes sistemas operacionais usam diferentes sistemas de arquivos. Conforme cresce a capacidade dos discos e aumenta o volume de arquivos e acessos, esta tarefa torna-se mais e mais complicada, exigindo o uso de sistemas de arquivos cada vez mais complexos e robustos – via [Hardware.com.br](http://www.hardware.com.br/termos/sistema-de-arquivos)
+> Um sistema de arquivos é um conjunto de estruturas lógicas e de rotinas, que permitem ao sistema operacional controlar o acesso ao disco rígido. Diferentes sistemas operacionais usam diferentes sistemas de arquivos. Conforme cresce a capacidade dos discos e aumenta o volume de arquivos e acessos, esta tarefa torna-se mais e mais complicada, exigindo o uso de sistemas de arquivos cada vez mais complexos e robustos – via [Hardware.com.br](http://www.hardware.com.br/termos/sistema-de-arquivos)
 ***
 
 O **sistema de arquivos no Windows é NTFS** (New Technology File System). Já no Linux, **existem mais de um sistema de arquivos disponível** . Na verdade, existem pelo menos duas dúzias :)
@@ -132,16 +132,16 @@ O **BtrFS** é o "mais novo" sistema de arquivos Linux. Ele vem com muitos recur
 
 Ele é visto como o **sistema de arquivos da próxima geração** para usuários de Linux, pois já está presente como opção, para instalação, na maioria das distribuições Linux existentes. Por exemplo, o **[openSUSE](https://www.linuxdescomplicado.com.br/2016/05/por-que-resolvi-trocar-o-ubuntu-lts-pelo-opensuse-tumbleweed.html)** traz o Btrfs como opção padrão.
 
-![tipo-swap-particao-linux](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/09/tipo-swap-particao-linux.jpg)
+![tipo-swap-particao-linux](../../../images/tipo-swap-particao-linux.jpg)
 
 A imagem acima mostra o tipo de **partição swap** . É uma pequena seção de disco rígido sem formatação que o Linux e outros sistemas operacionais **usam como memória virtual** . A grosso modo, é um método para aumentar a quantidade de RAM total (RAM física física + memória virtual).
 
 **SAIBA MAIS** 
 ***
-A memória virtual é um recurso que utiliza o disco rígido para armazenar dados não utilizados na memória RAM, liberando-a para receber mais dados. Isso torna o sistema mais estável e evita que ele se torne excessivamente lento quando muitas aplicações são executadas simultaneamente.
+> A memória virtual é um recurso que utiliza o disco rígido para armazenar dados não utilizados na memória RAM, liberando-a para receber mais dados. Isso torna o sistema mais estável e evita que ele se torne excessivamente lento quando muitas aplicações são executadas simultaneamente.
 ***
 
-**5. PONTO DE MONTAGEM**
+#### 5. PONTO DE MONTAGEM
 
 No Linux, para acessar um dispositivo de disco é necessário antes **"montá-lo" em um diretório do sistema** . O processo de montagem consiste em **tornar o dispositivo acessível** para o usuário. Em outras palavras, é preciso informar em qual diretório do sistema determinada partição será "configurada" :)
 
@@ -151,7 +151,7 @@ No Linux, para acessar um dispositivo de disco é necessário antes **"montá-lo
 
 **Atribuir um ponto de montagem a uma partição** é uma das coisas que vem com a formatação, além de incluir um sistema de arquivos. No Linux, uma partição pode ser montada em um dos vários pontos de montagem tradicionais. Em um sistema Linux, os pontos de montagem mais usados são /, /boot, /home e swap. '/' é o equivalente Linux da **unidade Windows :C** .
 
-![ponto-montagem-linux](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/09/ponto-montagem-linux.jpg)
+![ponto-montagem-linux](../../../images/ponto-montagem-linux.jpg)
 
 <!--
 **RECOMENDO QUE LEIA** [Conheça todos os elementos que formam a estrutura do sistema Linux](https://www.linuxdescomplicado.com.br/2016/09/muito-alem-do-kernel-conheca-todos-os-elementos-que-formam-a-estrutura-do-sistema-linux.html) [Desvendando as principais siglas e acrônimos do universo Linux](https://www.linuxdescomplicado.com.br/2017/01/muito-do-alem-do-kernel-desvendando-as-principais-siglas-e-acronimos-do-universo-linux.html) [10 coisas que você deve saber caso esteja começando com o Linux](https://www.linuxdescomplicado.com.br/2017/09/10-coisas-que-voce-deve-saber-caso-esteja-comecando-com-o-linux.html)
