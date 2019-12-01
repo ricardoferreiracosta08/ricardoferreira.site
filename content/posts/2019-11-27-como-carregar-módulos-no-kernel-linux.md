@@ -34,6 +34,6 @@ Usando o lsmod e a leitura do /proc/filesystems, capturo os módulos carregados 
 
 Por fim, removo o módulo usando o "modprobe -r" 
 
-<div class="iframe">
-<iframe class="video" width="960" height="515" src="https://www.youtube.com/embed/wFwOplqkKAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube">
+<iframe class="video" src="https://www.youtube.com/embed/wFwOplqkKAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

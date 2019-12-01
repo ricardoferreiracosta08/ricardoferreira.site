@@ -546,12 +546,6 @@ https://stackoverflow.com/questions/33858426/only-fill-60-percent-star-using-css
     color: #ECBE24;
   }
 }
-/* IE */
-<!--[if IE]>
-  .full-stars{
-    color: #ECBE24;
-  }
-<![endif]-->
 
 /* RESPONSIVE YOUTUBE IFRAME */
 .youtube {
