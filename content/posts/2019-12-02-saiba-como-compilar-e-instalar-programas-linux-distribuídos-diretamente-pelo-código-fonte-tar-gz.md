@@ -25,16 +25,22 @@ keywords:
   - make
   - make install
 ---
-Hoje em dia, instalar programas no Linux se tornou a **coisa mais simples** de se fazer no sistema. Dependendo da distribuição Linux, você tem recursos complementares que facilitam ainda mais o processo. **Gerenciadores de pacotes** e repositórios oficiais, mantidos pela comunidade mantenedora da distribuição, enriquecem o processo de instalação dos programas. Contudo, em muitos momentos você se depara com programas disponibilizados diretamente pelo código-fonte. Assim, cabe ao usuário ter conhecimento prévio para compilar e instalar programas Linux distribuídos diretamente pelo código-fonte, normalmente compactados **via tar.gz**.
+Hoje em dia, instalar programas no Linux se tornou a **coisa mais simples** de se fazer no sistema. Dependendo da distribuição Linux, você tem recursos complementares que facilitam ainda mais o processo. **Gerenciadores de pacotes** e repositórios oficiais, mantidos pela comunidade mantenedora da distribuição, enriquecem o processo de instalação dos programas. 
+
+Contudo, em muitos momentos você se depara com programas disponibilizados diretamente pelo código-fonte. Assim, cabe ao usuário ter conhecimento prévio para compilar e instalar programas Linux distribuídos diretamente pelo código-fonte, normalmente compactados **via tar.gz**.
 
 ## Contextualizando
 
-As distribuições Linux, ao longo do tempo, vem melhorando e criando métodos para facilitar a instalação de pacotes no Linux. Gerenciadores de pacotes, bem como: **apt e yum**, são exemplos legados dessas mudanças. Atualmente, **existem projetos** que visam a **universalização do modo e distribuição de programas** para os sistemas Linux. Entre eles, destaco o [Snap](http://www.linuxdescomplicado.com.br/2016/06/pacotes-snap-do-ubuntu-podem-se-tornar-formato-universal-para-todas-as-distribuicoes-linux.html) e [Flatpak](http://www.linuxdescomplicado.com.br/2016/06/anuncio-do-flatpak-o-futuro-das-aplicacoes-linux-provalvelmente-o-concorrente-direto-ao-snap-da-canonical.html); Canonical e Red Hat como mantenedoras, respectivamente. Entretanto, vão aparecer situações onde você não terá nenhuma dessas opções disponíveis... pois alguns desenvolvedores de softwares **disponibilizam seus programas diretamente pelo código-fonte (source) -** que por sinal **era, nos primórdios, o único método utilizado** para instalação de programas no Linux (algumas distribuições ainda mantêm essa técnica com frequência).Em resumo, você tem acesso a um arquivo compactado no **formato .tar.gz** (maioria das vezes), contendo o código-fonte do programa, e **a instalação consiste em compilar e instalar** os executáveis gerados na máquina. Mas por quê ainda se preocupar com isso se existem **pacotes pré-compilados para instalação**?!
+As distribuições Linux, ao longo do tempo, vem melhorando e criando métodos para facilitar a instalação de pacotes no Linux. Gerenciadores de pacotes, bem como: **apt e yum**, são exemplos legados dessas mudanças. Atualmente, **existem projetos** que visam a **universalização do modo e distribuição de programas** para os sistemas Linux. 
+
+Entre eles, destaco o [Snap](http://www.linuxdescomplicado.com.br/2016/06/pacotes-snap-do-ubuntu-podem-se-tornar-formato-universal-para-todas-as-distribuicoes-linux.html) e [Flatpak](http://www.linuxdescomplicado.com.br/2016/06/anuncio-do-flatpak-o-futuro-das-aplicacoes-linux-provalvelmente-o-concorrente-direto-ao-snap-da-canonical.html); Canonical e Red Hat como mantenedoras, respectivamente. Entretanto, vão aparecer situações onde você não terá nenhuma dessas opções disponíveis... pois alguns desenvolvedores de softwares **disponibilizam seus programas diretamente pelo código-fonte (source) -** que por sinal **era, nos primórdios, o único método utilizado** para instalação de programas no Linux (algumas distribuições ainda mantêm essa técnica com frequência).
+
+Em resumo, você tem acesso a um arquivo compactado no **formato .tar.gz** (maioria das vezes), contendo o código-fonte do programa, e **a instalação consiste em compilar e instalar** os executáveis gerados na máquina. Mas por quê ainda se preocupar com isso se existem **pacotes pré-compilados para instalação**?!
 
 **SAIBA MAIS** 
-
+***
 > Pacotes pré-compilados são pacotes já compilados e distribuídos num arquivo pronto, com dependências já configuradas, em um formato simples de instalar (.deb - Debian e .rpm - Red Hat, por exemplo).
-
+***
 Devido às **diferenças** que existem entre uma distribuição e outra um pacote do Fedora não funcionará no Debian, por exemplo. Assim, essa **técnica** garante suporte a todas as distribuições Linux, universalmente! Ou seja, baixando um programa distribuído a partir do código-fonte (source), **não será preciso** se ater a qual distro Linux você está usando; pois, verificada as dependências necessárias, será possível compilar e instalar o programa. Isso se deve ao fato de que essa maneira de distribuir os programas, diretamente pelo código-fonte (source), não é feita por **empacotamento pré-compilado** (pacote .deb ou .rpm, por exemplo). Assim, cabe ao usuário ter conhecimento prévio para compilar e instalar programas Linux distribuídos diretamente pelo código-fonte, normalmente **compactados via tar.gz**.
 
 **SAIBA MAIS** 
@@ -166,7 +172,8 @@ sudo make install
 Programa instalado!!   Mas, se você desejar remover o programa, que acabou de instalar, basta entrar no diretório que você instalou o programa e executar os 2 comandos abaixo:
 
 {{< highlight Bash shell scripts >}}
-sudo make uninstall sudo make clean
+sudo make uninstall 
+sudo make clean
 {{< /highlight >}}
 
 Por fim, informo que para instalar a maioria dos programas a partir do código-fonte (source), você passará pelas mesmas situações do exemplo. Contudo, com algumas diferenças das mostrados aqui. Por exemplo, você pode **precisar usar cmake em vez de make**. Por isso, sempre leia o arquivo "README" contido no diretório de cada programa!! Além dele, normalmente, existe o arquivo "Install" também ;-)
