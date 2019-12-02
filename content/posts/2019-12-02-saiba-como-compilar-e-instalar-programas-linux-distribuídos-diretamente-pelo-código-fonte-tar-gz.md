@@ -15,7 +15,6 @@ categories:
 tags:
   - tar.gz
   - compilação
-  - ''
 keywords:
   - linux
   - tar.gz
