@@ -33,13 +33,14 @@ As distribuições Linux, ao longo do tempo, vem melhorando e criando métodos p
 
 **SAIBA MAIS** 
 
->> Pacotes pré-compilados são pacotes já compilados e distribuídos num arquivo pronto, com dependências já configuradas, em um formato simples de instalar (.deb - Debian e .rpm - Red Hat, por exemplo).
+> Pacotes pré-compilados são pacotes já compilados e distribuídos num arquivo pronto, com dependências já configuradas, em um formato simples de instalar (.deb - Debian e .rpm - Red Hat, por exemplo).
 
 Devido às **diferenças** que existem entre uma distribuição e outra um pacote do Fedora não funcionará no Debian, por exemplo. Assim, essa **técnica** garante suporte a todas as distribuições Linux, universalmente! Ou seja, baixando um programa distribuído a partir do código-fonte (source), **não será preciso** se ater a qual distro Linux você está usando; pois, verificada as dependências necessárias, será possível compilar e instalar o programa. Isso se deve ao fato de que essa maneira de distribuir os programas, diretamente pelo código-fonte (source), não é feita por **empacotamento pré-compilado** (pacote .deb ou .rpm, por exemplo). Assim, cabe ao usuário ter conhecimento prévio para compilar e instalar programas Linux distribuídos diretamente pelo código-fonte, normalmente **compactados via tar.gz**.
 
 **SAIBA MAIS** 
-
->> Compilar significa transformar o código-fonte, escrito pelo programador, nos arquivos binários que são executados pelo sistema.
+***
+> Compilar significa transformar o código-fonte, escrito pelo programador, nos arquivos binários que são executados pelo sistema.
+***
 
 Por outro lado, um problema, em compilar e instalar programas a partir dos fontes, é que o processo é demorado e, para muitos, nem sempre simples. É preciso ter instalado uma grande quantidade de compiladores e bibliotecas, necessários para compilar os mais diversos programas. E isso causa bastante dificuldade para os usuários, principalmente iniciantes.
 
@@ -48,8 +49,9 @@ Por outro lado, um problema, em compilar e instalar programas a partir dos fonte
 Resumindo o processo de instalação de programas disponibilizados a partir do código-fonte, informo que o mesmo se dá em 4 passos: 1- Descompactar o arquivo tar.gz que **contém o código-fonte**; 2- Resolver **dependências necessárias** para a instalação correta do programa - cada programa possui suas próprias dependências, e isso torna processo demorado e um pouco mais complicado. Cada programa tem sua peculiaridade; 3- Compilar; 4- Instalar;
 
 **DETALHES** 
-
->> Neste tutorial usei como exemplo o programa **[Pidgin IM](https://www.pidgin.im/)** e o sistema **[OpenSUSE Tumbleweed](http://www.linuxdescomplicado.com.br/2016/05/por-que-resolvi-trocar-o-ubuntu-lts-pelo-opensuse-tumbleweed.html)**
+***
+> Neste tutorial usei como exemplo o programa **[Pidgin IM](https://www.pidgin.im/)** e o sistema **[OpenSUSE Tumbleweed](http://www.linuxdescomplicado.com.br/2016/05/por-que-resolvi-trocar-o-ubuntu-lts-pelo-opensuse-tumbleweed.html)**
+***
 
 #### 1- Baixar e descompactar o arquivo tar.gz
 
@@ -68,8 +70,9 @@ cd pidgin-2.11.0
 O conteúdo do diretório **contém o código-fonte da aplicação** e o **arquivo Makefile**, entre outros arquivos. **Essa estrutura garante um programa distribuído a partir do código-fonte** (source) ;-) Por isso, **nem todo arquivo "tar.gz"** significará um programa distribuído dessa forma; poderá ser apenas um arquivo compactado.
 
 **SAIBA MAIS** 
-
->> O Makefile é um arquivo para configuração de compilação utilizado pelo programa make, cuja ideia é simplificar e agilizar a compilação de programas.
+***
+> O Makefile é um arquivo para configuração de compilação utilizado pelo programa make, cuja ideia é simplificar e agilizar a compilação de programas.
+***
 
 #### 2- Resolver dependências
 
@@ -134,8 +137,9 @@ Print debugging messages...... : no
 Caso apresente algum erro, basta examinar a saída do comando ./configure e instalar/configurar todas as dependências ausentes usando seu gerenciador de pacotes. Execute ./configure **quantos vezes for preciso até que você não veja mais erros** ;-) No meu caso (com o openSUSE Tumbleweed instalado), **tive alguns erros** que avisaram a ausência de alguns pacotes. Portanto, segue lista de todos os pacotes que foi precisa instalar no meu ambiente de testes:
 
 **AVISO** 
-
->> Cada sistema vai apresentar **resultados diferentes**. Pois, poderão surgir dependências que estarão resolvidas e outras não. Por isso, essa etapa requer mais atenção do usuário Linux.
+***
+> Cada sistema vai apresentar **resultados diferentes**. Pois, poderão surgir dependências que estarão resolvidas e outras não. Por isso, essa etapa requer mais atenção do usuário Linux.
+***
 
 {{< highlight Bash shell scripts >}}
 sudo zypper install intltool glib2-devel gtk2-devel libXss1 libXss.so.1 libXss-devel libSM-devel meanwhile-devel libgnutls-devel tcl-devel tk-devel
