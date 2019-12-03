@@ -36,7 +36,7 @@ Embora ainda funcionais, elas são, realmente, consideradas obsoletas e, portant
 
 Os comandos de rede Linux, em questão, **arp, ifconfig, iptunnel, netstat, route, iwconfig e nameif** fazem parte do **[pacote "net-tools"](https://wiki.linuxfoundation.org/networking/net-tools)**. Contudo, esse pacote não é mantido há anos (décadas), tornando as ferramentas presentes nele obsoletas. 
 
-![network communication](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/07/network-communication.jpg) 
+![network communication](../../../network_communicatio_Akldj.jpg) 
 
 A funcionalidade fornecida por vários desses comandos foi "melhorada" no **[novo pacote "iproute2"](http://en.wikipedia.org/wiki/Iproute2)**, principalmente através do seu **novo comando ip**. O código do pacote "iproute2" está disponível no **[Kernel.org](https://www.kernel.org/pub/linux/utils/net/iproute2/)**. A documentação do "iproute2" está disponível na [**wiki Oficial do Linux Foundation**](http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2) e no **[PolicyRouting.org](http://www.policyrouting.org/iproute2-toc.html)**.
 
@@ -44,7 +44,7 @@ A funcionalidade fornecida por vários desses comandos foi "melhorada" no **[nov
 
 Qualquer **pessoa que tenha administrado sistemas Linux** por qualquer período de tempo certamente **aprendeu a usar os utilitários de ferramentas de rede** para realizar suas tarefas. Se você está acostumado a usar comandos como ifconfig, arp e netstat para executar tarefas de rede, você **deve repensar seus hábitos**.
 
-![e8005d337be2fcd130d1ebb0ce2a97da](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/07/e8005d337be2fcd130d1ebb0ce2a97da-1024x576.jpg) 
+![time](../../../e8005d337be2fcd130d1_i8S4v.jpg) 
 
 Para esses comandos, **[o status "deprecated" vem sendo anunciado há alguns anos](http://br-linux.org/2016/01/deprecated-ifconfig-route-e-outros-comandos-classicos-de-rede-no-linux-que-tem-sucessores-que-voce-precisa-conhecer.html)**, embora muita gente continue sem saber. Muito se deve a vários manuais e tutoriais que continuam se fixando na forma clássica e a **[desenvolvedores de ferramentas de rede que ainda usam esses utilitários](https://lwn.net/Articles/710533/)** :( 
 
