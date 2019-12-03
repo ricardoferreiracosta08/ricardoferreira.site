@@ -66,6 +66,7 @@ O **[iproute2](https://wiki.linuxfoundation.org/networking/iproute2)** é uma co
 |mii-tool|ethtool|
 
 **MAIS INFORMAÇÕES** 
+
 * [Net-tools obsoleto - Anúncio Linux Foundation](http://www.linuxfoundation.org/collaborate/workgroups/networking/net-tools)
 * [iproute2 - sucessor ao net-tools](https://wiki.linuxfoundation.org/networking/iproute2) [Moving on from net-tools - Artigo Lwn.net](https://lwn.net/Articles/710533/)
 
