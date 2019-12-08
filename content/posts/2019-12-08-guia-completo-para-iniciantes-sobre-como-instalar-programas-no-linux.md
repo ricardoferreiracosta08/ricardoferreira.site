@@ -43,7 +43,7 @@ Atualmente, **existem projetos** que visam a **universalização do modo e distr
 
 > [5 Erros que todo usuário Linux cometeu ao aprender Linux](https://www.linuxdescomplicado.com.br/2019/08/erros-que-todo-usuario-linux-cometeu-ao-comecar-aprender-linux.html) 
 
-> [Guia completo para iniciantes sobre discos e partições no Linux](https://www.linuxdescomplicado.com.br/2017/09/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux.html) 
+> [Guia completo para iniciantes sobre discos e partições no Linux](https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/) 
 
 > [Guia completo para iniciantes sobre áudio e som no Linux](https://www.linuxdescomplicado.com.br/2019/08/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux.html)
 
@@ -51,7 +51,7 @@ Atualmente, **existem projetos** que visam a **universalização do modo e distr
 
 ## Instalar programas no Linux
 
-O **histórico de desenvolvimento e publicação** de aplicações nos sistemas Linux é amplamente discutido. A criação dos gerenciadores de pacotes (APT e [**DNF**](https://www.linuxdescomplicado.com.br/2015/05/dnf-saiba-mais-sobre-o-novo-gerenciador-de-pacotes-do-fedora.html), por exemplo) foi repensada por conta de propostas para "empacotamento" de aplicações Linux, vide **[Snap](https://www.linuxdescomplicado.com.br/2016/06/pacotes-snap-do-ubuntu-podem-se-tornar-formato-universal-para-todas-as-distribuicoes-linux.html)**, [**Flatpak**](https://www.linuxdescomplicado.com.br/2016/06/anuncio-do-flatpak-o-futuro-das-aplicacoes-linux-provalvelmente-o-concorrente-direto-ao-snap-da-canonical.html) e **[AppImage](https://www.linuxdescomplicado.com.br/2016/02/appimage-ferramenta-que-permite-executar-aplicacoes-linux-independente-da-distribuicao-usada.html)**.
+O **histórico de desenvolvimento e publicação** de aplicações nos sistemas Linux é amplamente discutido. A criação dos gerenciadores de pacotes (APT e [**DNF**](https://www.linuxdescomplicado.com.br/2015/05/dnf-saiba-mais-sobre-o-novo-gerenciador-de-pacotes-do-fedora.html), por exemplo) foi repensada por conta de propostas para "empacotamento" de aplicações Linux, vide **[Snap](https://www.linuxdescomplicado.com.br/2016/06/pacotes-snap-do-ubuntu-podem-se-tornar-formato-universal-para-todas-as-distribuicoes-linux.html)**, **[Flatpak](https://www.linuxdescomplicado.com.br/2016/06/anuncio-do-flatpak-o-futuro-das-aplicacoes-linux-provalvelmente-o-concorrente-direto-ao-snap-da-canonical.html)** e **[AppImage](https://www.linuxdescomplicado.com.br/2016/02/appimage-ferramenta-que-permite-executar-aplicacoes-linux-independente-da-distribuicao-usada.html)**.
 
 **RECOMENDO QUE LEIA** 
 
@@ -71,7 +71,7 @@ Por mais de uma década, o Linux usou repositórios de software para distribuir 
 
 Uma distribuição Linux fornece um gerenciador de pacotes, comandos, e geralmente uma interface gráfica para esses comandos, que baixa o software do servidor e o instala no seu computador. É um **conceito tão simples** que serviu de modelo para todos os principais sistemas operacionais de celulares e, mais recentemente, para as "lojas de aplicativos". 
 
-![](https://www.linuxdescomplicado.com.br/wp-content/uploads/2019/08/ubuntu-software-on-ubuntu-1710-artful-aardvark.jpg) 
+![](../../images/ubuntu_software_on_u_DVPdY.jpg) 
 
 A instalação a partir de um repositório de software é o **principal método de instalação** de aplicativos no Linux. Deve ser o primeiro método no qual você procura qualquer aplicativo que pretenda instalar. Para instalar a partir de um repositório de software, geralmente, se usa algum **gerenciador de pacotes**. 
 
@@ -114,7 +114,7 @@ Assim, por padrão, seu sistema operacional Linux está configurado para buscar 
 
 De fato, quando você instala certos softwares, como o [navegador da Web Vivaldi](https://www.linuxdescomplicado.com.br/2015/09/os-melhores-navegadores-web-para-linux.html), o Google Chrome e muitos outros, o que você está instalando é o acesso aos repositórios particulares, a partir dos quais a versão mais recente do aplicativo é mantida por eles.
 
-#### **2\. Via pacotes pré-compilados**
+#### 2. Via pacotes pré-compilados
 
 **SAIBA MAIS** 
 
@@ -180,7 +180,7 @@ Esse modelo de instalação **depende do desenvolvedor para fornecer um "assiste
 sh ./gog_warsow_x.y.z.sh
 {{< /highlight >}}
 
-![](https://www.linuxdescomplicado.com.br/wp-content/uploads/2019/08/gog.jpg) 
+![](../../images/gog.jpg) 
 
 ***
 
