@@ -71,7 +71,7 @@ Por mais de uma década, o Linux usou repositórios de software para distribuir 
 
 Uma distribuição Linux fornece um gerenciador de pacotes, comandos, e geralmente uma interface gráfica para esses comandos, que baixa o software do servidor e o instala no seu computador. É um **conceito tão simples** que serviu de modelo para todos os principais sistemas operacionais de celulares e, mais recentemente, para as "lojas de aplicativos". 
 
-![](../../images/ubuntu_software_on_u_DVPdY.jpg) 
+![Loja de aplicativos do Ubuntu](../../../images/ubuntu_software_on_u_DVPdY.jpg) 
 
 A instalação a partir de um repositório de software é o **principal método de instalação** de aplicativos no Linux. Deve ser o primeiro método no qual você procura qualquer aplicativo que pretenda instalar. Para instalar a partir de um repositório de software, geralmente, se usa algum **gerenciador de pacotes**. 
 
@@ -180,7 +180,7 @@ Esse modelo de instalação **depende do desenvolvedor para fornecer um "assiste
 sh ./gog_warsow_x.y.z.sh
 {{< /highlight >}}
 
-![](../../images/gog.jpg) 
+![](../../../images/gog.jpg) 
 
 ***
 
