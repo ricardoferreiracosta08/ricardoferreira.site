@@ -49,7 +49,7 @@ Atualmente, **existem projetos** que visam a **universalização do modo e distr
 
 ***
 
-# Instalar programas no Linux
+## Instalar programas no Linux
 
 O **histórico de desenvolvimento e publicação** de aplicações nos sistemas Linux é amplamente discutido. A criação dos gerenciadores de pacotes (APT e [**DNF**](https://www.linuxdescomplicado.com.br/2015/05/dnf-saiba-mais-sobre-o-novo-gerenciador-de-pacotes-do-fedora.html), por exemplo) foi repensada por conta de propostas para "empacotamento" de aplicações Linux, vide **[Snap](https://www.linuxdescomplicado.com.br/2016/06/pacotes-snap-do-ubuntu-podem-se-tornar-formato-universal-para-todas-as-distribuicoes-linux.html)**, [**Flatpak**](https://www.linuxdescomplicado.com.br/2016/06/anuncio-do-flatpak-o-futuro-das-aplicacoes-linux-provalvelmente-o-concorrente-direto-ao-snap-da-canonical.html) e **[AppImage](https://www.linuxdescomplicado.com.br/2016/02/appimage-ferramenta-que-permite-executar-aplicacoes-linux-independente-da-distribuicao-usada.html)**.
 
@@ -59,13 +59,13 @@ O **histórico de desenvolvimento e publicação** de aplicações nos sistemas 
 
 > [Snap, Flatpak e AppImage – formatos universais para instalação de programas no Linux](https://www.linuxdescomplicado.com.br/2017/08/snap-flatpak-e-appimage-formatos-universais-para-instalacao-de-programas-no-linux.html) 
 
-[AppImage – ferramenta que permite executar aplicações Linux independente da distribuição usada](https://www.linuxdescomplicado.com.br/2016/02/appimage-ferramenta-que-permite-executar-aplicacoes-linux-independente-da-distribuicao-usada.html)
+> [AppImage – ferramenta que permite executar aplicações Linux independente da distribuição usada](https://www.linuxdescomplicado.com.br/2016/02/appimage-ferramenta-que-permite-executar-aplicacoes-linux-independente-da-distribuicao-usada.html)
 
 ***
 
-Para os idealizadores desses projetos, o **cenário atual das aplicações Linux é problemático** e afeta a flexibilidade de uso e desenvolvimento; já que para cada distro ou sistema Linux é **preciso configurar bibliotecas e componentes** peculiares para fazê-la funcionar. No passado, e ainda hoje, isso é contornado, trivialmente, com os pacotes pré-compilados ou, na ausência, deles, com os [distribuídos via tar.gz](https://www.linuxdescomplicado.com.br/2016/08/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz.html). Sendo assim, daqui destaco algumas **maneiras para instalar programas no Linux**:
+Para os idealizadores desses projetos, o **cenário atual das aplicações Linux é problemático** e afeta a flexibilidade de uso e desenvolvimento; já que para cada distro ou sistema Linux é **preciso configurar bibliotecas e componentes** peculiares para fazê-la funcionar. No passado, e ainda hoje, isso é contornado, trivialmente, com os pacotes pré-compilados ou, na ausência, deles, com os [distribuídos via tar.gz](https://ricardoferreira.site/2019/12/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz/). Sendo assim, daqui destaco algumas **maneiras para instalar programas no Linux**:
 
-#### **1\. Via Repositórios**
+#### 1. Via Repositórios
 
 Por mais de uma década, o Linux usou repositórios de software para distribuir software. Um "repositório" neste contexto é um **servidor público da distribuição** que hospeda pacotes de software pré-compilados - vide explicação no tópico a seguir. 
 
@@ -140,7 +140,7 @@ sudo dnf install lwks-14.0.0-amd64.rpm
 
 Em alguns casos, você precisa executar **etapas adicionais** para que o aplicativo seja executado. Leia com atenção a documentação sobre o software que está instalando.
 
-#### **3\. Via pacotes "universais"**
+#### 3. Via pacotes "universais"
 
 Imagine poder executar aplicações Linux **independente da distribuição** usada ou não se preocupar com qual formato de pacote deve usar para cada distribuição e derivadas, bem como: .deb ou .rpm. 
 
@@ -150,7 +150,7 @@ No caso do [AppImage](https://www.linuxdescomplicado.com.br/2016/02/appimage-fer
 
 Leia o artigo "[Snap, Flatpak e AppImage – formatos universais para instalação de programas no Linux](https://www.linuxdescomplicado.com.br/2017/08/snap-flatpak-e-appimage-formatos-universais-para-instalacao-de-programas-no-linux.html)" e saiba mais sobre o assunto.
 
-#### **4\. Via pacotes diretos "da fonte"**
+#### 4. Via pacotes diretos "da fonte"
 
 Irão aparecer situações onde você não terá nenhuma dessas opções disponíveis… pois alguns desenvolvedores de softwares **disponibilizam seus programas diretamente pelo código-fonte (source) –** que por sinal **era, nos primórdios, o único método utilizado** para instalação de programas no Linux (algumas distribuições ainda mantêm essa técnica com frequência). 
 
@@ -168,9 +168,9 @@ Assim, essa **técnica** garante suporte a todas as distribuições Linux, univ
 
 Por outro lado, um problema, em compilar e instalar programas a partir dos fontes, é que o **processo é demorado** e, para muitos, nem sempre simples. É preciso ter instalado uma grande quantidade de compiladores e bibliotecas, necessários para compilar os mais diversos programas. E isso causa bastante dificuldade para os usuários, principalmente iniciantes. Por isso, acredito que seja importante você **conhecer suas peculiaridades**. 
 
-Leia o artigo "[Saiba como compilar e instalar programas Linux distribuídos diretamente pelo código-fonte [tar.gz]](https://www.linuxdescomplicado.com.br/2016/08/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz.html)" e saiba mais sobre o assunto.
+Leia o artigo "[Saiba como compilar e instalar programas Linux distribuídos diretamente pelo código-fonte [tar.gz]](https://ricardoferreira.site/2019/12/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz/)" e saiba mais sobre o assunto.
 
-#### **5\. Via Scripts de instalação genérica**
+#### 5. Via Scripts de instalação genérica
 
 Alguns desenvolvedores lançam seus pacotes em um dos vários **formatos genéricos**. As extensões comuns **incluem .run e .sh**. Os drivers da placa gráfica NVIDIA, os pacotes FX visuais Foundry, como Nuke e Mari, e muitos jogos sem DRM do [GOG](http://gog.com/) usam esse estilo de instalador, por exemplo. 
 
