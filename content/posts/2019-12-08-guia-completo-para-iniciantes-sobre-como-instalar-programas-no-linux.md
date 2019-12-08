@@ -43,9 +43,9 @@ Atualmente, **existem projetos** que visam a **universalização do modo e distr
 
 > [5 Erros que todo usuário Linux cometeu ao aprender Linux](https://www.linuxdescomplicado.com.br/2019/08/erros-que-todo-usuario-linux-cometeu-ao-comecar-aprender-linux.html) 
 
-[Guia completo para iniciantes sobre discos e partições no Linux](https://www.linuxdescomplicado.com.br/2017/09/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux.html) 
+> [Guia completo para iniciantes sobre discos e partições no Linux](https://www.linuxdescomplicado.com.br/2017/09/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux.html) 
 
-[Guia completo para iniciantes sobre áudio e som no Linux](https://www.linuxdescomplicado.com.br/2019/08/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux.html)
+> [Guia completo para iniciantes sobre áudio e som no Linux](https://www.linuxdescomplicado.com.br/2019/08/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux.html)
 
 ***
 
