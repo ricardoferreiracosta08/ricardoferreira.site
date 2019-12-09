@@ -23,6 +23,11 @@ keywords:
   - shell
   - terminal
 ---
+
+<div class="youtube">
+<iframe class="video" src="https://www.youtube.com/embed/cZ8vxzNQeMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowf>
+</div>
+
 Se sua rotina no Linux é definida por **executar comandos para agilizar suas operações**, essas dicas podem ser muito úteis para você aumentar sua produtividade ao usar o shell Bash. 
 
 O terminal Linux é **amado por muitos e odiados por outros**. Basicamente, tudo que é feito no ambiente gráfico é possível fazer no terminal Linux. Mas, claro nem todos estão dispostos a abdicar de uma vida “tranquila” para ficar digitando comandos em terminal. 
