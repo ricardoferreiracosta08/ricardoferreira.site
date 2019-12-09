@@ -57,65 +57,102 @@ Deixo o espaço aberto para que você, informe nos comentários, algumas outras 
 
 #### 1 - Diretório do usuário num instante
 
-O til (~) é uma abreviação do diretório inicial do usuário logado no sistema. Isso significa que você **não precisa digitar o caminho completo para o diretório inicial**. Onde quer que você esteja no sistema de arquivos, você pode usar este comando para acessar o diretório inicial: ![](https://www.linuxdescomplicado.com.br/wp-content/uploads/2019/09/dica-1.gif)
+O til (~) é uma abreviação do diretório inicial do usuário logado no sistema. Isso significa que você **não precisa digitar o caminho completo para o diretório inicial**. Onde quer que você esteja no sistema de arquivos, você pode usar este comando para acessar o diretório inicial: 
 
-<div class="terminal-widget">$ pwd $ cd /usr/share/locale $ cd ~</div>
+{{< highlight Bash shell scripts >}}
+$ pwd $ cd /usr/share/locale $ cd ~
+{{< /highlight >}}
 
 Também, é possível, executar **apenas o comando cd sem o caracter til** (~): "cd" ele retorna para o diretório do usuário vigente.
 
 #### 2 - Múltiplos comandos de uma vez
 
-Você pode digitar quantos comandos quiser na linha de comando, **de uma única vez**, desde que separe cada um deles com um ponto-e-vírgula (;) ![](https://www.linuxdescomplicado.com.br/wp-content/uploads/2019/09/dica-2.gif)
+Você pode digitar quantos comandos quiser na linha de comando, **de uma única vez**, desde que separe cada um deles com um ponto-e-vírgula (;) 
 
-<div class="terminal-widget">$ ls lista.txt ; cat lista.txt ; wc -l lista.txt</div>
+{{< highlight Bash shell scripts >}}
+$ ls lista.txt ; cat lista.txt ; wc -l lista.txt
+{{< /highlight >}}
 
 Observe que o terceiro comando é executado mesmo se o segundo falhar, e assim por diante. Se você deseja **interromper a sequência de execução** se um comando falhar, use um e comercial duplo (&&) em vez de um ponto e vírgula:
 
-<div class="terminal-widget">$ ls lista.txt && cat lista.txt && wc -l lista.txt</div>
+{{< highlight Bash shell scripts >}}
+$ ls lista.txt && cat lista.txt && wc -l lista.txt
+{{< /highlight >}}
 
 #### 3 - Execute o último comando rapidamente
 
 Você costuma **usar as setas para cima e para baixo** para encontrar o comando e depois executá-lo? Isso leva muito tempo. Concorda? Use (!) ou (!!) para executar o último comando facilmente. No caso do (!) apenas **é preciso lembrar o nome do comando**.
 
-<div class="social-connect-widget">**SAIBA DISSO** Também é possível usar o (!) com o número de identificação do comando mostrado no resultado do comando "history". Algo executar o "history" você verá diversos comandos com seus respectivos IDs. Execute "!ID" e verá o comando ser executado novamente :)</div>
+**SAIBA DISSO** 
 
-**Por exemplo:** ! cat executará seu último "cat lista.txt". Definitivamente, economiza muito tempo e também é **útil em shell diferente do bash shell** (como csh ou ksh), onde as setas para cima e para baixo geralmente não fornecem comandos anteriores. ![](https://www.linuxdescomplicado.com.br/wp-content/uploads/2019/09/dica-3.gif) Por outro lado, você pode usar (!!) para **executar o último comando que você executou**, sem precisar "lembrar do comando". ![](https://www.linuxdescomplicado.com.br/wp-content/uploads/2019/09/dica-4.gif)
+***
+
+> Também é possível usar o (!) com o número de identificação do comando mostrado no resultado do comando "history". Algo executar o "history" você verá diversos comandos com seus respectivos IDs. Execute "!ID" e verá o comando ser executado novamente :)
+
+***
+
+**Por exemplo:** ! cat executará seu último "cat lista.txt". Definitivamente, economiza muito tempo e também é **útil em shell diferente do bash shell** (como csh ou ksh), onde as setas para cima e para baixo geralmente não fornecem comandos anteriores. 
+
+Por outro lado, você pode usar (!!) para **executar o último comando que você executou**, sem precisar "lembrar do comando". 
 
 #### 4 - Uso do pipe (|)
 
-Um "tubo" encadeia comandos juntos. Ele **pega a saída de um comando e a alimenta para o próximo como entrada**. O número de comandos canalizados (o comprimento da cadeia) é arbitrário. Aqui, usaremos cat para alimentar o conteúdo do arquivo lista.txt no "grep", que extrai qualquer linha que contenha um numeral "1" e exibe o resultado: ![](https://www.linuxdescomplicado.com.br/wp-content/uploads/2019/09/dica-6.gif)
+Um "tubo" encadeia comandos juntos. Ele **pega a saída de um comando e a alimenta para o próximo como entrada**. O número de comandos canalizados (o comprimento da cadeia) é arbitrário. Aqui, usaremos cat para alimentar o conteúdo do arquivo lista.txt no "grep", que extrai qualquer linha que contenha um numeral "1" e exibe o resultado: 
 
-<div class="terminal-widget">$ cat lista.txt | grep 1</div>
+{{< highlight Bash shell scripts >}}
+$ cat lista.txt | grep 1
+{{< /highlight >}}
 
 #### 5 - Buscar pelo comando já executado mais rapidamente
 
-Use "CTRL + R" para encontrar o último comando correspondente ao que deseja executar novamente. Melhor momento que você sabe que executou o comando "[ls -l | grep ” algo ” | cut -c55- | xargs rm](https://www.linuxdescomplicado.com.br/2019/08/o-poder-e-a-versatilidade-do-comando-xargs.html)", alguma vez no passado, mas não lembra os parâmetros necessários para executá-lo, novamente. Basta pressionar o botão "CRTL + R" e digite as palavras que você tinha no seu último comando e o sistema encontrará esse comando para você... depois basta pressionar ENTER ![](https://www.linuxdescomplicado.com.br/wp-content/uploads/2019/09/dica-5.gif) Assim, eu evito de usar o comando "history" para buscar os últimos comandos executados :)
+Use "CTRL + R" para encontrar o último comando correspondente ao que deseja executar novamente. Melhor momento que você sabe que executou o comando "[ls -l | grep ” algo ” | cut -c55- | xargs rm](https://www.linuxdescomplicado.com.br/2019/08/o-poder-e-a-versatilidade-do-comando-xargs.html)", alguma vez no passado, mas não lembra os parâmetros necessários para executá-lo, novamente. Basta pressionar o botão "CRTL + R" e digite as palavras que você tinha no seu último comando e o sistema encontrará esse comando para você... depois basta pressionar ENTER 
 
-<div class="terminal-widget">556 cat teste2 557 cat lista.txt 558 ls 559 pwd 560 cat lista.txt | xargs touch 561 ls 562 clear 563 cat lista.txt | xargs touch 564 history</div>
+Assim, eu evito de usar o comando "history" para buscar os últimos comandos executados :)
 
 #### 6 - Uso de apelidos para seus comandos mais usados
 
 Para [criar "seus próprios" comandos](https://www.linuxdescomplicado.com.br/2015/06/criar-comandos-usando-alias.html) é preciso usar o recurso de Alias. A sua estrutura é bem simples, como segue:
 
-<div class="terminal-widget">$ alias nome_apelido=’comando com parâmetros‘</div>
+{{< highlight Bash shell scripts >}}
+$ alias nome_apelido=’comando com parâmetros‘
+{{< /highlight >}}
 
-Para criá-los, é preciso modificar o **arquivo .bashrc** que se encontra em **/home/NomeDoUsuário/.bashrc** (se o arquivo não existir, crie-o) e adicionar cada apelido no final do arquivo. Por exemplo, segue lista de alguns “comandos” que você pode precisar:
+Para criá-los, é preciso modificar o **arquivo .bashrc** que se encontra em **/home/NomeDoUsuário/.bashrc** (se o arquivo não existir, crie-o) e adicionar cada apelido no final do arquivo. 
 
-<div class="terminal-widget">alias atualizar='sudo apt-get update && sudo apt-get upgrade' alias instalar_pacote='sudo apt-get install' alias remover_pacote='sudo apt-get remove' alias reparar_pacotes='sudo apt-get -f install' alias desligar_agora='sudo shutdown -h now'</div>
+Por fim, para gravar definitivamente esses apelidos, execute, no diretório home do usuário:
 
-Por fim, para gravar definitivamente esses apelidos, execute:
-
-<div class="terminal-widget"># source ~/.bashrc</div>
+{{< highlight Bash shell scripts >}}
+# source ~/.bashrc
+{{< /highlight >}}
 
 #### 7 - Navegar em dois diretórios rapidamente
 
-Use o caracter (-) junto com o comando "cd" para **alternar entre um e outro**. Aliado a isso, você pode usar os comandos "pushd", que insere diretório para a pilha de diretórios para alternar, e o "popd", que retira da pilha o último diretório inserido ![](https://www.linuxdescomplicado.com.br/wp-content/uploads/2019/09/dica-7.gif)
+Use o caracter (-) junto com o comando "cd" para **alternar entre um e outro**. Aliado a isso, você pode usar os comandos "pushd", que insere diretório para a pilha de diretórios para alternar, e o "popd", que retira da pilha o último diretório inserido.
 
 #### 8 - Alguns atalhos de teclado
 
 Sem o mouse parece possível apenas o uso das setas (esquerda e direita) para a **movimentação do cursor**. Entretanto, com algumas teclas de atalho é possível ser mais produtivo e ágil:
 
-<div class="social-connect-widget">Ctrl + a - vá para o início da linha de comando. Ctrl + e - vai para o final da linha de comando. Ctrl + k - exclua do cursor até o final da linha de comando - economize muito tempo. Ctrl + u - exclua do cursor até o início da linha de comando, não a estou usando, mas ainda assim boa. Ctrl + w - excluir do cursor para o início da palavra (ou seja, excluir uma palavra para trás) Ctrl + y - cole a palavra ou o texto que foi cortado usando um dos atalhos de exclusão (como o acima) após o cursor Ctrl + xx - move entre o início da linha de comando e a posição atual do cursor (e vice-versa) Alt + b - recua uma palavra (ou vá para o início da palavra em que o cursor está ativado) Alt + f - avança uma palavra (ou vai para o final da palavra em que o cursor está ativado) Alt + d - excluir para o final da palavra começando no cursor (palavra inteira se o cursor estiver no início da palavra) Alt + c - coloque em maiúscula no final da palavra começando no cursor (palavra inteira se o cursor estiver no início da palavra) Alt + u - faz maiúsculas do cursor até o final da palavra Alt + l - faz minúsculas do cursor até o final da palavra Alt + t - troca a palavra atual pela anterior Ctrl + f - avança um caractere Ctrl + b - retrocede um caractere Ctrl + d - exclui caracteres sob o cursor Ctrl + h - exclui o caractere antes do cursor Ctrl + t - troca o caractere sob o cursor pelo anterior</div>
+{{< highlight Bash shell scripts >}}
+Ctrl + a - vá para o início da linha de comando. 
+Ctrl + e - vai para o final da linha de comando. 
+Ctrl + k - exclua do cursor até o final da linha de comando - economize muito tempo. Ctrl + u - exclua do cursor até o início da linha de comando, não a estou usando, mas ainda assim boa. 
+Ctrl + w - excluir do cursor para o início da palavra (ou seja, excluir uma palavra para trás) 
+Ctrl + y - cole a palavra ou o texto que foi cortado usando um dos atalhos de exclusão (como o acima) após o cursor 
+Ctrl + xx - move entre o início da linha de comando e a posição atual do cursor (e vice-versa) 
+Alt + b - recua uma palavra (ou vá para o início da palavra em que o cursor está ativado) 
+Alt + f - avança uma palavra (ou vai para o final da palavra em que o cursor está ativado) 
+Alt + d - excluir para o final da palavra começando no cursor (palavra inteira se o cursor estiver no início da palavra) 
+Alt + c - coloque em maiúscula no final da palavra começando no cursor (palavra inteira se o cursor estiver no início da palavra) 
+Alt + u - faz maiúsculas do cursor até o final da palavra 
+Alt + l - faz minúsculas do cursor até o final da palavra 
+Alt + t - troca a palavra atual pela anterior 
+Ctrl + f - avança um caractere 
+Ctrl + b - retrocede um caractere 
+Ctrl + d - exclui caracteres sob o cursor 
+Ctrl + h - exclui o caractere antes do cursor 
+Ctrl + t - troca o caractere sob o cursor pelo anterior
+{{< /highlight >}}
 
 ***
 
