@@ -1,13 +1,13 @@
 {{ define "main" }}
 
-{{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-{{ range $pag.Pages }}
+{{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+{{ range $paginator.Pages }} 
 
 <article style="padding-top: 40px; padding-bottom: 40px; border-bottom: 1px solid #eee;">
     {{ if .Params.tags }}
     <div>
         {{ range .Params.tags }}
-        <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>&nbsp;
+        <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>  &nbsp;
         {{ end }}
     </div>
     {{ end }}
@@ -40,10 +40,10 @@
 
 </article>
 
-{{ end }}
+{{ end }} 
 
 {{ partial "pagination.html" .}}
-<!-- {{ template "_internal/pagination.html" . }}-->
+<!--{{ template "_internal/pagination.html" . }}-->
 
 {{ if .Site.Params.fixed_ads }}
 	<div class="fixed notmobile">

@@ -1,6 +1,9 @@
 baseurl = "https://ricardoferreira.site/"
 title = "Ricardo Ferreira"
 
+# Pagination - deve vim primeiro
+paginate = 4
+
 # Language
 languageCode = "pt-br"
 DefaultContentLanguage = "br"
@@ -26,9 +29,6 @@ enableRobotsTXT = true
 canonifyurls = "true"
 # pages with .html
 # uglyurls = true
-
-# Pagination
-paginate = 6 #(default = 10)
 
 [taxonomies]
   category = "categories"
