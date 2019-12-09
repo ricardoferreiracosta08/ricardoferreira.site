@@ -25,7 +25,7 @@ keywords:
 ---
 
 <div class="youtube">
-<iframe class="video" src="https://www.youtube.com/embed/cZ8vxzNQeMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowf>
+<iframe class="video" src="https://www.youtube.com/embed/cZ8vxzNQeMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 Se sua rotina no Linux é definida por **executar comandos para agilizar suas operações**, essas dicas podem ser muito úteis para você aumentar sua produtividade ao usar o shell Bash. 
