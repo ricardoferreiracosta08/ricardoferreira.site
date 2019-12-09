@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Dicas para você aumentar sua produtividade enquanto usa o shell Bash
 subtitle: Alguns "atalhos"
 description: >-
