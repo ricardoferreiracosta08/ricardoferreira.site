@@ -56,17 +56,11 @@ Ele tem função primeira **receber uma entrada** de uma lista de parâmetros de
 
 Em resumo, o xargs pode pegar a saída de um comando e enviá-lo para outro como parâmetros ! :)
 
-<div class="terminal-widget">comando | xargs [opções] [comando] [lista_parâmetros comando anterior]</div>
+{{< highlight Bash shell scripts >}}
+comando | xargs [opções] [comando] [lista_parâmetros comando anterior]
+{{< /highlight >}}
 
 ## Exemplos
-
-**RECOMENDO QUE LEIA**  
-
-*** 
-
-> [Algumas ferramentas de terminal que podem ser mais práticas do que os aplicativos gráficos](https://www.linuxdescomplicado.com.br/2017/01/algumas-ferramentas-de-terminal-que-podem-ser-mais-praticas-do-que-os-aplicativos-graficos.html)  
-
-> [O poder do comando dd – exemplos práticos](https://www.linuxdescomplicado.com.br/2016/11/alguns-exemplos-de-que-o-comando-dd-pode-ser-considerado-umas-das-ferramentas-mais-versateis-do-linux.html)</div>
 
 Como caso prático, mostro a leitura de arquivo de texto:
 
