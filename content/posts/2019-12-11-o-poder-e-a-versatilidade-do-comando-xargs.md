@@ -46,7 +46,7 @@ Esses fluxos estão todos em **modo texto**. Enviamos **input (stdin)** para um 
 
 Um dos **grandes recursos** dos sistemas Linux e Unix é a **habilidade de canalizar** a saída padrão stdout de um comando para a entrada stdin de um segundo comando \o/ Assim, o **primeiro comando** não difere se sua saída não estar indo para um texto num terminal; e o **segundo comando** não distingue que sua entrada não esteja vindo de um teclado.
 
-Embora **todos os comandos** do Linux tenham os três fluxos padrão, **nem todos aceitam** o stdout de outro comando como entrada para sua entrada padrão. Isso significa que você **não pode canalizar** a entrada para eles. Daí o comando xargs entra na jogada ![🙂](https://s.w.org/images/core/emoji/12.0.0-1/svg/1f642.svg)
+Embora **todos os comandos** do Linux tenham os três fluxos padrão, **nem todos aceitam** o stdout de outro comando como entrada para sua entrada padrão. Isso significa que você **não pode canalizar** a entrada para eles. Daí o comando xargs entra na jogada :)
 
 ## O comando xargs
 
@@ -54,7 +54,7 @@ O **comando xargs** é um comando para construir pipelines de execução usando 
 
 Ele tem função primeira **receber uma entrada** de uma lista de parâmetros de outro comando e **passá-la para a execução** de outro comando – isso tudo numa **única sentença**, através do uso do pipeline (|). Parece complexo, né?
 
-Em resumo, o xargs pode pegar a saída de um comando e enviá-lo para outro como parâmetros ![🙂](https://s.w.org/images/core/emoji/12.0.0-1/svg/1f642.svg)
+Em resumo, o xargs pode pegar a saída de um comando e enviá-lo para outro como parâmetros ! :)
 
 <div class="terminal-widget">comando | xargs [opções] [comando] [lista_parâmetros comando anterior]</div>
 
