@@ -30,6 +30,11 @@ keywords:
   - stderr
   - pipelines
 ---
+<div class="youtube">
+<iframe class="video" src="https://youtu.be/rw50a6-b9As" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
 Gosto muito da **[praticidade do terminal](https://www.linuxdescomplicado.com.br/2017/01/algumas-ferramentas-de-terminal-que-podem-ser-mais-praticas-do-que-os-aplicativos-graficos.html)**. Para alguns, um pavor; para outros uma obrigação. No meio disso, existem comandos que aumentam bastante nossa produtividade e que você não deveria refutar isso.
 
 Entre diversos deles, destaco o **comando xargs**, um comando capaz de **aumentar sua produtividade**.
