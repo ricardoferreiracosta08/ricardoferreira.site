@@ -31,7 +31,7 @@ keywords:
   - pipelines
 ---
 <div class="youtube">
-<iframe class="video" src="https://youtu.be/rw50a6-b9As" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/watch?v=rw50a6-b9As" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
