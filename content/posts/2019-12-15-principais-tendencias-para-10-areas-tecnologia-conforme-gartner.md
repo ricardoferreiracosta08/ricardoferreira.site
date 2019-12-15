@@ -28,7 +28,7 @@ keywords:
   - tecnologiadainformação
 ---
 
-Diante de **tantas habilidades exigidas** na área de TI quais conhecimentos devem ser adquiridos ou aprimorados para o próximo ano que chega?
+Diante de **tantas habilidades exigidas** na área de TI, quais conhecimentos devem ser adquiridos ou aprimorados para o próximo ano que chega?
 
 **Para ajudar** a enfrentar esse desafio, o Gartner resumiu as principais tendências e considerações de planejamento em **5 áreas-chave da Tecnologia**.
 
