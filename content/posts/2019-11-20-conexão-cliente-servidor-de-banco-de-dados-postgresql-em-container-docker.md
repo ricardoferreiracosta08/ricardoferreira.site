@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Conexão cliente/servidor de banco de dados PostgreSQL em container Docker
+seotitle: Conexão cliente/servidor de banco de dados PostgreSQL em container Docker
 subtitle: PostgreSQL no Docker
 description: Servidor PostgreSQL em container Docker
 summary: >-

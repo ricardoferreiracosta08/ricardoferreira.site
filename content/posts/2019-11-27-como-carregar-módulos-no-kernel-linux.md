@@ -1,6 +1,7 @@
 ---
 draft: false
 title: 'Como carregar módulos no Kernel Linux '
+seotitle: Como carregar módulos no Kernel Linux
 subtitle: 'Uso do lsmod, modprobe e /procfs'
 description: >-
   Usando o lsmod e a leitura do /proc/filesystems, capturo os módulos carregados

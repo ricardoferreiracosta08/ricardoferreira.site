@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Guia completo para iniciantes sobre discos e partições no Linux
+seotitle: Guia completo para iniciantes sobre discos e partições no Linux
 subtitle: 'Desmistificando alguns conceitos '
 description: >-
   Manipulação de discos ou partições são muito comuns, principalmente quando

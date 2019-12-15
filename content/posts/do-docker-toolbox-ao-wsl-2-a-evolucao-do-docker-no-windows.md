@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows
+seotitle: Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows
 subtitle: Um breve histórico
 description: >-
   Breve histórico do Docker no Windows. Do Docker ToolBox ao WSL 2

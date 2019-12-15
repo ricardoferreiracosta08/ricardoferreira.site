@@ -1,6 +1,7 @@
 ---
 draft: false
 title: O poder e a versatilidade do comando xargs
+seotitle: O poder e a versatilidade do comando xargs
 subtitle: Existem comandos Linux e existe o xargs
 description: >-
   O comando xargs é um comando para construir pipelines de execução usando os

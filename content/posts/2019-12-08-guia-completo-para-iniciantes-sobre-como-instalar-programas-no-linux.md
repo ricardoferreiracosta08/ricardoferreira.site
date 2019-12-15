@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Guia completo para iniciantes sobre como instalar programas no Linux
+seotitle: Guia completo para iniciantes sobre como instalar programas no Linux
 subtitle: Dos programas compilados aos empacotados universalmente
 description: >-
   Os programas podem vir de muitas fontes e cada equipe de desenvolvimento pode

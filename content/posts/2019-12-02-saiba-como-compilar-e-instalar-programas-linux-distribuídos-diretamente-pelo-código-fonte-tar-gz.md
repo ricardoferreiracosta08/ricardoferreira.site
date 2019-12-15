@@ -3,6 +3,7 @@ draft: false
 title: >-
   Saiba como compilar e instalar programas Linux distribuídos diretamente pelo
   código-fonte [tar.gz]
+seotitle: Saiba como compilar e instalar programas Linux distribuídos diretamente pelo código-fonte [tar.gz]
 subtitle: './configure, make e make install'
 description: "Hoje em dia, instalar programas no Linux se tornou a coisa mais simples de se fazer no sistema. Dependendo da distribuição Linux, você tem recursos complementares que facilitam ainda mais o processo. Contudo, em muitos momentos você se depara com programas\_disponibilizados\_diretamente pelo código-fonte."
 summary: "Hoje em dia, instalar programas no Linux se tornou a coisa mais simples de se fazer no sistema. Dependendo da distribuição Linux, você tem recursos complementares que facilitam ainda mais o processo. Contudo, em muitos momentos você se depara com programas\_disponibilizados\_diretamente pelo código-fonte."

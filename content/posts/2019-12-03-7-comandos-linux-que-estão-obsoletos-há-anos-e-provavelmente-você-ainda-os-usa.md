@@ -3,6 +3,7 @@ draft: false
 title: >-
   7 comandos Linux que estão "obsoletos" há anos e, provavelmente, você ainda os
   usa
+seotitle: 7 comandos Linux que estão "obsoletos" há anos e, provavelmente, você ainda os usa
 subtitle: 'ifconfig, netstat e outros'
 description: >-
   Embora ainda funcionais, esses comandos são, realmente, considerados obsoletos

@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Dicas para você aumentar sua produtividade enquanto usa o shell Bash
+seotitle: Dicas para você aumentar sua produtividade enquanto usa o shell Bash
 subtitle: Alguns "atalhos"
 description: >-
   Algumas dicas que podem ser muito úteis para você aumentar sua produtividade
