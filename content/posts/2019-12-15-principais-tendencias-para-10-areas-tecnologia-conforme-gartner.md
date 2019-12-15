@@ -1,19 +1,19 @@
 ---
 draft: false
 title: Conforme o Gartner, as tendências para 2020 nas diversas áreas técnicas da Tecnologia da Informação
-seotitle: Em 2020, tendências que todo professional de TI, de acordo com área, deve aprender
+seotitle: Para 2020, o que todo professional de TI, de acordo com área, deve aprender?
 subtitle: 2020 Planning Guide Overview
 description: >-
-  Diante de tantas habilidades exigidas na área de TI, em diversas áreas, quais conhecimentos devem ser adquiridos ou aprimorados
+  Diante de tantas habilidades exigidas na área de TI, quais conhecimentos devem ser adquiridos ou aprimorados
   para o próximo ano que chega? Compartilho, conforme o Gartner, as principais tendências e considerações de planejamento em 
-  10 áreas-chave da tecnologia.
+  5 áreas-chave da tecnologia.
 summary: >-
-  Diante de tantas habilidades exigidas na área de TI, em diversas áreas, quais conhecimentos devem ser adquiridos ou aprimorados
+  Diante de tantas habilidades exigidas na área de TI, quais conhecimentos devem ser adquiridos ou aprimorados
   para o próximo ano que chega? Compartilho, conforme o Gartner, as principais tendências e considerações de planejamento em 
-  10 áreas-chave da tecnologia.
-slug: principais-tendencias-para-10-areas-tecnologia-conforme-gartner
+  5 áreas-chave da tecnologia.
+slug: principais-tendencias-para-5-areas-tecnologia-conforme-gartner
 date: 2019-12-15T18:35:51.240Z
-image: /images/xargs_1140x570.jpg
+image: /images/gartner-future.jpg
 categories:
   - Carreira
 tags:
