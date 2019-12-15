@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Conforme o Gartner, as tendências para 2020 nas diversas áreas técnicas da Tecnologia da Informação
-seotitle: Para 2020, o que todo professional de TI, de acordo com área, deve aprender?
+seotitle: Para 2020, o que todo profissional de TI, de acordo com área, deve aprender?
 subtitle: 2020 Planning Guide Overview
 description: >-
   Diante de tantas habilidades exigidas na área de TI, quais conhecimentos devem ser adquiridos ou aprimorados
