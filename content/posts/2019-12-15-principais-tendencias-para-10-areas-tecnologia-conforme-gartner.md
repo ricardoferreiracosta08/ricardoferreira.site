@@ -36,7 +36,7 @@ Assim, compartilho esse conteúdo de maneira estruturada e de fácil compreensã
 
 ## Contexto atual
 
-Novos negócios digitais surgem todos os dias, de uso intensivo de ativos
+Novos negócios digitais surgem todos os dias, incluindo uso intensivo de ativos na
 indústrias, saúde, governo e outros. Nunca houve um **momento melhor** para
 organizações acelerarem sua **transformação digital**.
 
@@ -49,7 +49,7 @@ os profissionais **não devem apenas** ficar a par das tendências em suas princ
 em áreas correlatas :)
 
 Assim, a **Gartner**, empresa norte-americana de consultoria que desenvolve tecnologias relacionadas a introspecção necessária para seus clientes 
-tomarem suas decisões todos os dias, cria todo fim de ano **Guias de Planejamento (GTP)**. Esses guias abrangem um amplo 
+tomarem suas decisões, cria todo fim de ano **Guias de Planejamento (GTP)**. Esses guias abrangem um amplo 
 conjunto de tecnologias, serviços e infraestrutura em uma área específica de pesquisa, no caso a Tecnologia da Informação. E foi 
 desenvolvido para ajudá-lo a assimilar rapidamente e agir de acordo com as tendências mais importantes nessa área!
 
@@ -88,7 +88,7 @@ gerenciar custo, segurança e governança como parte essencial de sua estratégi
 
 **O que considerar ?**
 
-* Adoção de multi e híbrida estratégia de cloud 
+* Adoção de estratégia multi e híbrida de cloud 
 * Container e Serverless 
 * Estratégias de automação
 * DevSecOps
