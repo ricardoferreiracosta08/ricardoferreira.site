@@ -9,3 +9,7 @@
   gtag('config', '{{ .Site.Params.googleAnalytics }}');
 </script>
 {{ end }}
+
+{{ if .Site.Params.googleAdsense }}
+<script data-ad-client="ca-pub-5245300802542741" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+{{ end }}
