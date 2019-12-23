@@ -1,5 +1,8 @@
 {{ define "main" }}
 
+<img src="https://tpc.googlesyndication.com/simgad/16066144267882059342?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qntBmpD6oMAW89Ag2QkE7vMaNY3Bw" />
+{{ partial "adsense-graficos.html" . }}
+
 {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
 {{ range $paginator.Pages }} 
 

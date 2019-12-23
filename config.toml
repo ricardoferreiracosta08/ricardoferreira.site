@@ -53,6 +53,7 @@ canonifyurls = "true"
 [params.adsense]
 client = "ca-pub-5245300802542741"
 inArticleSlot = "3200652252"
+graficosSlot = "6376166852"
 
 [params]
         fixed_ads = false
