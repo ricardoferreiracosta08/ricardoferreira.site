@@ -52,6 +52,8 @@ Esses fluxos estão todos em **modo texto**. Enviamos **input (stdin)** para um 
 
 Um dos **grandes recursos** dos sistemas Linux e Unix é a **habilidade de canalizar** a saída padrão stdout de um comando para a entrada stdin de um segundo comando \o/ Assim, o **primeiro comando** não difere se sua saída não estar indo para um texto num terminal; e o **segundo comando** não distingue que sua entrada não esteja vindo de um teclado.
 
+<!--adsense-->
+
 Embora **todos os comandos** do Linux tenham os três fluxos padrão, **nem todos aceitam** o stdout de outro comando como entrada para sua entrada padrão. Isso significa que você **não pode canalizar** a entrada para eles. Daí o comando xargs entra na jogada :)
 
 ## O comando xargs

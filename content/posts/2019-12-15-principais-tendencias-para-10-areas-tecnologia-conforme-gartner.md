@@ -205,6 +205,8 @@ Os dados estão sendo usados em mais locais, para mais fins comerciais e
 por mais parceiros no ecossistema de negócios digitais. Aplicativos e APIs estão se expandindo para tornar
 mais funcionalidade de negócios acessíveis e a nuvem torna aplicativos críticos potencialmente acessíveis a um número maior de atacantes.
 
+<!--adsense-->
+
 Como os clientes estão em **vários níveis de maturidade de segurança**, as considerações de planejamento para 2020 abrangem
 muitos controles de segurança em cada domínio. Cada domínio possui controles básicos (por exemplo,
 firewalls) e opções mais avançadas (por exemplo, agentes de segurança de acesso à nuvem), geralmente selecionadas com base

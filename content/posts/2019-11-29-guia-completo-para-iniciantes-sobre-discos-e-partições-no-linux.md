@@ -54,6 +54,8 @@ Diferentemente de sistemas Windows, não existe **nenhuma unidade C ou D** no Li
 
 O nome e pasta **"dev" é a tradução de dispositivo** e, neste caso, representa um dispositivo de armazenamento em bloco. **O prefixo "sd"**, do arquivo contido na pasta "dev", é a tradução para o driver de armazenamento em massa SCSI (Small Computer System Interface). **Os discos SCSI** são unidades que podem ser HDs (pendrives), unidades de CD-RW e gravadoras de DVD. E a 'letra', sufixo de 'sd', indica o número do disco (sda).
 
+<!--adsense-->
+
 De acordo **com a imagem acima**, é mostrado como os discos rígidos são representados no Windows e num sistema Linux. O Windows, no caso, vê um **disco na unidade C:** e outro na **unidade D:** . Já no caso do Linux, ele assume uma abordagem diferente. O primeiro disco rígido detectado por um sistema Linux possui o **rótulo sda** . Em termos numéricos, é o disco rígido 0 (zero, a contagem começa de 0, não 1). O **segundo disco rígido é sdb**, e uma possível terceira unidade, sdc, e assim por diante.
 
 #### 2. PARTIÇÕES
@@ -127,7 +129,7 @@ O **sistema de arquivos no Windows é NTFS** (New Technology File System). Já n
 
 A imagem abaixo mostra, como opção para instalação, o sistema de arquivo Ext4, que é uma versão aprimorada do Ext3, é o padrão mais usado em lançamentos recentes das distribuições Linux:
 
-![](https://www.linuxdescomplicado.com.br/wp-content/uploads/2017/03/particoes.png)
+![](../../../images/particoes.png)
 
 O **BtrFS** é o "mais novo" sistema de arquivos Linux. Ele vem com muitos recursos que não estão disponíveis em outros sistemas de arquivos Linux, como gerenciamento de volume e **reconhecimento de RAID** - acrônimo para Redundant Array of Disclaimer Disks - que é um método de combinação de dois ou mais discos rígidos em uma única unidade lógica.
 
@@ -145,6 +147,8 @@ A imagem acima mostra o tipo de **partição swap** . É uma pequena seção de 
 #### 5. PONTO DE MONTAGEM
 
 No Linux, para acessar um dispositivo de disco é necessário antes **"montá-lo" em um diretório do sistema** . O processo de montagem consiste em **tornar o dispositivo acessível** para o usuário. Em outras palavras, é preciso informar em qual diretório do sistema determinada partição será "configurada" :)
+
+<!--adsense-->
 
 <!--
 **RECOMENDO QUE LEIA** [Saiba como montar partições e dispositivos de armazenamento no Linux usando o comando mount](https://www.linuxdescomplicado.com.br/2017/01/saiba-como-montar-particoes-e-dispositivos-de-armazenamento-no-linux-usando-o-comando-mount.html) [Saiba como resolver um problema comum de erro de pontos montagens no boot de sistemas Linux](https://www.linuxdescomplicado.com.br/2017/06/como-resolver-erro-de-pontos-montagens-fstab-linux.html) [Alguns exemplos de que o comando dd pode ser considerado umas das ferramentas mais versáteis do Linux](https://www.linuxdescomplicado.com.br/2016/11/alguns-exemplos-de-que-o-comando-dd-pode-ser-considerado-umas-das-ferramentas-mais-versateis-do-linux.html)
