@@ -109,6 +109,8 @@ Os aplicativos continuarão sendo **executados nos datacenters** quando as opç�
 requisitos técnicos de conformidade ou de armazenamento de dados do aplicativo, por exemplo - ou quando os custos de
 migrar para a nuvem excederá os benefícios.
 
+<!--adsense-->
+
 **Para enfrentar todos esses desafios**, os profissionais técnicos de I&O precisarão criar uma estratégia de TI híbrida gerenciável. 
 Essa estratégia deve abordar efetivamente todo o processamento de dados necessário da organização, 
 independentemente de ocorrerem em data centers, nuvens públicas ou computação de borda (Edge Computing).

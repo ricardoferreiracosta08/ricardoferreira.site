@@ -19,7 +19,8 @@
 -->
   <hr/>
 
-  {{ .Content }}
+  <!-- {{ .Content }} -->
+  {{ replace .Content "<!--adsense-->" (partial "adsense-inarticle.html" .) | safeHTML }}
 
   <hr/>
   {{ if .Params.categories }}

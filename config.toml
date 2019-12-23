@@ -50,11 +50,14 @@ canonifyurls = "true"
       {Name = "Minhas Palestras", URL = "#"}
   ]
 
+[params.adsense]
+client = "ca-pub-5245300802542741"
+inArticleSlot = "3200652252"
+
 [params]
         fixed_ads = false
         disqusShortname = "ricardoferreira"
         googleAnalytics = "UA-151634076-1"
-        googleAdsense = "pub-5245300802542741"
         copyright = "Built using Hugo v0.59.0. Content managed with Netlify CMS. Hosted by Netlify. Theme adapted from Hyde"
         description = "Entusiasta por novas tecnologias. Ciência da Computação por formação, Palestrante e Professor de ofício. Linux como paixão."
 #       description = "Bachelor degree in Computer Science. Speaker, instructor and professor by vocation. Infrastructure Linux SysAdmin by training. Passion for Linux"
