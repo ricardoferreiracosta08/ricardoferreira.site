@@ -13,7 +13,7 @@ summary: >-
   veja como criar um servidor VPS Linux na infraestrutura de nuvem da DigitalOcean – empresa norte-americana de hospedagem de servidor na nuvem.
 slug: como-criar-um-servidor-vps-linux-na-infraestrutura-de-nuvem-da-digitalocean
 date: 2019-12-23T12:25:12.051Z
-image: /images/digitalocean.jpeg
+image: /images/digitalocean.jpg
 categories:
   - LinuxDescomplicado
 tags:
