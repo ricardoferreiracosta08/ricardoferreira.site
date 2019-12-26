@@ -13,13 +13,20 @@ Search Engine Crawler Tags
 <!-- 
 Title Tags 
 -->
-
 {{ if .IsHome -}}
-  <title itemprop="name">{{ .Site.Title }}</title>
+  <title itemprop="name">{{ .Title }}</title>
   <meta property="og:title" content="{{ .Title }}" />
   <meta name="twitter:title" content="{{ .Title }}" />
   <meta itemprop="name" content="{{ .Title }}" />
   <meta name="application-name" content="{{ .Title }}" />
+{{- end }}
+
+{{ if or (eq .Section "cursos") (eq .Section "categories") (.IsPage) -}}
+  <title itemprop="name">{{ .Title | humanize }} | {{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Title | humanize }} | {{ .Site.Title }}" />
+  <meta name="twitter:title" content="{{ .Title | humanize }} | {{ .Site.Title }}" />
+  <meta itemprop="name" content="{{ .Title | humanize }} | {{ .Site.Title }}" />
+  <meta name="application-name" content="{{ .Title | humanize }} | {{ .Site.Title }}" />
 {{- else -}}
   <title itemprop="name">{{ .Params.seotitle }} | {{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Params.seotitle }} | {{ .Site.Title }}" />
