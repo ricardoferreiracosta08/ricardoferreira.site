@@ -63,7 +63,7 @@ O programa é um simulador que mostra ao usuário diversos aspectos da galáxia 
 #### 6 – KSTARS
 KStars é um programa de computador desenvolvido para o ambiente KDE e que funciona na maioria dos sistemas Unix, como o Linux e o FreeBSD.  Tem a capacidade de exibir uma simulação gráfica do céu noturno de qualquer lugar da Terra, em qualquer data e horário. Entre outras características, pode controlar telescópios.  Pode também baixar fotos e imagens de qualquer astro de bancos de imagens dos serviços de astronomia do mundo. Conta com um sistema de busca eficiente que pode se organizar por tipo (galáxia, cometa, aglomerado, etc) catálogo (NGC e M) e nome.
 
-<!-- adsense -->
+<!--adsense-->
 
 ## BIOLOGIA
 
@@ -141,6 +141,7 @@ GNU Octave é uma linguagem de alto nível interpretada, destina-se principalmen
 
 ***
 > MAIS APLICAÇÕES CIENTÍFICAS
+>
 > * [The OpenScience Project](http://www.openscience.org/links/top.php?order=rating)
 > * [42 of the Best Free Linux Scientific Software](http://www.linuxlinks.com/article/20080803104017665/Scientific.html)
 ***
