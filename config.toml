@@ -25,7 +25,7 @@ theme = "myhyde"
 pygmentsStyle = "native"
 
 # SEO
-enableRobotsTXT = true
+#enableRobotsTXT = true #to permit create file on static folder
 canonifyurls = "true"
 # pages with .html
 # uglyurls = true
