@@ -45,7 +45,7 @@ Assim, também existe uma categoria voltada para o ensino e pesquisa, destinada 
 
 #### 1 – AXIOM
 
-É {{< hl-text success >}}highlight success{{< /hl-text >}}   um sistema de propósito geral para álgebra computacional. É útil para pesquisa e desenvolvimento de algoritmos matemáticos. Tem uma linguagem de programação e um compilador embutido.
+É um sistema de propósito geral para álgebra computacional. É útil para pesquisa e desenvolvimento de algoritmos matemáticos. Tem uma linguagem de programação e um compilador embutido.
 
 #### 2 - MAXIMA
 
