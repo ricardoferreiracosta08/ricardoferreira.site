@@ -1,21 +1,59 @@
-{{ define "main" -}}
+{{ define "main" }}
 
-<div class="posts">
+  <hr/>
+    {{ partial "adsense-graficos.html" . }} 
+  <hr/>
 
-{{ range .Site.RegularPages -}}
-<article class="post">
-  <h1 class="post-title">
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-  </h1>
-  <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}" class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
-  {{ .Summary }}
-  {{ if .Truncated }}
-  <div class="read-more-link">
-    <a href="{{ .RelPermalink }}">Read More…</a>
-  </div>
-  {{ end }}
+
+{{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+{{ range $paginator.Pages }} 
+
+<article style="padding-top: 40px; padding-bottom: 40px; border-bottom: 1px solid #eee;">
+    {{ if .Params.tags }}
+    <div>
+        {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>  &nbsp;
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <h2 class="post-title"> 
+        <a hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+
+    <p id="post-date">
+      {{ partial "post_meta.html" . }}
+    </p>
+
+<!--
+    {{ if .Params.subtitle }}
+    <h4 class="post-subtitle">
+       {{ .Params.subtitle }}
+    </h4>
+    {{ end }}
+-->
+<!--    
+    {{ if .Params.image }}
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-title" />
+    {{ end }}    
+-->
+
+    <div class="post-entry">
+        {{ .Summary }}
+        <a href="{{ .Permalink }}" class="post-read-more">[Leia mais]</a>
+    </div>
+
 </article>
-{{- end }}
-</div>
 
-{{- end}}
+{{ end }} 
+
+{{ partial "pagination.html" .}}
+<!--{{ template "_internal/pagination.html" . }}-->
+
+{{ if .Site.Params.fixed_ads }}
+	<div class="fixed notmobile">
+		<i class="fas fa-rocket"></i> <a href="#" target="_blank">[DOCKER] Sabe a diferença entra as instruções ENTRYPOINT e CMD?</a>
+	</div>
+{{ end }}
+
+{{ end }}

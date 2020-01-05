@@ -1,0 +1,8 @@
+---
+title: "Linux Descomplicado"
+name: "linuxdescomplicado"
+description: >-
+     O Linux Descomplicado nasceu, em 2011, com o intuito de trazer informações relevantes e promover fácil acesso a todos 
+     usuários interessados em aprender a usar o sistema Linux, independentemente se está iniciando ou tem certa experiência com Linux.
+logo: "https://lh3.googleusercontent.com/qyweKCpR4tWyAGgtWa80eskSAO7iloZg9SZffuTp_6mTCDBewAiyk1uZ7TLMk4Et9JvzdiWA7gYuQBDWCKoCximmFNPyXtQsSzasZuXM2gsOTR2Dw6Rxibw68dz-379iioY6UDCI4zQ-XIwJ7dJs_roLVhJxT9A_q19eLA6AHcwNOpVbpASj3DiysBOiHtgXBIp1G57Qk2sxdaxfaxaJI6iKSLYammQ_65rmfFlxOb09vrU7sbrN7go5s8IPGJ8BY46ZOwfZtlMVVUqbPxLv0vAZR13SaKQ203fUBlD33_39jAc0OAKzVGr5eXYSN1bUFinNEkP_HWYWU8Eo0iEaYy_ZSOas_kNCnt9mFtXwFPcL4zAcpuMCvaGMsOewmDLyhm2aVappvO-kqsqmG-VASFy_fC4qcB68Sthk1L_AbJllld0CH3Xcz73xSvrKiJPBdCgSxF7W1ukW2-hvjiqyNwqif-0Kzsx2vjYQmPhf2oqOoX1OlxCMiLIp7Wu1lfLzkF3jwPxP9WtL8zJDH81ES8CZqR3Sq5CYq0M9zH8zsDhHjSa6F0oFuNMpIuNi07HOZL7IG8L6duPT8UTJVRzNpmDS7eFHD7nb6_3FB9St6HjnldNcvcO2lpHoFzgmNWgvP4re1Figm1Lmflgu6xLxES9WaHnoahYMlTMFx-76EsamjYnKshknOps=s240-no"
+---

@@ -4,8 +4,9 @@ keywords = ["sobre", "Ricardo Ferreira"]
 title = "Sobre"
 slug = "sobre"
 image = "images/Regras-IPtables-conhecer.png"
-type = "page"
-layout = "simple-static"
+#type = "page"
+#layout = "simple-static"
+showDate = false
 +++
 
 Entusiasta por novas tecnologias. Infrastructure SysAdmin, palestrante e professor de ofício. **Linux como paixão** e fundador do [**Linux Descomplicado**](http://www.linuxdescomplicado.com.br) - um dos maiores sites de Linux do Brasil que nasceu de forma despretenciosa; e hoje possui mais de 20 mil seguidores. IaC e CaaS como nova era.

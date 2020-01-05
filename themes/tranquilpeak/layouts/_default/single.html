@@ -1,0 +1,107 @@
+{{ partial "head.html" . }}
+  <body>
+    <div id="blog">
+      {{ partial "header.html" . }}
+      {{ partial "sidebar.html" . }}
+      {{ partial "post/header-cover.html" . }}
+      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
+        class="{{ with .Params.coverimage }}hasCover{{ end }}
+               {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
+               {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          {{ with .Params.covercaption }}
+            <span class="post-header-cover-caption caption">{{ . | markdownify }}</span>
+          {{ end }}
+          {{ if or (not .Params.coverimage) (eq .Params.covermeta "out") }}
+            {{ partial "post/header.html" . }}
+          {{ end }}
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+<!--              {{ (replaceRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" (printf "<h1 id=\"table-of-contents\">%s</h1>%s" (i18n "post.toc") .TableOfContents) .Content) | safeHTML }} -->
+		  {{ replace .Content "<!--adsense-->" (partial "adsense-inarticle.html" .) | safeHTML }}
+              {{ partial "post/gallery.html" . }}
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+<!-- MY CODE -->
+{{ if not .IsPage }}
+
+<footer class="base-top-margin card outline" style="margin-bottom: 40px; padding: 8px">
+   <h1><strong>Ei! Gostou do conteúdo?</strong></h1>
+   <p>Receba <strong>conteúdo novo, exclusivo e periodicamente</strong> diretamente na minha lista exclusiva!</p>
+   <p><a href="{{ .Site.Params.telegram }}" target="_blank" class="button"><i class="fa fa-2x fa-lg fa-telegram"></i> Entrar na lista do Telegram</a></p>
+</footer>
+<!-- END -->
+
+            {{ if (not (eq .Params.showTags false)) }}
+              {{ with .Params.tags }}
+                {{ $tagsLength := len . }}
+                {{ if gt $tagsLength 0 }}
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">{{ i18n "post.tagged_in" }}</span><br/>
+                    {{ partial "post/tag.html" $ }}
+                  </div>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+            {{ partial "post/actions.html" . }}
+
+<!-- MY CODE -->
+<hr/>
+<center>
+    <img alt="{{ .Site.Author.name }}" src="{{ .Site.BaseURL }}{{ .Site.Author.picture }}" class="author">
+    <h3><strong>{{ .Site.Author.name }}</strong></h3>
+    <p>{{ .Site.Params.description }}</p>
+    <p>
+        <a href="{{ .Site.Params.instagram }}" target="_blank"><i class="fa fa-2x fa-lg fa-instagram"></i></a>&nbsp;&nbsp;
+        <a href="{{ .Site.Params.twitter }}" target="_blank"><i class="fa fa-2x fa-lg fa-twitter-square"></i></a>&nbsp;&nbsp;
+        <a href="{{ .Site.Params.youtube }}" target="_blank"><i class="fa fa-2x fa-lg fa-youtube-square"></i></a>&nbsp;&nbsp;
+        <a href="{{ .Site.Params.linkedin }}" target="_blank"><i class="fa fa-lg fa-2x fa-linkedin-square"></i></a>&nbsp;&nbsp;
+        <a href="{{ .Site.Params.github }}" target="_blank"><i class="fa fa-2x fa-lg fa-github-square"></i></a>&nbsp;&nbsp;
+    </p>
+</center>
+
+<hr/>
+
+{{ $related := .Site.RegularPages.Related . | first 4 }}
+  {{ with $related }}
+  <h2 class="stories-title">Publicações Relacionadas</h2>  
+  <div class="bootstrap-wrapper">
+   <div class="container">
+    {{ range . }}
+    <div class="row" style="margin-bottom: 30px">
+    <div class="col-md-5 hide-xs">
+     <img src="{{ .Site.BaseURL }}{{ .Params.coverImage }}" alt="" class="cover" style="height:150px">
+    </div>    
+    <div class="col-md-5 col-xs-12">
+     <h5 style="color:#b22222">"{{ .Params.subtitle }}"</h5>
+     <h3 data-font="ultrabold" class="postShorten-title">
+       <a class="link-unstyled" href="{{ .Permalink }}">{{ .Title }}</a>
+     </h3> 
+    </div>
+    </div>
+    {{ end }}
+   </div>
+  </div>
+  <hr/>
+{{ end }}
+<!-- END -->
+
+            {{ if not (eq .Params.comments false) }}
+              {{ if .Site.DisqusShortname }}
+                {{ partial "post/disqus.html" . }}
+              {{ end }}
+            {{ end }}
+          </div>
+<!-- END not ISPage -->
+{{ end }}
+<!-- END -->
+        </article>
+        {{ partial "footer.html" . }}
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
+        {{ partial "post/actions.html" . }}
+      </div>
+      {{ partial "post/share-options.html" . }}
+    </div>
+{{ partial "foot.html" . }}

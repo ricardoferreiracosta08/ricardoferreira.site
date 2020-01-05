@@ -1,0 +1,143 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo {{ hugo.Version }} with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="{{ .Site.Author.name }}">
+<meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ end }}{{ if .Site.Params.keywords }}, {{ delimit .Site.Params.keywords ", " }}{{ end }}">
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+<!--
+Search Engine Crawler Tags
+-->
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
+<!-- 
+Title Tags 
+-->
+{{ if .IsHome -}}
+  <title itemprop="name">{{ .Title }}</title>
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta itemprop="name" content="{{ .Title }}" />
+  <meta name="application-name" content="{{ .Title }}" />
+{{- else if not .Params.seotitle -}}
+  <title itemprop="name">{{ .Title | humanize }} | {{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Title | humanize }} | {{ .Site.Title }}" />
+  <meta name="twitter:title" content="{{ .Title | humanize }} | {{ .Site.Title }}" />
+  <meta itemprop="name" content="{{ .Title | humanize }} | {{ .Site.Title }}" />
+  <meta name="application-name" content="{{ .Title | humanize }} | {{ .Site.Title }}" />
+{{- else -}}
+  <title itemprop="name">{{ .Params.seotitle }} | {{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Params.seotitle }} | {{ .Site.Title }}" />
+  <meta name="twitter:title" content="{{ .Params.seotitle }} | {{ .Site.Title }}" />
+  <meta itemprop="name" content="{{ .Params.seotitle }} | {{ .Site.Title }}" />
+  <meta name="application-name" content="{{ .Params.seotitle }} | {{ .Site.Title }}" />
+{{- end }}
+
+<!-- Meta Social -->
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="twitter:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:locale" content="{{ .Lang }}">
+{{ if .IsPage }}
+  {{ if not .PublishDate.IsZero }}
+    <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05" }}">
+  {{ end }}
+  {{ if not .Lastmod.IsZero }}
+    <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">
+  {{ end }}
+  {{ if not .ExpiryDate.IsZero }}
+    <meta property="article:expiration_time" content="{{ .ExpiryDate.Format "2006-01-02T15:04:05" }}">
+  {{ end }}
+  {{ with .Params.categories }}
+    {{ range $v := . }}
+      <meta property="article:section" content="{{ $v }}">
+    {{ end }}
+  {{ end }}
+  {{ with .Params.tags }}
+    {{ range $v := . }}
+      <meta property="article:tag" content="{{ $v }}">
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<meta name="twitter:card" content="summary_large_image">
+{{ with .Site.Author.twitter }}
+  <meta name="twitter:site" content="@{{ . }}">
+{{ end }}
+{{ if .Params.twitter }}
+  <meta name="twitter:creator" content="@{{ .Params.twitter }}">
+{{ else if .Site.Author.twitter }}
+  <meta name="twitter:creator" content="@{{ .Site.Author.twitter }}">
+{{ end }}
+
+{{ with .Site.Params.fbAppId }}
+  <meta property="fb:app_id" content="{{ . }}">
+{{ end }}
+{{ with .Site.Params.fbAdminIds }}
+  {{ range . }}
+      <meta property="fb:admins" content="{{ . }}">
+  {{ end }}
+{{ end }}
+
+{{ with .Params.thumbnailImage }}
+  <meta property="og:image" content="{{ . | absURL }}">
+  <meta property="twitter:image" content="{{ . | absURL }}">
+{{ end }}
+{{ with .Params.coverImage }}
+  <meta property="og:image" content="{{ . | absURL }}">
+  <meta property="twitter:image" content="{{ . | absURL }}">
+{{ end }}
+{{ with .Params.gallery }}
+  {{ range . }}
+    <meta property="og:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
+    <meta property="twitter:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
+  {{ end }}
+{{ end }}
+
+<!-- {{ if .Scratch.Get "gravatarEmail" }}
+  <meta property="og:image" content="https://www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
+{{ else if .Site.Author.picture }}
+  <meta property="og:image" content="{{ .Site.Author.picture | absURL }}">
+  <meta property="twitter:image" content="{{ .Site.Author.picture | absURL }}">
+{{ end }} -->
+
+<!-- 
+Image Tags
+-->
+
+{{ if ne .Section "post" -}}
+  <meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
+  <meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
+  <meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />
+{{ end -}}
+
+
+<!-- 
+Link Tags
+-->
+
+<base href="{{ .Permalink }}">
+<link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
+<meta name="url" content="{{ .Permalink }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+
+
+<!--
+Date Tags
+-->
+<meta property="og:updated_time" content={{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
+
+{{ with .OutputFormats.Get "RSS" }}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+{{ end }}

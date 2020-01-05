@@ -1,0 +1,60 @@
+{{ partial "head.html" . }}
+  <body>
+    <div id="blog">
+      {{ partial "header.html" . }}
+      {{ partial "sidebar.html" . }}
+      {{ if or (not (isset .Site.Params "categoryPagination")) (.Site.Params.categoryPagination) }}
+        {{ partial "post/header-cover.html" . }}
+      {{ end }}
+      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
+        class="{{ with .Params.coverimage }}hasCover{{ end }}
+               {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
+               {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
+        {{ if or (not (isset .Site.Params "categoryPagination")) (.Site.Params.categoryPagination) }}
+          <section class="postShorten-group main-content-wrap">	
+            <!-- MY CODE -->
+	    <h1><img height="45px" src="{{ .Params.logo }}" /> <a href="{{ .Permalink }}" class="link-unstyled">{{ .Params.Title }}</a></h1>
+            <hr/> <br/>
+            <p>{{ .Params.description }}</p>
+            <hr/>
+            <!-- END -->
+		
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+	   <!-- MY CODE -->
+	   {{ $cat := .Params.name }}
+           {{ $pattern := "linuxdescomplicado" }}
+           {{ if eq $cat $pattern }}  	      
+	   {{ if eq $paginator.PageNumber 1 }}
+		<footer class="base-top-margin card outline" style="margin-bottom: 40px; padding: 8px">
+		   <h1><strong>Gosta de Linux?! Receba materiais exclusivos!</strong></h1>
+		   <p>Cadastre-se gratuitamente e receba, com exclusividade, postagens e materiais ocultos para o público em geral. Inclusive, promoções e novidades em primeira mão!</p>
+		   <p><a href="http://eepurl.com/gAe0bT" target="_blank" class="button"><i class="fa fa-2x fa-lg fa-envelope-o"></i> Entrar na lista de e-mails</a></p>
+		</footer>
+	   {{ end }}
+	   {{ end }}
+            <!-- END -->
+            {{ range $paginator.Pages }}
+              <!-- MY CODE  -->
+              <!-- Before summary --> 
+              {{ .Render "my_categories_summary" }}
+              <!-- END -->
+            {{ end }}
+            {{ partial "pagination.html" . }}
+	    <!-- MY CODE -->
+            <hr/>
+             {{ partial "adsense-graficos.html" . }}
+            <hr/>
+            <!-- END -->
+          </section>
+        {{ else }}
+          <div id="archives" class="main-content-wrap">
+            <form id="filter-form" action="#">
+              <input name="date" type="text" class="form-control input--xlarge" placeholder="{{ i18n "global.search_date" }}" autofocus="autofocus">
+            </form>
+            {{ partial "archive-post.html" (where .Data.Pages "Type" "post") }}
+          </div>
+        {{ end }}
+        {{ partial "footer.html" . }}
+      </div>
+    </div>
+{{ partial "foot.html" . }}

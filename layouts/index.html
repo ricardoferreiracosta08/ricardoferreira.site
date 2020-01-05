@@ -1,58 +1,27 @@
-{{ define "main" }}
-
-<hr/>
-    {{ partial "adsense-graficos.html" . }}
-  <hr/>
-
-{{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-{{ range $paginator.Pages }} 
-
-<article style="padding-top: 40px; padding-bottom: 40px; border-bottom: 1px solid #eee;">
-    {{ if .Params.tags }}
-    <div>
-        {{ range .Params.tags }}
-        <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>  &nbsp;
-        {{ end }}
+{{ partial "head.html" . }}
+  <body>
+    <div id="blog">
+      {{ partial "header.html" . }}
+      {{ partial "sidebar.html" . }}
+      {{ partial "post/header-cover.html" . }}
+      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
+        class="{{ with .Params.coverimage }}hasCover{{ end }}
+               {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
+               {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
+        <section class="postShorten-group main-content-wrap">
+          {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
+          {{ range $paginator.Pages }}
+            {{ .Render "summary" }}
+          {{ end }}
+          {{ partial "pagination.html" . }}
+	<!-- MY CODE -->
+	  <hr/>
+	   {{ partial "adsense-graficos.html" . }}
+	  <hr/>
+	<!-- END -->
+        </section>
+        {{ partial "footer.html" . }}
+      </div>
     </div>
-    {{ end }}
+{{ partial "foot.html" . }}
 
-    <h2 class="post-title"> 
-        <a hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ .Title }}</a>
-    </h2>
-
-    <p id="post-date">
-      {{ partial "post_meta.html" . }}
-    </p>
-
-<!--
-    {{ if .Params.subtitle }}
-    <h4 class="post-subtitle">
-       {{ .Params.subtitle }}
-    </h4>
-    {{ end }}
--->
-<!--    
-    {{ if .Params.image }}
-      <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-title" />
-    {{ end }}    
--->
-
-    <div class="post-entry">
-        {{ .Summary }}
-        <a href="{{ .Permalink }}" class="post-read-more">[Leia mais]</a>
-    </div>
-
-</article>
-
-{{ end }} 
-
-{{ partial "pagination.html" .}}
-<!--{{ template "_internal/pagination.html" . }}-->
-
-{{ if .Site.Params.fixed_ads }}
-	<div class="fixed notmobile">
-		<i class="fas fa-rocket"></i> <a href="#" target="_blank">[DOCKER] Sabe a diferença entra as instruções ENTRYPOINT e CMD?</a>
-	</div>
-{{ end }}
-
-{{ end }}

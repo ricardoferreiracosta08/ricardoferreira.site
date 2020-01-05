@@ -1,0 +1,119 @@
+baseurl = "https://ricardoferreira.site/"
+title = "Ricardo Ferreira"
+
+# Pagination - deve vim primeiro
+paginate = 4
+
+# Language
+languageCode = "pt-br"
+DefaultContentLanguage = "br"
+#defaultContentLanguageInSubdir = true # url com /br forçado
+
+[languages]
+  [languages.br]
+    title = "Ricardo Ferreira"
+    languageName = "Portuguese"
+    weight = 1
+  [languages.en]
+    title = "Ricardo Ferreira"
+    languageName = "English"
+    weight = 2
+
+defaultExtension = "html"
+newContentEditor = "nano"
+theme = "myhyde"
+pygmentsStyle = "native"
+
+# SEO
+#enableRobotsTXT = true #to permit create file on static folder
+canonifyurls = "true"
+# pages with .html
+# uglyurls = true
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# posts - it should rename to same name of content folder
+[permalinks]
+  posts = "/:year/:month/:slug/"
+
+# opens external links absolute links in a new window or tab. 
+[Blackfriday]
+  hrefTargetBlank = true
+
+[Menus]
+  main = [
+      {Name = "Sobre", URL = "/sobre"},
+      {Name = "Linux Descomplicado", URL = "/categories/LinuxDescomplicado"},
+      {Name = "Meus Cursos", URL = "/cursos"},
+      {Name = "Minhas Palestras", URL = "#"}
+  ]
+
+[params.adsense]
+client = "ca-pub-5245300802542741"
+inArticleSlot = "3200652252"
+graficosSlot = "6376166852"
+
+[params]
+        fixed_ads = false
+        disqusShortname = "ricardoferreira"
+        googleAnalytics = "UA-151634076-1"
+        copyright = "Built using Hugo v0.59.0. Content managed with Netlify CMS. Hosted by Netlify. Theme adapted from Hyde"
+        description = "Entusiasta por novas tecnologias. Ciência da Computação por formação, Palestrante e Professor de ofício. Linux como paixão."
+#       description = "Bachelor degree in Computer Science. Speaker, instructor and professor by vocation. Infrastructure Linux SysAdmin by training. Passion for Linux"
+#	Linux SysAdmin | Infrastructure | Palestrante | Professor"
+        sitename = "Ricardo Ferreira"
+	ogimage = ""
+        author = "Ricardo Ferreira"   
+	perfil = "images/perfil-02.jpeg"
+	hideReadingTime = "true"
+	youtube = "https://www.youtube.com/channel/UCNzijOvZv4zKbwojY9LmheQ"
+	facebook = ""
+	github = "https://github.com/ricardoferreiracosta08/"
+	serverFault = "https://serverfault.com/users/547400/ricardo-ferreira"
+        linkedin = "https://www.linkedin.com/in/ricardo-ferreira-costa"
+	instagram = "https://instagram.com/ricardoferreira.tec"
+	twitter = "https://twitter.com/rferreira_tec"
+	usertwitter = "@rferreira_tec"
+#	tagline = "Por Ricardo Ferreira"
+#	defaultDescription = "Linux Descomplicado para Sysadmin's"
+	defaultKeywords = "sysadmin, networking, virtualization, webserver, monitoring, database, linux, docker"
+
+# Built using Hugo v0.59.0. Content managed with Netlify CMS. Hosted by Netlify.
+
+#######################
+# Old configs
+#######################
+
+#[[menu.main]]
+#    name = "Database"
+#    pre = "<i class='fa fa-database'></i> "
+#    weight = -110
+#    identifier = "Database"
+#    url = "/categories/database"
+#[[menu.main]]
+#    name = "Monitoring"
+#    pre = "<i class='fa fa-area-chart'></i> "
+#    weight = -100
+#    url = "/categories/monitoring"
+#[[menu.main]]
+#    name = "Networking"
+#    pre = "<i class='fa fa-exchange'></i> "
+#    weight = -100
+#    url = "/categories/networking"
+#[[menu.main]]
+#    name = "Virtualization"
+#    pre = "<i class='fa fa-cubes'></i> "
+#    weight = -100
+#    url = "/categories/virtualization"
+#[[menu.main]]
+#    name = "Webserver"
+#    pre = "<i class='fa fa-cloud'></i> "
+#    weight = -100
+#    url = "/categories/webserver"
+
+#[author]
+#	name = "Sysadmin | Linux Descomplicado"
+
+

@@ -1,0 +1,21 @@
+<div class="post-header main-content-wrap {{ if $.Params.metaalignment }}text-{{ $.Params.metaalignment }}{{ else }}text-left{{ end }}">
+  {{ with $.Params.link }}
+    <h1 itemprop="headline"> 
+      <a class="link" href="{{ . | absURL }}" target="_blank" itemprop="url">
+        {{ $.Title }}
+      </a>
+    </h1>
+  {{ else }}
+    <h1 class="post-title" itemprop="headline">
+      {{ $.Title }}
+    </h1>
+    <!-- MY CODE -->
+    {{ if .Params.coverimage }}
+      <h2 class="post-subtitle">"{{ .Params.subtitle }}"</h2>
+    {{ else }}
+      <h5 style="color:#b22222">{{ with .Params.subtitle }}"{{ . }}"{{ end }}</h5>
+    {{ end }}
+    <!-- END -->
+  {{ end }}
+  {{ partial "post/meta.html" . }}
+</div>
