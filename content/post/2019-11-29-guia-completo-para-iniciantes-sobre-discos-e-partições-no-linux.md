@@ -93,7 +93,12 @@ Contudo, conforme a **tabela de partições de cada disco**, características im
 
 #### 3. TABELA DE PARTIÇÕES
 
-Uma tabela de partição descreve o **"layout" (aparência) das partições de um disco rígido** . Atualmente, existem dois padrões de tabela de partição de disco: **MBR (Master Boot Record)** e **GPT (GUID Partition Table)** . **MBR**, também conhecido como **ms-dos**, e é o padrão mais comum e antigo - suportado pela BIOS. Já o **GPT** veio depois - suportado pela interface UEFI, presente computadores modernos.
+Uma tabela de partição descreve o **"layout" (aparência) das partições de um disco rígido** . 
+
+Atualmente, existem 2 padrões de tabela de partição de disco: **MBR (Master Boot Record)** e **GPT (GUID Partition Table)** . **MBR** também conhecido como rótulo **msdos**, pela maioria dos formatadores de disco (fdisk, gparted e outros), por conta 
+do formato MBR ter sido introduzido junto com o IBM PC DOS 2.0, em março de 1983. MBR é o padrão mais comum e antigo - suportado pela BIOS. 
+
+Já o **GPT** veio depois - suportado pela interface UEFI, presente computadores modernos.
 
 O **esquema de particionamento MBR** é o que você encontrará em computadores mais antigos. Computadores mais recentes suportam ambos os esquemas (MBR e GPT), por isso ainda é possível usar um esquema de partição **MBR** nesses computadores. As **principais limitações do MBR** levaram ao desenvolvimento da **GPT** . Essas limitações são:
 
