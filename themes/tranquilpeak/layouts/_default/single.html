@@ -65,13 +65,15 @@
 
 {{ $related := .Site.RegularPages.Related . | first 4 }}
   {{ with $related }}
-  <h2 class="stories-title">Publicações Relacionadas</h2>  
+  <h2 class="stories-title">Publicações Relacionadas</h2>  <br/>
   <div class="bootstrap-wrapper">
    <div class="container">
     {{ range . }}
     <div class="row" style="margin-bottom: 30px">
     <div class="col-md-5 hide-xs">
-     <img src="{{ .Site.BaseURL }}{{ .Params.coverImage }}" alt="" class="cover" style="height:150px">
+     <a class="link-unstyled" href="{{ .Permalink }}"> 
+      <img src="{{ .Params.thumbnailImage }}" alt="" class="cover" style="height:150px">
+     </a>
     </div>    
     <div class="col-md-5 col-xs-12">
      <h5 style="color:#b22222">"{{ .Params.subtitle }}"</h5>

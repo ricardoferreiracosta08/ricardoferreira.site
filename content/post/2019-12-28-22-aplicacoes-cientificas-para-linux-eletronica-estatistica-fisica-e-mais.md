@@ -16,11 +16,12 @@ summary: >-
 readingtime: '10'
 slug: aplicacoes-cientificas-para-linux-eletronica-estatistica-fisica-e-mais
 date: 2019-12-28T21:25:12.051Z
-coverImage: /images/app-cientificas.jpg
-coverCaption: Photo by Wynand van Poortvliet on Unsplash
-coverSize: partial
-autoThumbnailImage: true
+thumbnailImage: "https://lh3.googleusercontent.com/sWK75pwEOSUvx5GNsp11yaYeSqQMMuMsGsJpq9TDwpa5BDH0IftTF9Cg72s120CX0GLLBKEpH55uSmS1Ykf0a_P8Aw5Uom6AFVwrDRt2W8TSU_2JVFtM-iGOSecH4ie4PQiPsP3NtvbxkJk1ZvpZ9l5YXdz0JtoqeXJdJTfCsw490ObDoba4373-usSIISu8caTpFQjaIv--oshmUD6zq3NQ5a0JfQ87emri_fg-r8QaUR-vc0sKirZMIuRFjfFNEWeI-qvlz5pH1VLHaw3vuQn0F6v3M0M10hEbH9VtlaH77P0l3u8ubxVqS7ES5JDChm9hqDAOJXzS3VGSvX8jz9VL7t_GGlhfosMYv3Da0AR00RSB6aJcgVPyOw4xE0ZJ4ePJFGxlzRRvsLdPLYdp6932kMX1jgCw-bgMzMpaepdWUi6jhZ77ZuMIHD73K_RCMi0hIa4YbTgYgghYF3Vo1C4NT6qB2frvEH393i1ODL6ctd_xghpl44pkl0T8ddkXlSbwts4A4KOeMlEEAhZrKXjjYs2kiBEXzLtc1TP5Do5m8boGCFrD2TWVRS2SDYEm7OvjLSo4sbxDjQKs2Hg-xL8p2_ZliLbLuWf34dKrLE9cWcLlhjpnXjr1cgQsuHh2BNty4H5PL3JCjcCq-bCpi3TD8ymdjBwkhbeq9zmIjh-yH7gjyfGSeAo=w1424-h949-no"
 thumbnailImagePosition: top
+coverImage: "https://lh3.googleusercontent.com/vbFDgdxFOpXfNfcBK_RXX0VWLKrSgQY_hyxSg8Hgm7glbhxy3oRWsThBZIPZS5gDwOEzccZhOON3S0W-_8K8QwqnvoAxMsDLF194WfLLthGNPUxFLDCPipZzTxiVB3i0ddMq7AuQkwz94usbhBrSlpHuivi-Pd4kJeJzHCSuh2ujMud1GbTB558eRfzyrjJw_AMCtgMK87rX7VUhbS9c0y-u_pNpNbC_DviskHg_C7RDP2lO8tsBaLDmhAKJMku1C5NxKEa47FHdOUFdeVvGeAr3ZVNcU4OZxzWWUFFaxqY7DPSFNPCiBZPu7p6ASqq-XahfK9Kkx0LfjgPM3-KrRSgIhhDA4HXV9Ka5er4AWI-ARhaoho3pXbbGoB19fozARCuyslVOFjnXLBLUjIOD7RH0J4vSsgDWVkxCUWsd_cNkeu4nLzX_yxjSt9unZeub3ngvI_GtIqPBgdzsDhz0IRh9Y2zW4H9Il-2GQfvCjOlZ_WZyfcxoQcik0PDz1aHgF3MEU7apHhdTbnBpS2GcwxgwBY3y_jJcX2959fhrMB0N1PJyPejgttadybSjYJDjEMkM5LEon_F4ksHzKIkllIK6e6C-sRhrlqmGfh1om3BNRlt8iVnUIBlPpPqNlTakLc8HEJwblOPxfhaRLwUUzPuxOWBLO_Lcu4ztRAcQXcxnwHORjW5vCh4=w1599-h899-no"
+coverCaption: Foto de Lucas Pezeta no Pexels
+coverSize: partial
+# somente se nao tiver thumb definido - ==> autoThumbnailImage: true
 categories:
   - LinuxDescomplicado
 tags:
@@ -34,7 +35,6 @@ keywords:
   - ensino
   - softwarelivre
   - linux
-featured: true
 ---
 
 O sistema Linux, como qualquer outro SO, possui uma gama de softwares disponíveis para determinado propósito; bem como: multimídia, internet, gráficos e desenvolvimento. 

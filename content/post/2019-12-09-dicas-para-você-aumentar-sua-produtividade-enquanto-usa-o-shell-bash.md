@@ -11,7 +11,13 @@ summary: >-
   ao usar o shell bash. Maneiras para ser mais eficiente em suas tarefas.
 slug: aumentar-produtividade-enquanto-usa-o-shell-bash
 date: 2019-12-09T18:00:43.472Z
-image: /images/photo_1550439062_609_4ubzu.jpg
+#image
+thumbnailImage: "https://lh3.googleusercontent.com/7CyfQ2uCoa5xoRBTPJKSCGScmnImejsZdqO8Tcu6nohA3-KmgpGH4bg0a_RkkK7m24Qf5ttRvt6jfXLpXeAg7l48spgp0JZRGSNVdKkcuR7pxmNp4cYE_jXfIAqQRoUwVdGzNWnp7-M4Uwo04s11eqFlMFDtwrdDg0M2h8asc2uXflR0kVf5xv87dqXOC3nlUYJaf8rUNwJ7LuZurPuCY2rSnNewJTWytSiDCthy1Xl4V4KPNbMh4296SoAwWMfDHt4YfVhwBO4hhdtpbX7jaK5Sm8x46Rgoabv_CwEV1w3H0MU2wikFGT7ioTdNKC4skLLA8ZJNwYQbWmWvohfLS15djXhwvoj-i8O_Zyv8wa6VX782xGawjDpN7TX6KerCXym_Nr1ZSip8EwKTe2LiTUh4fRt2mPViIbTuTZpcSuvT2LrKW-NZRROzYK_V5SVzhcMNSRXdA079A3wuhouFAA7nJ4-EtLgmekgrkOuW-27kM33WE_qPrY5KAmD6wgJ87w0_bse1T9-cxWHOyaLInXjM_dsZnBuZVSy3sRPVmYBm0R1p9aDB-7GAv2w-2GcaXFsFTXWejBk60sVsYDOzufw-wU55Yy2rWsOQiZ923e5A2qaQEPSIFd6myb28Wuqwe1XNYpR4RfuWJha3fLmfy3Be7Y7yHBfm39p9SuDFYZR999zZfwrd8E8=w1350-h900-no"
+thumbnailImagePosition: left
+# coverImage:
+# coverCaption: Foto de ...
+# coverSize: partial
+# somente se nao tiver thumb definido - ==> autoThumbnailImage: true
 categories:
   - LinuxDescomplicado
 tags:
@@ -25,9 +31,7 @@ keywords:
   - terminal
 ---
 
-<div class="youtube">
-<iframe class="video" src="https://www.youtube.com/embed/cZ8vxzNQeMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{< youtube cZ8vxzNQeMA >}}
 
 Se sua rotina no Linux é definida por **executar comandos para agilizar suas operações**, essas dicas podem ser muito úteis para você aumentar sua produtividade ao usar o shell Bash. 
 

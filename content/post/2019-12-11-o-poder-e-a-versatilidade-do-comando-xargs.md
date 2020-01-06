@@ -15,7 +15,13 @@ summary: >-
   entra na jogada
 slug: o-poder-e-a-versatilidade-do-comando-xargs
 date: 2019-12-11T18:35:51.240Z
-image: /images/xargs_1140x570.jpg
+#image
+thumbnailImage: "https://lh3.googleusercontent.com/e-yz3o92FvaBK_RoyADlHUoiP794-9Elhu7D97gAbCJEc8U0jAdllXupj9LqmfcHwoDWZbZWnQeN2ekGtT9aZVzuNE6AUPxPZHhftGdU2bMi6HtmIAcLcPXqRLy6kqyzMwmMjPyvI35wVFQrZ0VJgfK0ZWGXvhAL6u55gcW_yVAjnuv2hcu73_957zUdpADxLHwDY-fOICwn3RkWbGqH5DZ4BC4lsgLbHY2PBjkUSEKYa1tlh0I827hQz62uHIGbkDP9MTeTwuJQ0tzYLY_5ghSsyenAs3qcZWB1wy-CgRM4Jh8gkYc7lejp8Yq-Jcz13GZYuwl0Npj8dceuUNTpA4ITnwB2qp_G07qmHy9fJ_7cXgbUI09BZCodFHBaiK9xPv-FTEnjkBoOqHtp_yaPaZFocbBseyFPwr75z3IpsZBi12kJN0CE0IBFaLlbkC1hes1O7IV9laMNCw4iSKZ6b0NDQI1c1N17LvOqw4mnNV_imdRgs62FNG4cHnwx2Q2RPd337bQxp9F1pAiu0pe1EdnVkA4UU3oqjRSd7OOxS0CM91P1eyPJY4DDl54LyZO5XgEUUX3R3YQMrW8vBNgzRh92oE3tHGkJO4_77THzKuPwSkJ5pi4nC8ftU-wt4o46WWC9EbntLSx67SitmdwLbU1vkMj17CW52gSZdRMSQvXg1HlYqV5MU3M=w1140-h570-no"
+thumbnailImagePosition: left
+# coverImage:
+# coverCaption: Foto de ...
+# coverSize: partial
+# somente se nao tiver thumb definido - ==> autoThumbnailImage: true
 categories:
   - LinuxDescomplicado
 tags:
@@ -31,9 +37,7 @@ keywords:
   - stderr
   - pipelines
 ---
-<div class="youtube">
-<iframe class="video" src="https://www.youtube.com/embed/rw50a6-b9As" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{< youtube rw50a6-b9As >}}
 
 Gosto muito da **[praticidade do terminal](https://www.linuxdescomplicado.com.br/2017/01/algumas-ferramentas-de-terminal-que-podem-ser-mais-praticas-do-que-os-aplicativos-graficos.html)**. Para alguns, um pavor; para outros uma obrigação. No meio disso, existem comandos que aumentam bastante nossa produtividade e que você não deveria refutar isso.
 
@@ -64,7 +68,7 @@ Ele tem função primeira **receber uma entrada** de uma lista de parâmetros de
 Em resumo, o xargs pode pegar a saída de um comando e enviá-lo para outro como parâmetros ! :)
 
 {{< highlight Bash shell scripts >}}
-comando | xargs [opções] [comando] [lista_parâmetros comando anterior]
+ $_ comando | xargs [opções] [comando] [lista_parâmetros comando anterior]
 {{< /highlight >}}
 
 ## Exemplos
