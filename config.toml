@@ -59,7 +59,7 @@ graficosSlot = "6376166852"
   # gravatarEmail = "thibaud.lepretre@gmail.com"
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = "images/perfil-02.jpeg"
+  picture = "https://lh3.googleusercontent.com/E82bZRGjM6Z2hme0jsW2jvJbHKVgXG3On1eMHg_x7TouxbcfeZsemr2hOQbuQggVm-G7DZRzoDLDPSGuYrI7MlG0Pz3T-Zlf-EYqFeHYcJyWr-1QTbkSOlHzemg9pghzt8eXy-i1tFJMDXXUoywAcGB232MsyYknV3lUvN1BTXSMYYLX6dvgfkeDdCcws4Tfxs-9f6T9QuVYVcc1t-Rrp4NlscoD6pVnd6gFpVqiTDurM-WJDTCtE_6cuBZplgRyGLjc4gHLlqHo_YIPSY-QCe0AXwEurvT6fBk0Hi1qwWFYd5p2PtM__uHq_SJBeAscmtvONYZuFmFNbYFQsTrBvO2nlSyXB4StlgTur_ffFfXQM1rqFveT02031bKLV66YjfFgjDFL2Vx3-W2Fvz58MbCRzAOy9_3HCi1hvjnJwL05C4NSoRO132PeM7vaNIewRpib8vNulrOt0NrPYKidfA59w6bc8R3bB9HT2A-wl5oKsk_PmRhuP8l-QoVgwPTAPJR-dRRLFrf3BIR1Dn4HOZz5NMf2QVrxzMPS3KpeVI3vABerwj9T_3huBwSYlbVUcVLaJ9T-nGrh-SjAN3MpCb4RGjENRk5cNCPp_cBoH0i4ud7ShD92ijdOyzRhs5XPe3P10prDZh2PVU1AsWNWijHZsVBPR6sR6fHm5j8r--lVtd_sV-aFZ0g=w854-h851-no"
   # picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
   # Your Twitter username without the @. E.g : tranquilpeak
   twitter = "rferreira_tec"
