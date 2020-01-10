@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Saiba como, facilmente, ocultar arquivos e pastas no Linux
-seotitle: Como, facilmente, ocultar arquivos e pastas no Linux
+seotitle: Como ocultar arquivos e pastas no Linux - sem programa, recurso extra ou dificuldade
 subtitle: A coisa mais fácil que você fez ou vai fazer no Linux
 description: >-
   Ocultar um arquivo e pastas no sistema de arquivos do Linux é algo tão simples que nem precisa instalar ou 
@@ -64,6 +64,8 @@ Mas, caso queira tornar o arquivo ou pasta novamente “visível” basta remove
 Para muitos isso **pode ser uma falha ou vulnerabilidade do sistema**. De [acordo com o Linux Audit](https://linux-audit.com/linux-history-how-dot-files-became-hidden-files/), tudo “começou” há muitos anos, quando os primeiros sistemas de arquivos foram criados no UNIX.
 
 Para permitir a navegação fácil, um único arquivo com um ponto (.) foi adicionado em cada diretório. Em segundo lugar um arquivo de ponto duplo (..) foi adicionado para mover facilmente para cima na estrutura de diretório. Como esses arquivos não tinham dados reais neles, um “recurso” rápido foi adicionado ao binário “ls” – comando responsável por listar conteúdo de diretórios nos sistemas Linux.
+
+[ADSENSE]
 
 O recurso, adicionado ao **binário ls**, envolveu **a verificação do primeiro caractere**. Se isso fosse um ponto, ele deve ser ignorado. E funcionou muito bem.
 
