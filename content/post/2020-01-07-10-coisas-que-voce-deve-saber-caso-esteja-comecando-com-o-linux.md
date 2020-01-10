@@ -13,7 +13,7 @@ readingtime: '10'
 slug: 10-coisas-que-voce-deve-saber-caso-esteja-comecando-com-o-linux
 date: 2020-01-07T15:25:12.051Z
 thumbnailImage: "https://lh3.googleusercontent.com/G_n6ti5VZIkoVKh-Df1wMN3rlRhecS4cINwwa0qCi1k1hNRH9pDu1rtDGGTbxCgfU8vSBSJ66smmpPS6nQ=w1000-no-tmp.jpg"
-thumbnailImagePosition: top
+thumbnailImagePosition: left
 coverImage: "https://lh3.googleusercontent.com/G_n6ti5VZIkoVKh-Df1wMN3rlRhecS4cINwwa0qCi1k1hNRH9pDu1rtDGGTbxCgfU8vSBSJ66smmpPS6nQ=w1000-no-tmp.jpg"
 coverCaption: Foto de Pixabay no Pexels
 coverSize: partial
