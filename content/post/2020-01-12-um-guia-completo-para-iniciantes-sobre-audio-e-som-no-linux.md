@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Guia completo para iniciantes sobre áudio e som no Linux
-seotitle: Tudo que precisa para entender sobre áudio e som no Linux
+seotitle: Tudo que precisa saber para entender sobre áudio e som no Linux
 subtitle: Das vibrações do som a geração do áudio
 description: >-
   No Linux há muitos programas que podem ajudar nas tarefas mais profissionais. Mas, é importante entender como funciona o áudio e som no Linux.
