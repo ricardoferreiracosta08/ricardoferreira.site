@@ -135,6 +135,8 @@ Talvez as aplicações mostradas até agora não sirvam por completo para você.
 
 #### Rsnapshot
 
+[ADSENSE]
+
 Ferramenta para sincronização de um sistema de arquivos local e remoto. É um utilitário de backup instantâneo (snapshot) baseado no rsync. Ele torna-se mais fácil para realizar backup instantâneos periódicos de máquinas locais e máquinas remotas através de SSH. A ferramenta faz uso extensivo de hard-links, sempre que possível, para reduzir significativamente o espaço em disco usado para armazenar os backups.
 
 <div class="social-connect-widget">
@@ -142,6 +144,8 @@ Ferramenta para sincronização de um sistema de arquivos local e remoto. É um 
 </div>
 
 #### Obnam
+
+[ADSENSE]
 
 Obnam é um programa de backup seguro e fácil de usar. Os backups podem ser armazenados em discos rígidos locais ou remotos, através do protocolo SFTP. Entre algumas características, destaco: suporte à snapshots (backups instantâneos), Deduplicação de dados e backups criptografados, usando o GnuPG .
 
