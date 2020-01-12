@@ -10,7 +10,7 @@ summary: >-
   Ocultar um arquivo e pastas no sistema de arquivos do Linux é algo tão simples que nem precisa instalar ou 
   configurar algo no sistema. Desde dos primórdios do sistema existe um recurso amplamente usado para ocultar arquivos e pastas no Linux. 
 readingtime: '3'
-slug: aplicacoes-cientificas-para-linux-eletronica-estatistica-fisica-e-mais
+slug: saiba-como-facilmente-ocultar-arquivos-e-pastas-no-linux
 date: 2020-01-10T21:25:12.051Z
 thumbnailImage: "https://lh3.googleusercontent.com/le-0dCFAYv0O5hoMLs7YkZy5YnzrLpcqM5exTxv-Ey9Hm3gj7V5iHsjupREv-NqHFn-lWTKIkHld_yWB4A=w1000-no-tmp.jpg"
 thumbnailImagePosition: left
