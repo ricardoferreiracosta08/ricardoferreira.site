@@ -13,7 +13,7 @@ readingtime: '10'
 slug: conheca-algumas-maneiras-para-restaurar-seu-sistema-linux-em-caso-de-falhas
 date: 2020-01-12T12:25:12.051Z
 thumbnailImage: "https://lh3.googleusercontent.com/I1mRKE7Wu4CB6fGrLrdb6XjKnoARCRXM8JoDnOm4rWNgXqWgbBq9Hjm1GQIcvsF2hE_cBTPkzSqFKFnqZQ=w1000-no-tmp.jpg"
-thumbnailImagePosition: top
+thumbnailImagePosition: left
 coverImage: "https://lh3.googleusercontent.com/I1mRKE7Wu4CB6fGrLrdb6XjKnoARCRXM8JoDnOm4rWNgXqWgbBq9Hjm1GQIcvsF2hE_cBTPkzSqFKFnqZQ=w1000-no-tmp.jpg"
 coverCaption: Foto de chuttersnap no Unsplash
 coverSize: partial

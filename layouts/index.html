@@ -9,6 +9,9 @@
                {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
         <section class="postShorten-group main-content-wrap">
+	  <!-- MY CODE -->
+	  {{ partial "adsense-graficos.html" . }}
+          <!-- -->
           {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
           {{ range $paginator.Pages }}
             {{ .Render "summary" }}
