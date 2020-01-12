@@ -13,7 +13,7 @@ readingtime: '3'
 slug: aplicacoes-cientificas-para-linux-eletronica-estatistica-fisica-e-mais
 date: 2020-01-10T21:25:12.051Z
 thumbnailImage: "https://lh3.googleusercontent.com/le-0dCFAYv0O5hoMLs7YkZy5YnzrLpcqM5exTxv-Ey9Hm3gj7V5iHsjupREv-NqHFn-lWTKIkHld_yWB4A=w1000-no-tmp.jpg"
-thumbnailImagePosition: top
+thumbnailImagePosition: left
 coverImage: "https://lh3.googleusercontent.com/le-0dCFAYv0O5hoMLs7YkZy5YnzrLpcqM5exTxv-Ey9Hm3gj7V5iHsjupREv-NqHFn-lWTKIkHld_yWB4A=w1000-no-tmp.jpg"
 coverCaption: Foto de Aron Van de Pol no Pexels
 coverSize: partial
@@ -21,12 +21,14 @@ coverSize: partial
 categories:
   - LinuxDescomplicado
 tags:
-  - ensino
-  - softwarelivre
-  - programas
+  - ocultar
+  - arquivos
+  - pastas
 keywords:
-  - matemática
-  - economia
+  - ocultar
+  - arquivos
+  - pastas
+  - linux
 ---
 
 Independentemente do motivo, provavelmente, você já quis ocultar algum arquivo ou pasta em seu sistema Linux. Entre algumas maneiras para fazer isso, mostrarei o processo “menos complicado” para fazer isso; e de maneira rápida, simples e eficiente.
