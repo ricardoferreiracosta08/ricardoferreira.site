@@ -106,6 +106,8 @@ MAME (Multiple Arcade Machine Emulator) pode emular jogos de arcade em máquinas
 
 ## E outros...
 
+[ADSENSE]
+
 #### <a href="http://www.libretro.com/" target="_blank">RetroArch</a>
 #### <a href="http://nestopia.sourceforge.net/" target="_blank">Nestopia</a>
 #### <a href="http://www.snes9x.com/" target="_blank">Snes9x</a>
