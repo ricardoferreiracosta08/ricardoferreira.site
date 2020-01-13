@@ -226,7 +226,7 @@ graficosSlot = "6376166852"
 	url= "/sobre"
 
 [params.footer]
-	copyright = "Built using Hugo v0.62.0. Content managed with Netlify CMS. Hosted by Netlify. Theme adapted from Hyde"
+	copyright = "Built using Hugo v0.62.0. Content managed with Netlify CMS. Hosted by Netlify. Theme adapted from TranquilPeak"
 	# Built using Hugo v0.59.0. Content managed with Netlify CMS. Hosted by Netlify.
 
 
