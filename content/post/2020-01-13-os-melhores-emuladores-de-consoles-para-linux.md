@@ -24,6 +24,7 @@ tags:
   - console
   - emulador
   - jogos
+  - desktop
 keywords:
   - console
   - emulador

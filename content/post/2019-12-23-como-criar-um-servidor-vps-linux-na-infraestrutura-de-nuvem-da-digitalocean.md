@@ -26,6 +26,7 @@ tags:
   - cloud
   - vps
   - digitalocean
+  - trabalho
 keywords:
   - linux
   - cloud

@@ -22,6 +22,7 @@ tags:
   - som
   - alsa
   - pulseaudio
+  - iniciante
 keywords:
   - som
   - audio

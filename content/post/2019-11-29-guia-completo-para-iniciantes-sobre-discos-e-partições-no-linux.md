@@ -22,6 +22,7 @@ categories:
 tags:
   - mbr
   - gpt
+  - inciante
 keywords:
   - linux
   - discos

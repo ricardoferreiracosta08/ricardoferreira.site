@@ -28,6 +28,7 @@ tags:
   - ensino
   - softwarelivre
   - programas
+  - desktop
 keywords:
   - matemática
   - economia

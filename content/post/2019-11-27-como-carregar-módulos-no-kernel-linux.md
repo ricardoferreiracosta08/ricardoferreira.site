@@ -28,6 +28,7 @@ tags:
   - kernel
   - lsmod
   - modprobe
+  - terminal
 keywords:
   - linux
   - kernel

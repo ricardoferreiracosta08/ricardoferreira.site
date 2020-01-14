@@ -29,6 +29,7 @@ tags:
   - stdin
   - stdout
   - pipelines
+  - terminal
 keywords:
   - xargs
   - linux

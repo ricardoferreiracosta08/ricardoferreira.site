@@ -22,6 +22,7 @@ categories:
 tags:
   - tar.gz
   - compilação
+  - iniciante
 keywords:
   - linux
   - tar.gz

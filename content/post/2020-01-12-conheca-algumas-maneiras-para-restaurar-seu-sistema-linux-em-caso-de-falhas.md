@@ -23,6 +23,7 @@ categories:
 tags:
   - backup
   - snapshots
+  - desktop
 keywords:
   - backup
   - snapshots

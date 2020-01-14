@@ -28,6 +28,7 @@ tags:
   - snap
   - flatpak
   - tar.gz
+  - iniciante
 keywords:
   - appimage
   - tar.gz

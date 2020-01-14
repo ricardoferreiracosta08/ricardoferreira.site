@@ -24,6 +24,7 @@ tags:
   - ocultar
   - arquivos
   - pastas
+  - iniciante
 keywords:
   - ocultar
   - arquivos

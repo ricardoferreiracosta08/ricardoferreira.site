@@ -28,6 +28,7 @@ tags:
   - ifconfig
   - iproute2
   - ip
+  - terminal
 keywords:
   - iproute
   - ifconfig
