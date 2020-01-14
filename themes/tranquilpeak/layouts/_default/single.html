@@ -27,11 +27,20 @@
 <!-- MY CODE -->
 {{ if eq .Section "post" }}
 
-<footer class="base-top-margin card outline" style="margin-bottom: 40px; padding: 8px">
+ {{ if in .Params.categories "LinuxDescomplicado" }}
+   <footer class="base-top-margin card outline" style="margin-bottom: 40px; padding: 8px">
+   <h1><strong>Gosta de Linux?! Receba materiais exclusivos!</strong></h1>
+   <p>Inscreva-se gratuitamente e receba, com exclusividade, postagens e materiais ocultos para o público em geral. Inclusive, promoções e novidades em primeira mão!</p>
+   <p><a href="http://bit.ly/lista_emails-LD" target="_blank" class="button"><i class="fa fa-2x fa-lg fa-envelope-o"></i> Entrar na lista de e-mails</a></p>
+   </footer>
+ {{ else }}
+   <footer class="base-top-margin card outline" style="margin-bottom: 40px; padding: 8px">
    <h1><strong>Ei! Gostou do conteúdo?</strong></h1>
    <p>Receba <strong>conteúdo novo, exclusivo e periodicamente</strong> diretamente na minha lista exclusiva!</p>
    <p><a href="{{ .Site.Params.telegram }}" target="_blank" class="button"><i class="fa fa-2x fa-lg fa-telegram"></i> Entrar na lista do Telegram</a></p>
-</footer>
+   </footer>
+ {{ end }}
+
 <!-- END -->
 
             {{ if (not (eq .Params.showTags false)) }}
