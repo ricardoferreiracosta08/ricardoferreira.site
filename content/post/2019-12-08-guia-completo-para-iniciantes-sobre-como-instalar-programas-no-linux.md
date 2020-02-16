@@ -45,31 +45,9 @@ Instalar programas no Linux, se tornou a coisa **mais simples** de se fazer hoje
 
 Atualmente, **existem projetos** que visam a **universalização do modo e distribuição de programas** para os sistemas Linux. Entre eles, destaco o [Snap](https://www.linuxdescomplicado.com.br/2016/06/pacotes-snap-do-ubuntu-podem-se-tornar-formato-universal-para-todas-as-distribuicoes-linux.html) e [Flatpak](https://www.linuxdescomplicado.com.br/2016/06/anuncio-do-flatpak-o-futuro-das-aplicacoes-linux-provalvelmente-o-concorrente-direto-ao-snap-da-canonical.html); Canonical e Red Hat como mantenedoras, respectivamente.
 
-**RECOMENDO QUE LEIA** 
-
-***
-
-> [5 Erros que todo usuário Linux cometeu ao aprender Linux](https://www.linuxdescomplicado.com.br/2019/08/erros-que-todo-usuario-linux-cometeu-ao-comecar-aprender-linux.html) 
-
-> [Guia completo para iniciantes sobre discos e partições no Linux](https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/) 
-
-> [Guia completo para iniciantes sobre áudio e som no Linux](https://www.linuxdescomplicado.com.br/2019/08/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux.html)
-
-***
-
 ## Instalar programas no Linux
 
 O **histórico de desenvolvimento e publicação** de aplicações nos sistemas Linux é amplamente discutido. A criação dos gerenciadores de pacotes (APT e [**DNF**](https://www.linuxdescomplicado.com.br/2015/05/dnf-saiba-mais-sobre-o-novo-gerenciador-de-pacotes-do-fedora.html), por exemplo) foi repensada por conta de propostas para "empacotamento" de aplicações Linux, vide **[Snap](https://www.linuxdescomplicado.com.br/2016/06/pacotes-snap-do-ubuntu-podem-se-tornar-formato-universal-para-todas-as-distribuicoes-linux.html)**, **[Flatpak](https://www.linuxdescomplicado.com.br/2016/06/anuncio-do-flatpak-o-futuro-das-aplicacoes-linux-provalvelmente-o-concorrente-direto-ao-snap-da-canonical.html)** e **[AppImage](https://www.linuxdescomplicado.com.br/2016/02/appimage-ferramenta-que-permite-executar-aplicacoes-linux-independente-da-distribuicao-usada.html)**.
-
-**RECOMENDO QUE LEIA** 
-
-***
-
-> [Snap, Flatpak e AppImage – formatos universais para instalação de programas no Linux](https://www.linuxdescomplicado.com.br/2017/08/snap-flatpak-e-appimage-formatos-universais-para-instalacao-de-programas-no-linux.html) 
-
-> [AppImage – ferramenta que permite executar aplicações Linux independente da distribuição usada](https://www.linuxdescomplicado.com.br/2016/02/appimage-ferramenta-que-permite-executar-aplicacoes-linux-independente-da-distribuicao-usada.html)
-
-***
 
 Para os idealizadores desses projetos, o **cenário atual das aplicações Linux é problemático** e afeta a flexibilidade de uso e desenvolvimento; já que para cada distro ou sistema Linux é **preciso configurar bibliotecas e componentes** peculiares para fazê-la funcionar. No passado, e ainda hoje, isso é contornado, trivialmente, com os pacotes pré-compilados ou, na ausência, deles, com os [distribuídos via tar.gz](https://ricardoferreira.site/2019/12/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz/). Sendo assim, daqui destaco algumas **maneiras para instalar programas no Linux**:
 
@@ -149,6 +127,8 @@ sudo dnf install lwks-14.0.0-amd64.rpm
 Em alguns casos, você precisa executar **etapas adicionais** para que o aplicativo seja executado. Leia com atenção a documentação sobre o software que está instalando.
 
 #### 3. Via pacotes "universais"
+
+[ADSENSE]
 
 Imagine poder executar aplicações Linux **independente da distribuição** usada ou não se preocupar com qual formato de pacote deve usar para cada distribuição e derivadas, bem como: .deb ou .rpm. 
 

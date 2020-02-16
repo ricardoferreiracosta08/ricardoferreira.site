@@ -58,7 +58,7 @@ Diferentemente de sistemas Windows, não existe **nenhuma unidade C ou D** no Li
 
 O nome e pasta **"dev" é a tradução de dispositivo** e, neste caso, representa um dispositivo de armazenamento em bloco. **O prefixo "sd"**, do arquivo contido na pasta "dev", é a tradução para o driver de armazenamento em massa SCSI (Small Computer System Interface). **Os discos SCSI** são unidades que podem ser HDs (pendrives), unidades de CD-RW e gravadoras de DVD. E a 'letra', sufixo de 'sd', indica o número do disco (sda).
 
-<!--adsense-->
+[ADSENSE]
 
 De acordo **com a imagem acima**, é mostrado como os discos rígidos são representados no Windows e num sistema Linux. O Windows, no caso, vê um **disco na unidade C:** e outro na **unidade D:** . Já no caso do Linux, ele assume uma abordagem diferente. O primeiro disco rígido detectado por um sistema Linux possui o **rótulo sda** . Em termos numéricos, é o disco rígido 0 (zero, a contagem começa de 0, não 1). O **segundo disco rígido é sdb**, e uma possível terceira unidade, sdc, e assim por diante.
 

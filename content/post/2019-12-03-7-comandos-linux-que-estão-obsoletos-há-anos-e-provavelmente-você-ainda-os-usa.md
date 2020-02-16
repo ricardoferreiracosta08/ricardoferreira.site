@@ -50,6 +50,8 @@ A funcionalidade fornecida por vários desses comandos foi "melhorada" no **[nov
 
 ## **Obsoletos?**
 
+[ADSENSE]
+
 Qualquer **pessoa que tenha administrado sistemas Linux** por qualquer período de tempo certamente **aprendeu a usar os utilitários de ferramentas de rede** para realizar suas tarefas. Se você está acostumado a usar comandos como ifconfig, arp e netstat para executar tarefas de rede, você **deve repensar seus hábitos**.
 
 ![time](../../../images/e8005d337be2fcd130d1_i8S4v.jpg) 

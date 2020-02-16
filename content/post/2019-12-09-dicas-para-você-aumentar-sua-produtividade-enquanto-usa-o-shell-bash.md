@@ -115,6 +115,8 @@ $ cat lista.txt | grep 1
 
 #### 5 - Buscar pelo comando já executado mais rapidamente
 
+[ADSENSE]
+
 Use "CTRL + R" para encontrar o último comando correspondente ao que deseja executar novamente. Melhor momento que você sabe que executou o comando "[ls -l | grep ” algo ” | cut -c55- | xargs rm](https://www.linuxdescomplicado.com.br/2019/08/o-poder-e-a-versatilidade-do-comando-xargs.html)", alguma vez no passado, mas não lembra os parâmetros necessários para executá-lo, novamente. Basta pressionar o botão "CRTL + R" e digite as palavras que você tinha no seu último comando e o sistema encontrará esse comando para você... depois basta pressionar ENTER 
 
 Assim, eu evito de usar o comando "history" para buscar os últimos comandos executados :)

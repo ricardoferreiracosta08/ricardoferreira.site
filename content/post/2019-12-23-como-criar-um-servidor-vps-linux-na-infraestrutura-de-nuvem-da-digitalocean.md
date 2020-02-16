@@ -37,6 +37,7 @@ keywords:
 
 {{< youtube EpUlYz91vWY >}}
 
+[ADSENSE]
 
 O uso de um servidor VPS é solução indicada caso queira ter mais controle sobre o ambiente alocado. Usando um servidor VPS na nuvem você passa a ter controle e flexibilidade do recurso usado. 
 

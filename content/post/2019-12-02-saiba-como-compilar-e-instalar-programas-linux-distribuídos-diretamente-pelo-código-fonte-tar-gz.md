@@ -52,6 +52,8 @@ Em resumo, você tem acesso a um arquivo compactado no **formato .tar.gz** (mai
 
 Devido às **diferenças** que existem entre uma distribuição e outra um pacote do Fedora não funcionará no Debian, por exemplo. Assim, essa **técnica** garante suporte a todas as distribuições Linux, universalmente! Ou seja, baixando um programa distribuído a partir do código-fonte (source), **não será preciso** se ater a qual distro Linux você está usando; pois, verificada as dependências necessárias, será possível compilar e instalar o programa. Isso se deve ao fato de que essa maneira de distribuir os programas, diretamente pelo código-fonte (source), não é feita por **empacotamento pré-compilado** (pacote .deb ou .rpm, por exemplo). Assim, cabe ao usuário ter conhecimento prévio para compilar e instalar programas Linux distribuídos diretamente pelo código-fonte, normalmente **compactados via tar.gz**.
 
+[ADSENSE]
+
 **SAIBA MAIS** 
 ***
 > Compilar significa transformar o código-fonte, escrito pelo programador, nos arquivos binários que são executados pelo sistema.
