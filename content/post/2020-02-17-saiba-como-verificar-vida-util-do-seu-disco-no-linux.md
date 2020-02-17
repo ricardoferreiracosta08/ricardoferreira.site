@@ -20,15 +20,16 @@ coverSize: partial
 categories:
   - LinuxDescomplicado
 tags:
-  - ffmpeg
-  - video
-  - audio
+  - hhd
+  - ssd
+  - smartmontools
+  - S.M.A.R.T
   - terminal
 keywords:
-  - linux
-  - ffmpeg
-  - video
-  - audio
+  - hdd
+  - ssd
+  - smart
+  - smartmontools
   - terminal
 ---
 
