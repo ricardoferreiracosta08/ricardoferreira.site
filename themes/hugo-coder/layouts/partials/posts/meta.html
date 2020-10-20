@@ -1,0 +1,22 @@
+<hr class="line" />
+<div class="post-meta">
+          <div class="date">
+	  {{ if not (in .Params.type "page") }}
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+		{{ .Date.Day }} {{ index .Site.Data.pt_br (printf "%d" .Date.Month) }} {{ .Date.Year }}
+              </time>
+            </span>
+	    <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              {{ i18n "reading_time" .ReadingTime }}
+            </span>
+	   {{ end }}
+	</div>
+          {{ with .Page.Params.Authors }}{{ partial "taxonomy/authors.html" . }}{{ end }}
+          {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
+          {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
+</div>
+<hr class="line" />
+

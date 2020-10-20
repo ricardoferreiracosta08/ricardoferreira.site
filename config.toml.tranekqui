@@ -1,0 +1,233 @@
+baseurl = "https://ricardoferreira.site/"
+title = "Ricardo Ferreira"
+
+# Pagination - deve vim primeiro
+paginate = 4
+
+disqusShortname = "ricardoferreira"
+googleAnalytics = "UA-151634076-1"
+
+# Language
+languageCode = "pt-br"
+defaultContentLanguage = "pt-br"
+
+# url com /br forçado
+# defaultContentLanguageInSubdir = true 
+
+defaultExtension = "html"
+newContentEditor = "nano"
+theme = "tranquilpeak"
+
+# SEO
+#enableRobotsTXT = true #to permit create file on static folder
+canonifyurls = "true"
+
+# pages with .html
+# uglyurls = true
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  archive = "archives"
+
+
+
+# posts - it should rename to same name of content folder
+# Currently the tranquilpeak theme uses content/post as oppose to
+# content/posts directory.
+# This would be changed in the upcoming release
+# ref: https://kakawait/hugo-tranquilpeak-theme#374
+
+[permalinks]
+  post = "/:year/:month/:slug/"
+
+# opens external links absolute links in a new window or tab. 
+[Blackfriday]
+  hrefTargetBlank = true
+
+[params.adsense]
+client = "ca-pub-5245300802542741"
+inArticleSlot = "3200652252"
+graficosSlot = "6376166852"
+
+[author]
+  name = "Ricardo Ferreira"   
+  bio = "Super bio with markdown support **COOL**"
+  job = "Java backend developer"
+  location = "Brasil"
+  # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
+  # gravatarEmail = "thibaud.lepretre@gmail.com"
+  # Your profile picture
+  # Overwritten by your gravatar image if `author.gravatarEmail` is filled
+  picture = "https://lh3.googleusercontent.com/-XAraymiRUu8aKddKnsdrypqiwRANyaq9B5WahmJee2K1ObiYuujIPL9WK-6OHWaRjragPm5OB_HSnZXfA=w1000-no-tmp.jpg"
+  # picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
+  # Your Twitter username without the @. E.g : tranquilpeak
+  twitter = "rferreira_tec"
+
+# Variable	Description	Type
+#-------------------------------------------------------------
+# weight	menu is ordered by weight	int
+# identifier	unique identifier for entry	string
+# name	title to be display	string
+# pre	icon to be display a left of the name	template.HTML
+# url	menu entry url	string
+# class	CSS Class added to the a link tag	string
+#- ------------------------------------------
+# 'identifier' can be use for translation see Menu translation.
+
+[[menu.main]]
+  weight = 10
+  identifier = "home"
+  name = "Home"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/"
+[[menu.main]]
+  weight = 0
+  identifier = "categories"
+  name = "Categories"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+  url = "/categories"
+[[menu.main]]
+  weight = 0
+  identifier = "tags"
+  name = "Tags"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+  url = "/tags"
+[[menu.main]]
+  weight = 0
+  identifier = "archives"
+  name = "Archives"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+  url = "/archives"
+[[menu.main]]
+  weight = 0
+  identifier = "search"
+  name = "Search"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
+  url = "/#search"
+  class = "st-search-show-outputs"
+[[menu.main]]
+  weight = 0
+  identifier = "about"
+  name = "About"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  url = "/sobre"
+
+[[menu.misc]]
+  weight = 0
+  identifier = "linuxdescomplicado"
+  name = "Linux Descomplicado"
+  pre = "<img src=\"https://lh3.googleusercontent.com/Y9TdEc6czLeVXnNZbRMe4ZqG13FgoeprPompI3GSZ3X5M9BM1eu6w6E-PKG1rZG96-X_PntM6rjZK_Z_Qw=w1000-no-tmp.jpg\" height=\"23px\"/>"
+  url = "/categories/linuxdescomplicado/"
+
+[params]
+        sitename = "Ricardo Ferreira"
+	youtube = "https://www.youtube.com/channel/UCNzijOvZv4zKbwojY9LmheQ"
+	telegram = "http://t.me/ricardoferreira_tec"
+	github = "https://github.com/ricardoferreiracosta08/"
+	serverFault = "https://serverfault.com/users/547400/ricardo-ferreira"
+        linkedin = "https://www.linkedin.com/in/ricardo-ferreira-costa"
+	instagram = "https://instagram.com/ricardoferreira.tec"
+	twitter = "https://twitter.com/rferreira_tec"
+
+	ogimage = "https://get.google.com/u/1/albumarchive/100602654992031584374/album/AF1QipMbaqrtPz7TvjmeO20plCu2htm2yz5v31x2A8vI/AF1QipOQFhn4GWYMX-BqLT38bcnx22ud8tfWffLaTsK4"
+
+        # Customize date format use to render blog post date, categories and other
+	# You must use date format used by Go Time package https://golang.org/pkg/time/
+	# Months (not work with short month like "jan", "feb", etc) are translated if translation exists on i18n folders
+	# Default format is: January 2, 2006
+        dateFormat = "2 January 2006"
+
+        # Global keywords configuration. Following keywords will be add to every pages
+	keywords = ["sysadmin", "networking", "virtualization", "webserver", "monitoring", "database", "linux", "docker"]
+
+	# Syntax highlighter, possible choice between: "highlight.js" (recommanded) and "prism.js" (experimental)
+	# You can comment it to disable syntax highlighting
+	syntaxHighlighter = "highlight.js"
+         
+	# Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
+	clearReading = true
+
+	# Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo". 
+	# If false it will flat categories.
+	hierarchicalCategories = false
+
+	description = "Há mais de 10 anos trabalha com sistemas Linux, desde desktops a servidores. Fundador do Linux Descomplicado. Aprecia temas voltados para novas tecnologias, internet, Linux, redes de computadores; informática em geral. Sempre em busca de novos conhecimentos. Preza por conteúdo de qualidade e autoexplicativo."
+        # description = "Entusiasta por novas tecnologias. Ciência da Computação por formação, Palestrante e Professor de ofício. Linux como paixão."
+	# description = "Bachelor degree in Computer Science. Speaker, instructor and professor by vocation. Infrastructure Linux SysAdmin by training. Passion for Linux"
+	# Linux SysAdmin | Infrastructure | Palestrante | Professor"
+
+	# Customization
+	# Define the behavior of the sidebar
+	# 1: Display extra large sidebar on extra large screen, large sidebar on large screen,
+	#    medium sidebar on medium screen and header bar on small screen and
+	# extra large sidebar is swiped on extra large screen and large sidebar on all lower screen (default)
+	# 2: Display large sidebar on large screen, medium sidebar on medium screen and
+	#    header bar on small screen and large sidebar is swiped
+	# 3: Display medium sidebar on large and medium screen and header bar on small screen and
+	#    medium sidebar is swiped
+	# 4: Display header bar on all screens, extra large sidebar is swiped on extra large screen and
+	#    large sidebar is swiped on all lower screens
+	# 5: Display header bar on all screens and large sidebar is swiped on large screen
+	# 6: Display header bar on all screens and medium sidebar is swiped
+	sidebarBehavior = 6
+
+	# Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
+	# There is many free CDN like Cloudinary or you can also use indirectly
+	# by using services like Google Photos.
+	# Current image is on AWS S3 and delivered by AWS CloudFront.
+	# Otherwise put your image in folder `static/_images/` (development)  or in `source/assets/images/` if you can't or don't want to build the theme,
+	# and use relative url : `your-image.png`
+	#
+	# Photo by Dmitry Chernyshov on Unsplash
+	# coverImage = "https://images.unsplash.com/photo-1528459061998-56fd57ad86e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2119&q=80"
+
+	# Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
+	imageGallery = true
+
+	# Display thumbnail image of each post on index pages (false: disabled, true: enabled)
+	 thumbnailImage = true
+	# Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
+	# Set this value to `right` if you have old posts to keep the old style on them
+	# and define `thumbnailImagePosition` on a post to overwrite this setting
+	# thumbnailImagePosition = "left"
+	# Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image
+	# Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image
+	# and set `autoThumbnailImage` to `false` on a post to overwrite this setting
+	# autoThumbnailImage = true
+
+	# Your favicon path, default is "/favicon.png"
+	favicon = "/favicon.png"
+
+	# Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
+	# they have to be referred from static root. Example
+	[[params.customCSS]]
+		href = "css/custom.css"
+
+	# Custom JS. Put here your custom JS files. They are loaded after the theme JS;
+	# they have to be referred from static root. Example
+	# [[params.customJS]]
+	#   src = "js/myscript.js"
+
+	[[params.sharingOptions]]
+    		name = "Facebook"
+		icon = "fa-facebook-official"
+		url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+
+	[[params.sharingOptions]]
+		name = "Twitter"
+		icon = "fa-twitter"
+		url = "https://twitter.com/intent/tweet?text=%s"
+
+# /#about - para float widget about
+[params.header.rightLink]
+     	class= ""	
+	icon = ""
+	url= "/sobre"
+
+[params.footer]
+	copyright = "Built using Hugo v0.62.0. Content managed with Netlify CMS. Hosted by Netlify. Theme adapted from TranquilPeak"
+	# Built using Hugo v0.59.0. Content managed with Netlify CMS. Hosted by Netlify.
+
+
+

@@ -1,0 +1,37 @@
+{{ define "title" }} 
+  {{ title (i18n (lower .Title)) | default .Title }} | {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container list">
+    <!-- MY CUSTOM -->
+    <h1 class="title"> {{ title (i18n (lower .Title)) | default .Title }} 
+       {{ with .Site.Params.rss }}
+	  <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
+            <i class="{{ .icon }}" aria-hidden="true"></i>
+          </a>
+       {{ end }}
+    </h1>
+    <!-- END -->
+    {{ .Content }}
+<!--    {{ .Description }} -->
+
+
+    <ul>
+	<!-- MY CUSTOM -->
+	{{ range (.Paginate (.Data.Pages.GroupByDate "Jan 2006")).PageGroups  }}
+            <h3 style="margin-top:16px; margin-bottom:16px;">{{.Key}}</h3>
+	    {{ range .Pages }}
+	      {{ .Render "li" }}
+	    {{ end }}
+	{{ end }}
+        <!-- END -->
+
+<!--      {{- range .Paginator.Pages -}} 
+        {{- .Render "li" -}}
+      {{- end -}}-->
+
+    </ul>
+
+    {{ partial "pagination.html" . }}
+  </section>
+{{ end }}

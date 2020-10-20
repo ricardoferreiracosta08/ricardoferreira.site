@@ -1,233 +1,225 @@
-baseurl = "https://ricardoferreira.site/"
+baseurl = "https://ricardoferreira.site"
 title = "Ricardo Ferreira"
 
-# Pagination - deve vim primeiro
-paginate = 4
+theme = "hugo-coder"
 
-disqusShortname = "ricardoferreira"
+languagecode = "pt-br"
+defaultcontentlanguage = "pt-br"
+
 googleAnalytics = "UA-151634076-1"
 
-# Language
-languageCode = "pt-br"
-defaultContentLanguage = "pt-br"
+paginate = 5
 
-# url com /br forçado
-# defaultContentLanguageInSubdir = true 
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
-defaultExtension = "html"
-newContentEditor = "nano"
-theme = "tranquilpeak"
+# disqusShortname = "yourdiscussshortname"
 
-# SEO
-#enableRobotsTXT = true #to permit create file on static folder
-canonifyurls = "true"
+[params.adsense]
+ client = "ca-pub-5245300802542741"
+ inArticleSlot = "3200652252"
+ graficosSlot = "6376166852"
 
-# pages with .html
-# uglyurls = true
+# opens external links absolute links in a new window or tab.
+# Blackfriday is a Markdown processor implemented in Go.
+[blackfriday]
+  hrefTargetBlank = true
+  noreferrerLinks = true
+  nofollowLinks = true
+
+[params]
+    author = "Ricardo Ferreira"
+    description = "More than ten years of expertise in IT, passionate about new technologies, bachelor's Computer Science, BPM Analyst, and Bussiness Intelligence Analyst. Nowadays, I keep learning new skills in data analytics and data science"
+    keywords = "linux,docker,sysadmin,bussiness intelligence,bi,data science,ds,technology"
+    info = "IT Specialist · BPM · BI · Bachelor's Computer Science"
+    avatarurl = "images/perfil-02.jpeg"
+    #gravatar = "john.doe@example.com"
+    footercontent = "Built using Hugo v0.74.3. Hosted by Netlify."
+
+    # OG_IMAGE
+    images = ["coverpage-FACEBOOK.png"]
+
+    dateformat = "2 January 2006"
+
+    hideFooter = false
+    hideCredits = false
+    hideCopyright = false
+    since = 2019
+
+    # Git Commit in Footer, uncomment the line below to enable it.
+    # commit = "https://github.com/luizdepra/hugo-coder/tree/"
+
+    rtl = false
+
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorscheme = "auto"
+
+    # Hide the toggle button, along with the associated vertical divider
+    hidecolorschemetoggle = false
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    # Enable Twemoji
+    enableTwemoji = true
+
+    # Custom CSS
+    customCSS = []
+
+    # Custom SCSS
+    customSCSS = ["scss/custom.scss"]
+
+    # Custom JS
+    customJS = []
+
+    ctaToHome = "More about me"
+
+# If you want to use fathom(https://usefathom.com) for analytics, add this section
+[params.fathomAnalytics]
+    siteID = "ABCDE"
+    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
+    serverURL = "analytics.example.com"
+
+# If you want to use plausible(https://plausible.io) for analytics, add this section
+[params.plausibleAnalytics]
+    domain = "example.com"
+    # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
+    serverURL = "analytics.example.com"
+
+# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
+[params.goatCounter]
+    code = "code"
 
 [taxonomies]
   category = "categories"
+  series = "series"
   tag = "tags"
-  archive = "archives"
+  author = "authors"
+
+[[params.social]]
+    name = "Github"
+    icon = "fa fa-github"
+    weight = 2
+    url = "https://github.com/ricardoferreiracosta08"
+[[params.social]]
+    name = "Instagram"
+    icon = "fa fa-instagram"
+    weight = 3
+    url = "https://www.instagram.com/ricardoferreira.tec"
+[[params.social]]
+    name = "Twitter"
+    icon = "fa fa-twitter"
+    weight = 4
+    url = "https://twitter.com/rferreira_tec"
+[[params.social]]
+    name = "YouTuBe"
+    icon = "fa fa-youtube"
+    weight = 5
+    url = "https://youtube.com/c/RicardoFerreiraTecnologia"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fa fa-linkedin"
+    weight = 1
+    url = "https://www.linkedin.com/in/ricardo-ferreira-costa"
+#[[params.social]]
+#    name = "Medium"
+#    icon = "fa fa-medium"
+#    weight = 5
+#    url = "https://medium.com/@ricardoferreiracosta"
+[[params.social]]
+    name = "Telegram"
+    icon = "fa fa-telegram"
+    weight = 6
+    url = "https://t.me/ricardoferreira_tec"
+
+[params.rss]
+    name = "RSS"
+    icon = "fa fa-rss"
+    weight = 7
+    url = "https://ricardoferreira.site/index.xml"
+    rel = "alternate"
+    type = "application/rss+xml"
 
 
+[languages]
+    [languages.en]
+        languagename = "English"
+        LanguageDirection = "images/en32.png"
 
-# posts - it should rename to same name of content folder
-# Currently the tranquilpeak theme uses content/post as oppose to
-# content/posts directory.
-# This would be changed in the upcoming release
-# ref: https://kakawait/hugo-tranquilpeak-theme#374
+        [languages.en.menu]
 
-[permalinks]
-  post = "/:year/:month/:slug/"
+#            [[languages.en.menu.main]]
+#            name = "About"
+#            weight = 1
+#            url = "about/"
 
-# opens external links absolute links in a new window or tab. 
-[Blackfriday]
-  hrefTargetBlank = true
+            [[languages.en.menu.main]]
+            name = "Hi! Would like talk with me?"
+            weight = 1
+            url = "https://t.me/ricardoferreiracosta"
+            pre = "<i class='fa fa-comment'></i>"
 
-[params.adsense]
-client = "ca-pub-5245300802542741"
-inArticleSlot = "3200652252"
-graficosSlot = "6376166852"
+            [[languages.en.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "blog/"
+            pre = "<i class='fa fa-pencil'></i>"
 
-[author]
-  name = "Ricardo Ferreira"   
-  bio = "Super bio with markdown support **COOL**"
-  job = "Java backend developer"
-  location = "Brasil"
-  # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  # gravatarEmail = "thibaud.lepretre@gmail.com"
-  # Your profile picture
-  # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = "https://lh3.googleusercontent.com/-XAraymiRUu8aKddKnsdrypqiwRANyaq9B5WahmJee2K1ObiYuujIPL9WK-6OHWaRjragPm5OB_HSnZXfA=w1000-no-tmp.jpg"
-  # picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
-  # Your Twitter username without the @. E.g : tranquilpeak
-  twitter = "rferreira_tec"
+#            [[languages.en.menu.main]]
+#            name = "Projects"
+#            weight = 3
+#            url = "projects/"
 
-# Variable	Description	Type
-#-------------------------------------------------------------
-# weight	menu is ordered by weight	int
-# identifier	unique identifier for entry	string
-# name	title to be display	string
-# pre	icon to be display a left of the name	template.HTML
-# url	menu entry url	string
-# class	CSS Class added to the a link tag	string
-#- ------------------------------------------
-# 'identifier' can be use for translation see Menu translation.
+            [[languages.en.menu.main]]
+            name = "All my courses online"
+            weight = 3
+            pre = "<i class='fa fa-book'></i>"
+            url = "https://www.udemy.com/user/ricardo-ferreira-costa-2/"
 
-[[menu.main]]
-  weight = 10
-  identifier = "home"
-  name = "Home"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
-  url = "/"
-[[menu.main]]
-  weight = 0
-  identifier = "categories"
-  name = "Categories"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
-  url = "/categories"
-[[menu.main]]
-  weight = 0
-  identifier = "tags"
-  name = "Tags"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
-  url = "/tags"
-[[menu.main]]
-  weight = 0
-  identifier = "archives"
-  name = "Archives"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
-  url = "/archives"
-[[menu.main]]
-  weight = 0
-  identifier = "search"
-  name = "Search"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
-  url = "/#search"
-  class = "st-search-show-outputs"
-[[menu.main]]
-  weight = 0
-  identifier = "about"
-  name = "About"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
-  url = "/sobre"
-
-[[menu.misc]]
-  weight = 0
-  identifier = "linuxdescomplicado"
-  name = "Linux Descomplicado"
-  pre = "<img src=\"https://lh3.googleusercontent.com/Y9TdEc6czLeVXnNZbRMe4ZqG13FgoeprPompI3GSZ3X5M9BM1eu6w6E-PKG1rZG96-X_PntM6rjZK_Z_Qw=w1000-no-tmp.jpg\" height=\"23px\"/>"
-  url = "/categories/linuxdescomplicado/"
-
-[params]
-        sitename = "Ricardo Ferreira"
-	youtube = "https://www.youtube.com/channel/UCNzijOvZv4zKbwojY9LmheQ"
-	telegram = "http://t.me/ricardoferreira_tec"
-	github = "https://github.com/ricardoferreiracosta08/"
-	serverFault = "https://serverfault.com/users/547400/ricardo-ferreira"
-        linkedin = "https://www.linkedin.com/in/ricardo-ferreira-costa"
-	instagram = "https://instagram.com/ricardoferreira.tec"
-	twitter = "https://twitter.com/rferreira_tec"
-
-	ogimage = "https://get.google.com/u/1/albumarchive/100602654992031584374/album/AF1QipMbaqrtPz7TvjmeO20plCu2htm2yz5v31x2A8vI/AF1QipOQFhn4GWYMX-BqLT38bcnx22ud8tfWffLaTsK4"
-
-        # Customize date format use to render blog post date, categories and other
-	# You must use date format used by Go Time package https://golang.org/pkg/time/
-	# Months (not work with short month like "jan", "feb", etc) are translated if translation exists on i18n folders
-	# Default format is: January 2, 2006
-        dateFormat = "2 January 2006"
-
-        # Global keywords configuration. Following keywords will be add to every pages
-	keywords = ["sysadmin", "networking", "virtualization", "webserver", "monitoring", "database", "linux", "docker"]
-
-	# Syntax highlighter, possible choice between: "highlight.js" (recommanded) and "prism.js" (experimental)
-	# You can comment it to disable syntax highlighting
-	syntaxHighlighter = "highlight.js"
-         
-	# Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
-	clearReading = true
-
-	# Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo". 
-	# If false it will flat categories.
-	hierarchicalCategories = false
-
-	description = "Há mais de 10 anos trabalha com sistemas Linux, desde desktops a servidores. Fundador do Linux Descomplicado. Aprecia temas voltados para novas tecnologias, internet, Linux, redes de computadores; informática em geral. Sempre em busca de novos conhecimentos. Preza por conteúdo de qualidade e autoexplicativo."
-        # description = "Entusiasta por novas tecnologias. Ciência da Computação por formação, Palestrante e Professor de ofício. Linux como paixão."
-	# description = "Bachelor degree in Computer Science. Speaker, instructor and professor by vocation. Infrastructure Linux SysAdmin by training. Passion for Linux"
-	# Linux SysAdmin | Infrastructure | Palestrante | Professor"
-
-	# Customization
-	# Define the behavior of the sidebar
-	# 1: Display extra large sidebar on extra large screen, large sidebar on large screen,
-	#    medium sidebar on medium screen and header bar on small screen and
-	# extra large sidebar is swiped on extra large screen and large sidebar on all lower screen (default)
-	# 2: Display large sidebar on large screen, medium sidebar on medium screen and
-	#    header bar on small screen and large sidebar is swiped
-	# 3: Display medium sidebar on large and medium screen and header bar on small screen and
-	#    medium sidebar is swiped
-	# 4: Display header bar on all screens, extra large sidebar is swiped on extra large screen and
-	#    large sidebar is swiped on all lower screens
-	# 5: Display header bar on all screens and large sidebar is swiped on large screen
-	# 6: Display header bar on all screens and medium sidebar is swiped
-	sidebarBehavior = 6
-
-	# Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
-	# There is many free CDN like Cloudinary or you can also use indirectly
-	# by using services like Google Photos.
-	# Current image is on AWS S3 and delivered by AWS CloudFront.
-	# Otherwise put your image in folder `static/_images/` (development)  or in `source/assets/images/` if you can't or don't want to build the theme,
-	# and use relative url : `your-image.png`
-	#
-	# Photo by Dmitry Chernyshov on Unsplash
-	# coverImage = "https://images.unsplash.com/photo-1528459061998-56fd57ad86e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2119&q=80"
-
-	# Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
-	imageGallery = true
-
-	# Display thumbnail image of each post on index pages (false: disabled, true: enabled)
-	 thumbnailImage = true
-	# Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
-	# Set this value to `right` if you have old posts to keep the old style on them
-	# and define `thumbnailImagePosition` on a post to overwrite this setting
-	# thumbnailImagePosition = "left"
-	# Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image
-	# Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image
-	# and set `autoThumbnailImage` to `false` on a post to overwrite this setting
-	# autoThumbnailImage = true
-
-	# Your favicon path, default is "/favicon.png"
-	favicon = "/favicon.png"
-
-	# Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
-	# they have to be referred from static root. Example
-	[[params.customCSS]]
-		href = "css/custom.css"
-
-	# Custom JS. Put here your custom JS files. They are loaded after the theme JS;
-	# they have to be referred from static root. Example
-	# [[params.customJS]]
-	#   src = "js/myscript.js"
-
-	[[params.sharingOptions]]
-    		name = "Facebook"
-		icon = "fa-facebook-official"
-		url = "https://www.facebook.com/sharer/sharer.php?u=%s"
-
-	[[params.sharingOptions]]
-		name = "Twitter"
-		icon = "fa-twitter"
-		url = "https://twitter.com/intent/tweet?text=%s"
-
-# /#about - para float widget about
-[params.header.rightLink]
-     	class= ""	
-	icon = ""
-	url= "/sobre"
-
-[params.footer]
-	copyright = "Built using Hugo v0.62.0. Content managed with Netlify CMS. Hosted by Netlify. Theme adapted from TranquilPeak"
-	# Built using Hugo v0.59.0. Content managed with Netlify CMS. Hosted by Netlify.
+#            [[languages.en.menu.main]]
+#            name = "Contact me"
+#            weight = 5
+#            url = "contact/"
 
 
+    [languages.pt-br]
+        languagename = "Português"
+        title = "Ricardo Ferreira"
+        LanguageDirection = "../images/br32.png"
 
+        [languages.pt-br.params]
+            author = "Ricardo Ferreira"
+            info = "Linux · Docker · Analista BPM · Bussiness Intelligence · Mirando a Ciência de Dados"
+            description = "Mais de 10 anos de experiência em TI, apaixonado por novas tecnologias, bacharel em ciência da computação, analista de processos de negócio e BI, também especializado nas mais diversas plataformas nas áreas de Infraestrutura e Servidores, Linux, Redes e Serviços de TI"
+            keywords = "linux,docker,bpm,dados,bussiness intelligence,bi,sysadmin, tecnologia"
+            footercontent = "Construído usando Hugo v0.74.3. Hospedado em Netlify"
+            ctaToHome = "Mais sobre mim"
+
+        [languages.pt-br.menu]
+
+            [[languages.pt-br.menu.main]]
+            name = "Opa! Afim de trocar uma ideia?"
+            weight = 1
+            url = "https://t.me/ricardoferreiracosta"
+
+            [[languages.pt-br.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "blog/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Todos meus cursos online"
+            weight = 3
+            url = "https://www.udemy.com/user/ricardo-ferreira-costa-2/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Mentoria Gratuita | Agende a sua"
+            weight = 5
+            pre = "<i class='fa fa-calendar'></i>"
+            url = "https://calendly.com/ricardoferreira_tec/mentoriagratuita"
+            post = "shake"

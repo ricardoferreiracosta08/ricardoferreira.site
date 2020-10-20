@@ -47,8 +47,8 @@
 
 {{ end }} 
 
-{{ partial "pagination.html" .}}
-<!--{{ template "_internal/pagination.html" . }}-->
+<!--{{ partial "pagination.html" .}}-->
+{{ template "_internal/pagination.html" . }}
 
 {{ if .Site.Params.fixed_ads }}
 	<div class="fixed notmobile">

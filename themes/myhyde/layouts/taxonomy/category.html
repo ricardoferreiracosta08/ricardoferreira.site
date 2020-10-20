@@ -17,7 +17,7 @@
                 <a class="text-dark" href="{{.RelPermalink}}">{{ .Title }}</a>
               </h3>
               <div class="mb-1 text-muted">{{ partial "post_meta.html" . }}</div>
-              <p class="card-text mb-auto">{{ slicestr .Summary 0 110 }}...</p>
+              <p class="card-text mb-auto">{{  .Summary }}...</p>
               <a style="margin-top: 15px" href="{{.Permalink}}">[Leia mais]</a>
             </div>
           </div>

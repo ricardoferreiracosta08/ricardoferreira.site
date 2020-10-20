@@ -1,0 +1,44 @@
+{{ define "title" }}
+  {{ .Title }} | {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+         <!-- MY CUSTOM -->
+	  {{ if .Params.subtitle }}
+            <p class="stories-title" style="color: #c80000">
+                <strong>{{ .Params.subtitle }}</strong>
+            </p>
+          {{ end }}
+         <!-- END -->
+          <h1 class="title">{{ .Title }}</h1>
+        </div>
+        <!-- MY CUSTOM -->
+        {{ partial "posts/meta.html" . }}
+        <!-- ENd -->
+      </header>
+
+      <div>
+        {{ if .Params.featured_image }}
+          <img src='{{ .Params.featured_image }}' alt="Featured image"/>
+        {{ end }}
+        <!-- MY CUSTOM -->
+        {{ $content := replace .Content "[ADSENSE]" ( partial "adsense-inarticle.html" .) }}
+        {{ $content | safeHTML }}
+<!--        {{ .Content }} -->
+      </div>
+
+
+      <footer>
+        {{ partial "posts/series.html" . }}
+        {{ partial "posts/disqus.html" . }}
+        {{ partial "posts/commento.html" . }}
+        {{ partial "posts/utterances.html" . }}
+      </footer>
+    </article>
+
+    {{ partial "posts/math.html" . }}
+  </section>
+{{ end }}

@@ -1,0 +1,10 @@
+<li>
+  <!--  <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>-->
+  <span class="date">{{ .Date.Day }} {{ index .Site.Data.pt_br (printf "%d" .Date.Month) }} {{ .Date.Year }}</span>
+  <a /*class="title"*/ href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
+
+<!--   {{ range $.Params.categories }}
+    <a href="/categories/{{ . | urlize}}">{{ . }}</a>
+   {{ end }}
+-->
+</li>
