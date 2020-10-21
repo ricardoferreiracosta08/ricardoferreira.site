@@ -16,6 +16,11 @@ pygmentscodefencesguesssyntax = true
 
 # disqusShortname = "yourdiscussshortname"
 
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
 # posts - it should rename to same name of content folder
 [permalinks]
   blog = "/:year/:month/:slug/"
