@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /en/
+Sitemap: https://ricardoferreira.site/sitemap.xml
