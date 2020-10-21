@@ -65,7 +65,7 @@
   content: none; }
 
 .post h1, h2 {
-  margin: 0;
+  margin-top: 36px;
   text-transform: uppercase; }
 
 .post h1:after, h2:after {
@@ -82,7 +82,7 @@
 
 .post h3, h4 {
   color: darkred;
-  margin: 0; }
+  margin-top: 36px; }
 
 .post h3:after, h4:after {
   content: '';
