@@ -16,6 +16,10 @@ pygmentscodefencesguesssyntax = true
 
 # disqusShortname = "yourdiscussshortname"
 
+# posts - it should rename to same name of content folder
+[permalinks]
+  blog = "/:year/:month/:slug/"
+
 [params.adsense]
  client = "ca-pub-5245300802542741"
  inArticleSlot = "3200652252"
