@@ -1,21 +1,16 @@
 ---
 draft: false
-title: 5 Erros que todo usuário Linux cometeu ao aprender Linux
-seotitle: 5 Erros que todo usuário Linux cometeu ao aprender Linux
-subtitle: Aprenda com os erros
+title: Alguns erros que eu cometi quando comecei a aprender Linux
+#seotitle: 5 Erros que todo usuário Linux cometeu ao aprender Linux
+subtitle: Aprenda com algum dos meus erros
 description: >-
   Todos os erros se concentram no terminal de comandos, pois lá está presente os maiores riscos para o sistema
 summary: >-
   Todos os erros se concentram no terminal de comandos, pois lá está presente os maiores riscos para o sistema
 slug: erros-que-todo-usuario-linux-cometeu-ao-comecar-aprender-linux
 date: 2020-01-26T22:35:51.240Z
-#image
-thumbnailImage: "https://lh3.googleusercontent.com/jKfPXQuVFQ2S-z-xdvtN3skjrBEfxvenGOdjbSYK2qCeECMjeVZTcBiC_bQmh58lWj9GshkhpAqhPBHI3g=w1000-no-tmp.jpg"
-thumbnailImagePosition: left
-coverImage: "https://lh3.googleusercontent.com/jKfPXQuVFQ2S-z-xdvtN3skjrBEfxvenGOdjbSYK2qCeECMjeVZTcBiC_bQmh58lWj9GshkhpAqhPBHI3g=w1000-no-tmp.jpg"
-coverCaption: ""
-coverSize: partial
-# somente se nao tiver thumb definido - ==> autoThumbnailImage: true
+images:
+  - 2020/01/erros-que-todo-usuario-linux-cometeu-ao-comecar-aprender-linux/cover.jpg
 categories:
   - Linux
 tags:
