@@ -1,6 +1,6 @@
 +++ 
-draft = true
-date = {{ .Date }}
+description = ""
 title = ""
-slug = "" 
+slug = ""
+images = []
 +++

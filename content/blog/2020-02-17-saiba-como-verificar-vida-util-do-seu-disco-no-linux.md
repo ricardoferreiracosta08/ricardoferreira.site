@@ -144,8 +144,11 @@ Portanto, os casos marcados como TYPE “Old_age” indicam sintomas de que o di
 
 Na coluna “WHEN_FAILED” (a mais importante), você vê o status FAILING_NOW. Num disco saudável, esta coluna fica limpa para todas as opções, indicando que o disco nunca apresentou os erros!
 
-***
-> **AVISO**
 
-> Embora relativamente raro, em muitos casos o drive pode realmente se perder menos de 24 horas depois de indicado o erro, por isso transfira todos os dados importante imediatamente!!
-***
+{{< alert warning no-icon >}}
+**AVISO**
+
+Embora, relativamente raro, em muitos casos, o drive pode, realmente, danificar em menos de 24 horas, depois de indicado o erro. 
+Por isso, transfira todos os dados importante, imediatamente!!
+{{< /alert >}}
+

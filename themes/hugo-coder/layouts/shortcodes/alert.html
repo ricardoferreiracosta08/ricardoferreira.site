@@ -1,0 +1,4 @@
+<div class="alert {{ range .Params }}{{ . }} {{ end }}">
+  <p>{{ .Inner | markdownify }}</p>
+</div>
+<!-- https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#alert -->

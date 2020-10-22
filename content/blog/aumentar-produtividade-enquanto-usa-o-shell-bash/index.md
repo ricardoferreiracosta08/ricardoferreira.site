@@ -1,8 +1,8 @@
 ---
 draft: false
-title: Dicas para você aumentar sua produtividade enquanto usa o shell Bash
+title: 8 dicas que eu uso para aumentar minha produtividade no shell Bash
 seotitle: Dicas para você aumentar sua produtividade enquanto usa o shell Bash
-subtitle: Alguns "atalhos"
+subtitle: Alguns "hacks"
 description: >-
   Algumas dicas que podem ser muito úteis para você aumentar sua produtividade
   ao usar o shell bash. Maneiras para ser mais eficiente em suas tarefas.
@@ -11,13 +11,6 @@ summary: >-
   ao usar o shell bash. Maneiras para ser mais eficiente em suas tarefas.
 slug: aumentar-produtividade-enquanto-usa-o-shell-bash
 date: 2019-12-09T18:00:43.472Z
-#image
-thumbnailImage: "https://lh3.googleusercontent.com/jEk2YwGar00Y0XnFfC1SZATw7GRHLJgegADkybT4drlnED1DbM3a_yUIm1SeEfOOwrzQafqpdaVCUc6W5g=w1000-no-tmp.jpg"
-thumbnailImagePosition: left
-# coverImage:
-# coverCaption: Foto de ...
-# coverSize: partial
-# somente se nao tiver thumb definido - ==> autoThumbnailImage: true
 categories:
   - Linux
 tags:
@@ -45,7 +38,7 @@ Primeiramente, o **shell (ou interpretador de linha de comando)** é um módulo 
 
 A partir daí houveram evoluções significativas do shell. Atualmente, a maioria dos sistemas Linux usam, por padrão, **uma evolução do Bourne shell, chamada Bash (Bourne Again Shell)**. O Bash, além das funcionalidades das versões anteriores, também implementa um linguagem simples de programação que permite o desenvolvimento de pequenos programas (os famosos shell scripts).
 
-**RECOMENDO QUE LEIA:** 
+<!--**RECOMENDO QUE LEIA:** 
 
 ***
 
@@ -56,7 +49,7 @@ A partir daí houveram evoluções significativas do shell. Atualmente, a maiori
 > [Muito além do kernel – conheça todos os elementos que formam a estrutura do sistema Linux](https://www.linuxdescomplicado.com.br/2016/09/muito-alem-do-kernel-conheca-todos-os-elementos-que-formam-a-estrutura-do-sistema-linux.html)
 
 ***
-
+-->
 Em resumo, o **shell** é um programa independente do usuário, **executado fora do kernel**, que fornece uma interface para interpretação de comandos. Ele permite a interação com o sistema executando comandos em uma **interface de texto (CLI)**. Mesmo que você esteja apenas usando o ambiente gráfico e nunca tenha precisado usar ou executar nenhum comando Linux, o shell está em constante execução. Quando você abrir o terminal de linha de comando, você verá o shell em pleno funcionamento :)😉
 
 ## Foco na produtividade
@@ -166,6 +159,4 @@ Ctrl + h - exclui o caractere antes do cursor
 Ctrl + t - troca o caractere sob o cursor pelo anterior
 {{< /highlight >}}
 
-***
-
-Via | [howtogeek](https://www.howtogeek.com/439199/15-special-characters-you-need-to-know-for-bash/) | [greenido](https://greenido.wordpress.com/2011/10/07/linux-bash-shortcuts-to-boost-your-productivity/) | [hackernoon](https://hackernoon.com/10-basic-tips-on-working-fast-in-unix-or-linux-terminal-5746ae42d277)
+<!-- Via | [howtogeek](https://www.howtogeek.com/439199/15-special-characters-you-need-to-know-for-bash/) | [greenido](https://greenido.wordpress.com/2011/10/07/linux-bash-shortcuts-to-boost-your-productivity/) | [hackernoon](https://hackernoon.com/10-basic-tips-on-working-fast-in-unix-or-linux-terminal-5746ae42d277) -->

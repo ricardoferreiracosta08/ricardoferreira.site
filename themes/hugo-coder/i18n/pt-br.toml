@@ -25,3 +25,9 @@ other = "Promovido por"
 
 [theme_adapted_from]
 other = "Tema adaptado de"
+
+[hi_i_am]
+other = "Olá! Quem escreve aqui é o"
+
+[looking_for_help]
+other = "Procurando ajuda?"
