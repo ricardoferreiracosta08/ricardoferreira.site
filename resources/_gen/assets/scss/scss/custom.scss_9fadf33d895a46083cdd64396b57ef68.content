@@ -61,6 +61,10 @@
     .date {
       display: block;
       text-align: left !important; } }
+@media only screen and (max-width: 768px) {
+  .list ul li .date {
+    display: none !important; } }
+
 .content article header h1 {
   text-transform: none !important; }
 
