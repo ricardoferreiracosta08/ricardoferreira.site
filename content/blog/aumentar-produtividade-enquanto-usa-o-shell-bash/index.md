@@ -58,8 +58,6 @@ Em resumo, o **shell** é um programa independente do usuário, **executado fora
 
 Aqui deixo algumas dicas que podem fazer com você seja mais produtivo **enquanto usa o shell Bash** (obviamente, não apenas estas). 
 
-Deixo o espaço aberto para que você, informe nos comentários, algumas outras técnicas ou meios que fazem você ser mais eficiente usando um terminal Linux!
-
 #### 1 - Diretório do usuário num instante
 
 O til (~) é uma abreviação do diretório inicial do usuário logado no sistema. Isso significa que você **não precisa digitar o caminho completo para o diretório inicial**. Onde quer que você esteja no sistema de arquivos, você pode usar este comando para acessar o diretório inicial: 

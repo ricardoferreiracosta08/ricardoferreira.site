@@ -75,6 +75,3 @@ Primeiro, não existe “problema de permissão”. O controle de acesso via per
 Existem permissões que deve ser concedidas somente para o dono do arquivo. Outras para o grupo e outros, e permissões somente de execução e não de escrita. Cada nuance dessas põe em risco a segurança do seu sistema, principalmente se feito em um recurso protegido pelo modo super-usuário :/
 
 —
-
-Assim, diante desses erros muito comuns, que erros você cometeu enquanto aprendia a usar o Linux? Compartilhe-os nos comentários.
-
