@@ -37,7 +37,7 @@ Sendo assim, resolvi escrever um artigo que "deixasse de lado" termos, altamente
 
 Devido a grande procura sobre esse tema, resolvi criar um curso focado nos fundamentos de discos e partições no Linux. 
 
-Curtiu? [Eu quero o curso](https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/)
+Curtiu? [Eu quero o curso](https://www.udemy.com/course/fundamentos-linux-sistemas-de-arquivos-e-dispositivos/?referralCode=BE4C4F68EECD104189ED)
 {{< /alert >}}
 
 Primeiramente, saiba que **toda operação com partições de discos é perigosa**, pois há o risco de perda ou corrompimento dos dados. Tenha sempre um backup (cópia de segurança) de seus arquivos. Ou, prefira realizar testes dessa natureza em ambientes isolados ou que não afetem dados críticos do seu cotidiano. Por exemplo, sugiro o **[uso de máquinas virtuais](https://www.linuxdescomplicado.com.br/2011/06/5-motivos-pelos-quais-voce-deve-usar-o-2.html)** para esse cenário :)
@@ -177,6 +177,6 @@ No Linux, para acessar um dispositivo de disco é necessário antes **"montá-lo
 
 **MAIS INFORMAÇÕES** 
 
-* [Eu quero fazer um curso sobre isso](https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/)
+* [Eu quero fazer um curso sobre isso](https://www.udemy.com/course/fundamentos-linux-sistemas-de-arquivos-e-dispositivos/?referralCode=BE4C4F68EECD104189ED)
 * [Fundamentos do Sistema Linux: Discos e Partições](https://www.vivaolinux.com.br/artigos/impressora.php?codigo=4858) 
 * [Guia Foca GNU/Linux | Capítulo 5 - Discos e Partições](http://www.guiafoca.org/cgs/guia/intermediario/ch-disc.html)
