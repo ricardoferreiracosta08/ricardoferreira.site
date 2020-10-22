@@ -86,13 +86,13 @@ $ ls lista.txt && cat lista.txt && wc -l lista.txt
 
 Você costuma **usar as setas para cima e para baixo** para encontrar o comando e depois executá-lo? Isso leva muito tempo. Concorda? Use (!) ou (!!) para executar o último comando facilmente. No caso do (!) apenas **é preciso lembrar o nome do comando**.
 
-**SAIBA DISSO** 
+{{< alert info no-icon >}}
+**FIQUE SABENDO** 
 
-***
+Ao executar o comando "history" você verá diversos comandos com seus respectivos IDs. 
+Execute "!ID" (sem aspas) e verá o comando ser executado novamente.
+{{< /alert >}}
 
-> Também é possível usar o (!) com o número de identificação do comando mostrado no resultado do comando "history". Algo executar o "history" você verá diversos comandos com seus respectivos IDs. Execute "!ID" e verá o comando ser executado novamente :)
-
-***
 
 **Por exemplo:** ! cat executará seu último "cat lista.txt". Definitivamente, economiza muito tempo e também é **útil em shell diferente do bash shell** (como csh ou ksh), onde as setas para cima e para baixo geralmente não fornecem comandos anteriores. 
 
