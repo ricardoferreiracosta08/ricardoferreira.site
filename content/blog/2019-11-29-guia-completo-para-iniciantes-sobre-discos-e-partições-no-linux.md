@@ -10,19 +10,11 @@ summary: >-
 readingtime: '10'
 slug: guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux
 date: 2019-11-29T18:25:12.051Z
-#image
-thumbnailImage: "https://lh3.googleusercontent.com/tHgGxdU6y0kRLxcUoqzUI2oTJFAt1wbdVDeTT-8aXU9kFMO5LnBbId9onQESCfChltfWR7yPfxbHYSVa9A=w1000-no-tmp.jpg"
-thumbnailImagePosition: left
-coverImage: "https://lh3.googleusercontent.com/tHgGxdU6y0kRLxcUoqzUI2oTJFAt1wbdVDeTT-8aXU9kFMO5LnBbId9onQESCfChltfWR7yPfxbHYSVa9A=w1000-no-tmp.jpg"
-coverCaption: Foto de Jared Arango no Unsplash
-coverSize: partial
-# somente se nao tiver thumb definido - ==> autoThumbnailImage: true
 categories:
   - Linux
 tags:
   - mbr
   - gpt
-  - inciante
 keywords:
   - linux
   - discos
@@ -39,6 +31,14 @@ Contudo, alguns detalhes técnicos acabam por confundir muitos usuários que dei
 Sendo assim, resolvi escrever um artigo que "deixasse de lado" termos, altamente, técnicos, associados a este assunto, e que oferecesse uma leitura mais simples e descomplicada :)
 
 ## **Antes de começar...**
+
+{{< alert success no-icon >}}
+**FIQUE SABENDO**
+
+Devido a grande procura sobre esse tema, resolvi criar um curso focado nos fundamentos de discos e partições no Linux. 
+
+Curtiu? [Eu quero o curso](https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/)
+{{< /alert >}}
 
 Primeiramente, saiba que **toda operação com partições de discos é perigosa**, pois há o risco de perda ou corrompimento dos dados. Tenha sempre um backup (cópia de segurança) de seus arquivos. Ou, prefira realizar testes dessa natureza em ambientes isolados ou que não afetem dados críticos do seu cotidiano. Por exemplo, sugiro o **[uso de máquinas virtuais](https://www.linuxdescomplicado.com.br/2011/06/5-motivos-pelos-quais-voce-deve-usar-o-2.html)** para esse cenário :)
 
@@ -157,7 +157,7 @@ A imagem acima mostra o tipo de **partição swap** . É uma pequena seção de 
 
 No Linux, para acessar um dispositivo de disco é necessário antes **"montá-lo" em um diretório do sistema** . O processo de montagem consiste em **tornar o dispositivo acessível** para o usuário. Em outras palavras, é preciso informar em qual diretório do sistema determinada partição será "configurada" :)
 
-<!--adsense-->
+[ADSENSE]
 
 <!--
 **RECOMENDO QUE LEIA** [Saiba como montar partições e dispositivos de armazenamento no Linux usando o comando mount](https://www.linuxdescomplicado.com.br/2017/01/saiba-como-montar-particoes-e-dispositivos-de-armazenamento-no-linux-usando-o-comando-mount.html) [Saiba como resolver um problema comum de erro de pontos montagens no boot de sistemas Linux](https://www.linuxdescomplicado.com.br/2017/06/como-resolver-erro-de-pontos-montagens-fstab-linux.html) [Alguns exemplos de que o comando dd pode ser considerado umas das ferramentas mais versáteis do Linux](https://www.linuxdescomplicado.com.br/2016/11/alguns-exemplos-de-que-o-comando-dd-pode-ser-considerado-umas-das-ferramentas-mais-versateis-do-linux.html)
@@ -173,9 +173,10 @@ No Linux, para acessar um dispositivo de disco é necessário antes **"montá-lo
 
 ***
 
-Via | [LinuxBSDOS](http://linuxbsdos.com/2014/11/08/a-beginners-guide-to-disks-and-disk-partitions-in-linux/)
+<!-- Via | [LinuxBSDOS](http://linuxbsdos.com/2014/11/08/a-beginners-guide-to-disks-and-disk-partitions-in-linux/) -->
 
 **MAIS INFORMAÇÕES** 
 
+* [Eu quero fazer um curso sobre isso](https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/)
 * [Fundamentos do Sistema Linux: Discos e Partições](https://www.vivaolinux.com.br/artigos/impressora.php?codigo=4858) 
 * [Guia Foca GNU/Linux | Capítulo 5 - Discos e Partições](http://www.guiafoca.org/cgs/guia/intermediario/ch-disc.html)
