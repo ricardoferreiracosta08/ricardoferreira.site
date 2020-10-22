@@ -10,6 +10,8 @@ summary: >-
   Algumas dicas que podem ser muito úteis para você aumentar sua produtividade
   ao usar o shell bash. Maneiras para ser mais eficiente em suas tarefas.
 slug: aumentar-produtividade-enquanto-usa-o-shell-bash
+images: 
+  - 2019/12/aumentar-produtividade-enquanto-usa-o-shell-bash/cover.jpeg
 date: 2019-12-09T18:00:43.472Z
 categories:
   - Linux
