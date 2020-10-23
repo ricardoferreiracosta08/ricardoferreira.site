@@ -1,47 +1,43 @@
 ---
 draft: false
-title: Saiba como verificar a vida útil do seu disco rígido ou SSD
+title: Veja como verificar a vida útil do seu disco no Linux
 seotitle: Você já se preocupou em verificar a vida útil do seu HD ou SSH?
 subtitle: Nada é pra sempre! Inclusive, seu disco
 description: >-
      Prever quando um disco irá falhar totalmente é quase improvável, pois defeitos podem começar a aparecer por vários motivos; até mesmo pela própria utilização normal do dispositivo.
 summary: >-
      Prever quando um disco irá falhar totalmente é quase improvável, pois defeitos podem começar a aparecer por vários motivos; até mesmo pela própria utilização normal do dispositivo.
-readingtime: '3'
 slug: saiba-como-verificar-vida-util-do-seu-disco-no-linux
 date: 2020-02-17T16:25:12.051Z
-#image
-thumbnailImage: "https://lh3.googleusercontent.com/2t0rcPI_nhVvYD4SDhI4WGw1cV-xmAAHoRIgxX4ZhlhMJMDwmL4NvwIW07dab7xjDCJwVeLmBa1TGCkV-g=w1000-no-tmp.jpg"
-thumbnailImagePosition: left
-coverImage: "https://lh3.googleusercontent.com/2t0rcPI_nhVvYD4SDhI4WGw1cV-xmAAHoRIgxX4ZhlhMJMDwmL4NvwIW07dab7xjDCJwVeLmBa1TGCkV-g=w1000-no-tmp.jpg"
-coverCaption: Foto de Patrick Lindenberg no Unsplash
-coverSize: partial
-# somente se nao tiver thumb definido - ==> autoThumbnailImage: true
 categories:
   - Linux
 tags:
-  - hhd
-  - ssd
   - smartmontools
   - S.M.A.R.T
-  - terminal
 keywords:
-  - hdd
+  - hd
   - ssd
-  - smart
   - smartmontools
   - terminal
 ---
 
-Todos sabem que os discos (HDD ou SSD) são equipamentos feitos de componentes mecânicos, suscetíveis a desgastes com o passar do tempo. Prever quando um disco irá falhar totalmente é quase improvável, pois defeitos podem começar a aparecer por vários motivos; até mesmo pela própria utilização normal do dispositivo. 
+Todos sabem que os discos (HDD ou SSD) são equipamentos feitos de componentes, **suscetíveis a desgastes**
+com o passar do tempo. Prever quando um disco irá falhar é quase impossível, pois **defeitos podem começar** a 
+aparecer por vários motivos; até mesmo pela própria utilização normal do dispositivo. 
 
-Portanto, para evitar os famosos badblocks, setores defeituosos na superfície do disco, que dificultam a leitura/escrita de dados deixando o tempo de resposta do disco muito lento, você precisa saber diagnosticar o estado atual do disco; antes mesmo que ele comece a falhar! 
+Portanto, para evitar os famosos 'badblocks' (por exemplo), setores defeituosos na superfície do disco, 
+que dificultam a leitura/escrita de dados deixando o tempo de resposta do disco muito lento, 
+**você precisa saber diagnosticar o estado atual** do disco; antes mesmo que ele comece a falhar! 
 
 [ADSENSE]
 
-Atualmente os discos rígidos modernos podem realocar ou marcar os badblocks automaticamente através do serviço de monitoramento chamado [SMART](https://pt.wikipedia.org/wiki/S.M.A.R.T.). Isso é impercetivel ao sistema operacional e ao usuário por se um tratamento na camada de hardware do disco sendo desnecessário o intervenção manual, mas nem sempre esse tratamento é feito com sucesso.
+Atualmente os discos modernos podem realocar ou marcar os badblocks automaticamente, 
+através do **serviço de monitoramento** chamado [SMART](https://pt.wikipedia.org/wiki/S.M.A.R.T.). 
+Isso é impercetivel ao sistema operacional e ao usuário, por se um tratamento na camada de hardware do disco sendo 
+desnecessário o intervenção manual. Mas, é sempre válido conhecer e definir um controle para um melhor acompanhamento da "saúde" do disco.
 
-É possível monitorar os erros de leitura do disco (mesmo antes dos badblocks começarem a aparecer) usando o SMART. No Linux, este recurso é disponibilizado através do “smartmontools“, um pacote disponível nos repositórios da maioria das distribuições .
+É possível monitorar os erros de leitura do disco (mesmo antes dos badblocks começarem a aparecer) usando o SMART. 
+No Linux, este recurso é disponibilizado através do “smartmontools“, um pacote disponível nos repositórios da maioria das distribuições .
 
 #### SMARTMONTOOLS
 
@@ -73,6 +69,14 @@ sudo smartctl -s on /dev/sda
 {{< /highlight >}}
 
 #### Diagnosticando seu disco
+
+{{< alert success no-icon >}}
+**FIQUE SABENDO**
+
+Devido a grande procura sobre esse tema, resolvi criar um curso focado nos fundamentos de discos e partições no Linux.
+
+Curtiu? [Eu quero o curso](https://www.udemy.com/course/fundamentos-linux-sistemas-de-arquivos-e-dispositivos/?referralCode=BE4C4F68EECD104189ED)
+{{< /alert >}}
 
 O smartmontools oferece diversos níveis de diagnósticos – **Rápido e Longo**. No nível mais rápido já é possível coletar muitas informações úteis sobre a vida útil do seu disco!
 

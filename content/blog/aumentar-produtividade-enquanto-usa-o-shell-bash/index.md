@@ -32,13 +32,13 @@ Se sua rotina no Linux é definida por **executar comandos para agilizar suas op
 
 O terminal Linux é **amado por muitos e odiados por outros**. Basicamente, tudo que é feito no ambiente gráfico é possível fazer no terminal Linux. Mas, claro nem todos estão dispostos a abdicar de uma vida “tranquila” para ficar digitando comandos em terminal. 
 
-Então, para que os estão dispostos, apresento maneiras para executar menos comandos e ser **mais eficiente em suas tarefas** :)
+Então, para os que estão dispostos, apresento algumas dicas que uso para executar menos comandos e ser **mais eficiente em minhas tarefas** :)
 
 ## Shell Bash
 
 Primeiramente, o **shell (ou interpretador de linha de comando)** é um módulo que atua como camada externa (“concha“) entre o usuário e o sistema operacional. Existem **diversos tipos** de shell. O primeiro deles foi o **Bourne shell (sh)** que oferecia diversos comandos internos que permitiam ao usuário solicitar chamadas ao sistema operacional. 
 
-A partir daí houveram evoluções significativas do shell. Atualmente, a maioria dos sistemas Linux usam, por padrão, **uma evolução do Bourne shell, chamada Bash (Bourne Again Shell)**. O Bash, além das funcionalidades das versões anteriores, também implementa um linguagem simples de programação que permite o desenvolvimento de pequenos programas (os famosos shell scripts).
+A partir daí existiram evoluções significativas do shell. Atualmente, a maioria dos sistemas Linux usam, por padrão, **uma evolução do Bourne shell, chamada Bash (Bourne Again Shell)**. O Bash, além das funcionalidades das versões anteriores, também implementa um linguagem simples de programação que permite o desenvolvimento de pequenos programas (os famosos shell scripts).
 
 <!--**RECOMENDO QUE LEIA:** 
 
@@ -52,18 +52,26 @@ A partir daí houveram evoluções significativas do shell. Atualmente, a maiori
 
 ***
 -->
-Em resumo, o **shell** é um programa independente do usuário, **executado fora do kernel**, que fornece uma interface para interpretação de comandos. Ele permite a interação com o sistema executando comandos em uma **interface de texto (CLI)**. Mesmo que você esteja apenas usando o ambiente gráfico e nunca tenha precisado usar ou executar nenhum comando Linux, o shell está em constante execução. Quando você abrir o terminal de linha de comando, você verá o shell em pleno funcionamento :)😉
+Em resumo, o **shell** é um programa independente do usuário, **executado fora do kernel**, que fornece uma interface para interpretação de comandos. Ele permite a interação com o sistema executando comandos em uma **interface de texto (CLI)**. Mesmo que você esteja apenas usando o ambiente gráfico e nunca tenha precisado usar ou executar nenhum comando Linux, o shell está em constante execução. Quando você abrir o terminal de linha de comando, você verá o shell em pleno funcionamento 😉
 
 ## Foco na produtividade
 
 Aqui deixo algumas dicas que podem fazer com você seja mais produtivo **enquanto usa o shell Bash** (obviamente, não apenas estas). 
+
+{{< alert info no-icon >}}
+**SE LIGA**
+
+O vídeo no início dessa publicação apresenta melhor essas dicas. Confere aí!
+{{< /alert >}}
 
 #### 1 - Diretório do usuário num instante
 
 O til (~) é uma abreviação do diretório inicial do usuário logado no sistema. Isso significa que você **não precisa digitar o caminho completo para o diretório inicial**. Onde quer que você esteja no sistema de arquivos, você pode usar este comando para acessar o diretório inicial: 
 
 {{< highlight Bash shell scripts >}}
-$ pwd $ cd /usr/share/locale $ cd ~
+$ pwd 
+$ cd /usr/share/locale 
+$ cd ~
 {{< /highlight >}}
 
 Também, é possível, executar **apenas o comando cd sem o caracter til** (~): "cd" ele retorna para o diretório do usuário vigente.

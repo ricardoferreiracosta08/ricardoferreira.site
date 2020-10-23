@@ -7,8 +7,9 @@ summary: >-
   Manipulação de discos ou partições são muito comuns, principalmente quando
   decide-se ter mais de um sistema instalado na máquina ou criar "espaço
   reservado" para determinados arquivos.
-readingtime: '10'
 slug: guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux
+images:
+  - 2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/cover.jpeg
 date: 2019-11-29T18:25:12.051Z
 categories:
   - Linux
