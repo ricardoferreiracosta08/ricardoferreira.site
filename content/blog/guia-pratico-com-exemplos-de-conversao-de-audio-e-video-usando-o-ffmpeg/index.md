@@ -1,7 +1,7 @@
 ---
 draft: true
 title: Guia prático de conversão de áudio e vídeo usando o FFmpeg
-seotitle: Guia prático com exemplos de conversão de áudio e vídeo usando o FFmpeg
+#seotitle: Guia prático com exemplos de conversão de áudio e vídeo usando o FFmpeg
 subtitle: O poder do FFmpeg
 description: >-
      FFmpeg é um excelente framework, de código aberto, completo que lida com arquivos de áudio e vídeo. Por isso, 
@@ -13,12 +13,8 @@ readingtime: '3'
 slug: guia-pratico-com-exemplos-de-conversao-de-audio-e-video-usando-o-ffmpeg
 date: 2020-02-03T11:25:12.051Z
 #image
-thumbnailImage: "../../../images/FFMPEG.png"
-thumbnailImagePosition: left
-coverImage: "https://lh3.googleusercontent.com/9NWvgvBH5-cDu4SK4PgUqdZBGFeLLeWiXBGEHqscVP-qdLCb0s7_w6E6Q8aVvg0B-fFY22P20vkt6k4sqw=w1000-no-tmp.jpg"
-coverCaption: Foto Viktor Talashuk no Unsplash
-coverSize: partial
-# somente se nao tiver thumb definido - ==> autoThumbnailImage: true
+images:
+  - 2020/02/
 categories:
   - Linux
 tags:

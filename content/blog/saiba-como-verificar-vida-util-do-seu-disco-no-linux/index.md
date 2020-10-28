@@ -1,7 +1,7 @@
 ---
 draft: false
-title: Veja como verificar a vida útil do seu disco no Linux
-seotitle: Você já se preocupou em verificar a vida útil do seu HD ou SSH?
+title: Veja como verificar a vida útil do seu disco usando Linux
+#seotitle: Você já se preocupou em verificar a vida útil do seu HD ou SSH?
 subtitle: Nada é pra sempre! Inclusive, seu disco
 description: >-
      Prever quando um disco irá falhar totalmente é quase improvável, pois defeitos podem começar a aparecer por vários motivos; até mesmo pela própria utilização normal do dispositivo.

@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Saiba como criar um servidor VPS Linux na infraestrutura de nuvem da DigitalOcean
+title: Como criar servidor cloud VPS Linux na DigitalOcean
 seotitle: Como criar um servidor VPS Linux em infraestrutura de nuvem - e ganhe cupom com $100
 subtitle: 'E ganhe um cupom com $100'
 description: >-

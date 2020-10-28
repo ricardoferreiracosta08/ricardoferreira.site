@@ -1,7 +1,7 @@
 ---
 draft: false
 title: >-
-  Saiba como compilar e instalar programas Linux distribuídos diretamente pelo
+  Como compilar e instalar programas Linux distribuídos diretamente pelo
   código-fonte [tar.gz]
 seotitle: Saiba como compilar e instalar programas Linux distribuídos diretamente pelo código-fonte [tar.gz]
 subtitle: './configure, make e make install'
@@ -191,4 +191,4 @@ Por fim, informo que para instalar a maioria dos programas a partir do código-f
 
 * * *
 
-Via | [MakeTechEasier](https://www.maketecheasier.com/compile-linux-programs-source/)
+<!-- Via | [MakeTechEasier](https://www.maketecheasier.com/compile-linux-programs-source/) -->
