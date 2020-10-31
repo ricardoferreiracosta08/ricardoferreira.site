@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>terminal on Ricardo Ferreira</title>
+    <link>https://ricardoferreira.site/tags/terminal/</link>
+    <description>Recent content in terminal on Ricardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Wed, 15 Jan 2020 22:35:51 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como prevenir que seus arquivos sejam removidos, acidentalmente</title>
+      <link>https://ricardoferreira.site/2020/01/saiba-como-prevenir-que-seus-arquivos-e-pastas-sejam-removidos-ou-modificados-acidentalmente/</link>
+      <pubDate>Wed, 15 Jan 2020 22:35:51 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2020/01/saiba-como-prevenir-que-seus-arquivos-e-pastas-sejam-removidos-ou-modificados-acidentalmente/</guid>
+      <description>Caso você queira prevenir que seus arquivos e pastas sejam removidos ou modificados acidentalmente,  basta você usar ferramentas definidas, por padrão, nos sistemas Linux.</description>
+    </item>
+    
+    <item>
+      <title>O poder e a versatilidade do comando xargs</title>
+      <link>https://ricardoferreira.site/2019/12/o-poder-e-a-versatilidade-do-comando-xargs/</link>
+      <pubDate>Wed, 11 Dec 2019 18:35:51 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2019/12/o-poder-e-a-versatilidade-do-comando-xargs/</guid>
+      <description>Embora todos os comandos do Linux tenham os três fluxos padrão, nem todos aceitam o stdout de outro comando como entrada para sua entrada padrão. Isso significa que você não pode canalizar a entrada para eles. Daí o comando xargs entra na jogada</description>
+    </item>
+    
+    <item>
+      <title>8 dicas que eu uso para aumentar minha produtividade no shell Bash</title>
+      <link>https://ricardoferreira.site/2019/12/aumentar-produtividade-enquanto-usa-o-shell-bash/</link>
+      <pubDate>Mon, 09 Dec 2019 18:00:43 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2019/12/aumentar-produtividade-enquanto-usa-o-shell-bash/</guid>
+      <description>Algumas dicas que podem ser muito úteis para você aumentar sua produtividade ao usar o shell bash. Maneiras para ser mais eficiente em suas tarefas.</description>
+    </item>
+    
+    <item>
+      <title>7 comandos Linux que estão &#34;obsoletos&#34; há anos e, provavelmente, você ainda os usa</title>
+      <link>https://ricardoferreira.site/2019/12/ifconfig-e-outros-comandos-linux-de-rede-obsoletos-ha-anos-e-que-ja-possuem-sucessores/</link>
+      <pubDate>Tue, 03 Dec 2019 12:51:56 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2019/12/ifconfig-e-outros-comandos-linux-de-rede-obsoletos-ha-anos-e-que-ja-possuem-sucessores/</guid>
+      <description>Embora ainda funcionais, esses comandos são, realmente, considerados obsoletos e, portanto, devem ser renunciadas em favor de ferramentas mais &amp;ldquo;modernas&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Como carregar módulos no Kernel Linux </title>
+      <link>https://ricardoferreira.site/2019/11/como-carregar-modulos-no-kernel-linux/</link>
+      <pubDate>Wed, 27 Nov 2019 15:16:22 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2019/11/como-carregar-modulos-no-kernel-linux/</guid>
+      <description>Usando o lsmod e a leitura do /proc/filesystems, capturo os módulos carregados no sistema. Com o modprobe carrego o módulo isofs (iso9660), previamente suportado, no meu Kernel LTS 4.19.84-1, disponibilizado no diretório /lib/modules/$(uname -r)/kernel/fs/isofs/.</description>
+    </item>
+    
+  </channel>
+</rss>

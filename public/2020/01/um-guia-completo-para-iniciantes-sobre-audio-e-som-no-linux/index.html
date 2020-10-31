@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    
+    
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreira.sitesitemap.xml" />
+
+    <meta name="author" content="Ricardo Ferreira">
+    <meta name="description" content="No Linux há muitos programas que podem ajudar nas tarefas mais profissionais. Mas, é importante entender como funciona o áudio e som no Linux.">
+    <meta name="keywords" content="som,audio,linux">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+
+<meta name="twitter:title" content="Guia completo para iniciantes sobre áudio e som no Linux"/>
+<meta name="twitter:description" content="No Linux há muitos programas que podem ajudar nas tarefas mais profissionais. Mas, é importante entender como funciona o áudio e som no Linux."/>
+
+    <meta property="og:title" content="Guia completo para iniciantes sobre áudio e som no Linux" />
+<meta property="og:description" content="No Linux há muitos programas que podem ajudar nas tarefas mais profissionais. Mas, é importante entender como funciona o áudio e som no Linux." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ricardoferreira.site/2020/01/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux/" />
+<meta property="og:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+<meta property="article:published_time" content="2020-01-12T17:25:12+00:00" />
+<meta property="article:modified_time" content="2020-01-12T17:25:12+00:00" /><meta property="og:site_name" content="Ricardo Ferreira" />
+
+
+    <title>
+  Guia completo para iniciantes sobre áudio e som no Linux | Ricardo Ferreira
+</title>
+
+    
+      <link rel="canonical" href="https://ricardoferreira.site/2020/01/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d6e433e13546fa567433d5584c785811e370595e0c26d582e31f33105df646eb.css" integrity="sha256-1uQz4TVG&#43;lZ0M9VYTHhYEeNwWV4MJtWC4x8zEF32Rus=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+      
+      
+        
+        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.76.5" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation"  style="background-color: black;color: white;position: sticky;top: 0;z-index: 100" >
+  <section class="container">
+    
+    
+
+    <a class="navigation-title" href="/" style="color: white;">
+     Ricardo Ferreira
+     
+    </a>
+    
+
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"  style="color: white;"></i>
+        </span>
+      
+
+     
+    
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+         
+	  
+            <p class="stories-title" style="color: #c80000">
+                <strong>Das vibrações do som a geração do áudio</strong>
+            </p>
+          
+         
+          <h1 class="title">Guia completo para iniciantes sobre áudio e som no Linux</h1>
+        </div>
+        
+        <hr class="line" />
+<div class="post-meta">
+          <div class="date">
+	  
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2020-01-12T17:25:12Z">
+		12 Janeiro 2020
+              </time>
+            </span>
+	    <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              7 minutos
+            </span>
+	   
+	</div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">Linux</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/som/">som</a>
+      <span class="separator">•</span>
+    <a href="/tags/alsa/">alsa</a>
+      <span class="separator">•</span>
+    <a href="/tags/pulseaudio/">pulseaudio</a>
+      <span class="separator">•</span>
+    <a href="/tags/iniciante/">iniciante</a></div>
+
+</div>
+<hr class="line" />
+
+
+        
+      </header>
+
+      <div>
+        
+        
+        
+        <p>Quando se pensa em áudio e som no Linux vem logo a mente ferramentas voltadas para <strong>produção musical</strong> ou profissional da área.</p>
+<p>No Linux <strong>há muitos programas</strong> que podem ajudar nas tarefas mais profissionais. Mas, o foco agora é para todos os usuários que queiram entender como funciona o áudio e som no Linux.</p>
+<h2 id="do-começo">Do começo</h2>
+<p>Primeiramente, áudio e som são coisas distintas. Conforme <a href="https://www.dicionarioinformal.com.br/diferenca-entre/%C3%A1udio/som/">Dicionário Informal</a>, áudio se refere a “transmissão ou reprodução eletrônica de um som”. Por outro lado, o som é “qualquer variação de pressão (no ar, na água…) que o ouvido humano possa captar”.</p>
+<h4 id="como-e-o-que-eu-posso-ouvir">Como e o que eu posso ouvir?</h4>
+<p>Você pode se lembrar da escola que <strong>o som são ondas que viajam pelo ar</strong>. Vibrações de qualquer tipo fazem com que as moléculas do ar se movam. Quando essa forma de onda encontra seus ouvidos, ela faz com que os pelos do ouvido não se movam. Cabelos diferentes são suscetíveis a <strong>frequências diferentes</strong>, e os sinais enviados por esses cabelos são transformados em sons que você ouve em seu cérebro.</p>
+<p>A <strong>intensidade do som</strong> vem da sua frequência, quanto mais curtas forem as ondas em uma forma de onda, maior será o som. O <strong>volume do som</strong> vem de quão altas as ondas são. A <strong>audição humana</strong> fica em um intervalo entre 20 Hz e 20.000 Hz, embora varie por pessoa. Para nós, as ondas abaixo de 20 Hz são chamadas de “infra-som” e as ondas acima de 20kHz são chamadas de “ultrassom”. Praticamente nenhum humano pode <strong>ouvir além do ultrassom</strong> – normalmente, sua audição limitara-se em 16kHz.</p>
+<p>Para <strong>entender tudo isso</strong>, confira este <a href="https://www.szynalski.com/tone-generator">gerador de tom</a>, onde você pode experimentar diversas frequências e sons diferentes.</p>
+<hr>
+<blockquote>
+<p><strong>VOCÊ SABIA?</strong></p>
+<p>A audição humana é bem limitada. Estamos entre as menores faixas de freqüência audíveis por seres vivos.
+Por exemplo, um <!-- raw HTML omitted -->gato pode ouvir até 40kHz<!-- raw HTML omitted --> e os <!-- raw HTML omitted -->golfinhos podem ouvir até ouvir até 160kHz<!-- raw HTML omitted -->!!</p>
+</blockquote>
+<hr>
+<h4 id="como-meu-computador-gera-som">Como meu computador gera som?</h4>
+<p>Para ouvir o som, você provavelmente usará <strong>fones de ouvido ou alto-falantes</strong>. Dentro deles há cones que são acionados por um eletroímã, fazendo com que eles vibrem em frequências muito precisas. Isso é, basicamente, <strong>como o som é reproduzido</strong>. Embora os fones de ouvido modernos certamente sejam bastante complexos.</p>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<p>Para acionar esse ímã, uma fonte de áudio enviará um sinal analógico (uma forma de onda) por um fio ao driver, fazendo com que ele se mova na frequência dessa forma de onda. Isto é, basicamente, <strong>como funciona a reprodução de áudio</strong> – e não vamos nos aprofundar muito mais do que isso.</p>
+<p><strong>Computadores são digitais</strong> – o que significa que eles não lidam com dados analógico; processadores entendem LIGADO e DESLIGADO; eles não entendem 38.689138% LIGADO e 78.21156% DESLIGADO. Ao <strong>converter um sinal analógico</strong> (como o som) em um digital, utilizamos um <strong><a href="https://pt.wikipedia.org/wiki/Modula%C3%A7%C3%A3o_por_c%C3%B3digo_de_pulsos">formato chamado PCM</a></strong>. Para um PCM ser transformado em um sinal analógico, você <strong>precisa de um DAC</strong> – ou, literalmente, <strong>uma placa de som</strong>. DAC significa ‘Digital to Analog Converter’, ou algumas pessoas o chamam de “Digital Audio Converter / Chip”.</p>
+<p>PCM significa <strong>Pulse-code Modulation</strong>, que é uma maneira de <strong>representar sinais analógicos amostrados em um formato digital</strong>. Imagine pegar uma amostra de uma forma de onda em intervalos regulares e armazenar o valor e, em seguida, arredondar esse valor para um ‘passo’ mais próximo. Isso é PCM. A <strong>precisão do PCM</strong> vem de dois elementos, que não serão escopos do texto, mas que poderão ser lidos mais detalhadamentes <a href="https://www.reddit.com/r/linux/comments/coi4dt/a_complete_guide_of_and_debunking_of_audio_on">AQUI</a>: taxa de amostragem (sampling rate) e profundidade de bits (bit depth).</p>
+<p>– <strong>taxa de amostragem</strong> é expressa em Hz e é com que frequência uma amostra de uma forma de onda é capturada;</p>
+<p>– <strong>profundidade de bits</strong> é a informação armazenada em cada amostra;</p>
+<p>– <strong>canais</strong> decidem quantas saídas simultâneas o PCM pode dirigir separadamente. Já que temos 2 ouvidos, você precisa de pelo menos dois canais 🙂</p>
+<p>Como resultado… a <strong>reprodução de áudio padrão</strong> para usuários e profissionais é de 48kHz, 16 bits, 2 canais PCM. Isso é mais do que suficiente para representar totalmente o alcance total da audição humana.</p>
+<h2 id="áudio-e-som-no-linux">Áudio e som no Linux</h2>
+<p>Então, agora que sabemos como o PCM funciona, <strong>como áudio e som no Linux funcionam?</strong> Alguns componentes importantes entram em jogo aqui, e precisaremos discutir cada um deles com algum detalhe.</p>
+<h4 id="alsa">ALSA</h4>
+<p>ALSA é a <strong>interface para o driver</strong> de som do kernel. A <strong>ALSA pode receber um sinal PCM</strong> e enviá-lo ao seu hardware conversando com o driver. Algo importante a saber sobre a maioria das placas de sons é que eles só podem receber <strong>um sinal de cada vez</strong>, na verdade. Isso significa que apenas um único aplicativo pode enviar o som para o ALSA de uma só vez. Há muito tempo, em um tempo mais obscuro, você não podia assistir a um filme enquanto ouvia música :/</p>
+<p>Este problema foi resolvido há muito tempo com o uso de <strong>alsalib</strong>, mas fazer mixagem em um nível de biblioteca não é uma solução muito boa para o problema. Isso deu origem a servidores de som, dos quais muitos já existiram. Antes do PulseAudio, o <strong>esound</strong> era muito popular, mas tinha muitos problemas, eventualmente foi <strong>sucedido pelo PulseAudio</strong>.</p>
+<h4 id="pulseaudio">PulseAudio</h4>
+<p>Quando você pensa em áudio no Linux, o <strong>PulseAudio</strong> está provavelmente entre as primeiras coisas que você pensa. O PulseAudio NÃO é um driver nem fala com seus drivers. Na verdade, o PulseAudio <strong>só faz duas coisas</strong> que discutiremos em detalhes, posteriormente. O <strong>PulseAudio fala com a ALSA</strong>, assumindo o controle de seu único fluxo de áudio, e permite que <strong>outros aplicativos conversem com o PulseAudio</strong>. O <strong>Pulse é um ‘multiplexador de áudio’</strong>, transformando vários sinais em um através de um processo que é chamado de <strong>mixagem</strong>. A mixagem é um assunto incrivelmente complicado que não vamos falar aqui 🙂</p>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<p>Essas <strong>duas coisas permitem</strong> que você jogue um jogo, ouça música e assista ao YouTube, além de notificações para produzir um som ao mesmo tempo. O PulseAudio é o elemento mais crítico da pilha de sons do Linux. O PulseAudio atualmente é um <strong>software muito estável e sólido</strong>. Se você tem problemas de áudio nos dias de hoje, geralmente é um problema no ALSA ou no seu driver.</p>
+<h2 id="outros-servidores-de-som">Outros servidores de som</h2>
+<p>O PulseAudio não é o único <strong>servidor/daemon de som disponível para o Linux</strong>, embora seja certamente o mais popular e provavelmente o padrão de qualquer distribuição que você esteja usando. O <strong>PulseAudio tornou-se um padrão para o som do Linux</strong> e tem, de longe, a melhor compatibilidade com a maioria dos aplicativos, mas isso não significa que não haja alternativas.</p>
+<p>Então, listo algumas (existem outras alternativas):</p>
+<h4 id="jack">JACK</h4>
+<p>O JACK Audio Connection Kit, um acrônimo recursivo como o GNU, é um servidor de som focado principalmente em baixa latência. Se você estiver fazendo um <strong>trabalho de áudio profissional no Linux</strong>, já estará familiarizado com o JACK. O desenvolvimento do JACK é muito focado em baixa latência, áudio em tempo real e é crítico para essas pessoas. O JACK está disponível na maioria das distros como uma alternativa, e você pode experimentar por si mesmo, se quiser; mas você pode achar que alguns aplicativos não funcionam bem com o JACK.</p>
+<h4 id="pipewire">PipeWire</h4>
+<p>PipeWire é um projeto que está atualmente <strong>em desenvolvimento</strong>, procurando resolver os principais problemas que existem nos servidores de som atuais. O <a href="https://pipewire.org/">PipeWire</a> não é apenas um servidor de som, mas também lida com a multiplexação de fontes de vídeo (como uma câmera). Especial atenção foi dada ao trabalho com aplicativos de área restrita (como <!-- raw HTML omitted -->Flatpaks<!-- raw HTML omitted -->), que é uma área em que o PulseAudio está ausente.</p>
+<p>O PipeWire é um <strong>projeto muito promissor</strong> que pode muito bem ter sucesso com o PulseAudio no futuro e você deve esperar aparecer nos repositórios de distribuição muito em breve. Você pode testá-lo agora mesmo, embora não seja tão fácil começar como o JACK.</p>
+<h2 id="considerações">Considerações</h2>
+<p>Aspectos mostrados foram base para um entendimento de como funcionam áudio e som no Linux. Para falarmos de <strong>qualidade de áudio/som</strong>, compre um boa placa de som externa. Uma boa placa fará uma melhoria significativa na sua experiência auditiva; e nada tem a ver com ALSA e PulseAudio 🙂</p>
+<p>Seus fones de ouvido e amplificadores realmente fazem a maior diferença. Ter um bom par de fones de ouvido emparelhado com um bom amplificador de fone de ouvido dez vezes mais importante do que qualquer outro chip que você tenha no seu PC.</p>
+<p>Por fim, <strong>quebrando alguns mitos.</strong> A qualidade de som do Linux <strong>NÃO é pior</strong> que o Windows. Eles são exatamente os mesmos, o Pulse não funciona tão diferente de como o Windows faz mixagens e reamostragens. E a qualidade de som do Linux <strong>NÃO pode ser melhor</strong> que o Windows. Eles são exatamente os mesmos. Todas as melhorias na qualidade vêm do driver e da sua placa de som, não do servidor de som :/</p>
+<p>Via | Excelente artigo do <a href="https://www.reddit.com/user/_Spell_/">usuário <em>Spell</em></a> publicado no <a href="https://www.reddit.com/r/linux/comments/coi4dt/a_complete_guide_of_and_debunking_of_audio_on/">Reddit</a></p>
+
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+    <h2>Gostou?</h2>
+    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor independente, 
+    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
+
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+
+        
+    <div class="centered">
+    <div class="about">
+    <ul>
+      
+        
+          <li>
+            <a href="https://www.linkedin.com/in/ricardo-ferreira-costa" aria-label="LinkedIn"  target="_blank" >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/ricardoferreiracosta08" aria-label="Github"  target="_blank" >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://www.instagram.com/ricardoferreira.tec" aria-label="Instagram"  target="_blank" >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://twitter.com/rferreira_tec" aria-label="Twitter"  target="_blank" >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://youtube.com/c/RicardoFerreiraTecnologia" aria-label="YouTuBe"  target="_blank" >
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://t.me/ricardoferreira_tec" aria-label="Telegram"  target="_blank" >
+              <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+    </ul>
+    </div>
+    </div>
+
+
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Construído usando Hugo v0.74.3. Hospedado em Netlify</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Ricardo Ferreira 
+      
+      
+         · 
+        Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & Tema adaptado de <a target="_blank" href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-151634076-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

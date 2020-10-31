@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>trabalho on Ricardo Ferreira</title>
+    <link>https://ricardoferreira.site/tags/trabalho/</link>
+    <description>Recent content in trabalho on Ricardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 23 Dec 2019 12:25:12 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/trabalho/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como criar servidor cloud VPS Linux na DigitalOcean</title>
+      <link>https://ricardoferreira.site/2019/12/como-criar-um-servidor-vps-linux-na-infraestrutura-de-nuvem-da-digitalocean/</link>
+      <pubDate>Mon, 23 Dec 2019 12:25:12 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2019/12/como-criar-um-servidor-vps-linux-na-infraestrutura-de-nuvem-da-digitalocean/</guid>
+      <description>O uso de um servidor VPS é solução indicada caso queira ter mais controle sobre o ambiente alocado.  Usando um servidor VPS na nuvem você passa a ter controle e flexibilidade do recurso usado. Sendo assim,  veja como criar um servidor VPS Linux na infraestrutura de nuvem da DigitalOcean – empresa norte-americana de hospedagem de servidor na nuvem.</description>
+    </item>
+    
+  </channel>
+</rss>

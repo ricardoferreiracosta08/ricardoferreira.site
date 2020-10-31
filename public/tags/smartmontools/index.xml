@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>smartmontools on Ricardo Ferreira</title>
+    <link>https://ricardoferreira.site/tags/smartmontools/</link>
+    <description>Recent content in smartmontools on Ricardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 17 Feb 2020 16:25:12 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/smartmontools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Veja como verificar a vida útil do seu disco usando Linux</title>
+      <link>https://ricardoferreira.site/2020/02/saiba-como-verificar-vida-util-do-seu-disco-no-linux/</link>
+      <pubDate>Mon, 17 Feb 2020 16:25:12 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2020/02/saiba-como-verificar-vida-util-do-seu-disco-no-linux/</guid>
+      <description>Prever quando um disco irá falhar totalmente é quase improvável, pois defeitos podem começar a aparecer por vários motivos; até mesmo pela própria utilização normal do dispositivo.</description>
+    </item>
+    
+  </channel>
+</rss>

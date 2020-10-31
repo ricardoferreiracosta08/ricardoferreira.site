@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>som on Ricardo Ferreira</title>
+    <link>https://ricardoferreira.site/tags/som/</link>
+    <description>Recent content in som on Ricardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 12 Jan 2020 17:25:12 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/som/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guia completo para iniciantes sobre áudio e som no Linux</title>
+      <link>https://ricardoferreira.site/2020/01/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux/</link>
+      <pubDate>Sun, 12 Jan 2020 17:25:12 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2020/01/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux/</guid>
+      <description>No Linux há muitos programas que podem ajudar nas tarefas mais profissionais. Mas, é importante entender como funciona o áudio e som no Linux.</description>
+    </item>
+    
+  </channel>
+</rss>

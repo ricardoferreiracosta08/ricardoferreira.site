@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iniciante on Ricardo Ferreira</title>
+    <link>https://ricardoferreira.site/tags/iniciante/</link>
+    <description>Recent content in iniciante on Ricardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 26 Jan 2020 22:35:51 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/iniciante/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alguns erros que eu cometi quando comecei a aprender Linux</title>
+      <link>https://ricardoferreira.site/2020/01/erros-que-todo-usuario-linux-cometeu-ao-comecar-aprender-linux/</link>
+      <pubDate>Sun, 26 Jan 2020 22:35:51 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2020/01/erros-que-todo-usuario-linux-cometeu-ao-comecar-aprender-linux/</guid>
+      <description>Todos os erros se concentram no terminal de comandos, pois lá está presente os maiores riscos para o sistema</description>
+    </item>
+    
+    <item>
+      <title>Guia completo para iniciantes sobre áudio e som no Linux</title>
+      <link>https://ricardoferreira.site/2020/01/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux/</link>
+      <pubDate>Sun, 12 Jan 2020 17:25:12 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2020/01/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux/</guid>
+      <description>No Linux há muitos programas que podem ajudar nas tarefas mais profissionais. Mas, é importante entender como funciona o áudio e som no Linux.</description>
+    </item>
+    
+    <item>
+      <title>Saiba como, facilmente, ocultar arquivos e pastas no Linux</title>
+      <link>https://ricardoferreira.site/2020/01/saiba-como-facilmente-ocultar-arquivos-e-pastas-no-linux/</link>
+      <pubDate>Fri, 10 Jan 2020 21:25:12 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2020/01/saiba-como-facilmente-ocultar-arquivos-e-pastas-no-linux/</guid>
+      <description>Ocultar um arquivo e pastas no sistema de arquivos do Linux é algo tão simples que nem precisa instalar ou  configurar algo no sistema. Desde dos primórdios do sistema existe um recurso amplamente usado para ocultar arquivos e pastas no Linux.</description>
+    </item>
+    
+    <item>
+      <title>10 coisas que você deve saber caso esteja começando com o Linux</title>
+      <link>https://ricardoferreira.site/2020/01/10-coisas-que-voce-deve-saber-caso-esteja-comecando-com-o-linux/</link>
+      <pubDate>Tue, 07 Jan 2020 15:25:12 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2020/01/10-coisas-que-voce-deve-saber-caso-esteja-comecando-com-o-linux/</guid>
+      <description>Para muitos o começo de tudo sempre é desafiador. Principalmente, por estar prestes a conhecer algo novo.  Em se tratando de &amp;ldquo;um novo&amp;rdquo; sistema operacional, que será usado na sua máquina, não seria diferente.</description>
+    </item>
+    
+    <item>
+      <title>Guia completo para iniciantes sobre como instalar programas no Linux</title>
+      <link>https://ricardoferreira.site/2019/12/guia-completo-para-iniciantes-sobre-como-instalar-programas-no-linux/</link>
+      <pubDate>Sun, 08 Dec 2019 19:02:55 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2019/12/guia-completo-para-iniciantes-sobre-como-instalar-programas-no-linux/</guid>
+      <description>Muitos usuários desistem por não entenderem ou desconhecerem uma operação simples do sistema&amp;hellip; instalar programas</description>
+    </item>
+    
+    <item>
+      <title>Como compilar e instalar programas Linux distribuídos diretamente pelo código-fonte [tar.gz]</title>
+      <link>https://ricardoferreira.site/2019/12/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz/</link>
+      <pubDate>Mon, 02 Dec 2019 15:18:46 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2019/12/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz/</guid>
+      <description>Hoje em dia, instalar programas no Linux se tornou a coisa mais simples de se fazer no sistema. Dependendo da distribuição Linux, você tem recursos complementares que facilitam ainda mais o processo. Contudo, em muitos momentos você se depara com programas disponibilizados diretamente pelo código-fonte.</description>
+    </item>
+    
+  </channel>
+</rss>

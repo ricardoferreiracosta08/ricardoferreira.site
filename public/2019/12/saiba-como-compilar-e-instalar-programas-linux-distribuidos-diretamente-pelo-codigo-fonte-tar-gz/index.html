@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    
+    
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreira.sitesitemap.xml" />
+
+    <meta name="author" content="Ricardo Ferreira">
+    <meta name="description" content="Hoje em dia, instalar programas no Linux se tornou a coisa mais simples de se fazer no sistema. Dependendo da distribuição Linux, você tem recursos complementares que facilitam ainda mais o processo. Contudo, em muitos momentos você se depara com programas disponibilizados diretamente pelo código-fonte.">
+    <meta name="keywords" content="linux,tar.gz,compilação,programas,instalação,configure,make,make install">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+
+<meta name="twitter:title" content="Como compilar e instalar programas Linux distribuídos diretamente pelo código-fonte [tar.gz]"/>
+<meta name="twitter:description" content="Hoje em dia, instalar programas no Linux se tornou a coisa mais simples de se fazer no sistema. Dependendo da distribuição Linux, você tem recursos complementares que facilitam ainda mais o processo. Contudo, em muitos momentos você se depara com programas disponibilizados diretamente pelo código-fonte."/>
+
+    <meta property="og:title" content="Como compilar e instalar programas Linux distribuídos diretamente pelo código-fonte [tar.gz]" />
+<meta property="og:description" content="Hoje em dia, instalar programas no Linux se tornou a coisa mais simples de se fazer no sistema. Dependendo da distribuição Linux, você tem recursos complementares que facilitam ainda mais o processo. Contudo, em muitos momentos você se depara com programas disponibilizados diretamente pelo código-fonte." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ricardoferreira.site/2019/12/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz/" />
+<meta property="og:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+<meta property="article:published_time" content="2019-12-02T15:18:46+00:00" />
+<meta property="article:modified_time" content="2019-12-02T15:18:46+00:00" /><meta property="og:site_name" content="Ricardo Ferreira" />
+
+
+    <title>
+  Como compilar e instalar programas Linux distribuídos diretamente pelo código-fonte [tar.gz] | Ricardo Ferreira
+</title>
+
+    
+      <link rel="canonical" href="https://ricardoferreira.site/2019/12/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d6e433e13546fa567433d5584c785811e370595e0c26d582e31f33105df646eb.css" integrity="sha256-1uQz4TVG&#43;lZ0M9VYTHhYEeNwWV4MJtWC4x8zEF32Rus=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+      
+      
+        
+        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.76.5" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation"  style="background-color: black;color: white;position: sticky;top: 0;z-index: 100" >
+  <section class="container">
+    
+    
+
+    <a class="navigation-title" href="/" style="color: white;">
+     Ricardo Ferreira
+     
+    </a>
+    
+
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"  style="color: white;"></i>
+        </span>
+      
+
+     
+    
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+         
+	  
+            <p class="stories-title" style="color: #c80000">
+                <strong>./configure, make e make install</strong>
+            </p>
+          
+         
+          <h1 class="title">Como compilar e instalar programas Linux distribuídos diretamente pelo código-fonte [tar.gz]</h1>
+        </div>
+        
+        <hr class="line" />
+<div class="post-meta">
+          <div class="date">
+	  
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2019-12-02T15:18:46Z">
+		2 Dezembro 2019
+              </time>
+            </span>
+	    <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              7 minutos
+            </span>
+	   
+	</div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">Linux</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/tar.gz/">tar.gz</a>
+      <span class="separator">•</span>
+    <a href="/tags/compila%C3%A7%C3%A3o/">compilação</a>
+      <span class="separator">•</span>
+    <a href="/tags/iniciante/">iniciante</a></div>
+
+</div>
+<hr class="line" />
+
+
+        
+      </header>
+
+      <div>
+        
+        
+        
+        <p>Hoje em dia, instalar programas no Linux se tornou a <strong>coisa mais simples</strong> de se fazer no sistema. Dependendo da distribuição Linux, você tem recursos complementares que facilitam ainda mais o processo. <strong>Gerenciadores de pacotes</strong> e repositórios oficiais, mantidos pela comunidade mantenedora da distribuição, enriquecem o processo de instalação dos programas. </p>
+<p>Contudo, em muitos momentos você se depara com programas disponibilizados diretamente pelo código-fonte. Assim, cabe ao usuário ter conhecimento prévio para compilar e instalar programas Linux distribuídos diretamente pelo código-fonte, normalmente compactados <strong>via tar.gz</strong>.</p>
+<h2 id="contextualizando">Contextualizando</h2>
+<p>As distribuições Linux, ao longo do tempo, vem melhorando e criando métodos para facilitar a instalação de pacotes no Linux. Gerenciadores de pacotes, bem como: <strong>apt e yum</strong>, são exemplos legados dessas mudanças. Atualmente, <strong>existem projetos</strong> que visam a <strong>universalização do modo e distribuição de programas</strong> para os sistemas Linux.</p>
+<p>Entre eles, destaco o <a href="http://www.linuxdescomplicado.com.br/2016/06/pacotes-snap-do-ubuntu-podem-se-tornar-formato-universal-para-todas-as-distribuicoes-linux.html">Snap</a> e <a href="http://www.linuxdescomplicado.com.br/2016/06/anuncio-do-flatpak-o-futuro-das-aplicacoes-linux-provalvelmente-o-concorrente-direto-ao-snap-da-canonical.html">Flatpak</a>; Canonical e Red Hat como mantenedoras, respectivamente. Entretanto, vão aparecer situações onde você não terá nenhuma dessas opções disponíveis&hellip; pois alguns desenvolvedores de softwares <strong>disponibilizam seus programas diretamente pelo código-fonte (source) -</strong> que por sinal <strong>era, nos primórdios, o único método utilizado</strong> para instalação de programas no Linux (algumas distribuições ainda mantêm essa técnica com frequência).</p>
+<p>Em resumo, você tem acesso a um arquivo compactado no <strong>formato .tar.gz</strong> (maioria das vezes), contendo o código-fonte do programa, e <strong>a instalação consiste em compilar e instalar</strong> os executáveis gerados na máquina. Mas por quê ainda se preocupar com isso se existem <strong>pacotes pré-compilados para instalação</strong>?!</p>
+<p><strong>SAIBA MAIS</strong></p>
+<hr>
+<blockquote>
+<p>Pacotes pré-compilados são pacotes já compilados e distribuídos num arquivo pronto, com dependências já configuradas, em um formato simples de instalar (.deb - Debian e .rpm - Red Hat, por exemplo).</p>
+</blockquote>
+<hr>
+<p>Devido às <strong>diferenças</strong> que existem entre uma distribuição e outra um pacote do Fedora não funcionará no Debian, por exemplo. Assim, essa <strong>técnica</strong> garante suporte a todas as distribuições Linux, universalmente! Ou seja, baixando um programa distribuído a partir do código-fonte (source), <strong>não será preciso</strong> se ater a qual distro Linux você está usando; pois, verificada as dependências necessárias, será possível compilar e instalar o programa. Isso se deve ao fato de que essa maneira de distribuir os programas, diretamente pelo código-fonte (source), não é feita por <strong>empacotamento pré-compilado</strong> (pacote .deb ou .rpm, por exemplo). Assim, cabe ao usuário ter conhecimento prévio para compilar e instalar programas Linux distribuídos diretamente pelo código-fonte, normalmente <strong>compactados via tar.gz</strong>.</p>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<p><strong>SAIBA MAIS</strong></p>
+<hr>
+<blockquote>
+<p>Compilar significa transformar o código-fonte, escrito pelo programador, nos arquivos binários que são executados pelo sistema.</p>
+</blockquote>
+<hr>
+<p>Por outro lado, um problema, em compilar e instalar programas a partir dos fontes, é que o processo é demorado e, para muitos, nem sempre simples. É preciso ter instalado uma grande quantidade de compiladores e bibliotecas, necessários para compilar os mais diversos programas. E isso causa bastante dificuldade para os usuários, principalmente iniciantes.</p>
+<h2 id="em-4-passos">Em 4 passos&hellip;</h2>
+<p>Resumindo o processo de instalação de programas disponibilizados a partir do código-fonte, informo que o mesmo se dá em 4 passos: 1- Descompactar o arquivo tar.gz que <strong>contém o código-fonte</strong>; 2- Resolver <strong>dependências necessárias</strong> para a instalação correta do programa - cada programa possui suas próprias dependências, e isso torna processo demorado e um pouco mais complicado. Cada programa tem sua peculiaridade; 3- Compilar; 4- Instalar;</p>
+<p><strong>DETALHES</strong></p>
+<hr>
+<blockquote>
+<p>Neste tutorial usei como exemplo o programa <strong><a href="https://www.pidgin.im/">Pidgin IM</a></strong> e o sistema <strong><a href="http://www.linuxdescomplicado.com.br/2016/05/por-que-resolvi-trocar-o-ubuntu-lts-pelo-opensuse-tumbleweed.html">OpenSUSE Tumbleweed</a></strong></p>
+</blockquote>
+<hr>
+<h4 id="1--baixar-e-descompactar-o-arquivo-targz">1- Baixar e descompactar o arquivo tar.gz</h4>
+<p>Primeiramente, faça o download do <strong>arquivo pidgin-2.11.0.tar.gz</strong> <a href="https://sourceforge.net/projects/pidgin/files/Pidgin/">AQUI</a> [ <strong>Versão 2.11.0</strong> ] O arquivo baixado é um tarball, geralmente é identificado através do uso de duas extensões &ldquo;.tar&rdquo; e &ldquo;.gz&rdquo;, combinadas para formar &ldquo;.tar.gz&rdquo;. Uma extensão combinada simples, .tar.bz também é popular. Esse formato usa o <strong>utilitário tar</strong> para criar um único <em><strong>tarfile</strong></em> com todo o conteúdo do diretório - o código-fonte do programa, no caso. Para descompactar o conteúdo do arquivo <strong>arquivo pidgin-2.11.0.tar.gz</strong>, você deve executar o comando:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">tar -xzvf pidgin-2.11.0.tar.gz</code></pre></div>
+<p>Entre no diretório descompactado:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash"><span style="color:#fff;font-weight:bold">cd</span> pidgin-2.11.0</code></pre></div>
+<p>O conteúdo do diretório <strong>contém o código-fonte da aplicação</strong> e o <strong>arquivo Makefile</strong>, entre outros arquivos. <strong>Essa estrutura garante um programa distribuído a partir do código-fonte</strong> (source) ;-) Por isso, <strong>nem todo arquivo &ldquo;tar.gz&rdquo;</strong> significará um programa distribuído dessa forma; poderá ser apenas um arquivo compactado.</p>
+<p><strong>SAIBA MAIS</strong></p>
+<hr>
+<blockquote>
+<p>O Makefile é um arquivo para configuração de compilação utilizado pelo programa make, cuja ideia é simplificar e agilizar a compilação de programas.</p>
+</blockquote>
+<hr>
+<h4 id="2--resolver-dependências">2- Resolver dependências</h4>
+<p>Esta etapa pode ser considerada a mais &ldquo;complexa&rdquo; do processo, pois caso as dependências necessárias, da aplicação, não sejam atendidas o código-fonte não poderá ser compilado e instalado, futuramente. E cada aplicação possui um leque diferente de dependências. No caso do programa Pidgin <strong>existem algumas dependências que precisam ser resolvidas</strong> - ou seja pacotes que já precisam estar instalados no sistema, pois caso contrário dará erro no processo! Em distribuições derivadas do Debian, a principal dependência é pacote de compiladores que contém todas as ferramentas básicas para compilação de um programa. Muito conhecido, chamado de <strong>build-essential</strong>:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo apt-get install build-essential</code></pre></div>
+<p>Como usei o OpenSUSE, o pacote equivalente é o <strong>devel_basis</strong>:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo zypper install -t pattern devel_basis</code></pre></div>
+<p>Assim, depois de satisfazer as dependências do sistema, é preciso resolver as pendências da aplicação. Para isso, você DEVE executar o comando:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">./configure</code></pre></div>
+<p>Esse comando <strong>verifica todas dependências que o programa precisa</strong>, como se o pacote de compiladores está instalado; por exemplo. O prefixo ./ diz ao sistema Linux para <strong>procurar o arquivo de configuração no diretório atual e executá-lo</strong>. Assim, você precisa estar dentro do diretório do programa (<strong>pidgin-2.11.0</strong>) para poder executar esse comando:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">[ .... ] 
+checking <span style="color:#fff;font-weight:bold">for</span> strdup... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> strstr... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> atexit... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> setlocale... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> getopt_long... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> inet_aton... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> __res_query in -lresolv... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> gethostent in -lnsl... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> socket... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> getaddrinfo... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> inet_ntop... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> getifaddrs... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> socklen_t... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> struct sockaddr.sa_len... no checking whether IPV6_V6ONLY is declared... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> special C compiler options needed <span style="color:#fff;font-weight:bold">for</span> large files... no 
+checking <span style="color:#fff;font-weight:bold">for</span> _FILE_OFFSET_BITS value needed <span style="color:#fff;font-weight:bold">for</span> large files... no 
+checking <span style="color:#fff;font-weight:bold">for</span> dlopen... no 
+checking <span style="color:#fff;font-weight:bold">for</span> dlopen in -ldl... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> library containing ceil... -lm checking <span style="color:#fff;font-weight:bold">for</span> fileno()... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> the %z format string in strftime()... yes 
+checking whether NLS is requested... yes 
+checking <span style="color:#fff;font-weight:bold">for</span> intltool-update... /usr/bin/intltool-update checking <span style="color:#fff;font-weight:bold">for</span> intltool-merge... /usr/bin/intltool-merge checking <span style="color:#fff;font-weight:bold">for</span> intltool-extract... /usr/bin/intltool-extract checking <span style="color:#fff;font-weight:bold">for</span> xgettext... /usr/bin/xgettext checking <span style="color:#fff;font-weight:bold">for</span> msgmerge... /usr/bin/msgmerge checking <span style="color:#fff;font-weight:bold">for</span> msgfmt... /usr/bin/msgfmt 
+[ .... ]</code></pre></div>
+<p>Se tudo correr bem, <strong>você não verá quaisquer erros</strong>:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">[ ... ] 
+Build with Perl support....... : yes 
+Build with Tcl support........ : yes 
+Build with Tk support......... : yes 
+Print debugging messages...... : no 
+**Pidgin will be installed in /usr/local/bin. configure complete, now <span style="color:#fff;font-weight:bold">type</span> <span style="color:#0ff;font-weight:bold">&#39;make&#39;</span>**</code></pre></div>
+<p>Caso apresente algum erro, basta examinar a saída do comando ./configure e instalar/configurar todas as dependências ausentes usando seu gerenciador de pacotes. Execute ./configure <strong>quantos vezes for preciso até que você não veja mais erros</strong> ;-) No meu caso (com o openSUSE Tumbleweed instalado), <strong>tive alguns erros</strong> que avisaram a ausência de alguns pacotes. Portanto, segue lista de todos os pacotes que foi precisa instalar no meu ambiente de testes:</p>
+<p><strong>AVISO</strong></p>
+<hr>
+<blockquote>
+<p>Cada sistema vai apresentar <strong>resultados diferentes</strong>. Pois, poderão surgir dependências que estarão resolvidas e outras não. Por isso, essa etapa requer mais atenção do usuário Linux.</p>
+</blockquote>
+<hr>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo zypper install intltool glib2-devel gtk2-devel libXss1 libXss.so.1 libXss-devel libSM-devel meanwhile-devel libgnutls-devel tcl-devel tk-devel</code></pre></div>
+<h4 id="3--compilação">3- Compilação</h4>
+<p>Depois de ter resolvido todas as dependências, você deve compilar o programa. Use o <strong>comando make</strong> para fazer isso:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">make</code></pre></div>
+<p>Este processo pode demorar alguns minutos, dependendo do programa. Certifique-se de que a saída não exibirá quaisquer erros antes de continuar para o próximo passo ;-)</p>
+<h4 id="4--instalação">4- Instalação</h4>
+<p>Pronto&hellip; não tendo apresentado nenhum erro até agora, você precisa instalar o programa. Basta executar <strong>sudo make install</strong>. Este passo move todos os binários em seu local correto no seu sistema para que o programa fique pronto para usar:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo make install</code></pre></div>
+<p>Programa instalado!!   Mas, se você desejar remover o programa, que acabou de instalar, basta entrar no diretório que você instalou o programa e executar os 2 comandos abaixo:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo make uninstall 
+sudo make clean</code></pre></div>
+<p>Por fim, informo que para instalar a maioria dos programas a partir do código-fonte (source), você passará pelas mesmas situações do exemplo. Contudo, com algumas diferenças das mostrados aqui. Por exemplo, você pode <strong>precisar usar cmake em vez de make</strong>. Por isso, sempre leia o arquivo &ldquo;README&rdquo; contido no diretório de cada programa!! Além dele, normalmente, existe o arquivo &ldquo;Install&rdquo; também ;-)</p>
+<hr>
+<!-- raw HTML omitted -->
+
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+    <h2>Gostou?</h2>
+    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor independente, 
+    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
+
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+
+        
+    <div class="centered">
+    <div class="about">
+    <ul>
+      
+        
+          <li>
+            <a href="https://www.linkedin.com/in/ricardo-ferreira-costa" aria-label="LinkedIn"  target="_blank" >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/ricardoferreiracosta08" aria-label="Github"  target="_blank" >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://www.instagram.com/ricardoferreira.tec" aria-label="Instagram"  target="_blank" >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://twitter.com/rferreira_tec" aria-label="Twitter"  target="_blank" >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://youtube.com/c/RicardoFerreiraTecnologia" aria-label="YouTuBe"  target="_blank" >
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://t.me/ricardoferreira_tec" aria-label="Telegram"  target="_blank" >
+              <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+    </ul>
+    </div>
+    </div>
+
+
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Construído usando Hugo v0.74.3. Hospedado em Netlify</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Ricardo Ferreira 
+      
+      
+         · 
+        Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & Tema adaptado de <a target="_blank" href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-151634076-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

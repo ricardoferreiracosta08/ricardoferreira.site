@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    
+    
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreira.sitesitemap.xml" />
+
+    <meta name="author" content="Ricardo Ferreira">
+    <meta name="description" content="Restaurar um sistema Linux parece algo improvável, já que não é uma função padrão da maiorias das distros Linux.  Por isso, seguem algumas ferramentas e opções que usam snapshots que servem para restaurar seu sistema Linux em caso de falhas.">
+    <meta name="keywords" content="backup,snapshots,falha,recuperação,linux">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+
+<meta name="twitter:title" content="Conheça algumas maneiras para restaurar seu sistema Linux em caso de falhas"/>
+<meta name="twitter:description" content="Restaurar um sistema Linux parece algo improvável, já que não é uma função padrão da maiorias das distros Linux.  Por isso, seguem algumas ferramentas e opções que usam snapshots que servem para restaurar seu sistema Linux em caso de falhas."/>
+
+    <meta property="og:title" content="Conheça algumas maneiras para restaurar seu sistema Linux em caso de falhas" />
+<meta property="og:description" content="Restaurar um sistema Linux parece algo improvável, já que não é uma função padrão da maiorias das distros Linux.  Por isso, seguem algumas ferramentas e opções que usam snapshots que servem para restaurar seu sistema Linux em caso de falhas." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ricardoferreira.site/2020/01/conheca-algumas-maneiras-para-restaurar-seu-sistema-linux-em-caso-de-falhas/" />
+<meta property="og:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+<meta property="article:published_time" content="2020-01-12T12:25:12+00:00" />
+<meta property="article:modified_time" content="2020-01-12T12:25:12+00:00" /><meta property="og:site_name" content="Ricardo Ferreira" />
+
+
+    <title>
+  Conheça algumas maneiras para restaurar seu sistema Linux em caso de falhas | Ricardo Ferreira
+</title>
+
+    
+      <link rel="canonical" href="https://ricardoferreira.site/2020/01/conheca-algumas-maneiras-para-restaurar-seu-sistema-linux-em-caso-de-falhas/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d6e433e13546fa567433d5584c785811e370595e0c26d582e31f33105df646eb.css" integrity="sha256-1uQz4TVG&#43;lZ0M9VYTHhYEeNwWV4MJtWC4x8zEF32Rus=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+      
+      
+        
+        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.76.5" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation"  style="background-color: black;color: white;position: sticky;top: 0;z-index: 100" >
+  <section class="container">
+    
+    
+
+    <a class="navigation-title" href="/" style="color: white;">
+     Ricardo Ferreira
+     
+    </a>
+    
+
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"  style="color: white;"></i>
+        </span>
+      
+
+     
+    
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+         
+	  
+            <p class="stories-title" style="color: #c80000">
+                <strong>Falhou! E agora? Não se desespere :)</strong>
+            </p>
+          
+         
+          <h1 class="title">Conheça algumas maneiras para restaurar seu sistema Linux em caso de falhas</h1>
+        </div>
+        
+        <hr class="line" />
+<div class="post-meta">
+          <div class="date">
+	  
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2020-01-12T12:25:12Z">
+		12 Janeiro 2020
+              </time>
+            </span>
+	    <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              6 minutos
+            </span>
+	   
+	</div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">Linux</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/backup/">backup</a>
+      <span class="separator">•</span>
+    <a href="/tags/snapshots/">snapshots</a>
+      <span class="separator">•</span>
+    <a href="/tags/desktop/">desktop</a></div>
+
+</div>
+<hr class="line" />
+
+
+        
+      </header>
+
+      <div>
+        
+        
+        
+        <p>Quem nunca quis dá um CTRL+Z no momento em que fez ou aconteceu algo errado? Aquele <strong>botão “desfazer”</strong>,
+encontrado em diversos programas, resolveria muitas coisas caso tivesse disponível para <strong>restaurar seu sistema Linux</strong>
+em situações inesperadas.</p>
+<p>Sendo assim, conheça algumas maneiras para restaurar seu sistema Linux em caso de falhas, possivelmente, <strong>reversíveis é claro</strong>.</p>
+<h2 id="contextualizando">Contextualizando</h2>
+<p><img src="https://lh3.googleusercontent.com/D1e7JZOBJnf87a3jefobbVSLoYkFgovBoxd5qBtiy1jdAcx-eEWa0qz7U39lN9paNQ8OFe9bvryCkNKZiA=w1000-no-tmp.jpg" alt=""></p>
+<p>Restaurar um sistema Linux parece algo improvável, já que não é uma função padrão da maiorias das distros Linux. O termo “Ponto de Restauração” soa bem familiar para usuários Windows. Essa funcionalidade garante uma restauração completa do sistema, tendo uma vez salvo o “ponto” anterior à falha.</p>
+<p>Contudo, mesmo não tendo essa característica disponível por padrão, os sistemas Linux possuem diversas ferramentas que oferecem a funcionalidade da “Restauração do Sistema”. A maioria delas são baseadas no mesmo princípio da restauração do sistema no Windows. Elas criam <em>snapshots</em> (estados instantâneos) de seu sistema em intervalos especificados e deixa você reverter para um estado salvo anteriormente.</p>
+<h2 id="snapshots-">Snapshots ?!</h2>
+<p>Para muitos, o mais óbvio e claro seria fazer backup do sistema regularmente; e quando fosse preciso recuperá-lo, bastava recuperar o último backup funcional. Contudo, existem diferenças entre <strong>modelos de backup</strong> e <strong>snpashots</strong>.</p>
+<p>Comumente, as rotinas de backup armazenam, em espaço secundário, pastas e volumes do sistema. Quando se decide fazer backup de todo o disco, o <!-- raw HTML omitted -->processo passar a ser clonagem de disco<!-- raw HTML omitted -->; o que garantem uma imagem fidedigna do disco.</p>
+<p>Por outro lado, <em>snapshots</em> são <strong>estados instantâneos</strong> de um sistema de arquivos criado em pontos específicos no tempo que é guardado e mantido no mesmo dispositivo de armazenamento. Eles geralmente incluem todos os diretórios e arquivos de um sistema de arquivos, ou, no mínimo, os arquivos necessários para o sistema operacional funcionar corretamente.</p>
+<p><img src="https://lh3.googleusercontent.com/iISZpVI0NatC6EYUXibcCdUtLrapXDJYxX7M32KqaEYAy0CfaKujmDm28tpvn54nmdfQCpYGPm_B6SRc3Q=w1000-no-tmp.jpg" alt=""></p>
+<p>Manter um <em>snapshot</em> no mesmo sistema de arquivos do SO torna possível executar uma reversão mais rápida; e também economiza espaço em disco, pois desse modo cada novo <em>snapshot</em> não tem que salvar todo o estado do sistema de arquivos. Em vez disso, os futuros <em>snapshots</em> passam a funcionar como <strong><em>backups incrementais</em></strong>, porque passam a salvar somente as alterações que foram feitas desde o último <em>snapshot</em>.</p>
+<p>Assim, significa que cada <em>snapshot</em> depende do anterior para restaurar completamente o sistema. Diferentemente de <!-- raw HTML omitted -->uma imagem de um disco completo<!-- raw HTML omitted --> que é independente de outros backups, contudo economiza bem mais espaço e precisa ser salvo em outra mídia secundária.</p>
+<p>Entretanto, o problema com os <em>snapshots</em> é claro… por salvarem no mesmo espaço do SO, passam a ficar vulneráveis a falhas do disco – se o disco sofrer danos mecânicos, você provavelmente vai perder os <em>snapshots</em>, juntamente com todo o sistema de arquivos do sistema. Para evitar isso, é recomendado fazer um <em>snapshot</em> logo em seguida que instalar e configurar a sua distribuição Linux pela primeira vez. Depois copiá-lo para um dispositivo de armazenamento secundário.</p>
+<p>Assim, seguem algumas ferramentas e opções <strong>que usam snapshots</strong> que servem para restaurar seu sistema Linux em caso de falhas.</p>
+<h4 id="timeshift">TimeShift</h4>
+<p><img src="https://lh3.googleusercontent.com/SDK2YioMYHVv_lLynC-MFeK5hBtRSewu89HkGrAnyuruySLqMP_3ez2JRzCKYvRPX2ZGriYrwcU0MWcBuQ=w1000-no-tmp.jpg" alt=""></p>
+<p>TimeShift possui uma interface gráfica simples. Também é possível usá-lo a partir do terminal. Por padrão, no momento da criação do snapshot,  ele não inclui arquivos pessoais de um usuário (o diretório /home). Contudo, você pode adicionar pastas personalizadas nos seus snapshots ;-).</p>
+<p>Ele permite tirar snapshots sempre que quiser ou automaticamente, mediante configuração. Você pode agendar horários, que variam de diários, semanais e mensais; e configurar quantas vezes o TimeShift deve removê-los. Há uma opção especial chamada <strong>Boot Snapshots</strong> que cria um novo snapshot após cada reinicialização.</p>
+<p>Para restaurar um snapshot você deve selecionar um ‘ponto’ específico e escolher o local para o qual ele deve ser restaurado. O TimeShift oferece a opção de restaurar snapshots para dispositivos externos. Além disso, existem um recurso de “Clonagem” que permite copiar diretamente o estado atual do sistema para outro dispositivo –  útil para a migração para um novo computador, sem ter que configurar tudo do zero.</p>
+<p>Para instalar em distros Ubuntu e derivadas:</p>
+<!-- raw HTML omitted -->
+<h4 id="back-in-time">Back In Time</h4>
+<p><img src="https://lh3.googleusercontent.com/_20zVjNTasE4kK8zLwcIhdU-nZrzUDa9OZDclQliknEj0Q6j30f6fxjeDFLIQphYnUL6uO2n0emGLyWMcg=w1000-no-tmp.jpg" alt=""></p>
+<p><strong>Back In Time</strong> é amigável o suficiente para atrair iniciantes no Linux. Enquanto isso, a aba de Configurações oferece um controle refinado. A interface funciona como um gerenciador de arquivos regular, e você pode visualizar todos os seus snapshots, procurar arquivos em cada um deles, e restaurar arquivos e pastas selecionadas.</p>
+<p>O <strong>Back In Time</strong> cria snapshots que podem incluir pastas de sua escolha. Seus snapshots podem ser criptografadas e armazenadas em um dispositivo de rede, um disco externo, ou seu sistema de arquivos local. Ele atualiza somente os arquivos que foram alterados. Além disso, os snapshots podem ser agendadas (diário, semanal, mensal, várias vezes por dia ou somente após a reinicialização) ou você pode criá-los manualmente.</p>
+<p>Para instalar em distros Ubuntu e derivadas:</p>
+<!-- raw HTML omitted -->
+<p>Caso a sua distro não ofereça o programa no repositório oficial, baixe o source <!-- raw HTML omitted -->aqui<!-- raw HTML omitted -->.</p>
+<h4 id="systemback">SystemBack</h4>
+<p><img src="https://lh3.googleusercontent.com/llvo2h8jiRHHqM7XcwRmOedpKrFLFE2HgEDDgA_qmFPdb3097fLUxql6t0R_yKnIwZ-CveCcZ1wvzIR8_w=w1000-no-tmp.jpg" alt=""></p>
+<p>O Systemback é software de Backup. Ele se mostra como uma das melhores ferramentas para este nicho, por ser simples e fácil de usar, com diversos recursos.</p>
+<p>Com ele você pode:</p>
+<ul>
+<li>
+<p>Copiar o seu sistema completamente;</p>
+</li>
+<li>
+<p>Criar pontos de restauração; semelhante ao que acontece com a restauração do sistema do Windows;</p>
+</li>
+<li>
+<p>Criar sua própria distro LIVE, criando uma ISO inicializável</p>
+</li>
+</ul>
+<p>Para fazer a instalação nos sistemas Ubuntu e derivados – somente neles :(, execute os seguintes comandos (instalação via PPA):</p>
+<!-- raw HTML omitted -->
+<p>Para mais informações de como usar essa ferramenta, <!-- raw HTML omitted -->segue tutorial completo<!-- raw HTML omitted -->.</p>
+<h4 id="snapper">Snapper</h4>
+<p><img src="https://lh3.googleusercontent.com/ebZXT_FVKMdBbO8USA0xsZm8GpV2Pv3asSIp9jQ7cTkFzaN2oYnCTH4VuvTRNXIUabGcI5GfD-Tq62L3nw=w1000-no-tmp.jpg" alt=""></p>
+<p>Snapper está intimamente ligado ao <!-- raw HTML omitted -->openSUSE<!-- raw HTML omitted -->, onde foi introduzido na versão 12.1. É possível instalá-lo em outras distribuições, mas não é garantido que funcione. A maneira mais fácil de configurar Snapper é instalar o openSUSE em uma partição Btrfs; nesse caso, Snapper é instalado e configurado automaticamente. Você pode usar o Snapper pela linha de comando ou através do YaST; e também há uma alternativa chamada <strong><!-- raw HTML omitted -->snapper-GUI<!-- raw HTML omitted --></strong>.</p>
+<!-- raw HTML omitted -->
+<h2 id="soluções-avançadas">Soluções Avançadas</h2>
+<p>Talvez as aplicações mostradas até agora não sirvam por completo para você. Assim, existem soluções mais avançadas que podem atender diversas outras soluções.</p>
+<h4 id="rsnapshot">Rsnapshot</h4>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<p>Ferramenta para sincronização de um sistema de arquivos local e remoto. É um utilitário de backup instantâneo (snapshot) baseado no rsync. Ele torna-se mais fácil para realizar backup instantâneos periódicos de máquinas locais e máquinas remotas através de SSH. A ferramenta faz uso extensivo de hard-links, sempre que possível, para reduzir significativamente o espaço em disco usado para armazenar os backups.</p>
+<!-- raw HTML omitted -->
+<h4 id="obnam">Obnam</h4>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<p>Obnam é um programa de backup seguro e fácil de usar. Os backups podem ser armazenados em discos rígidos locais ou remotos, através do protocolo SFTP. Entre algumas características, destaco: suporte à snapshots (backups instantâneos), Deduplicação de dados e backups criptografados, usando o GnuPG .</p>
+<!-- raw HTML omitted -->
+<h4 id="lvm-snapshots">LVM Snapshots</h4>
+<p><img src="https://lh3.googleusercontent.com/QCUALtIoyKpWd-KuysYu9_yG17sY9LdZakLhdrqd-HWBwnlDk0D1uLzR-5zf5fcc6Rk9rjeieIE5ymGvTg=w1000-no-tmp.jpg" alt=""></p>
+<p>LVM (Logical Volume Manager) é um método para alocar espaço do disco rígido, em volumes lógicos, que podem ser facilmente redimensionados; diferentemente das partições salvas nas tabelas de partições. Uma das grandes vantagens do uso do LVM é poder criar uma camada lógica sobre um disco rígido ou conjunto de discos e ter condições de de criar, excluir, redimensionar e expandir partições no disco sem precisar desligar o computador ou mover dados.</p>
+<p>Quando se trata de preservar dados preciosos, é sempre uma boa ideia para pensar sobre isso com antecedência. Assim, vale a pena considerar o uso de LVM como uma maneira de organizar seus discos rígidos. Embora não seja exatamente um aplicativo, a implementação LVM vem com um recurso snapshot embutido no kernel do Linux. Você pode montar os snapshots e navegar neles como qualquer outro disco ou partição. Além disso, mesclar vários snapshots e restaurá-los para resolver problemas do sistema.</p>
+
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+    <h2>Gostou?</h2>
+    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor independente, 
+    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
+
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+
+        
+    <div class="centered">
+    <div class="about">
+    <ul>
+      
+        
+          <li>
+            <a href="https://www.linkedin.com/in/ricardo-ferreira-costa" aria-label="LinkedIn"  target="_blank" >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/ricardoferreiracosta08" aria-label="Github"  target="_blank" >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://www.instagram.com/ricardoferreira.tec" aria-label="Instagram"  target="_blank" >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://twitter.com/rferreira_tec" aria-label="Twitter"  target="_blank" >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://youtube.com/c/RicardoFerreiraTecnologia" aria-label="YouTuBe"  target="_blank" >
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://t.me/ricardoferreira_tec" aria-label="Telegram"  target="_blank" >
+              <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+    </ul>
+    </div>
+    </div>
+
+
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Construído usando Hugo v0.74.3. Hospedado em Netlify</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Ricardo Ferreira 
+      
+      
+         · 
+        Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & Tema adaptado de <a target="_blank" href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-151634076-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

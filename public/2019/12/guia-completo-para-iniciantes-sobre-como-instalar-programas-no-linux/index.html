@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    
+    
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreira.sitesitemap.xml" />
+
+    <meta name="author" content="Ricardo Ferreira">
+    <meta name="description" content="Os programas podem vir de muitas fontes e cada equipe de desenvolvimento pode entregar seu software da maneira que achar melhor. Por isso, conhecer as formas de como instalar programas no Linux.">
+    <meta name="keywords" content="appimage,tar.gz,snap,flatpak,programas,linux,deb,rpm,repositórios">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+
+<meta name="twitter:title" content="Guia completo para iniciantes sobre como instalar programas no Linux"/>
+<meta name="twitter:description" content="Os programas podem vir de muitas fontes e cada equipe de desenvolvimento pode entregar seu software da maneira que achar melhor. Por isso, conhecer as formas de como instalar programas no Linux."/>
+
+    <meta property="og:title" content="Guia completo para iniciantes sobre como instalar programas no Linux" />
+<meta property="og:description" content="Os programas podem vir de muitas fontes e cada equipe de desenvolvimento pode entregar seu software da maneira que achar melhor. Por isso, conhecer as formas de como instalar programas no Linux." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ricardoferreira.site/2019/12/guia-completo-para-iniciantes-sobre-como-instalar-programas-no-linux/" />
+<meta property="og:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+<meta property="article:published_time" content="2019-12-08T19:02:55+00:00" />
+<meta property="article:modified_time" content="2019-12-08T19:02:55+00:00" /><meta property="og:site_name" content="Ricardo Ferreira" />
+
+
+    <title>
+  Guia completo para iniciantes sobre como instalar programas no Linux | Ricardo Ferreira
+</title>
+
+    
+      <link rel="canonical" href="https://ricardoferreira.site/2019/12/guia-completo-para-iniciantes-sobre-como-instalar-programas-no-linux/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d6e433e13546fa567433d5584c785811e370595e0c26d582e31f33105df646eb.css" integrity="sha256-1uQz4TVG&#43;lZ0M9VYTHhYEeNwWV4MJtWC4x8zEF32Rus=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+      
+      
+        
+        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.76.5" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation"  style="background-color: black;color: white;position: sticky;top: 0;z-index: 100" >
+  <section class="container">
+    
+    
+
+    <a class="navigation-title" href="/" style="color: white;">
+     Ricardo Ferreira
+     
+    </a>
+    
+
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"  style="color: white;"></i>
+        </span>
+      
+
+     
+    
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+         
+	  
+            <p class="stories-title" style="color: #c80000">
+                <strong>Dos programas compilados aos empacotados universalmente</strong>
+            </p>
+          
+         
+          <h1 class="title">Guia completo para iniciantes sobre como instalar programas no Linux</h1>
+        </div>
+        
+        <hr class="line" />
+<div class="post-meta">
+          <div class="date">
+	  
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2019-12-08T19:02:55Z">
+		8 Dezembro 2019
+              </time>
+            </span>
+	    <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              8 minutos
+            </span>
+	   
+	</div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">Linux</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/pacotes/">pacotes</a>
+      <span class="separator">•</span>
+    <a href="/tags/instala%C3%A7%C3%A3o/">instalação</a>
+      <span class="separator">•</span>
+    <a href="/tags/snap/">snap</a>
+      <span class="separator">•</span>
+    <a href="/tags/flatpak/">flatpak</a>
+      <span class="separator">•</span>
+    <a href="/tags/tar.gz/">tar.gz</a>
+      <span class="separator">•</span>
+    <a href="/tags/iniciante/">iniciante</a></div>
+
+</div>
+<hr class="line" />
+
+
+        
+      </header>
+
+      <div>
+        
+        
+        
+        <p>Os programas podem vir de <strong>muitas fontes</strong> e cada <strong>equipe de desenvolvimento</strong> pode entregar seu software da maneira que achar melhor. Por isso, conhecer as formas de como <strong>instalar programas</strong> no Linux é fundamental.</p>
+<p>Instalar programas no Linux, se tornou a coisa <strong>mais simples</strong> de se fazer hoje em dia. Dependendo da distribuição Linux, você tem <strong>recursos complementares</strong> que facilitam ainda mais o processo. As distribuições Linux, ao longo do tempo, vem melhorando e criando métodos para facilitar a instalação de pacotes no Linux. Gerenciadores de pacotes, bem como: <strong>apt e yum</strong>, são exemplos legados dessas mudanças.</p>
+<p>Atualmente, <strong>existem projetos</strong> que visam a <strong>universalização do modo e distribuição de programas</strong> para os sistemas Linux. Entre eles, destaco o <a href="https://www.linuxdescomplicado.com.br/2016/06/pacotes-snap-do-ubuntu-podem-se-tornar-formato-universal-para-todas-as-distribuicoes-linux.html">Snap</a> e <a href="https://www.linuxdescomplicado.com.br/2016/06/anuncio-do-flatpak-o-futuro-das-aplicacoes-linux-provalvelmente-o-concorrente-direto-ao-snap-da-canonical.html">Flatpak</a>; Canonical e Red Hat como mantenedoras, respectivamente.</p>
+<h2 id="instalar-programas-no-linux">Instalar programas no Linux</h2>
+<p>O <strong>histórico de desenvolvimento e publicação</strong> de aplicações nos sistemas Linux é amplamente discutido. A criação dos gerenciadores de pacotes (APT e <a href="https://www.linuxdescomplicado.com.br/2015/05/dnf-saiba-mais-sobre-o-novo-gerenciador-de-pacotes-do-fedora.html"><strong>DNF</strong></a>, por exemplo) foi repensada por conta de propostas para &ldquo;empacotamento&rdquo; de aplicações Linux, vide <strong><a href="https://www.linuxdescomplicado.com.br/2016/06/pacotes-snap-do-ubuntu-podem-se-tornar-formato-universal-para-todas-as-distribuicoes-linux.html">Snap</a></strong>, <strong><a href="https://www.linuxdescomplicado.com.br/2016/06/anuncio-do-flatpak-o-futuro-das-aplicacoes-linux-provalvelmente-o-concorrente-direto-ao-snap-da-canonical.html">Flatpak</a></strong> e <strong><a href="https://www.linuxdescomplicado.com.br/2016/02/appimage-ferramenta-que-permite-executar-aplicacoes-linux-independente-da-distribuicao-usada.html">AppImage</a></strong>.</p>
+<p>Para os idealizadores desses projetos, o <strong>cenário atual das aplicações Linux é problemático</strong> e afeta a flexibilidade de uso e desenvolvimento; já que para cada distro ou sistema Linux é <strong>preciso configurar bibliotecas e componentes</strong> peculiares para fazê-la funcionar. No passado, e ainda hoje, isso é contornado, trivialmente, com os pacotes pré-compilados ou, na ausência, deles, com os <a href="https://ricardoferreira.site/2019/12/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz/">distribuídos via tar.gz</a>. Sendo assim, daqui destaco algumas <strong>maneiras para instalar programas no Linux</strong>:</p>
+<h4 id="1-via-repositórios">1. Via Repositórios</h4>
+<p>Por mais de uma década, o Linux usou repositórios de software para distribuir software. Um &ldquo;repositório&rdquo; neste contexto é um <strong>servidor público da distribuição</strong> que hospeda pacotes de software pré-compilados - vide explicação no tópico a seguir.</p>
+<p>Uma distribuição Linux fornece um gerenciador de pacotes, comandos, e geralmente uma interface gráfica para esses comandos, que baixa o software do servidor e o instala no seu computador. É um <strong>conceito tão simples</strong> que serviu de modelo para todos os principais sistemas operacionais de celulares e, mais recentemente, para as &ldquo;lojas de aplicativos&rdquo;.</p>
+<p><img src="../../../images/ubuntu_software_on_u_DVPdY.jpg" alt="Loja de aplicativos do Ubuntu"></p>
+<p>A instalação a partir de um repositório de software é o <strong>principal método de instalação</strong> de aplicativos no Linux. Deve ser o primeiro método no qual você procura qualquer aplicativo que pretenda instalar. Para instalar a partir de um repositório de software, geralmente, se usa algum <strong>gerenciador de pacotes</strong>.</p>
+<p>O comando a ser usado depende da distribuição Linux a usada. Por exemplo: - Debian e derivados, como Ubuntu e Linux Mint - gerenciador APT - <a href="https://www.linuxdescomplicado.com.br/2016/03/linha-do-tempo-contendo-todas-as-versoes-do-fedora.html">Fedora</a> - gerenciador <a href="https://www.linuxdescomplicado.com.br/2015/05/dnf-saiba-mais-sobre-o-novo-gerenciador-de-pacotes-do-fedora.html">DNF</a> - <a href="https://www.linuxdescomplicado.com.br/2016/05/por-que-resolvi-trocar-o-ubuntu-lts-pelo-opensuse-tumbleweed.html">OpenSUSE</a> - gerenciador <a href="https://www.linuxdescomplicado.com.br/2015/05/15-comandos-zypper-opensuse.html">zypper</a> - <a href="https://www.linuxdescomplicado.com.br/2019/08/instalacao-do-arch-linux-como-aprendizado.html">Arch Linux</a> - gerenciador pacman Assim, como exemplo prático, vou simular a instalação, via linha de comando, do <a href="https://www.linuxdescomplicado.com.br/2017/02/uma-introducao-ao-editor-de-texto-nano.html">editor de texto nano</a> em algumas distribuições Linux:</p>
+<p><strong>Debian e derivados</strong></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo apt-get install nano</code></pre></div>
+<p><strong>RedHat e derivados</strong></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo yum install nano</code></pre></div>
+<p><strong>Fedora</strong></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo dnf install nano</code></pre></div>
+<p><strong>OpenSUSE</strong></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo zypper install nano</code></pre></div>
+<p>Além disso, existem os <strong>repositórios extras</strong> de cada distribuição Linux, além do repositório padrão. Por exemplo:</p>
+<ul>
+<li><a href="https://fedoraproject.org/wiki/EPEL">EPEL</a> atende ao Red Hat Enterprise Linux e CentOS.</li>
+<li><a href="http://rpmfusion.org/">RPMFusion</a> serve ao Fedora</li>
+<li>O Ubuntu tem vários níveis de suporte, além de uma rede PPA (Personal Package Archive)</li>
+<li>O <a href="http://packman.links2linux.org/">Packman</a> fornece software extra para o OpenSUSE</li>
+<li>O <a href="http://slackbuilds.org/">SlackBuilds.org</a> fornece scripts de compilação da [comunidade para Slackware]
+(<a href="https://www.linuxdescomplicado.com.br/2019/08/slackware-cria-programa-de-financiamento-coletivo.html)">https://www.linuxdescomplicado.com.br/2019/08/slackware-cria-programa-de-financiamento-coletivo.html)</a>.</li>
+</ul>
+<p>Assim, por padrão, seu sistema operacional Linux está configurado para buscar apenas seus <strong>repositórios padrões oficiais</strong>. Se você deseja usar opções de software diferentes, você deve adicionar esses repositórios extras. Geralmente, você pode instalar um repositório como se fosse um pacote de software.</p>
+<p>De fato, quando você instala certos softwares, como o <a href="https://www.linuxdescomplicado.com.br/2015/09/os-melhores-navegadores-web-para-linux.html">navegador da Web Vivaldi</a>, o Google Chrome e muitos outros, o que você está instalando é o acesso aos repositórios particulares, a partir dos quais a versão mais recente do aplicativo é mantida por eles.</p>
+<h4 id="2-via-pacotes-pré-compilados">2. Via pacotes pré-compilados</h4>
+<p><strong>SAIBA MAIS</strong></p>
+<hr>
+<blockquote>
+<p>Pacotes pré-compilados são pacotes já distribuídos num arquivo pronto, com dependências já configuradas, em um formato simples de instalar (.deb – Debian e .rpm – Red Hat, por exemplo).</p>
+</blockquote>
+<hr>
+<p>O modelo de repositório é tão popular porque fornece um link entre o usuário (você) e o desenvolvedor. Quando atualizações importantes são divulgadas, seu sistema solicita a aceitação delas e você pode concentrar todas em um local centralizado.</p>
+<p>Entretanto, há momentos em que <strong>um pacote é disponibilizado</strong> sem nenhum repositório anexado. Esses pacotes instaláveis vêm de várias formas. Por exemplo, um desenvolvedor distribui software em um formato de pacote pré-compilado Linux comum, como <strong>.rpm, .deb</strong>.</p>
+<p>Em relação a eles, você não os obtêm através de um repositório; você apenas faz o download do instalador. Esses <strong>pacotes únicos</strong> podem ser instalados com as mesmas ferramentas usadas na instalação a partir de um repositório. Se você <strong>clicar duas vezes</strong> no pacote baixado, um instalador gráfico é iniciado e o orienta no processo de instalação.</p>
+<p>Como alternativa, você pode instalar a partir de um terminal. A diferença aqui é que um arquivo de pacote único que você <strong>baixou da Internet</strong> não vem de um repositório. É uma instalação &ldquo;local&rdquo;, o que significa que o seu software de gerenciamento de pacotes não precisa baixá-lo para instalá-lo. A maioria dos gerenciadores de pacotes lida com isso de forma transparente: <strong>Por exemplo</strong>, o <a href="https://www.linuxdescomplicado.com.br/2016/11/introducao-ao-editor-de-videos-lightworks.html">editor de vídeo Lightworks</a> fornece um arquivo .deb para usuários Debian e derivados (como Ubuntu e LinuxMint) e um arquivo .rpm para usuários RedHat e derivados (como Fedora e CentOS). Quando você deseja atualizar, você volta ao site e baixa o arquivo apropriado, mais recente.</p>
+<p><strong>Usando o gerenciador de pacotes DNF e a distribuição Fedora</strong>:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo dnf install lwks-14.0.0-amd64.rpm</code></pre></div>
+<p>Em alguns casos, você precisa executar <strong>etapas adicionais</strong> para que o aplicativo seja executado. Leia com atenção a documentação sobre o software que está instalando.</p>
+<h4 id="3-via-pacotes-universais">3. Via pacotes &ldquo;universais&rdquo;</h4>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<p>Imagine poder executar aplicações Linux <strong>independente da distribuição</strong> usada ou não se preocupar com qual formato de pacote deve usar para cada distribuição e derivadas, bem como: .deb ou .rpm.</p>
+<p>Isso já é possível graças aos <strong>‘formatos universais’ Snap, Flatpak e AppImage</strong>, disponíveis para Linux. <strong>Em outras palavras</strong>, você poderá usar um programa no Fedora e no Ubuntu a partir de um mesmo arquivo – sem a necessidade de instalação de bibliotecas compartilhadas ou complementos peculiares de cada sistema.</p>
+<p>No caso do <a href="https://www.linuxdescomplicado.com.br/2016/02/appimage-ferramenta-que-permite-executar-aplicacoes-linux-independente-da-distribuicao-usada.html">AppImage</a>, a <strong>ideia central não é nova</strong> e lembra o uso dos programas portáteis no Windows; que você carrega no pendrive e pode executar diversas aplicações sem instalá-las. Estes “novos” formatos <strong>contêm todos os arquivos necessários</strong>, incluindo as dependências para os outros pacotes. Consequentemente, eles conterão <strong>arquivos de instalação maiores</strong>. Por outro lado, você não terá problema se remover uma aplicação em um desses formatos; pois nenhum outro pacote/programa será afetado por causa de conflito de dependências, por exemplo. Por isso, acredito que seja importante você <strong>conhecer suas peculiaridades</strong> e saber quando deve usar ou não cada um deles.</p>
+<p>Leia o artigo &ldquo;<a href="https://www.linuxdescomplicado.com.br/2017/08/snap-flatpak-e-appimage-formatos-universais-para-instalacao-de-programas-no-linux.html">Snap, Flatpak e AppImage – formatos universais para instalação de programas no Linux</a>&rdquo; e saiba mais sobre o assunto.</p>
+<h4 id="4-via-pacotes-diretos-da-fonte">4. Via pacotes diretos &ldquo;da fonte&rdquo;</h4>
+<p>Irão aparecer situações onde você não terá nenhuma dessas opções disponíveis… pois alguns desenvolvedores de softwares <strong>disponibilizam seus programas diretamente pelo código-fonte (source) –</strong> que por sinal <strong>era, nos primórdios, o único método utilizado</strong> para instalação de programas no Linux (algumas distribuições ainda mantêm essa técnica com frequência).</p>
+<p>Em resumo, você tem acesso a um arquivo compactado no <strong>formato .tar.gz</strong> (maioria das vezes), contendo o código-fonte do programa, e <strong>a instalação consiste em compilar e instalar</strong> os executáveis gerados na máquina. Mas por que ainda se preocupar com isso se existem <strong>pacotes pré-compilados para instalação</strong>?! Devido às <strong>diferenças</strong> que existem entre uma distribuição e outra um pacote do Fedora não funcionará no Debian, por exemplo.</p>
+<p>Assim, essa <strong>técnica</strong> garante suporte a todas as distribuições Linux, universalmente! Ou seja, baixando um programa distribuído a partir do código-fonte (source), <strong>não será preciso</strong> se ater a qual distro Linux você está usando; pois, verificada as dependências necessárias, será possível compilar e instalar o programa. Isso se deve ao fato de que essa maneira de distribuir os programas, diretamente pelo código-fonte (source), não é feita por <strong>empacotamento pré-compilado</strong> (pacote .deb ou .rpm, por exemplo). Assim, cabe ao usuário ter conhecimento prévio para compilar e instalar programas Linux distribuídos diretamente pelo código-fonte, normalmente <strong>compactados via tar.gz</strong>.</p>
+<p><strong>SAIBA MAIS</strong></p>
+<hr>
+<blockquote>
+<p>Compilar significa transformar o código-fonte, escrito pelo programador, nos arquivos binários que são executados pelo sistema.</p>
+</blockquote>
+<hr>
+<p>Por outro lado, um problema, em compilar e instalar programas a partir dos fontes, é que o <strong>processo é demorado</strong> e, para muitos, nem sempre simples. É preciso ter instalado uma grande quantidade de compiladores e bibliotecas, necessários para compilar os mais diversos programas. E isso causa bastante dificuldade para os usuários, principalmente iniciantes. Por isso, acredito que seja importante você <strong>conhecer suas peculiaridades</strong>.</p>
+<p>Leia o artigo &ldquo;<a href="https://ricardoferreira.site/2019/12/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz/">Saiba como compilar e instalar programas Linux distribuídos diretamente pelo código-fonte [tar.gz]</a>&rdquo; e saiba mais sobre o assunto.</p>
+<h4 id="5-via-scripts-de-instalação-genérica">5. Via Scripts de instalação genérica</h4>
+<p>Alguns desenvolvedores lançam seus pacotes em um dos vários <strong>formatos genéricos</strong>. As extensões comuns <strong>incluem .run e .sh</strong>. Os drivers da placa gráfica NVIDIA, os pacotes FX visuais Foundry, como Nuke e Mari, e muitos jogos sem DRM do <a href="http://gog.com/">GOG</a> usam esse estilo de instalador, por exemplo.</p>
+<p>Esse modelo de instalação <strong>depende do desenvolvedor para fornecer um &ldquo;assistente&rdquo; de instalação</strong>. Alguns dos instaladores são gráficos, enquanto outros apenas rodam em um terminal. Você pode executar o instalador diretamente de um terminal, por exemplo:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sh ./gog_warsow_x.y.z.sh</code></pre></div>
+<p><img src="../../../images/gog.jpg" alt=""></p>
+<hr>
+<p>Via | <a href="https://opensource.com/article/18/1/how-install-apps-linux">Opensource.com</a></p>
+
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+    <h2>Gostou?</h2>
+    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor independente, 
+    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
+
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+
+        
+    <div class="centered">
+    <div class="about">
+    <ul>
+      
+        
+          <li>
+            <a href="https://www.linkedin.com/in/ricardo-ferreira-costa" aria-label="LinkedIn"  target="_blank" >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/ricardoferreiracosta08" aria-label="Github"  target="_blank" >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://www.instagram.com/ricardoferreira.tec" aria-label="Instagram"  target="_blank" >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://twitter.com/rferreira_tec" aria-label="Twitter"  target="_blank" >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://youtube.com/c/RicardoFerreiraTecnologia" aria-label="YouTuBe"  target="_blank" >
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://t.me/ricardoferreira_tec" aria-label="Telegram"  target="_blank" >
+              <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+    </ul>
+    </div>
+    </div>
+
+
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Construído usando Hugo v0.74.3. Hospedado em Netlify</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Ricardo Ferreira 
+      
+      
+         · 
+        Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & Tema adaptado de <a target="_blank" href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-151634076-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

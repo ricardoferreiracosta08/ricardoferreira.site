@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ricardoferreira.site/blog/</loc>
+    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/categories/</loc>
+    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ricardoferreira.site/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://ricardoferreira.site/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/categories/linux/</loc>
+    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/</loc>
+    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ricardoferreira.site/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://ricardoferreira.site/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/s.m.a.r.t/</loc>
+    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/smartmontools/</loc>
+    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/</loc>
+    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ricardoferreira.site/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://ricardoferreira.site/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2020/02/saiba-como-verificar-vida-util-do-seu-disco-no-linux/</loc>
+    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2020/01/erros-que-todo-usuario-linux-cometeu-ao-comecar-aprender-linux/</loc>
+    <lastmod>2020-01-26T22:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/iniciante/</loc>
+    <lastmod>2020-01-26T22:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/chattr/</loc>
+    <lastmod>2020-01-15T22:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2020/01/saiba-como-prevenir-que-seus-arquivos-e-pastas-sejam-removidos-ou-modificados-acidentalmente/</loc>
+    <lastmod>2020-01-15T22:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/terminal/</loc>
+    <lastmod>2020-01-15T22:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/alsa/</loc>
+    <lastmod>2020-01-12T17:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2020/01/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux/</loc>
+    <lastmod>2020-01-12T17:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/pulseaudio/</loc>
+    <lastmod>2020-01-12T17:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/som/</loc>
+    <lastmod>2020-01-12T17:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/backup/</loc>
+    <lastmod>2020-01-12T12:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2020/01/conheca-algumas-maneiras-para-restaurar-seu-sistema-linux-em-caso-de-falhas/</loc>
+    <lastmod>2020-01-12T12:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/desktop/</loc>
+    <lastmod>2020-01-12T12:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/snapshots/</loc>
+    <lastmod>2020-01-12T12:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/arquivos/</loc>
+    <lastmod>2020-01-10T21:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/ocultar/</loc>
+    <lastmod>2020-01-10T21:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/pastas/</loc>
+    <lastmod>2020-01-10T21:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2020/01/saiba-como-facilmente-ocultar-arquivos-e-pastas-no-linux/</loc>
+    <lastmod>2020-01-10T21:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2020/01/10-coisas-que-voce-deve-saber-caso-esteja-comecando-com-o-linux/</loc>
+    <lastmod>2020-01-07T15:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/comunidade/</loc>
+    <lastmod>2020-01-07T15:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/cloud/</loc>
+    <lastmod>2019-12-23T12:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2019/12/como-criar-um-servidor-vps-linux-na-infraestrutura-de-nuvem-da-digitalocean/</loc>
+    <lastmod>2019-12-23T12:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/digitalocean/</loc>
+    <lastmod>2019-12-23T12:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/trabalho/</loc>
+    <lastmod>2019-12-23T12:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/vps/</loc>
+    <lastmod>2019-12-23T12:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/categories/carreira/</loc>
+    <lastmod>2019-12-15T18:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/gartner/</loc>
+    <lastmod>2019-12-15T18:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/tecnologia/</loc>
+    <lastmod>2019-12-15T18:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2019/12/principais-tendencias-para-5-areas-tecnologia-conforme-gartner/</loc>
+    <lastmod>2019-12-15T18:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2019/12/o-poder-e-a-versatilidade-do-comando-xargs/</loc>
+    <lastmod>2019-12-11T18:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/pipelines/</loc>
+    <lastmod>2019-12-11T18:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/stdin/</loc>
+    <lastmod>2019-12-11T18:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/stdout/</loc>
+    <lastmod>2019-12-11T18:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/xargs/</loc>
+    <lastmod>2019-12-11T18:35:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2019/12/aumentar-produtividade-enquanto-usa-o-shell-bash/</loc>
+    <lastmod>2019-12-09T18:00:43+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/bash/</loc>
+    <lastmod>2019-12-09T18:00:43+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/shell/</loc>
+    <lastmod>2019-12-09T18:00:43+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/flatpak/</loc>
+    <lastmod>2019-12-08T19:02:55+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2019/12/guia-completo-para-iniciantes-sobre-como-instalar-programas-no-linux/</loc>
+    <lastmod>2019-12-08T19:02:55+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/instala%C3%A7%C3%A3o/</loc>
+    <lastmod>2019-12-08T19:02:55+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/pacotes/</loc>
+    <lastmod>2019-12-08T19:02:55+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/snap/</loc>
+    <lastmod>2019-12-08T19:02:55+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/tar.gz/</loc>
+    <lastmod>2019-12-08T19:02:55+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2019/12/ifconfig-e-outros-comandos-linux-de-rede-obsoletos-ha-anos-e-que-ja-possuem-sucessores/</loc>
+    <lastmod>2019-12-03T12:51:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/ifconfig/</loc>
+    <lastmod>2019-12-03T12:51:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/ip/</loc>
+    <lastmod>2019-12-03T12:51:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/iproute2/</loc>
+    <lastmod>2019-12-03T12:51:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/net-tools/</loc>
+    <lastmod>2019-12-03T12:51:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2019/12/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz/</loc>
+    <lastmod>2019-12-02T15:18:46+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/compila%C3%A7%C3%A3o/</loc>
+    <lastmod>2019-12-02T15:18:46+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/gpt/</loc>
+    <lastmod>2019-11-29T18:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/</loc>
+    <lastmod>2019-11-29T18:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/mbr/</loc>
+    <lastmod>2019-11-29T18:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2019/11/como-carregar-modulos-no-kernel-linux/</loc>
+    <lastmod>2019-11-27T15:16:22+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/kernel/</loc>
+    <lastmod>2019-11-27T15:16:22+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/lsmod/</loc>
+    <lastmod>2019-11-27T15:16:22+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/modprobe/</loc>
+    <lastmod>2019-11-27T15:16:22+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2019/11/conexao-cliente-servidor-de-banco-de-dados-postgresql-em-container-docker/</loc>
+    <lastmod>2019-11-20T15:18:27+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/container/</loc>
+    <lastmod>2019-11-20T15:18:27+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/categories/docker/</loc>
+    <lastmod>2019-11-20T15:18:27+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/pgadmin/</loc>
+    <lastmod>2019-11-20T15:18:27+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/postgresql/</loc>
+    <lastmod>2019-11-20T15:18:27+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2019/11/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</loc>
+    <lastmod>2019-11-05T23:29:33+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/tags/wsl/</loc>
+    <lastmod>2019-11-05T23:29:33+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/authors/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ricardoferreira.site/en/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://ricardoferreira.site/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/contato/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/cursos/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/cursos/docker-do-zero-online/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/license/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/categories/linuxdescomplicado/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/series/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ricardoferreira.site/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://ricardoferreira.site/series/"
+                />
+  </url>
+  
+</urlset>

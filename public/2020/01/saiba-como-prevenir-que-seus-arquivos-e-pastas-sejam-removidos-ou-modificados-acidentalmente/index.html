@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    
+    
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreira.sitesitemap.xml" />
+
+    <meta name="author" content="Ricardo Ferreira">
+    <meta name="description" content="Caso você queira prevenir que seus arquivos e pastas sejam removidos ou modificados acidentalmente,  basta você usar ferramentas definidas, por padrão, nos sistemas Linux.">
+    <meta name="keywords" content="chattr,terminal,linux">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+
+<meta name="twitter:title" content="Como prevenir que seus arquivos sejam removidos, acidentalmente"/>
+<meta name="twitter:description" content="Caso você queira prevenir que seus arquivos e pastas sejam removidos ou modificados acidentalmente,  basta você usar ferramentas definidas, por padrão, nos sistemas Linux."/>
+
+    <meta property="og:title" content="Como prevenir que seus arquivos sejam removidos, acidentalmente" />
+<meta property="og:description" content="Caso você queira prevenir que seus arquivos e pastas sejam removidos ou modificados acidentalmente,  basta você usar ferramentas definidas, por padrão, nos sistemas Linux." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ricardoferreira.site/2020/01/saiba-como-prevenir-que-seus-arquivos-e-pastas-sejam-removidos-ou-modificados-acidentalmente/" />
+<meta property="og:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+<meta property="article:published_time" content="2020-01-15T22:35:51+00:00" />
+<meta property="article:modified_time" content="2020-01-15T22:35:51+00:00" /><meta property="og:site_name" content="Ricardo Ferreira" />
+
+
+    <title>
+  Como prevenir que seus arquivos sejam removidos, acidentalmente | Ricardo Ferreira
+</title>
+
+    
+      <link rel="canonical" href="https://ricardoferreira.site/2020/01/saiba-como-prevenir-que-seus-arquivos-e-pastas-sejam-removidos-ou-modificados-acidentalmente/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d6e433e13546fa567433d5584c785811e370595e0c26d582e31f33105df646eb.css" integrity="sha256-1uQz4TVG&#43;lZ0M9VYTHhYEeNwWV4MJtWC4x8zEF32Rus=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+      
+      
+        
+        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.76.5" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation"  style="background-color: black;color: white;position: sticky;top: 0;z-index: 100" >
+  <section class="container">
+    
+    
+
+    <a class="navigation-title" href="/" style="color: white;">
+     Ricardo Ferreira
+     
+    </a>
+    
+
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"  style="color: white;"></i>
+        </span>
+      
+
+     
+    
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+         
+	  
+            <p class="stories-title" style="color: #c80000">
+                <strong>Já pensou remover um arquivo sem intenção?</strong>
+            </p>
+          
+         
+          <h1 class="title">Como prevenir que seus arquivos sejam removidos, acidentalmente</h1>
+        </div>
+        
+        <hr class="line" />
+<div class="post-meta">
+          <div class="date">
+	  
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2020-01-15T22:35:51Z">
+		15 Janeiro 2020
+              </time>
+            </span>
+	    <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2 minutos
+            </span>
+	   
+	</div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">Linux</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/chattr/">chattr</a>
+      <span class="separator">•</span>
+    <a href="/tags/terminal/">terminal</a></div>
+
+</div>
+<hr class="line" />
+
+
+        
+      </header>
+
+      <div>
+        
+        
+        
+        <p>As principais técnicas de proteção a leitura e escrita, e até a remoção, de seus arquivos no sistema Linux podem ser feitas sem a instalação de softwares adicionais. Caso você queira prevenir que seus arquivos e pastas sejam removidos ou modificados acidentalmente, basta você usar ferramentas definidas, por padrão, nos sistemas Linux.</p>
+<p>Existe uma ferramenta de linha de comando chamado <strong>chattr</strong> (“Change Attribute”) que pode ser usado para impedir que arquivos e pastas sejam excluídos acidentalmente e até alterados sem sua permissão. Ele aplica certos atributos a um arquivo ou pasta que outros usuários não podem excluir ou modificá-los, acidentalmente ou intencionalmente, mesmo como usuário root.</p>
+<p><strong>AVISO</strong></p>
+<hr>
+<blockquote>
+<p>Em sistemas de arquivos Linux, como o ext2, ext3, ext4 e o btrfs suportam todas os parâmetros disponíveis.
+Assim, existem alguns sistemas de arquivos Linux que podem não suportar todas as funcionalidades que o <!-- raw HTML omitted -->chattr<!-- raw HTML omitted --> pode oferecer!</p>
+</blockquote>
+<hr>
+<p>Por padrão, o <strong>chattr</strong> está disponível na maioria das distribuições Linux existentes:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ chattr [operador] [chave] [nome <span style="color:#fff;font-weight:bold">do</span> arquivo]</code></pre></div>
+<h4 id="1-impedir-modificação-e-exclusão-acidental-de-arquivo-ou-pasta">1. Impedir modificação e exclusão, acidental, de arquivo ou pasta</h4>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ sudo chattr +i arquivo.txt</code></pre></div>
+<p>Verifique os atributos do arquivo:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$  lsattr arquivo.txt</code></pre></div>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">--i------ arquivo.txt</code></pre></div>
+<p>Tente remover o arquivo (usuário normal ou root):</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$  sudo rm -f arquivo.txt</code></pre></div>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">  rm: não foi possível remover <span style="color:#0ff;font-weight:bold">&#39;arquivo.txt&#39;</span>: Operação não permitida</code></pre></div>
+<p>Para reverter a operação:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$  sudo chattr -i arquivo.txt</code></pre></div>
+<p>No caso de pastas, use o parâmetro -R:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$  sudo chattr -R +i /home/ricardo/pasta/</code></pre></div>
+<h4 id="2permitir-apenas-modificação-inserção-de-dados-em-um-arquivo">2.Permitir apenas modificação (inserção de dados) em um arquivo</h4>
+<p>Suponha que você só queira permitir que todos adicionem dados em um arquivo sem alterar ou modificar os dados já existentes. Você pode usar o atributo ‘a’ da seguinte forma:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$  sudo chattr +a arquivo.txt</code></pre></div>
+<p>Verifique os atributos do arquivo:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$  lsattr arquivo.txt</code></pre></div>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">--a---------- arquivo.txt</code></pre></div>
+<p>Tente remover o arquivo (usuário normal ou root):</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">  sudo rm -f arquivo.txt</code></pre></div>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">  rm: não foi possível remover &amp;<span style="color:#007f7f">#8216;arquivo.txt&amp;#8217;: Operação não permitida</span></code></pre></div>
+<p>Tente adicionar um conteúdo ao arquivo:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$  <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#34;texto inserido&#34;</span> &gt;&gt; arquivo.txt</code></pre></div>
+<p>Para reverter a operação:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$  sudo chattr -a arquivo.txt</code></pre></div>
+<h2 id="considerações">Considerações</h2>
+<p>Essa técnica pode ser útil para proteger os arquivos e dados importantes do sistema. Inclusive, de você mesmo! Pois, evita que informações sejam modificadas ou apagadas, acidentalmente.</p>
+<p>Caso queira algo mais completo para segurança dos seus arquivos, use <strong><!-- raw HTML omitted -->técnicas de encriptação<!-- raw HTML omitted --></strong>, por exemplo!</p>
+
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+    <h2>Gostou?</h2>
+    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor independente, 
+    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
+
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+
+        
+    <div class="centered">
+    <div class="about">
+    <ul>
+      
+        
+          <li>
+            <a href="https://www.linkedin.com/in/ricardo-ferreira-costa" aria-label="LinkedIn"  target="_blank" >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/ricardoferreiracosta08" aria-label="Github"  target="_blank" >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://www.instagram.com/ricardoferreira.tec" aria-label="Instagram"  target="_blank" >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://twitter.com/rferreira_tec" aria-label="Twitter"  target="_blank" >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://youtube.com/c/RicardoFerreiraTecnologia" aria-label="YouTuBe"  target="_blank" >
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://t.me/ricardoferreira_tec" aria-label="Telegram"  target="_blank" >
+              <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+    </ul>
+    </div>
+    </div>
+
+
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Construído usando Hugo v0.74.3. Hospedado em Netlify</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Ricardo Ferreira 
+      
+      
+         · 
+        Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & Tema adaptado de <a target="_blank" href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-151634076-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

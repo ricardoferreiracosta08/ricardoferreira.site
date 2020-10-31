@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iproute2 on Ricardo Ferreira</title>
+    <link>https://ricardoferreira.site/tags/iproute2/</link>
+    <description>Recent content in iproute2 on Ricardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Tue, 03 Dec 2019 12:51:56 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/iproute2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>7 comandos Linux que estão &#34;obsoletos&#34; há anos e, provavelmente, você ainda os usa</title>
+      <link>https://ricardoferreira.site/2019/12/ifconfig-e-outros-comandos-linux-de-rede-obsoletos-ha-anos-e-que-ja-possuem-sucessores/</link>
+      <pubDate>Tue, 03 Dec 2019 12:51:56 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2019/12/ifconfig-e-outros-comandos-linux-de-rede-obsoletos-ha-anos-e-que-ja-possuem-sucessores/</guid>
+      <description>Embora ainda funcionais, esses comandos são, realmente, considerados obsoletos e, portanto, devem ser renunciadas em favor de ferramentas mais &amp;ldquo;modernas&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

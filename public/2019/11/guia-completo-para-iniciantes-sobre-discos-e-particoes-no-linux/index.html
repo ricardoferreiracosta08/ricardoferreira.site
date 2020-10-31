@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    
+    
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreira.sitesitemap.xml" />
+
+    <meta name="author" content="Ricardo Ferreira">
+    <meta name="description" content="Manipulação de discos ou partições são muito comuns, principalmente quando decide-se ter mais de um sistema instalado na máquina ou criar &ldquo;espaço reservado&rdquo; para determinados arquivos.">
+    <meta name="keywords" content="linux,discos,partição,mbr,gpt,sistema de arquivos,swap">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/cover.jpeg"/>
+
+<meta name="twitter:title" content="Guia completo para iniciantes sobre discos e partições no Linux"/>
+<meta name="twitter:description" content="Manipulação de discos ou partições são muito comuns, principalmente quando decide-se ter mais de um sistema instalado na máquina ou criar &ldquo;espaço reservado&rdquo; para determinados arquivos."/>
+
+    <meta property="og:title" content="Guia completo para iniciantes sobre discos e partições no Linux" />
+<meta property="og:description" content="Manipulação de discos ou partições são muito comuns, principalmente quando decide-se ter mais de um sistema instalado na máquina ou criar &ldquo;espaço reservado&rdquo; para determinados arquivos." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/" />
+<meta property="og:image" content="https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/cover.jpeg" />
+<meta property="article:published_time" content="2019-11-29T18:25:12+00:00" />
+<meta property="article:modified_time" content="2019-11-29T18:25:12+00:00" /><meta property="og:site_name" content="Ricardo Ferreira" />
+
+
+    <title>
+  Guia completo para iniciantes sobre discos e partições no Linux | Ricardo Ferreira
+</title>
+
+    
+      <link rel="canonical" href="https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d6e433e13546fa567433d5584c785811e370595e0c26d582e31f33105df646eb.css" integrity="sha256-1uQz4TVG&#43;lZ0M9VYTHhYEeNwWV4MJtWC4x8zEF32Rus=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+      
+      
+        
+        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.76.5" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation"  style="background-color: black;color: white;position: sticky;top: 0;z-index: 100" >
+  <section class="container">
+    
+    
+
+    <a class="navigation-title" href="/" style="color: white;">
+     Ricardo Ferreira
+     
+    </a>
+    
+
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"  style="color: white;"></i>
+        </span>
+      
+
+     
+    
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+         
+	  
+            <p class="stories-title" style="color: #c80000">
+                <strong>Desmistificando alguns conceitos </strong>
+            </p>
+          
+         
+          <h1 class="title">Guia completo para iniciantes sobre discos e partições no Linux</h1>
+        </div>
+        
+        <hr class="line" />
+<div class="post-meta">
+          <div class="date">
+	  
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2019-11-29T18:25:12Z">
+		29 Novembro 2019
+              </time>
+            </span>
+	    <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              8 minutos
+            </span>
+	   
+	</div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">Linux</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/mbr/">mbr</a>
+      <span class="separator">•</span>
+    <a href="/tags/gpt/">gpt</a></div>
+
+</div>
+<hr class="line" />
+
+
+        
+      </header>
+
+      <div>
+        
+        
+        
+        <p>Manipulação de discos ou partições são muito comuns, principalmente quando decide-se ter mais de um sistema instalado na máquina ou criar &ldquo;espaço reservado&rdquo; para determinados arquivos.</p>
+<p>Contudo, alguns detalhes técnicos acabam por confundir muitos usuários que deixam de realizar algumas tarefas desse tipo, por conta disso.</p>
+<p>Sendo assim, resolvi escrever um artigo que &ldquo;deixasse de lado&rdquo; termos, altamente, técnicos, associados a este assunto, e que oferecesse uma leitura mais simples e descomplicada :)</p>
+<h2 id="antes-de-começar"><strong>Antes de começar&hellip;</strong></h2>
+<div class="alert success no-icon ">
+  <p><p><strong>FIQUE SABENDO</strong></p>
+<p>Devido a grande procura sobre esse tema, resolvi criar um curso focado nos fundamentos de discos e partições no Linux.</p>
+<p>Curtiu? <a href="https://www.udemy.com/course/fundamentos-linux-sistemas-de-arquivos-e-dispositivos/?referralCode=BE4C4F68EECD104189ED">Eu quero o curso</a></p>
+</p>
+</div>
+
+
+<p>Primeiramente, saiba que <strong>toda operação com partições de discos é perigosa</strong>, pois há o risco de perda ou corrompimento dos dados. Tenha sempre um backup (cópia de segurança) de seus arquivos. Ou, prefira realizar testes dessa natureza em ambientes isolados ou que não afetem dados críticos do seu cotidiano. Por exemplo, sugiro o <strong><a href="https://www.linuxdescomplicado.com.br/2011/06/5-motivos-pelos-quais-voce-deve-usar-o-2.html">uso de máquinas virtuais</a></strong> para esse cenário :)</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Diante disso, apresento alguns conceitos importantes para uma boa compreensão:</p>
+<h2 id="discos-e-partições-no-linux"><strong>Discos e partições no Linux</strong></h2>
+<h4 id="1-nomenclatura-dos-discos">1. NOMENCLATURA DOS DISCOS</h4>
+<p>Diferentemente de sistemas Windows, não existe <strong>nenhuma unidade C ou D</strong> no Linux. Uma referência a um disco rígido no Linux, normalmente, você verá algo como arquivos /dev/sda, /dev/sdb, /dev/sdc, etc.</p>
+<p><img src="../../../images/discos-windows-linux.jpg" alt="discos-windows-linux"></p>
+<p>O nome e pasta <strong>&ldquo;dev&rdquo; é a tradução de dispositivo</strong> e, neste caso, representa um dispositivo de armazenamento em bloco. <strong>O prefixo &ldquo;sd&rdquo;</strong>, do arquivo contido na pasta &ldquo;dev&rdquo;, é a tradução para o driver de armazenamento em massa SCSI (Small Computer System Interface). <strong>Os discos SCSI</strong> são unidades que podem ser HDs (pendrives), unidades de CD-RW e gravadoras de DVD. E a &lsquo;letra&rsquo;, sufixo de &lsquo;sd&rsquo;, indica o número do disco (sda).</p>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<p>De acordo <strong>com a imagem acima</strong>, é mostrado como os discos rígidos são representados no Windows e num sistema Linux. O Windows, no caso, vê um <strong>disco na unidade C:</strong> e outro na <strong>unidade D:</strong> . Já no caso do Linux, ele assume uma abordagem diferente. O primeiro disco rígido detectado por um sistema Linux possui o <strong>rótulo sda</strong> . Em termos numéricos, é o disco rígido 0 (zero, a contagem começa de 0, não 1). O <strong>segundo disco rígido é sdb</strong>, e uma possível terceira unidade, sdc, e assim por diante.</p>
+<h4 id="2-partições">2. PARTIÇÕES</h4>
+<p>Para <strong>instalar um sistema operacional em um disco rígido</strong>, ele deve primeiro ser subdividido em unidades de armazenamento distintas. Em outras palavras, um disco precisa ser particionado (ter partições). Analogamente, a uma pizza com respectivos pedaços :)</p>
+<p>As <strong>partições são divisões lógicas</strong> existentes no disco rígido, indicando onde começa e onde termina uma região do disco. Um disco rígido (HD) pode ser dividido em várias partições, e cada partição será tratada com se fosse um dispositivo à parte.</p>
+<p>Dessa forma, podemos instalar mais de um sistema operacional num mesmo HD, bem como salvar arquivos em uma partição separada, de modo a não perder os dados numa eventual corrupção do sistema. Uma partição de disco <strong>não interfere em outras partições existentes</strong>, por este motivo é possível usar o Windows, Linux e qualquer outro sistema operacional no mesmo disco. Mas, <strong>quando se apaga uma partição</strong>, você estará apagando TODOS os arquivos existentes nela!</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><img src="../../../images/particoes-numericas-linux.jpg" alt="particoes-numericas-linux"></p>
+<p>Se você observar a imagem, você verá que, ao contrário dos discos rígidos, os números de partição começam de 1, não 0 (zero). Ou seja, se tivermos 2 partições, elas serão representadas por sda1 e sda2 :)</p>
+<p>Em <strong>relação aos tipos</strong>, as partições subdividas em <strong>Primárias, Estendidas e Lógicas</strong> .</p>
+<ul>
+<li><strong>Primárias:</strong> partições que contém um sistema de arquivos. Normalmente, partições de sistemas operacionais.</li>
+<li><strong>Estendidas:</strong> partições primárias especiais, que ao invés de receber um sistema de arquivos &ldquo;abrigam&rdquo; outras partições lógicas.</li>
+<li><strong>Lógicas:</strong> são as partições criadas dentro das partições estendidas. Essas partições, assim como as primárias, recebem sistemas de arquivos.</li>
+</ul>
+<p><img src="../../../images/tipos-particoes-linux-mbr.jpg" alt="tipos-particoes-linux-mbr"></p>
+<p>Na imagem acima, vemos o uso de partições primárias, estendidas e lógicas. Ao marcar uma partição como uma <strong>partição estendida</strong>, é possível criar muitas mais partições debaixo dela. Essas partições são chamadas de <strong>partições lógicas</strong> .</p>
+<p>Ainda na imagem anterior, você pode ver que <strong>existem 3 partições primárias</strong> - sda1, sda2 e sda3. A <strong>quarta partição é uma partição estendida</strong>, que permite criar mais partições lógicas - sda6 e sda7 :)</p>
+<p>Contudo, conforme a <strong>tabela de partições de cada disco</strong>, características importantes das partições podem mudar :)</p>
+<h4 id="3-tabela-de-partições">3. TABELA DE PARTIÇÕES</h4>
+<p>Uma tabela de partição descreve o <strong>&ldquo;layout&rdquo; (aparência) das partições de um disco rígido</strong> .</p>
+<p>Atualmente, existem 2 padrões de tabela de partição de disco: <strong>MBR (Master Boot Record)</strong> e <strong>GPT (GUID Partition Table)</strong> . <strong>MBR</strong> também conhecido como rótulo <strong>msdos</strong>, pela maioria dos formatadores de disco (fdisk, gparted e outros), por conta
+do formato MBR ter sido introduzido junto com o IBM PC DOS 2.0, em março de 1983. MBR é o padrão mais comum e antigo - suportado pela BIOS.</p>
+<p>Já o <strong>GPT</strong> veio depois - suportado pela interface UEFI, presente computadores modernos.</p>
+<p>O <strong>esquema de particionamento MBR</strong> é o que você encontrará em computadores mais antigos. Computadores mais recentes suportam ambos os esquemas (MBR e GPT), por isso ainda é possível usar um esquema de partição <strong>MBR</strong> nesses computadores. As <strong>principais limitações do MBR</strong> levaram ao desenvolvimento da <strong>GPT</strong> . Essas limitações são:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<ul>
+<li>Não permite a configuração de mais de 4 partições primárias (GPT suporta até 128 partições primárias)</li>
+<li>As partições de disco (cada fatia da pizza) são limitadas a 2 TB, ou seja, um disco com capacidade superior não será compreendido com sua capacidade máxima (GPT suporta partições acima dos 2 TB e um máximo de 1 ZB a depender do <strong><a href="https://www.linuxdescomplicado.com.br/2017/03/dentre-diversos-sistemas-de-arquivos-linux-existentes-qual-eu-devo-usar.html">sistema de arquivos usado</a></strong>)</li>
+<li>Computadores mais recentes vêm com um firmware de substituição para o <strong>antigo sistema BIOS</strong> chamado UEFI (interface Unified Extensible Firmware), e o <strong>GPT faz parte do padrão UEFI</strong>. Se você comprou um computador com Windows 7/8 recentemente, é garantido que ele está instalado em um esquema de particionamento GPT.</li>
+</ul>
+<p><img src="../../../images/disco-gpt-ubuntu.jpg" alt="disco-gpt-ubuntu"></p>
+<p>A figura acima mostra o resultado do comando &ldquo;sudo fdisk -l&rdquo;, a partir de uma distribuição <strong><a href="https://www.linuxdescomplicado.com.br/category/distribuicoes/ubuntu">Ubuntu Linux</a></strong> . O ' <strong>Disklabel Type</strong>' confirma que o GPT está em uso. Caso fosse o esquema de partição de disco fosse o MBR, o ' <strong>Disklabel Type</strong>' seria representado por <strong>dos</strong> :)</p>
+<p>No <strong>esquema de particionamento GPT</strong>, como dito anteriormente, &ldquo;supera&rdquo; duas limitações do esquema MBR - máximo de quatro partições primárias e o limite de 2 TB para os tamanhos de partição. A imagem abaixo mostra um disco sob o <strong>esquema de particionamento GPT</strong>:</p>
+<p><img src="../../../images/particionamento-gpt-instalador.jpg" alt="particionamento-gpt-instalador"></p>
+<p>Como visto existem 7 partições, todas primárias. Assim, o <strong>conceito de partições estendidas e lógicas</strong> é &ldquo;irrelevante&rdquo; ao GPT :)</p>
+<h4 id="4-sistema-de-arquivos">4. SISTEMA DE ARQUIVOS</h4>
+<p>Antes que uma <strong>partição de disco</strong> possa ser usada para armazenar dados, primeiro ela deve <strong>ser formatada</strong> . O processo de formatação inclui &ldquo;carimbá-lo&rdquo; com um <strong>sistema de arquivos</strong> .</p>
+<p><strong>SAIBA MAIS</strong></p>
+<hr>
+<blockquote>
+<p>Um sistema de arquivos é um conjunto de estruturas lógicas e de rotinas, que permitem ao sistema operacional controlar o acesso ao disco rígido. Diferentes sistemas operacionais usam diferentes sistemas de arquivos. Conforme cresce a capacidade dos discos e aumenta o volume de arquivos e acessos, esta tarefa torna-se mais e mais complicada, exigindo o uso de sistemas de arquivos cada vez mais complexos e robustos – via <a href="http://www.hardware.com.br/termos/sistema-de-arquivos">Hardware.com.br</a></p>
+</blockquote>
+<hr>
+<p>O <strong>sistema de arquivos no Windows é NTFS</strong> (New Technology File System). Já no Linux, <strong>existem mais de um sistema de arquivos disponível</strong> . Na verdade, existem pelo menos duas dúzias :)</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>A imagem abaixo mostra, como opção para instalação, o sistema de arquivo Ext4, que é uma versão aprimorada do Ext3, é o padrão mais usado em lançamentos recentes das distribuições Linux:</p>
+<p><img src="../../../images/particoes.png" alt=""></p>
+<p>O <strong>BtrFS</strong> é o &ldquo;mais novo&rdquo; sistema de arquivos Linux. Ele vem com muitos recursos que não estão disponíveis em outros sistemas de arquivos Linux, como gerenciamento de volume e <strong>reconhecimento de RAID</strong> - acrônimo para Redundant Array of Disclaimer Disks - que é um método de combinação de dois ou mais discos rígidos em uma única unidade lógica.</p>
+<p>Ele é visto como o <strong>sistema de arquivos da próxima geração</strong> para usuários de Linux, pois já está presente como opção, para instalação, na maioria das distribuições Linux existentes. Por exemplo, o <strong><a href="https://www.linuxdescomplicado.com.br/2016/05/por-que-resolvi-trocar-o-ubuntu-lts-pelo-opensuse-tumbleweed.html">openSUSE</a></strong> traz o Btrfs como opção padrão.</p>
+<p><img src="../../../images/tipo-swap-particao-linux.jpg" alt="tipo-swap-particao-linux"></p>
+<p>A imagem acima mostra o tipo de <strong>partição swap</strong> . É uma pequena seção de disco rígido sem formatação que o Linux e outros sistemas operacionais <strong>usam como memória virtual</strong> . A grosso modo, é um método para aumentar a quantidade de RAM total (RAM física física + memória virtual).</p>
+<p><strong>SAIBA MAIS</strong></p>
+<hr>
+<blockquote>
+<p>A memória virtual é um recurso que utiliza o disco rígido para armazenar dados não utilizados na memória RAM, liberando-a para receber mais dados. Isso torna o sistema mais estável e evita que ele se torne excessivamente lento quando muitas aplicações são executadas simultaneamente.</p>
+</blockquote>
+<hr>
+<h4 id="5-ponto-de-montagem">5. PONTO DE MONTAGEM</h4>
+<p>No Linux, para acessar um dispositivo de disco é necessário antes <strong>&ldquo;montá-lo&rdquo; em um diretório do sistema</strong> . O processo de montagem consiste em <strong>tornar o dispositivo acessível</strong> para o usuário. Em outras palavras, é preciso informar em qual diretório do sistema determinada partição será &ldquo;configurada&rdquo; :)</p>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><strong>Atribuir um ponto de montagem a uma partição</strong> é uma das coisas que vem com a formatação, além de incluir um sistema de arquivos. No Linux, uma partição pode ser montada em um dos vários pontos de montagem tradicionais. Em um sistema Linux, os pontos de montagem mais usados são /, /boot, /home e swap. &lsquo;/&rsquo; é o equivalente Linux da <strong>unidade Windows :C</strong> .</p>
+<p><img src="../../../images/ponto-montagem-linux.jpg" alt="ponto-montagem-linux"></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<!-- raw HTML omitted -->
+<p><strong>MAIS INFORMAÇÕES</strong></p>
+<ul>
+<li><a href="https://www.udemy.com/course/fundamentos-linux-sistemas-de-arquivos-e-dispositivos/?referralCode=BE4C4F68EECD104189ED">Eu quero fazer um curso sobre isso</a></li>
+<li><a href="https://www.vivaolinux.com.br/artigos/impressora.php?codigo=4858">Fundamentos do Sistema Linux: Discos e Partições</a></li>
+<li><a href="http://www.guiafoca.org/cgs/guia/intermediario/ch-disc.html">Guia Foca GNU/Linux | Capítulo 5 - Discos e Partições</a></li>
+</ul>
+
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+    <h2>Gostou?</h2>
+    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor independente, 
+    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
+
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+
+        
+    <div class="centered">
+    <div class="about">
+    <ul>
+      
+        
+          <li>
+            <a href="https://www.linkedin.com/in/ricardo-ferreira-costa" aria-label="LinkedIn"  target="_blank" >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/ricardoferreiracosta08" aria-label="Github"  target="_blank" >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://www.instagram.com/ricardoferreira.tec" aria-label="Instagram"  target="_blank" >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://twitter.com/rferreira_tec" aria-label="Twitter"  target="_blank" >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://youtube.com/c/RicardoFerreiraTecnologia" aria-label="YouTuBe"  target="_blank" >
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://t.me/ricardoferreira_tec" aria-label="Telegram"  target="_blank" >
+              <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+    </ul>
+    </div>
+    </div>
+
+
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Construído usando Hugo v0.74.3. Hospedado em Netlify</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Ricardo Ferreira 
+      
+      
+         · 
+        Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & Tema adaptado de <a target="_blank" href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-151634076-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

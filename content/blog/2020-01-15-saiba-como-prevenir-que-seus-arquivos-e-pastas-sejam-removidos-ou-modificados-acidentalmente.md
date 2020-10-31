@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Como prevenir que seus arquivos sejam removidos, acidentalmente
+title: Como eu previno que meus arquivos sejam removidos, acidentalmente, no Linux
 seotitle: Já pensou se você remove um arquivo acidentalmente? Veja como prevenir que isso ocorra no Linux
 subtitle: Já pensou remover um arquivo sem intenção? 
 description: >-

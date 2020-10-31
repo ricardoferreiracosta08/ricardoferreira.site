@@ -39,12 +39,12 @@ pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Ricardo Ferreira"
-    description = "More than ten years of expertise in IT, I am passionate about new technologies, bachelor's Computer Science, BPM Analyst, and Bussiness Intelligence Analyst. Nowadays, I keep learning new skills in data analytics and data science"
+    description = "More than ten years of expertise in IT, I am passionate about new technologies, bachelor's Computer Science. Nowadays, I keep learning new skills in data analytics and data science"
     keywords = "linux,docker,sysadmin,bussiness intelligence,bi,data science,datascience,technology"
-    info = "IT Specialist · Linux · BI · Bachelor's Computer Science"
+    info = "IT Specialist · Bachelor's Computer Science"
     avatarurl = "images/perfil-02.jpeg"
     #gravatar = "john.doe@example.com"
-    footercontent = "Built using Hugo v0.74.3. Hosted by Netlify."
+    footercontent = "Built using Hugo v0.76.5. Hosted by Netlify."
 
     # OG_IMAGE
     images = ["coverpage-FACEBOOK.png"]
@@ -203,10 +203,10 @@ pygmentscodefencesguesssyntax = true
 
         [languages.pt-br.params]
             author = "Ricardo Ferreira"
-            info = "Linux · Docker · BPM · Bussiness Intelligence · Mirando a Ciência de Dados"
-            description = "Mais de 10 anos de experiência em TI, sou apaixonado por novas tecnologias, bacharel em Ciência da Computação, Analista de Processos de Negócio e BI, também especializado nas mais diversas plataformas nas áreas de Infraestrutura e Servidores, Linux, Redes e Serviços de TI"
+            info = "Analista de Tecnologia"
+	    description = "Analista de Tecnologia há 10 anos, sou apaixonado por novas tecnologias, bacharel em ciência da computação. Alguns anos na operação, decidi mirar os dados. Cientista de dados em formação! 🔥"
             keywords = "linux,docker,bpm,dados,bussiness intelligence,bi,sysadmin, tecnologia"
-            footercontent = "Construído usando Hugo v0.74.3. Hospedado em Netlify"
+            footercontent = "Construído usando Hugo v0.76.5. Hospedado em Netlify"
             ctaToHome = "Mais sobre mim"
 
         [languages.pt-br.menu]
@@ -222,7 +222,7 @@ pygmentscodefencesguesssyntax = true
             url = "blog/"
 
             [[languages.pt-br.menu.main]]
-            name = "Todos meus cursos online"
+            name = "Tenho alguns cursos. Olha aqui!"
             weight = 3
             url = "https://www.udemy.com/user/ricardo-ferreira-costa-2/"
 

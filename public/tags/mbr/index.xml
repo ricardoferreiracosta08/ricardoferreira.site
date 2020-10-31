@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mbr on Ricardo Ferreira</title>
+    <link>https://ricardoferreira.site/tags/mbr/</link>
+    <description>Recent content in mbr on Ricardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 29 Nov 2019 18:25:12 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/mbr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guia completo para iniciantes sobre discos e partições no Linux</title>
+      <link>https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/</link>
+      <pubDate>Fri, 29 Nov 2019 18:25:12 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/</guid>
+      <description>Manipulação de discos ou partições são muito comuns, principalmente quando decide-se ter mais de um sistema instalado na máquina ou criar &amp;ldquo;espaço reservado&amp;rdquo; para determinados arquivos.</description>
+    </item>
+    
+  </channel>
+</rss>

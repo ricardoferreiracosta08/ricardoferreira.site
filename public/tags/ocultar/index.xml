@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ocultar on Ricardo Ferreira</title>
+    <link>https://ricardoferreira.site/tags/ocultar/</link>
+    <description>Recent content in ocultar on Ricardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 10 Jan 2020 21:25:12 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/ocultar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Saiba como, facilmente, ocultar arquivos e pastas no Linux</title>
+      <link>https://ricardoferreira.site/2020/01/saiba-como-facilmente-ocultar-arquivos-e-pastas-no-linux/</link>
+      <pubDate>Fri, 10 Jan 2020 21:25:12 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2020/01/saiba-como-facilmente-ocultar-arquivos-e-pastas-no-linux/</guid>
+      <description>Ocultar um arquivo e pastas no sistema de arquivos do Linux é algo tão simples que nem precisa instalar ou  configurar algo no sistema. Desde dos primórdios do sistema existe um recurso amplamente usado para ocultar arquivos e pastas no Linux.</description>
+    </item>
+    
+  </channel>
+</rss>

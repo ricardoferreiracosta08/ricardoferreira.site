@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    
+    
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreira.sitesitemap.xml" />
+
+    <meta name="author" content="Ricardo Ferreira">
+    <meta name="description" content="O comando xargs é um comando para construir pipelines de execução usando os fluxos de dados padrão. Ele tem função primeira receber uma entrada de uma lista de parâmetros de outro comando e passá-la para a execução de outro comando – isso tudo numa única sentença, através do uso do pipeline.">
+    <meta name="keywords" content="xargs,linux,stdin,stdout,stderr,pipelines">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+
+<meta name="twitter:title" content="O poder e a versatilidade do comando xargs"/>
+<meta name="twitter:description" content="O comando xargs é um comando para construir pipelines de execução usando os fluxos de dados padrão. Ele tem função primeira receber uma entrada de uma lista de parâmetros de outro comando e passá-la para a execução de outro comando – isso tudo numa única sentença, através do uso do pipeline."/>
+
+    <meta property="og:title" content="O poder e a versatilidade do comando xargs" />
+<meta property="og:description" content="O comando xargs é um comando para construir pipelines de execução usando os fluxos de dados padrão. Ele tem função primeira receber uma entrada de uma lista de parâmetros de outro comando e passá-la para a execução de outro comando – isso tudo numa única sentença, através do uso do pipeline." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ricardoferreira.site/2019/12/o-poder-e-a-versatilidade-do-comando-xargs/" />
+<meta property="og:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+<meta property="article:published_time" content="2019-12-11T18:35:51+00:00" />
+<meta property="article:modified_time" content="2019-12-11T18:35:51+00:00" /><meta property="og:site_name" content="Ricardo Ferreira" />
+
+
+    <title>
+  O poder e a versatilidade do comando xargs | Ricardo Ferreira
+</title>
+
+    
+      <link rel="canonical" href="https://ricardoferreira.site/2019/12/o-poder-e-a-versatilidade-do-comando-xargs/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d6e433e13546fa567433d5584c785811e370595e0c26d582e31f33105df646eb.css" integrity="sha256-1uQz4TVG&#43;lZ0M9VYTHhYEeNwWV4MJtWC4x8zEF32Rus=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+      
+      
+        
+        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.76.5" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation"  style="background-color: black;color: white;position: sticky;top: 0;z-index: 100" >
+  <section class="container">
+    
+    
+
+    <a class="navigation-title" href="/" style="color: white;">
+     Ricardo Ferreira
+     
+    </a>
+    
+
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"  style="color: white;"></i>
+        </span>
+      
+
+     
+    
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+         
+	  
+            <p class="stories-title" style="color: #c80000">
+                <strong>Existem comandos Linux e existe o xargs</strong>
+            </p>
+          
+         
+          <h1 class="title">O poder e a versatilidade do comando xargs</h1>
+        </div>
+        
+        <hr class="line" />
+<div class="post-meta">
+          <div class="date">
+	  
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2019-12-11T18:35:51Z">
+		11 Dezembro 2019
+              </time>
+            </span>
+	    <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3 minutos
+            </span>
+	   
+	</div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">Linux</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/xargs/">xargs</a>
+      <span class="separator">•</span>
+    <a href="/tags/stdin/">stdin</a>
+      <span class="separator">•</span>
+    <a href="/tags/stdout/">stdout</a>
+      <span class="separator">•</span>
+    <a href="/tags/pipelines/">pipelines</a>
+      <span class="separator">•</span>
+    <a href="/tags/terminal/">terminal</a></div>
+
+</div>
+<hr class="line" />
+
+
+        
+      </header>
+
+      <div>
+        
+        
+        
+        
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/rw50a6-b9As" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Gosto muito da <strong><a href="https://www.linuxdescomplicado.com.br/2017/01/algumas-ferramentas-de-terminal-que-podem-ser-mais-praticas-do-que-os-aplicativos-graficos.html">praticidade do terminal</a></strong>. Para alguns, um pavor; para outros uma obrigação. No meio disso, existem comandos que aumentam bastante nossa produtividade e que você não deveria refutar isso.</p>
+<p>Entre diversos deles, destaco o <strong>comando xargs</strong>, um comando capaz de <strong>aumentar sua produtividade</strong>.</p>
+<h2 id="contextualizando">Contextualizando</h2>
+<p>Todos os utilitários padrões do Linux possuem 3 <strong>fluxos de dados</strong> associados a eles:</p>
+<ul>
+<li><strong>1.</strong> fluxo de entrada padrão (stdin),</li>
+<li><strong>2.</strong> fluxo de saída padrão (stdout),</li>
+<li><strong>3.</strong> fluxo de erro padrão (stderr)</li>
+</ul>
+<p>Esses fluxos estão todos em <strong>modo texto</strong>. Enviamos <strong>input (stdin)</strong> para um comando usando texto, e a <strong>resposta (stdout)</strong> é escrita na janela do terminal como texto. <strong>Mensagens de erro</strong> também são exibidas no terminal como texto (stderr).</p>
+<p>Um dos <strong>grandes recursos</strong> dos sistemas Linux e Unix é a <strong>habilidade de canalizar</strong> a saída padrão stdout de um comando para a entrada stdin de um segundo comando \o/ Assim, o <strong>primeiro comando</strong> não difere se sua saída não estar indo para um texto num terminal; e o <strong>segundo comando</strong> não distingue que sua entrada não esteja vindo de um teclado.</p>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<p>Embora <strong>todos os comandos</strong> do Linux tenham os três fluxos padrão, <strong>nem todos aceitam</strong> o stdout de outro comando como entrada para sua entrada padrão. Isso significa que você <strong>não pode canalizar</strong> a entrada para eles. Daí o comando xargs entra na jogada :)</p>
+<h2 id="o-comando-xargs">O comando xargs</h2>
+<p>O <strong>comando xargs</strong> é um comando para construir pipelines de execução usando os fluxos de dados padrão. O xargs aceitará entrada canalizada.</p>
+<p>Ele tem função primeira <strong>receber uma entrada</strong> de uma lista de parâmetros de outro comando e <strong>passá-la para a execução</strong> de outro comando – isso tudo numa <strong>única sentença</strong>, através do uso do pipeline (|). Parece complexo, né?</p>
+<p>Em resumo, o xargs pode pegar a saída de um comando e enviá-lo para outro como parâmetros ! :)</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash"> $_ comando | xargs [opções] [comando] [lista_parâmetros comando anterior]</code></pre></div>
+<h2 id="exemplos">Exemplos</h2>
+<p>Como caso prático, mostro a leitura de arquivo de texto:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ cat /home/ricardo/lista.txt
+
+arquivo_1  
+arquivo_2  
+arquivo_3  
+arquivo_4</code></pre></div>
+<p>E se <strong>canalizarmos a saída</strong> do comando anterior através do comando xargs e pipeline (|)? Uma lista é exibida na janela do terminal:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ cat /home/ricardo/lista.txt | xargs
+
+arquivo_1 arquivo_2 arquivo_3 arquivo_4</code></pre></div>
+<p>Assim, <strong>esse recurso permite</strong> que o xargs receba essa lista como parâmetros para outro(s) comando(s). Por exemplo: touch.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ cat /home/ricardo/lista.txt | xargs touch</code></pre></div>
+<p>Esse último comando se divide assim:</p>
+<ul>
+<li><strong>– cat directories.txt | :</strong> Isso envia o conteúdo do arquivo lista.txt (todos os nomes de arquivos) para o xargs.</li>
+<li><strong>– xargs touch:</strong> cria (touch) todos os arquivos baseado na lista de parâmetros recebida do comando cat.</li>
+</ul>
+<p>Por fim, dado a criação dos arquivos listados no arquivo, podemos usar a mesma estrutura para removê-los, simultaneamente, usando o comando rm:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ cat /home/ricardo/lista.txt | xargs rm</code></pre></div>
+<h2 id="considerações">Considerações</h2>
+<p>Diante do exposto, você percebe que essa canalização da entrada de dados de outro comando para o xargs pode aumentar sua produtividade, pois você <strong>evita</strong> repetições ou uso de scripts “complexos” para capturar saídas de outros comandos para, posteriormente, manipulá-los em outras estruturas de dados – <em>numa única sentença você faz <strong>trabalhos simultâneos mais rapidamente</strong></em>.</p>
+<p>É claro que o uso de <strong>recursos de shell script</strong> podem aumentar o nível de granularidade da lista de parâmetros canalizadas pelo xargs. Por exemplo:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ ls -l | grep ” algo ” | cut -c55- | xargs rm</code></pre></div>
+<p>Onde, o grep selecionou os arquivos que continham a cadeia “algo” no diretório corrente listado pelo ls -l. O comando cut pegou somente o nome dos arquivos, passando-os para a remoção pelo rm usando o comando xargs como sequencia.</p>
+<p>Então, o poder e a versatilidade do xargs se torna cada vez mais marcante!</p>
+<hr>
+<p>Via | <a href="http://www.dicas-l.com.br/cantinhodoshell/cantinhodoshell_20070226.php#.XUo8nHWYXmi">Dicas-l</a> | <a href="https://www.howtogeek.com/435164/how-to-use-the-xargs-command-on-linux/">HowToGeek</a></p>
+
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+    <h2>Gostou?</h2>
+    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor independente, 
+    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
+
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+
+        
+    <div class="centered">
+    <div class="about">
+    <ul>
+      
+        
+          <li>
+            <a href="https://www.linkedin.com/in/ricardo-ferreira-costa" aria-label="LinkedIn"  target="_blank" >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/ricardoferreiracosta08" aria-label="Github"  target="_blank" >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://www.instagram.com/ricardoferreira.tec" aria-label="Instagram"  target="_blank" >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://twitter.com/rferreira_tec" aria-label="Twitter"  target="_blank" >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://youtube.com/c/RicardoFerreiraTecnologia" aria-label="YouTuBe"  target="_blank" >
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://t.me/ricardoferreira_tec" aria-label="Telegram"  target="_blank" >
+              <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+    </ul>
+    </div>
+    </div>
+
+
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Construído usando Hugo v0.74.3. Hospedado em Netlify</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Ricardo Ferreira 
+      
+      
+         · 
+        Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & Tema adaptado de <a target="_blank" href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-151634076-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

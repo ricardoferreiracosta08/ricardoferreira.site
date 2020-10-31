@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kernel on Ricardo Ferreira</title>
+    <link>https://ricardoferreira.site/tags/kernel/</link>
+    <description>Recent content in kernel on Ricardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Wed, 27 Nov 2019 15:16:22 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como carregar módulos no Kernel Linux </title>
+      <link>https://ricardoferreira.site/2019/11/como-carregar-modulos-no-kernel-linux/</link>
+      <pubDate>Wed, 27 Nov 2019 15:16:22 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2019/11/como-carregar-modulos-no-kernel-linux/</guid>
+      <description>Usando o lsmod e a leitura do /proc/filesystems, capturo os módulos carregados no sistema. Com o modprobe carrego o módulo isofs (iso9660), previamente suportado, no meu Kernel LTS 4.19.84-1, disponibilizado no diretório /lib/modules/$(uname -r)/kernel/fs/isofs/.</description>
+    </item>
+    
+  </channel>
+</rss>

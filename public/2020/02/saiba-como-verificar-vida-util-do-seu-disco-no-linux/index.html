@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    
+    
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreira.sitesitemap.xml" />
+
+    <meta name="author" content="Ricardo Ferreira">
+    <meta name="description" content="Prever quando um disco irá falhar totalmente é quase improvável, pois defeitos podem começar a aparecer por vários motivos; até mesmo pela própria utilização normal do dispositivo.">
+    <meta name="keywords" content="hd,ssd,smartmontools,terminal">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+
+<meta name="twitter:title" content="Veja como verificar a vida útil do seu disco usando Linux"/>
+<meta name="twitter:description" content="Prever quando um disco irá falhar totalmente é quase improvável, pois defeitos podem começar a aparecer por vários motivos; até mesmo pela própria utilização normal do dispositivo."/>
+
+    <meta property="og:title" content="Veja como verificar a vida útil do seu disco usando Linux" />
+<meta property="og:description" content="Prever quando um disco irá falhar totalmente é quase improvável, pois defeitos podem começar a aparecer por vários motivos; até mesmo pela própria utilização normal do dispositivo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ricardoferreira.site/2020/02/saiba-como-verificar-vida-util-do-seu-disco-no-linux/" />
+<meta property="og:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+<meta property="article:published_time" content="2020-02-17T16:25:12+00:00" />
+<meta property="article:modified_time" content="2020-02-17T16:25:12+00:00" /><meta property="og:site_name" content="Ricardo Ferreira" />
+
+
+    <title>
+  Veja como verificar a vida útil do seu disco usando Linux | Ricardo Ferreira
+</title>
+
+    
+      <link rel="canonical" href="https://ricardoferreira.site/2020/02/saiba-como-verificar-vida-util-do-seu-disco-no-linux/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d6e433e13546fa567433d5584c785811e370595e0c26d582e31f33105df646eb.css" integrity="sha256-1uQz4TVG&#43;lZ0M9VYTHhYEeNwWV4MJtWC4x8zEF32Rus=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+      
+      
+        
+        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.76.5" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation"  style="background-color: black;color: white;position: sticky;top: 0;z-index: 100" >
+  <section class="container">
+    
+    
+
+    <a class="navigation-title" href="/" style="color: white;">
+     Ricardo Ferreira
+     
+    </a>
+    
+
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"  style="color: white;"></i>
+        </span>
+      
+
+     
+    
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+         
+	  
+            <p class="stories-title" style="color: #c80000">
+                <strong>Nada é pra sempre! Inclusive, seu disco</strong>
+            </p>
+          
+         
+          <h1 class="title">Veja como verificar a vida útil do seu disco usando Linux</h1>
+        </div>
+        
+        <hr class="line" />
+<div class="post-meta">
+          <div class="date">
+	  
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2020-02-17T16:25:12Z">
+		17 Fevereiro 2020
+              </time>
+            </span>
+	    <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              5 minutos
+            </span>
+	   
+	</div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">Linux</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/smartmontools/">smartmontools</a>
+      <span class="separator">•</span>
+    <a href="/tags/s.m.a.r.t/">S.M.A.R.T</a></div>
+
+</div>
+<hr class="line" />
+
+
+        
+      </header>
+
+      <div>
+        
+        
+        
+        <p>Todos sabem que os discos (HDD ou SSD) são equipamentos feitos de componentes, <strong>suscetíveis a desgastes</strong>
+com o passar do tempo. Prever quando um disco irá falhar é quase impossível, pois <strong>defeitos podem começar</strong> a
+aparecer por vários motivos; até mesmo pela própria utilização normal do dispositivo.</p>
+<p>Portanto, para evitar os famosos &lsquo;badblocks&rsquo; (por exemplo), setores defeituosos na superfície do disco,
+que dificultam a leitura/escrita de dados deixando o tempo de resposta do disco muito lento,
+<strong>você precisa saber diagnosticar o estado atual</strong> do disco; antes mesmo que ele comece a falhar!</p>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<p>Atualmente os discos modernos podem realocar ou marcar os badblocks automaticamente,
+através do <strong>serviço de monitoramento</strong> chamado <a href="https://pt.wikipedia.org/wiki/S.M.A.R.T.">SMART</a>.
+Isso é impercetivel ao sistema operacional e ao usuário, por se um tratamento na camada de hardware do disco sendo
+desnecessário o intervenção manual. Mas, é sempre válido conhecer e definir um controle para um melhor acompanhamento da &ldquo;saúde&rdquo; do disco.</p>
+<p>É possível monitorar os erros de leitura do disco (mesmo antes dos badblocks começarem a aparecer) usando o SMART.
+No Linux, este recurso é disponibilizado através do “smartmontools“, um pacote disponível nos repositórios da maioria das distribuições .</p>
+<h4 id="smartmontools">SMARTMONTOOLS</h4>
+<p>Todos recursos da ferramenta podem ser acessadas usando o <strong>utilitário smartctl</strong>.</p>
+<p>Para começarmos a diagnosticar o disco é preciso acessar o terminal e executar o comando abaixo – responsável por coletar as informações do drive do disco:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo smartctl -i /dev/sda
+
+=== START OF INFORMATION SECTION ===
+Model Family: Western Digital Scorpio Blue Serial ATA
+Device Model: WDC WD3200BEVT-75ZCT2
+Serial Number: WD-WXF0A99E0057
+LU WWN Device Id: <span style="color:#ff0;font-weight:bold">5</span> 0014ee 2ae210af4
+Firmware Version: 11.01A11
+User Capacity: 320.072.933.376 bytes [<span style="color:#ff0;font-weight:bold">320</span> GB] Sector Size: <span style="color:#ff0;font-weight:bold">512</span> bytes logical/physical
+Device is: In smartctl database [<span style="color:#fff;font-weight:bold">for</span> details use: -P show] ATA Version is: <span style="color:#ff0;font-weight:bold">8</span>
+ATA Standard is: Exact ATA specification draft version not indicated
+Local Time is: Tue Aug <span style="color:#ff0;font-weight:bold">13</span> 23:42:23 <span style="color:#ff0;font-weight:bold">2013</span> BRT
+SMART support is: Available – device has SMART capability.
+SMART support is: Enabled</code></pre></div>
+<p>Caso esteja informando: <strong>SMART support is: Disabled</strong>. Basta executar o comando abaixo para ativar o SMART:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo smartctl -s on /dev/sda</code></pre></div>
+<h4 id="diagnosticando-seu-disco">Diagnosticando seu disco</h4>
+<div class="alert success no-icon ">
+  <p><p><strong>FIQUE SABENDO</strong></p>
+<p>Devido a grande procura sobre esse tema, resolvi criar um curso focado nos fundamentos de discos e partições no Linux.</p>
+<p>Curtiu? <a href="https://www.udemy.com/course/fundamentos-linux-sistemas-de-arquivos-e-dispositivos/?referralCode=BE4C4F68EECD104189ED">Eu quero o curso</a></p>
+</p>
+</div>
+
+
+<p>O smartmontools oferece diversos níveis de diagnósticos – <strong>Rápido e Longo</strong>. No nível mais rápido já é possível coletar muitas informações úteis sobre a vida útil do seu disco!</p>
+<p>Em primeiro lugar, execute o comando abaixo; para um diagnóstico rápido que <strong>leva cerca de 2 minutos</strong>:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo smartctl -t short /dev/sda
+
+=== START OF OFFLINE IMMEDIATE AND SELF-TEST SECTION ===
+Sending command: “Execute SMART Short self-test routine immediately in off-line mode”.
+Drive <span style="color:#fff;font-weight:bold">command</span> “Execute SMART Short self-test routine immediately in off-line mode” successful. Testing has begun.
+Please <span style="color:#fff;font-weight:bold">wait</span> <span style="color:#ff0;font-weight:bold">2</span> minutes <span style="color:#fff;font-weight:bold">for</span> <span style="color:#fff;font-weight:bold">test</span> to complete.</code></pre></div>
+<p>Logo em seguida, execute o comando abaixo para exibir <strong>um relatório de todos os auto-testes realizados</strong> e o status de cada um.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo smartctl -l selftest /dev/sda</code></pre></div>
+<p>Num disco saudável, todos reportarão <strong>&ldquo;Completed without error&rdquo;</strong>. Contudo, <strong>no meu caso obtive o seguinte</strong> (caso real que aconteceu com um disco meu :( ):</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">=== START OF READ SMART DATA SECTION ===
+SMART Self-test log structure revision number <span style="color:#ff0;font-weight:bold">1</span>
+Num  Test_Description    Status                 
+<span style="color:#007f7f"># 1  Short offline       Completed: unknown failure   </span>
+<span style="color:#007f7f"># 2  Short offline       Completed: unknown failure   </span>
+<span style="color:#007f7f"># 3  Short offline       Completed: unknown failure   </span>
+<span style="color:#007f7f"># 4  Short offline       Completed: unknown failure   </span>
+<span style="color:#007f7f"># 5  Short offline       Completed: unknown failure   </span>
+<span style="color:#007f7f"># 6  Conveyance offline  Completed: unknown failure   </span>
+<span style="color:#007f7f"># 7  Conveyance offline  Completed: unknown failure   </span>
+<span style="color:#007f7f"># 8  Short offline       Completed: read failure       </span>
+<span style="color:#007f7f"># 9  Short offline       Completed: read failure       </span>
+<span style="color:#007f7f">#10  Short offline       Completed: read failure       </span>
+<span style="color:#007f7f">#11  Short offline       Completed without error     </span>
+<span style="color:#007f7f">#12  Short offline       Completed without error    </span></code></pre></div>
+<p>Como pode reparar, foi listado alguns erros na <strong>coluna STATUS</strong>. Isto caracteriza problemas no disco analisado. Para adquirir informações mais consistentes sobre esta situação é preciso executar outro comando!</p>
+<p>O uso do parâmetro “-H” (health) exibe um diagnóstico rápido e preciso:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo smartctl -H /dev/sda</code></pre></div>
+<p>Com este comando, obtive a certeza que meu disco está com um erro iminente :(</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">=== START OF READ SMART DATA SECTION ===
+SMART overall-health self-assessment <span style="color:#fff;font-weight:bold">test</span> result: FAILED!
+Drive failure expected in less than <span style="color:#ff0;font-weight:bold">24</span> hours. SAVE ALL DATA.
+Failed Attributes:
+ID# ATTRIBUTE_NAME            TYPE       UPDATED             WHEN_FAILED
+  <span style="color:#ff0;font-weight:bold">5</span> Reallocated_Sector_Ct         Pre-fail       Always                FAILING_NOW      </code></pre></div>
+<h4 id="entendendo-o-relatório">ENTENDENDO O RELATÓRIO</h4>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<p>Como foi destacado, o resultado do diagnóstico foi <strong>FAILED</strong> e com uma solução prática: <strong>SAVE ALL DATA</strong> (salve todos os seus dados)! Num disco saudável, seria <strong>PASSED</strong> :)</p>
+<p>Mas é importante salientar alguns tópicos. A coluna TYPE (como destacada) descreve o tipo de falha. Neste caso, um disco “FAILED” não é um local seguro para guardar seus dados, mas em muitos casos ainda pode funcionar por alguns meses.</p>
+<p>Portanto, os casos marcados como TYPE “Old_age” indicam sintomas de que o disco está no final de sua vida útil, mas não significam por sí só problemas iminentes. Os mais graves são os TYPE “Pre-Fail”, que indicam que o disco está no final de sua vida útil – o meu caso 🙁</p>
+<p>Na coluna “WHEN_FAILED” (a mais importante), você vê o status FAILING_NOW. Num disco saudável, esta coluna fica limpa para todas as opções, indicando que o disco nunca apresentou os erros!</p>
+<div class="alert warning no-icon ">
+  <p><p><strong>AVISO</strong></p>
+<p>Embora, relativamente raro, em muitos casos, o drive pode, realmente, danificar em menos de 24 horas, depois de indicado o erro.
+Por isso, transfira todos os dados importante, imediatamente!!</p>
+</p>
+</div>
+
+
+
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+    <h2>Gostou?</h2>
+    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor independente, 
+    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
+
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+
+        
+    <div class="centered">
+    <div class="about">
+    <ul>
+      
+        
+          <li>
+            <a href="https://www.linkedin.com/in/ricardo-ferreira-costa" aria-label="LinkedIn"  target="_blank" >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/ricardoferreiracosta08" aria-label="Github"  target="_blank" >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://www.instagram.com/ricardoferreira.tec" aria-label="Instagram"  target="_blank" >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://twitter.com/rferreira_tec" aria-label="Twitter"  target="_blank" >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://youtube.com/c/RicardoFerreiraTecnologia" aria-label="YouTuBe"  target="_blank" >
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://t.me/ricardoferreira_tec" aria-label="Telegram"  target="_blank" >
+              <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+    </ul>
+    </div>
+    </div>
+
+
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Construído usando Hugo v0.74.3. Hospedado em Netlify</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Ricardo Ferreira 
+      
+      
+         · 
+        Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & Tema adaptado de <a target="_blank" href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-151634076-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

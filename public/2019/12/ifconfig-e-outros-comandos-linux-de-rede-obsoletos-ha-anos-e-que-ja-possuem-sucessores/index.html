@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    
+    
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreira.sitesitemap.xml" />
+
+    <meta name="author" content="Ricardo Ferreira">
+    <meta name="description" content="Embora ainda funcionais, esses comandos são, realmente, considerados obsoletos e, portanto, devem ser renunciadas em favor de ferramentas mais &#34;modernas&#34;.">
+    <meta name="keywords" content="iproute,ifconfig,ip,net tools,linux">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+
+<meta name="twitter:title" content="7 comandos Linux que estão &#34;obsoletos&#34; há anos e, provavelmente, você ainda os usa"/>
+<meta name="twitter:description" content="Embora ainda funcionais, esses comandos são, realmente, considerados obsoletos e, portanto, devem ser renunciadas em favor de ferramentas mais &#34;modernas&#34;."/>
+
+    <meta property="og:title" content="7 comandos Linux que estão &#34;obsoletos&#34; há anos e, provavelmente, você ainda os usa" />
+<meta property="og:description" content="Embora ainda funcionais, esses comandos são, realmente, considerados obsoletos e, portanto, devem ser renunciadas em favor de ferramentas mais &#34;modernas&#34;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ricardoferreira.site/2019/12/ifconfig-e-outros-comandos-linux-de-rede-obsoletos-ha-anos-e-que-ja-possuem-sucessores/" />
+<meta property="og:image" content="https://ricardoferreira.site/coverpage-FACEBOOK.png"/>
+<meta property="article:published_time" content="2019-12-03T12:51:56+00:00" />
+<meta property="article:modified_time" content="2019-12-03T12:51:56+00:00" /><meta property="og:site_name" content="Ricardo Ferreira" />
+
+
+    <title>
+  7 comandos Linux que estão &#34;obsoletos&#34; há anos e, provavelmente, você ainda os usa | Ricardo Ferreira
+</title>
+
+    
+      <link rel="canonical" href="https://ricardoferreira.site/2019/12/ifconfig-e-outros-comandos-linux-de-rede-obsoletos-ha-anos-e-que-ja-possuem-sucessores/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d6e433e13546fa567433d5584c785811e370595e0c26d582e31f33105df646eb.css" integrity="sha256-1uQz4TVG&#43;lZ0M9VYTHhYEeNwWV4MJtWC4x8zEF32Rus=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+      
+      
+        
+        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.76.5" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation"  style="background-color: black;color: white;position: sticky;top: 0;z-index: 100" >
+  <section class="container">
+    
+    
+
+    <a class="navigation-title" href="/" style="color: white;">
+     Ricardo Ferreira
+     
+    </a>
+    
+
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"  style="color: white;"></i>
+        </span>
+      
+
+     
+    
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+         
+	  
+            <p class="stories-title" style="color: #c80000">
+                <strong>ifconfig, netstat e outros</strong>
+            </p>
+          
+         
+          <h1 class="title">7 comandos Linux que estão &#34;obsoletos&#34; há anos e, provavelmente, você ainda os usa</h1>
+        </div>
+        
+        <hr class="line" />
+<div class="post-meta">
+          <div class="date">
+	  
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2019-12-03T12:51:56Z">
+		3 Dezembro 2019
+              </time>
+            </span>
+	    <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3 minutos
+            </span>
+	   
+	</div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">Linux</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/net-tools/">net-tools</a>
+      <span class="separator">•</span>
+    <a href="/tags/ifconfig/">ifconfig</a>
+      <span class="separator">•</span>
+    <a href="/tags/iproute2/">iproute2</a>
+      <span class="separator">•</span>
+    <a href="/tags/ip/">ip</a>
+      <span class="separator">•</span>
+    <a href="/tags/terminal/">terminal</a></div>
+
+</div>
+<hr class="line" />
+
+
+        
+      </header>
+
+      <div>
+        
+        
+        
+        <p>Os comandos arp, ifconfig, iptunnel, netstat, route, iwconfig e nameif foram (ainda são) essenciais para administrar configurações de rede no Linux, mas estão obsoletos há anos e, provavelmente, você ainda os usa; deixaram de ser mantidos e passaram ao status, de desenvolvimento, “deprecated” por várias distribuições Linux.</p>
+<p>Embora ainda funcionais, elas são, realmente, consideradas obsoletas e, portanto, devem ser renunciadas em favor de ferramentas mais &ldquo;modernas&rdquo;.</p>
+<h2 id="pacote-net-tools"><strong>Pacote net-tools</strong></h2>
+<p>Os comandos de rede Linux, em questão, <strong>arp, ifconfig, iptunnel, netstat, route, iwconfig e nameif</strong> fazem parte do <strong><a href="https://wiki.linuxfoundation.org/networking/net-tools">pacote &ldquo;net-tools&rdquo;</a></strong>. Contudo, esse pacote não é mantido há anos (décadas), tornando as ferramentas presentes nele obsoletas.</p>
+<p><img src="../../../images/network_communicatio_Akldj.jpg" alt="network communication"></p>
+<p>A funcionalidade fornecida por vários desses comandos foi &ldquo;melhorada&rdquo; no <strong><a href="http://en.wikipedia.org/wiki/Iproute2">novo pacote &ldquo;iproute2&rdquo;</a></strong>, principalmente através do seu <strong>novo comando ip</strong>. O código do pacote &ldquo;iproute2&rdquo; está disponível no <strong><a href="https://www.kernel.org/pub/linux/utils/net/iproute2/">Kernel.org</a></strong>. A documentação do &ldquo;iproute2&rdquo; está disponível na <a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2"><strong>wiki Oficial do Linux Foundation</strong></a> e no <strong><a href="http://www.policyrouting.org/iproute2-toc.html">PolicyRouting.org</a></strong>.</p>
+<h2 id="obsoletos"><strong>Obsoletos?</strong></h2>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<p>Qualquer <strong>pessoa que tenha administrado sistemas Linux</strong> por qualquer período de tempo certamente <strong>aprendeu a usar os utilitários de ferramentas de rede</strong> para realizar suas tarefas. Se você está acostumado a usar comandos como ifconfig, arp e netstat para executar tarefas de rede, você <strong>deve repensar seus hábitos</strong>.</p>
+<p><img src="../../../images/e8005d337be2fcd130d1_i8S4v.jpg" alt="time"></p>
+<p>Para esses comandos, <strong><a href="http://br-linux.org/2016/01/deprecated-ifconfig-route-e-outros-comandos-classicos-de-rede-no-linux-que-tem-sucessores-que-voce-precisa-conhecer.html">o status &ldquo;deprecated&rdquo; vem sendo anunciado há alguns anos</a></strong>, embora muita gente continue sem saber. Muito se deve a vários manuais e tutoriais que continuam se fixando na forma clássica e a <strong><a href="https://lwn.net/Articles/710533/">desenvolvedores de ferramentas de rede que ainda usam esses utilitários</a></strong> :(</p>
+<p>Por enquanto, os usuários que estão acostumados a digitar comandos como estes, provavelmente, ainda estão seguros. Na pior das hipóteses, eles precisam instalar o pacote &ldquo;net-tools&rdquo;, explicitamente, caso já esteja instalado na sua distribuição Linux (o <strong><a href="https://www.linuxdescomplicado.com.br/2017/06/debian-9-stretch-atualizacao-de-uma-das-maiores-distribuicoes-linux-e-divulgada-confira-novidades.html">Debian 9</a></strong> parece não mais tê-lo instalado por <em>default</em>). Em resumo, o <strong>status &ldquo;deprecated</strong>&rdquo; representa que um pacote não está mais sendo mantido, mas ainda funciona, podendo deixar de funcionar caso os desenvolvedores das distribuições o decidam fazer. Portanto, é bom ter em mente os &ldquo;novos&rdquo; comandos de rede que devem ser usados em substituição aos &ldquo;antigos&rdquo;.</p>
+<h2 id="o-sucessor"><strong>O Sucessor</strong></h2>
+<p>O <strong><a href="https://wiki.linuxfoundation.org/networking/iproute2">iproute2</a></strong> é uma coleção de utilitários para controle de redes TCP/IP e controle de rede no Linux. Atualmente, é mantida por <strong>Stephen Hemminger</strong>. O autor original é o <strong>Alexey Kuznetsov</strong>, conhecido pela implementação da QoS no kernel do Linux. A maioria dos manuais de configuração de rede ainda se refere ao ifconfig e route como as principais ferramentas de configuração de rede, mas o <a href="https://wiki.linuxfoundation.org/networking/iproute2"><strong>ifconfig é conhecido por se comportar de forma inadequada em ambientes de rede modernos</strong></a>. Assim, eles são considerados obsoletos, <strong>mas a maioria das distros ainda os inclui</strong>. Sendo assim, segue lista com os comandos obsoletos e seus respectivos &ldquo;sucessores&rdquo; contidos no pacote <strong><a href="https://wiki.linuxfoundation.org/networking/iproute2">iproute2</a></strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Obsoleto</th>
+<th>Sucessor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arp</td>
+<td>ip n (ip neighbor)</td>
+</tr>
+<tr>
+<td>ifconfig</td>
+<td>ip a (ip addr), ip link, ip -s (ip -stats)</td>
+</tr>
+<tr>
+<td>iptunnel</td>
+<td>ip tunnel</td>
+</tr>
+<tr>
+<td>route</td>
+<td>ip r (ip route)e</td>
+</tr>
+<tr>
+<td>nameif</td>
+<td>ip link, ifrename</td>
+</tr>
+<tr>
+<td>iwconfig</td>
+<td>iw</td>
+</tr>
+<tr>
+<td>netstat</td>
+<td>ss, ip route (for netstat-r), ip -s link (for netstat -i), ip maddr (for netstat-g)</td>
+</tr>
+<tr>
+<td>mii-tool</td>
+<td>ethtool</td>
+</tr>
+</tbody>
+</table>
+<p><strong>MAIS INFORMAÇÕES</strong></p>
+<ul>
+<li><a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/net-tools">Net-tools obsoleto - Anúncio Linux Foundation</a></li>
+<li><a href="https://wiki.linuxfoundation.org/networking/iproute2">iproute2 - sucessor ao net-tools</a> <a href="https://lwn.net/Articles/710533/">Moving on from net-tools - Artigo Lwn.net</a></li>
+</ul>
+<hr>
+<p>Via | <a href="https://dougvitale.wordpress.com/2011/12/21/deprecated-linux-networking-commands-and-their-replacements/">Blog Dougvitale</a></p>
+
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+    <h2>Gostou?</h2>
+    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor independente, 
+    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
+
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+
+        
+    <div class="centered">
+    <div class="about">
+    <ul>
+      
+        
+          <li>
+            <a href="https://www.linkedin.com/in/ricardo-ferreira-costa" aria-label="LinkedIn"  target="_blank" >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/ricardoferreiracosta08" aria-label="Github"  target="_blank" >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://www.instagram.com/ricardoferreira.tec" aria-label="Instagram"  target="_blank" >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://twitter.com/rferreira_tec" aria-label="Twitter"  target="_blank" >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://youtube.com/c/RicardoFerreiraTecnologia" aria-label="YouTuBe"  target="_blank" >
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://t.me/ricardoferreira_tec" aria-label="Telegram"  target="_blank" >
+              <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+    </ul>
+    </div>
+    </div>
+
+
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Construído usando Hugo v0.74.3. Hospedado em Netlify</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Ricardo Ferreira 
+      
+      
+         · 
+        Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & Tema adaptado de <a target="_blank" href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-151634076-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

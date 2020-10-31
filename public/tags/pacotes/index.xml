@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pacotes on Ricardo Ferreira</title>
+    <link>https://ricardoferreira.site/tags/pacotes/</link>
+    <description>Recent content in pacotes on Ricardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 08 Dec 2019 19:02:55 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/pacotes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guia completo para iniciantes sobre como instalar programas no Linux</title>
+      <link>https://ricardoferreira.site/2019/12/guia-completo-para-iniciantes-sobre-como-instalar-programas-no-linux/</link>
+      <pubDate>Sun, 08 Dec 2019 19:02:55 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/2019/12/guia-completo-para-iniciantes-sobre-como-instalar-programas-no-linux/</guid>
+      <description>Muitos usuários desistem por não entenderem ou desconhecerem uma operação simples do sistema&amp;hellip; instalar programas</description>
+    </item>
+    
+  </channel>
+</rss>

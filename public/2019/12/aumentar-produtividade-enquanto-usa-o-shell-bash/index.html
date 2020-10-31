@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    
+    
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreira.sitesitemap.xml" />
+
+    <meta name="author" content="Ricardo Ferreira">
+    <meta name="description" content="Algumas dicas que podem ser muito úteis para você aumentar sua produtividade ao usar o shell bash. Maneiras para ser mais eficiente em suas tarefas.">
+    <meta name="keywords" content="linux,bash,shell,terminal">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ricardoferreira.site/2019/12/aumentar-produtividade-enquanto-usa-o-shell-bash/cover.jpeg"/>
+
+<meta name="twitter:title" content="8 dicas que eu uso para aumentar minha produtividade no shell Bash"/>
+<meta name="twitter:description" content="Algumas dicas que podem ser muito úteis para você aumentar sua produtividade ao usar o shell bash. Maneiras para ser mais eficiente em suas tarefas."/>
+
+    <meta property="og:title" content="8 dicas que eu uso para aumentar minha produtividade no shell Bash" />
+<meta property="og:description" content="Algumas dicas que podem ser muito úteis para você aumentar sua produtividade ao usar o shell bash. Maneiras para ser mais eficiente em suas tarefas." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ricardoferreira.site/2019/12/aumentar-produtividade-enquanto-usa-o-shell-bash/" />
+<meta property="og:image" content="https://ricardoferreira.site/2019/12/aumentar-produtividade-enquanto-usa-o-shell-bash/cover.jpeg" />
+<meta property="article:published_time" content="2019-12-09T18:00:43+00:00" />
+<meta property="article:modified_time" content="2019-12-09T18:00:43+00:00" /><meta property="og:site_name" content="Ricardo Ferreira" />
+
+
+    <title>
+  8 dicas que eu uso para aumentar minha produtividade no shell Bash | Ricardo Ferreira
+</title>
+
+    
+      <link rel="canonical" href="https://ricardoferreira.site/2019/12/aumentar-produtividade-enquanto-usa-o-shell-bash/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d6e433e13546fa567433d5584c785811e370595e0c26d582e31f33105df646eb.css" integrity="sha256-1uQz4TVG&#43;lZ0M9VYTHhYEeNwWV4MJtWC4x8zEF32Rus=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+      
+      
+        
+        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.76.5" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation"  style="background-color: black;color: white;position: sticky;top: 0;z-index: 100" >
+  <section class="container">
+    
+    
+
+    <a class="navigation-title" href="/" style="color: white;">
+     Ricardo Ferreira
+     
+    </a>
+    
+
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"  style="color: white;"></i>
+        </span>
+      
+
+     
+    
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+         
+	  
+            <p class="stories-title" style="color: #c80000">
+                <strong>Alguns &#34;hacks&#34;</strong>
+            </p>
+          
+         
+          <h1 class="title">8 dicas que eu uso para aumentar minha produtividade no shell Bash</h1>
+        </div>
+        
+        <hr class="line" />
+<div class="post-meta">
+          <div class="date">
+	  
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2019-12-09T18:00:43Z">
+		9 Dezembro 2019
+              </time>
+            </span>
+	    <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              6 minutos
+            </span>
+	   
+	</div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/linux/">Linux</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/shell/">shell</a>
+      <span class="separator">•</span>
+    <a href="/tags/bash/">bash</a>
+      <span class="separator">•</span>
+    <a href="/tags/terminal/">terminal</a></div>
+
+</div>
+<hr class="line" />
+
+
+        
+      </header>
+
+      <div>
+        
+        
+        
+        
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/cZ8vxzNQeMA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Se sua rotina no Linux é definida por <strong>executar comandos para agilizar suas operações</strong>, essas dicas podem ser muito úteis para você aumentar sua produtividade ao usar o shell Bash.</p>
+<p>O terminal Linux é <strong>amado por muitos e odiados por outros</strong>. Basicamente, tudo que é feito no ambiente gráfico é possível fazer no terminal Linux. Mas, claro nem todos estão dispostos a abdicar de uma vida “tranquila” para ficar digitando comandos em terminal.</p>
+<p>Então, para os que estão dispostos, apresento algumas dicas que uso para executar menos comandos e ser <strong>mais eficiente em minhas tarefas</strong> :)</p>
+<h2 id="shell-bash">Shell Bash</h2>
+<p>Primeiramente, o <strong>shell (ou interpretador de linha de comando)</strong> é um módulo que atua como camada externa (“concha“) entre o usuário e o sistema operacional. Existem <strong>diversos tipos</strong> de shell. O primeiro deles foi o <strong>Bourne shell (sh)</strong> que oferecia diversos comandos internos que permitiam ao usuário solicitar chamadas ao sistema operacional.</p>
+<p>A partir daí existiram evoluções significativas do shell. Atualmente, a maioria dos sistemas Linux usam, por padrão, <strong>uma evolução do Bourne shell, chamada Bash (Bourne Again Shell)</strong>. O Bash, além das funcionalidades das versões anteriores, também implementa um linguagem simples de programação que permite o desenvolvimento de pequenos programas (os famosos shell scripts).</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Em resumo, o <strong>shell</strong> é um programa independente do usuário, <strong>executado fora do kernel</strong>, que fornece uma interface para interpretação de comandos. Ele permite a interação com o sistema executando comandos em uma <strong>interface de texto (CLI)</strong>. Mesmo que você esteja apenas usando o ambiente gráfico e nunca tenha precisado usar ou executar nenhum comando Linux, o shell está em constante execução. Quando você abrir o terminal de linha de comando, você verá o shell em pleno funcionamento 😉</p>
+<h2 id="foco-na-produtividade">Foco na produtividade</h2>
+<p>Aqui deixo algumas dicas que podem fazer com você seja mais produtivo <strong>enquanto usa o shell Bash</strong> (obviamente, não apenas estas).</p>
+<div class="alert info no-icon ">
+  <p><p><strong>SE LIGA</strong></p>
+<p>O vídeo no início dessa publicação apresenta melhor essas dicas. Confere aí!</p>
+</p>
+</div>
+
+
+<h4 id="1---diretório-do-usuário-num-instante">1 - Diretório do usuário num instante</h4>
+<p>O til (~) é uma abreviação do diretório inicial do usuário logado no sistema. Isso significa que você <strong>não precisa digitar o caminho completo para o diretório inicial</strong>. Onde quer que você esteja no sistema de arquivos, você pode usar este comando para acessar o diretório inicial:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ <span style="color:#fff;font-weight:bold">pwd</span> 
+$ <span style="color:#fff;font-weight:bold">cd</span> /usr/share/locale 
+$ <span style="color:#fff;font-weight:bold">cd</span> ~</code></pre></div>
+<p>Também, é possível, executar <strong>apenas o comando cd sem o caracter til</strong> (~): &ldquo;cd&rdquo; ele retorna para o diretório do usuário vigente.</p>
+<h4 id="2---múltiplos-comandos-de-uma-vez">2 - Múltiplos comandos de uma vez</h4>
+<p>Você pode digitar quantos comandos quiser na linha de comando, <strong>de uma única vez</strong>, desde que separe cada um deles com um ponto-e-vírgula (;)</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ ls lista.txt ; cat lista.txt ; wc -l lista.txt</code></pre></div>
+<p>Observe que o terceiro comando é executado mesmo se o segundo falhar, e assim por diante. Se você deseja <strong>interromper a sequência de execução</strong> se um comando falhar, use um e comercial duplo (&amp;&amp;) em vez de um ponto e vírgula:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ ls lista.txt &amp;&amp; cat lista.txt &amp;&amp; wc -l lista.txt</code></pre></div>
+<h4 id="3---execute-o-último-comando-rapidamente">3 - Execute o último comando rapidamente</h4>
+<p>Você costuma <strong>usar as setas para cima e para baixo</strong> para encontrar o comando e depois executá-lo? Isso leva muito tempo. Concorda? Use (!) ou (!!) para executar o último comando facilmente. No caso do (!) apenas <strong>é preciso lembrar o nome do comando</strong>.</p>
+<div class="alert info no-icon ">
+  <p><p><strong>FIQUE SABENDO</strong></p>
+<p>Ao executar o comando &ldquo;history&rdquo; você verá diversos comandos com seus respectivos IDs.
+Execute &ldquo;!ID&rdquo; (sem aspas) e verá o comando ser executado novamente.</p>
+</p>
+</div>
+
+
+<p><strong>Por exemplo:</strong> ! cat executará seu último &ldquo;cat lista.txt&rdquo;. Definitivamente, economiza muito tempo e também é <strong>útil em shell diferente do bash shell</strong> (como csh ou ksh), onde as setas para cima e para baixo geralmente não fornecem comandos anteriores.</p>
+<p>Por outro lado, você pode usar (!!) para <strong>executar o último comando que você executou</strong>, sem precisar &ldquo;lembrar do comando&rdquo;.</p>
+<h4 id="4---uso-do-pipe-">4 - Uso do pipe (|)</h4>
+<p>Um &ldquo;tubo&rdquo; encadeia comandos juntos. Ele <strong>pega a saída de um comando e a alimenta para o próximo como entrada</strong>. O número de comandos canalizados (o comprimento da cadeia) é arbitrário. Aqui, usaremos cat para alimentar o conteúdo do arquivo lista.txt no &ldquo;grep&rdquo;, que extrai qualquer linha que contenha um numeral &ldquo;1&rdquo; e exibe o resultado:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ cat lista.txt | grep <span style="color:#ff0;font-weight:bold">1</span></code></pre></div>
+<h4 id="5---buscar-pelo-comando-já-executado-mais-rapidamente">5 - Buscar pelo comando já executado mais rapidamente</h4>
+<p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5245300802542741"
+     data-ad-slot="3200652252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</p>
+<p>Use &ldquo;CTRL + R&rdquo; para encontrar o último comando correspondente ao que deseja executar novamente. Melhor momento que você sabe que executou o comando &ldquo;<a href="https://www.linuxdescomplicado.com.br/2019/08/o-poder-e-a-versatilidade-do-comando-xargs.html">ls -l | grep ” algo ” | cut -c55- | xargs rm</a>&rdquo;, alguma vez no passado, mas não lembra os parâmetros necessários para executá-lo, novamente. Basta pressionar o botão &ldquo;CRTL + R&rdquo; e digite as palavras que você tinha no seu último comando e o sistema encontrará esse comando para você&hellip; depois basta pressionar ENTER</p>
+<p>Assim, eu evito de usar o comando &ldquo;history&rdquo; para buscar os últimos comandos executados :)</p>
+<h4 id="6---uso-de-apelidos-para-seus-comandos-mais-usados">6 - Uso de apelidos para seus comandos mais usados</h4>
+<p>Para <a href="https://www.linuxdescomplicado.com.br/2015/06/criar-comandos-usando-alias.html">criar &ldquo;seus próprios&rdquo; comandos</a> é preciso usar o recurso de Alias. A sua estrutura é bem simples, como segue:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ <span style="color:#fff;font-weight:bold">alias</span> nome_apelido=’comando com parâmetros‘</code></pre></div>
+<p>Para criá-los, é preciso modificar o <strong>arquivo .bashrc</strong> que se encontra em <strong>/home/NomeDoUsuário/.bashrc</strong> (se o arquivo não existir, crie-o) e adicionar cada apelido no final do arquivo.</p>
+<p>Por fim, para gravar definitivamente esses apelidos, execute, no diretório home do usuário:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash"><span style="color:#007f7f"># source ~/.bashrc</span></code></pre></div>
+<h4 id="7---navegar-em-dois-diretórios-rapidamente">7 - Navegar em dois diretórios rapidamente</h4>
+<p>Use o caracter (-) junto com o comando &ldquo;cd&rdquo; para <strong>alternar entre um e outro</strong>. Aliado a isso, você pode usar os comandos &ldquo;pushd&rdquo;, que insere diretório para a pilha de diretórios para alternar, e o &ldquo;popd&rdquo;, que retira da pilha o último diretório inserido.</p>
+<h4 id="8---alguns-atalhos-de-teclado">8 - Alguns atalhos de teclado</h4>
+<p>Sem o mouse parece possível apenas o uso das setas (esquerda e direita) para a <strong>movimentação do cursor</strong>. Entretanto, com algumas teclas de atalho é possível ser mais produtivo e ágil:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">Ctrl + a - vá para o início da linha de comando. 
+Ctrl + e - vai para o final da linha de comando. 
+Ctrl + k - exclua <span style="color:#fff;font-weight:bold">do</span> cursor até o final da linha de comando - economize muito tempo. Ctrl + u - exclua <span style="color:#fff;font-weight:bold">do</span> cursor até o início da linha de comando, não a estou usando, mas ainda assim boa. 
+Ctrl + w - excluir <span style="color:#fff;font-weight:bold">do</span> cursor para o início da palavra (ou seja, excluir uma palavra para trás) 
+Ctrl + y - cole a palavra ou o texto que foi cortado usando um dos atalhos de exclusão (como o acima) após o cursor 
+Ctrl + xx - move entre o início da linha de comando e a posição atual <span style="color:#fff;font-weight:bold">do</span> cursor (e vice-versa) 
+Alt + b - recua uma palavra (ou vá para o início da palavra em que o cursor está ativado) 
+Alt + f - avança uma palavra (ou vai para o final da palavra em que o cursor está ativado) 
+Alt + d - excluir para o final da palavra começando no cursor (palavra inteira se o cursor estiver no início da palavra) 
+Alt + c - coloque em maiúscula no final da palavra começando no cursor (palavra inteira se o cursor estiver no início da palavra) 
+Alt + u - faz maiúsculas <span style="color:#fff;font-weight:bold">do</span> cursor até o final da palavra 
+Alt + l - faz minúsculas <span style="color:#fff;font-weight:bold">do</span> cursor até o final da palavra 
+Alt + t - troca a palavra atual pela anterior 
+Ctrl + f - avança um caractere 
+Ctrl + b - retrocede um caractere 
+Ctrl + d - exclui caracteres sob o cursor 
+Ctrl + h - exclui o caractere antes <span style="color:#fff;font-weight:bold">do</span> cursor 
+Ctrl + t - troca o caractere sob o cursor pelo anterior</code></pre></div>
+<!-- raw HTML omitted -->
+
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+    <h2>Gostou?</h2>
+    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor independente, 
+    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
+
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+
+        
+    <div class="centered">
+    <div class="about">
+    <ul>
+      
+        
+          <li>
+            <a href="https://www.linkedin.com/in/ricardo-ferreira-costa" aria-label="LinkedIn"  target="_blank" >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/ricardoferreiracosta08" aria-label="Github"  target="_blank" >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://www.instagram.com/ricardoferreira.tec" aria-label="Instagram"  target="_blank" >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://twitter.com/rferreira_tec" aria-label="Twitter"  target="_blank" >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://youtube.com/c/RicardoFerreiraTecnologia" aria-label="YouTuBe"  target="_blank" >
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://t.me/ricardoferreira_tec" aria-label="Telegram"  target="_blank" >
+              <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+    </ul>
+    </div>
+    </div>
+
+
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Construído usando Hugo v0.74.3. Hospedado em Netlify</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Ricardo Ferreira 
+      
+      
+         · 
+        Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & Tema adaptado de <a target="_blank" href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-151634076-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

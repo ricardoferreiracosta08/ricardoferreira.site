@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Veja como verificar a vida útil do seu disco usando Linux
+title: Como eu verifico a vida útil do meu disco no Linux
 #seotitle: Você já se preocupou em verificar a vida útil do seu HD ou SSH?
 subtitle: Nada é pra sempre! Inclusive, seu disco
 description: >-
