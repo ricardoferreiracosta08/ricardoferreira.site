@@ -1,5 +1,5 @@
 <section class="container centered">
-  <div class="about">
+  <div class="about" style="width: 500px">
     {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
       {{ with .Site.Params.avatarurl }}
         <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>

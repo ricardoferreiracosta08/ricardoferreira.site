@@ -1,7 +1,7 @@
 ---
 title: "Blog "
 #name: "linuxdescomplicado"
-description: a
+description: Lista de publicações que reúne tudo que estudo e aplico constantemente em minha carreira de Tecnologia.
 ---
 <!-- CONTENT -->
 
@@ -10,4 +10,4 @@ prático, desde áreas que já trabalho há algum tempo como Linux e Servidores,
 como meus novos aprendizados em negócios, análise de dados e ciência de dados. 
 
 **Alguma contribuição, crítica ou problema encontrado?** [Reporte aqui!](https://github.com/ricardoferreiracosta08/ricardoferreira.site/tree/master/content/blog)
-Basta alterar o arquivo de texto, diretamente no Github e abrir um pull-request 😊
+Basta alterar o arquivo de texto, diretamente no Github e abrir um pull-request 🤘

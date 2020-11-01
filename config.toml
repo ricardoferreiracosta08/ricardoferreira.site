@@ -204,7 +204,7 @@ pygmentscodefencesguesssyntax = true
         [languages.pt-br.params]
             author = "Ricardo Ferreira"
             info = "Analista de Tecnologia"
-	    description = "Analista de Tecnologia há 10 anos, sou apaixonado por novas tecnologias, bacharel em ciência da computação. Alguns anos na operação, decidi mirar os dados. Cientista de dados em formação! 🔥"
+	    description = "Analista de Tecnologia há 10 anos, sou apaixonado por novas tecnologias, bacharel em ciência da computação. Alguns anos na operação, decidi mirar os dados 🔥"
             keywords = "linux,docker,bpm,dados,bussiness intelligence,bi,sysadmin, tecnologia"
             footercontent = "Construído usando Hugo v0.76.5. Hospedado em Netlify"
             ctaToHome = "Mais sobre mim"
@@ -222,9 +222,9 @@ pygmentscodefencesguesssyntax = true
             url = "blog/"
 
             [[languages.pt-br.menu.main]]
-            name = "Tenho alguns cursos. Olha aqui!"
+            name = "Meus cursos online"
             weight = 3
-            url = "https://www.udemy.com/user/ricardo-ferreira-costa-2/"
+            url = "cursos/"
 
             [[languages.pt-br.menu.main]]
             name = "Mentoria Gratuita | Agende a sua"
