@@ -25,9 +25,9 @@
           <img src='{{ .Params.featured_image }}' alt="Featured image"/>
         {{ end }}
         <!-- MY CUSTOM -->
-        {{ $content := replace .Content "[ADSENSE]" ( partial "adsense-inarticle.html" .) }}
-        {{ $content | safeHTML }}
-<!--        {{ .Content }} -->
+        {{ $content := replace .Content "[ADSENSE]" ( partial "adsense-inarticle.html" .) }} 
+        {{ $content | safeHTML }} 
+<!--        {{ .Content }}  -->
       </div>
 
       <footer>
