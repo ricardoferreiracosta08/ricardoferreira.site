@@ -98,10 +98,11 @@ Visão geral do projeto:
 **Tecnicamente**, é uma aplicação web PHP em arquitetura de microserviço com **containers Docker** que se conecta via API Restful 
 Flask com mapeamento objeto-relacional SQLAlchemy, escrito em Python, com persistência em banco de dados PostgreSQL. 
 
-A fim de garantir que você tenha uma maior absorção do que está sendo apresentado aqui, acesse o código completo desse projeto no meu GitHub e
-acompanhe em detalhes como cada trecho e recurso foi adotado tendo como base a Metodologia discutida anteriormente.
+A fim de garantir que você tenha uma maior absorção do que está sendo apresentado aqui, acesse o [código completo desse projeto no meu GitHub]
+(https://github.com/ricardoferreiracosta08/microservice-simple-docker-compose) e acompanhe em detalhes como cada trecho e 
+recurso foi adotado tendo como base a Metodologia discutida anteriormente.
 
-Leia o Readme para proceder com a execução e veja na prática seu funcionamento!
+**Leia o Readme** para proceder com a execução e veja na prática seu funcionamento!
 
 {{< alert success no-icon >}}
 Esse artigo foi criado por conta da aula "Microserviço na prática - do zero ao push" apresentado no meu curso de Introdução a Docker! Curtiu? 
@@ -117,7 +118,7 @@ desenvolvimento em microserviços usando containers Docker. Por isso, não abord
 Esteja sempre centrado no versionamento do código, em diferentes etapas do desenvolvimento integrado e continuado 
 (development, staging, production, etc) e ciente de que existe apenas uma base de código por aplicação, mas existirão vários deploys da mesma. 
 
-Acesse toda a base de código desse projeto no meu GitHub aqui!
+Acesse toda a base de código desse projeto no meu GitHub [aqui](https://github.com/ricardoferreiracosta08/microservice-simple-docker-compose)!
 
 #### 2. Dependências "Dependencies"
 
@@ -300,6 +301,7 @@ docker-compose exec database-books psql -U test -p 5432 -d books
 ## Referências
 
 + [Curso Docker do Zero - Introdução a administração de containers](http://bit.ly/cursoAprendaDockerdoZero)
++ [GitHub desse projeto](https://github.com/ricardoferreiracosta08/microservice-simple-docker-compose)
 + [The Twelve-Factor App (pt_BR)](https://12factor.net/pt_br/)
 + [The Twelve-Factor App — A Successful Microservices Guideline](https://dev.to/simon_sugob/the-twelve-factor-appa-successful-microservices-guideline-3a1h)
 + [Book "Building Microservices"](https://samnewman.io/books/building_microservices/)
