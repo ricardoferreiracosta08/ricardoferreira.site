@@ -203,8 +203,8 @@ pygmentscodefencesguesssyntax = true
 
         [languages.pt-br.params]
             author = "Ricardo Ferreira"
-            info = "Analista de Tecnologia"
-	    description = "Analista de Tecnologia há 10 anos, sou apaixonado por novas tecnologias, bacharel em ciência da computação. Alguns anos na operação, decidi mirar os dados 🔥"
+            info = "Linux · Docker · Dados"
+	    description = "Apaixonado por novas tecnologias, bacharel em Ciência da Computação. Alguns anos na operação, decidi mirar os dados. Desenvolvedor nas horas vagas"
             keywords = "linux,docker,bpm,dados,bussiness intelligence,bi,sysadmin, tecnologia"
             footercontent = "Construído usando Hugo v0.76.5. Hospedado em Netlify"
             ctaToHome = "Mais sobre mim"
