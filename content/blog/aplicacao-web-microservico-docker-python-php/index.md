@@ -98,8 +98,7 @@ Visão geral do projeto:
 **Tecnicamente**, é uma aplicação web PHP em arquitetura de microserviço com **containers Docker** que se conecta via API Restful 
 Flask com mapeamento objeto-relacional SQLAlchemy, escrito em Python, com persistência em banco de dados PostgreSQL. 
 
-A fim de garantir que você tenha uma maior absorção do que está sendo apresentado aqui, acesse o [código completo desse projeto no meu GitHub]
-(https://github.com/ricardoferreiracosta08/microservice-simple-docker-compose) e acompanhe em detalhes como cada trecho e 
+A fim de garantir que você tenha uma maior absorção do que está sendo apresentado aqui, acesse o [código completo desse projeto no meu GitHub](https://github.com/ricardoferreiracosta08/microservice-simple-docker-compose) e acompanhe em detalhes como cada trecho e 
 recurso foi adotado tendo como base a Metodologia discutida anteriormente.
 
 **Leia o Readme** para proceder com a execução e veja na prática seu funcionamento!
