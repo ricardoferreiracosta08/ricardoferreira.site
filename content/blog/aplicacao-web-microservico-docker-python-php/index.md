@@ -104,7 +104,7 @@ recurso foi adotado tendo como base a Metodologia discutida anteriormente.
 **Leia o Readme** para proceder com a execução e veja na prática seu funcionamento!
 
 {{< alert success no-icon >}}
-Esse artigo foi criado por conta da aula "Microserviço na prática - do zero ao push" apresentado no meu curso de Introdução a Docker! Curtiu? 
+Esse artigo foi criado por conta da aula "Microserviço na prática - aplicação web PHP simples conectada via API Restful" apresentado no meu curso de Introdução a Docker! Curtiu? 
 [Eu quero o curso](http://bit.ly/cursoAprendaDockerdoZero)
 {{< /alert >}}
 
