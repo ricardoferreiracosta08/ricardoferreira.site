@@ -226,9 +226,15 @@ pygmentscodefencesguesssyntax = true
             weight = 3
             url = "cursos/"
 
+#            [[languages.pt-br.menu.main]]
+#            name = "Mentoria Gratuita | Agende a sua"
+#            weight = 5
+#            pre = "<i class='fa fa-calendar'></i>"
+#            url = "https://calendly.com/ricardoferreira_tec/mentoriagratuita"
+#            post = "shake"
+
             [[languages.pt-br.menu.main]]
-            name = "Mentoria Gratuita | Agende a sua"
+            name = "Lives Semanais | Convite Discord "
             weight = 5
-            pre = "<i class='fa fa-calendar'></i>"
-            url = "https://calendly.com/ricardoferreira_tec/mentoriagratuita"
+            url = "https://discord.gg/hFVnUPwMZd"
             post = "shake"
