@@ -39,7 +39,7 @@ pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Ricardo Ferreira"
-    description = "More than ten years of expertise in IT, I am passionate about new technologies, bachelor's Computer Science. Nowadays, I keep learning new skills in data analytics and data science"
+    description = "More than ten years of expertise in IT, I am passionate about new technologies, bachelor's Computer Science. Nowadays, I keep learning new skills in data engineer"
     keywords = "linux,docker,sysadmin,bussiness intelligence,bi,data science,datascience,technology"
     info = "IT Specialist · Bachelor's Computer Science"
     avatarurl = "images/perfil-02.jpeg"
@@ -203,8 +203,8 @@ pygmentscodefencesguesssyntax = true
 
         [languages.pt-br.params]
             author = "Ricardo Ferreira"
-            info = "Linux · Código · Dados"
-	    description = "Apaixonado por novas tecnologias, bacharel em Ciência da Computação. Alguns anos na operação, decidi mirar os dados. Desenvolvedor nas horas vagas"
+            info = "Linux · Código · Infraestrutura"
+	    description = "Apaixonado por novas tecnologias, bacharel em Ciência da Computação. Alguns anos na operação, decidi mirar os dados."
             keywords = "linux,docker,bpm,dados,bussiness intelligence,bi,sysadmin, tecnologia"
             footercontent = "Construído usando Hugo v0.76.5. Hospedado em Netlify"
             ctaToHome = "Mais sobre mim"
@@ -234,7 +234,7 @@ pygmentscodefencesguesssyntax = true
 #            post = "shake"
 
             [[languages.pt-br.menu.main]]
-            name = "Lives Semanais | Convite Discord "
+            name = "Lives Semanais | Inscreva-se "
             weight = 5
-            url = "https://discord.gg/hFVnUPwMZd"
+            url = "https://mailchi.mp/112e941bc94c/ricardoferreira"
             post = "shake"
