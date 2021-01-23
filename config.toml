@@ -234,7 +234,7 @@ pygmentscodefencesguesssyntax = true
 #            post = "shake"
 
             [[languages.pt-br.menu.main]]
-            name = "Lives Semanais | Inscreva-se "
+            name = "Aulas Semanais | Inscreva-se "
             weight = 5
             url = "https://ricardoferreira.ck.page/aulas-semanais"
             post = "shake"
