@@ -39,9 +39,9 @@ pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Ricardo Ferreira"
-    description = "More than ten years of expertise in IT, I am passionate about new technologies, bachelor's Computer Science. Nowadays, I keep learning new skills in data engineer"
+    description = "More than ten years of expertise in IT, I am passionate about new technologies, bachelor's Computer Science. Nowadays, I keep learning new skills in Data Engineer"
     keywords = "linux,docker,sysadmin,bussiness intelligence,bi,data science,datascience,technology"
-    info = "IT Specialist · Bachelor's Computer Science"
+    info = "Senior Infrastructure and Open source IT"
     avatarurl = "images/perfil-02.jpeg"
     #gravatar = "john.doe@example.com"
     footercontent = "Built using Hugo v0.76.5. Hosted by Netlify."
