@@ -11,6 +11,11 @@
     <meta name="googlebot" content="index,follow" />
 
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreira.sitesitemap.xml" />
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
 
     <meta name="author" content="Ricardo Ferreira">
     <meta name="description" content="Restaurar um sistema Linux parece algo improvável, já que não é uma função padrão da maiorias das distros Linux.  Por isso, seguem algumas ferramentas e opções que usam snapshots que servem para restaurar seu sistema Linux em caso de falhas.">
@@ -55,7 +60,7 @@
       
         
         
-        <link rel="stylesheet" href="/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="/css/coder-dark.min.354b7f480cbced7eddc22aa3407be7b2531f2c817de41a45a480a366bb95df45.css" integrity="sha256-NUt/SAy87X7dwiqjQHvnslMfLIF95BpFpICjZruV30U=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -79,7 +84,25 @@
       <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
     
 
-    <meta name="generator" content="Hugo 0.76.5" />
+    <meta name="generator" content="Hugo 0.79.1" />
+    
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '420857232451931');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=420857232451931&ev=PageView&noscript=1"
+/></noscript>
+
+
   </head>
 
   
@@ -170,7 +193,7 @@
       <div>
         
         
-        
+         
         <p>Quem nunca quis dá um CTRL+Z no momento em que fez ou aconteceu algo errado? Aquele <strong>botão “desfazer”</strong>,
 encontrado em diversos programas, resolveria muitas coisas caso tivesse disponível para <strong>restaurar seu sistema Linux</strong>
 em situações inesperadas.</p>
@@ -264,7 +287,7 @@ em situações inesperadas.</p>
 <p><img src="https://lh3.googleusercontent.com/QCUALtIoyKpWd-KuysYu9_yG17sY9LdZakLhdrqd-HWBwnlDk0D1uLzR-5zf5fcc6Rk9rjeieIE5ymGvTg=w1000-no-tmp.jpg" alt=""></p>
 <p>LVM (Logical Volume Manager) é um método para alocar espaço do disco rígido, em volumes lógicos, que podem ser facilmente redimensionados; diferentemente das partições salvas nas tabelas de partições. Uma das grandes vantagens do uso do LVM é poder criar uma camada lógica sobre um disco rígido ou conjunto de discos e ter condições de de criar, excluir, redimensionar e expandir partições no disco sem precisar desligar o computador ou mover dados.</p>
 <p>Quando se trata de preservar dados preciosos, é sempre uma boa ideia para pensar sobre isso com antecedência. Assim, vale a pena considerar o uso de LVM como uma maneira de organizar seus discos rígidos. Embora não seja exatamente um aplicativo, a implementação LVM vem com um recurso snapshot embutido no kernel do Linux. Você pode montar os snapshots e navegar neles como qualquer outro disco ou partição. Além disso, mesclar vários snapshots e restaurá-los para resolver problemas do sistema.</p>
-
+ 
 
       </div>
 
@@ -277,15 +300,27 @@ em situações inesperadas.</p>
         
         
         
-    <h2>Gostou?</h2>
-    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor independente, 
+    <h2>Gostou do conteúdo?</h2>
+    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor web independente, 
     administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
 
     <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
     Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
 
+    <p>Ah... <strong>quase esquecendo</strong>, <strong><a href="https://app.picpay.com/user/ricardoferreira.tec" target="_blank">
+    aceito um café</a></strong> ☕ </p>
+   
 
         
+<h3>Contribua</h3>
+
+<strong>Alguma contribuição, crítica ou problema encontrado?</strong> 
+<a href="https://github.com/ricardoferreiracosta08/ricardoferreira.site/tree/master/content/blog" target="_blank">Reporte aqui!</a>
+Basta alterar o arquivo de texto, diretamente no Github e abrir um pull-request!
+
+
+        <br/><br/><br/>
+
     <div class="centered">
     <div class="about">
     <ul>
@@ -346,7 +381,6 @@ em situações inesperadas.</p>
         
       </footer>
     </article>
-
     
   </section>
 
@@ -356,14 +390,14 @@ em situações inesperadas.</p>
   <footer class="footer">
     <section class="container">
       
-        <p>Construído usando Hugo v0.74.3. Hospedado em Netlify</p>
+        <p>Construído usando Hugo v0.76.5. Hospedado em Netlify</p>
       
       
         ©
         
           2019 -
         
-        2020
+        2021
          Ricardo Ferreira 
       
       

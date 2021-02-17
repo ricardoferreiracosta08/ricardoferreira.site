@@ -48,6 +48,8 @@ os pontos de falhas que exigem maior esforço no monitoramento para a mitigaçã
 + Tudo passa a ser orientado por eventos e mensagens entre as partes
 + Totalmente aplicável a **escalonar horizontalmente** seu software. Aqui encaixa-se o uso de orquestradores de containers, como Swarm e Kubernetes
 
+[FORM_CONVERTKIT]
+
 Tudo isso confronta com as **práticas tradicionais de desenvolvimento** que estabelecem um único ponto (famoso monólito) de criação. 
 Dificultando a manutenção, concentrando as falhas e diminuindo a resiliência já que a aplicação precisará parar ou reiniciar, por completo caso o 
 módulo de upload precise de atualizaçaõ ou tenha dado problema, por exemplo.

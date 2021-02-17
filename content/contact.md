@@ -20,8 +20,8 @@ Além disso, sou [instrutor na Udemy](https://www.udemy.com/user/ricardo-ferreir
 
 Por outro lado, caso procura alguém para **resolver algum problema seu**, saiba que ofereço tanto serviço de [consultoria como de Freelancer](). 
 
-Inclusive, devido a meus anos de experiência na carreira de TI, ofereço **GRATUITAMENTE 1 hora de mentoria online**
+<!--Inclusive, devido a meus anos de experiência na carreira de TI, ofereço **GRATUITAMENTE 1 hora de mentoria online**
 para eu te auxiliar em algum aspecto da sua jornada profissional. Sinta-se a vontade para agendar a sua,
-conforme minha disponibilidade. [Quero agendar minha mentoria agora!](https://calendly.com/ricardoferreira_tec/mentoriagratuita)
+conforme minha disponibilidade. [Quero agendar minha mentoria agora!](https://calendly.com/ricardoferreira_tec/mentoriagratuita)-->
 
 No mais, **aguardo seu contato**!

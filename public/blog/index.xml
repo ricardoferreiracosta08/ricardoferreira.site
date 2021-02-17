@@ -6,9 +6,19 @@
     <description>Recent content in Blog  on Ricardo Ferreira</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Mon, 17 Feb 2020 16:25:12 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Nov 2020 13:24:58 -0300</lastBuildDate><atom:link href="https://ricardoferreira.site/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Veja como verificar a vida útil do seu disco usando Linux</title>
+      <title>Aplicação web em arquitetura de microserviço utilizando Docker 🐳</title>
+      <link>https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/</link>
+      <pubDate>Tue, 10 Nov 2020 13:24:58 -0300</pubDate>
+      
+      <guid>https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/</guid>
+      <description>Tendo em vista a Metodologia &amp;ldquo;The Twelve-Factor App&amp;rdquo;, criada por Adam Wiggins, co-fundador da PaaS Heroku, que preconiza todo software cloud entregue como serviço deve seguir algumas premissas de desenvolvimento que impulsonam o uso da arquitetura de Microserviços, eu apresento uma solução web simples que demonstra na prática o emprego de todos os 12 fatores da Metodologia!
+Por que Microserviço? 🤨 Microserviço é um conceito que garante que uma aplicação possa ser dividida em múltiplos serviços menores (microserviços) que se comunicam entre si, tradicionalmente, via APIs Rest (métodos GET/POST/PUT/DELETE do protocolo HTTP + JSON).</description>
+    </item>
+    
+    <item>
+      <title>Como eu verifico a vida útil do meu disco no Linux</title>
       <link>https://ricardoferreira.site/2020/02/saiba-como-verificar-vida-util-do-seu-disco-no-linux/</link>
       <pubDate>Mon, 17 Feb 2020 16:25:12 +0000</pubDate>
       
@@ -26,7 +36,7 @@
     </item>
     
     <item>
-      <title>Como prevenir que seus arquivos sejam removidos, acidentalmente</title>
+      <title>Como eu previno que meus arquivos sejam removidos, acidentalmente, no Linux</title>
       <link>https://ricardoferreira.site/2020/01/saiba-como-prevenir-que-seus-arquivos-e-pastas-sejam-removidos-ou-modificados-acidentalmente/</link>
       <pubDate>Wed, 15 Jan 2020 22:35:51 +0000</pubDate>
       

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    
+    
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://ricardoferreira.sitesitemap.xml" />
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <meta name="author" content="Ricardo Ferreira">
+    <meta name="description" content="Aplicação web PHP em arquitetura de microserviço com containers Docker que se conecta via API Restful">
+    <meta name="keywords" content="docker,microserviço,linux,python,php,flask,api,restful,sqlalchemy,postgresql">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/overview.png"/>
+
+<meta name="twitter:title" content="Aplicação web em arquitetura de microserviço utilizando Docker 🐳"/>
+<meta name="twitter:description" content="Aplicação web PHP em arquitetura de microserviço com containers Docker que se conecta via API Restful"/>
+
+    <meta property="og:title" content="Aplicação web em arquitetura de microserviço utilizando Docker 🐳" />
+<meta property="og:description" content="Aplicação web PHP em arquitetura de microserviço com containers Docker que se conecta via API Restful" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/" />
+<meta property="og:image" content="https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/overview.png" />
+<meta property="article:published_time" content="2020-11-10T13:24:58-03:00" />
+<meta property="article:modified_time" content="2020-11-10T13:24:58-03:00" /><meta property="og:site_name" content="Ricardo Ferreira" />
+
+
+    <title>
+  Aplicação web em arquitetura de microserviço utilizando Docker 🐳 | Ricardo Ferreira
+</title>
+
+    
+      <link rel="canonical" href="https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d6e433e13546fa567433d5584c785811e370595e0c26d582e31f33105df646eb.css" integrity="sha256-1uQz4TVG&#43;lZ0M9VYTHhYEeNwWV4MJtWC4x8zEF32Rus=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.354b7f480cbced7eddc22aa3407be7b2531f2c817de41a45a480a366bb95df45.css" integrity="sha256-NUt/SAy87X7dwiqjQHvnslMfLIF95BpFpICjZruV30U=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+      
+      
+        
+        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.79.1" />
+    
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '420857232451931');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=420857232451931&ev=PageView&noscript=1"
+/></noscript>
+
+
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation"  style="background-color: black;color: white;position: sticky;top: 0;z-index: 100" >
+  <section class="container">
+    
+    
+
+    <a class="navigation-title" href="/" style="color: white;">
+     Ricardo Ferreira
+     
+    </a>
+    
+
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"  style="color: white;"></i>
+        </span>
+      
+
+     
+    
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+         
+	  
+            <p class="stories-title" style="color: #c80000">
+                <strong>Ou Docker ou racha</strong>
+            </p>
+          
+         
+          <h1 class="title">Aplicação web em arquitetura de microserviço utilizando Docker 🐳</h1>
+        </div>
+        
+        <hr class="line" />
+<div class="post-meta">
+          <div class="date">
+	  
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2020-11-10T13:24:58-03:00">
+		10 Novembro 2020
+              </time>
+            </span>
+	    <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              9 minutos
+            </span>
+	   
+	</div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/docker/">Docker</a></div>
+
+          
+</div>
+<hr class="line" />
+
+
+        
+      </header>
+
+      <div>
+        
+        
+         
+        <p>Tendo em vista a <strong>Metodologia &ldquo;The Twelve-Factor App&rdquo;</strong>, criada por Adam Wiggins, co-fundador da PaaS <a href="https://www.heroku.com/">Heroku</a>,
+que preconiza todo software cloud entregue como serviço deve seguir algumas premissas de desenvolvimento que <strong>impulsonam o uso da arquitetura
+de Microserviços</strong>, eu apresento uma solução web simples que demonstra na prática o emprego de todos os 12 fatores da Metodologia!</p>
+<h2 id="por-que-microserviço-">Por que Microserviço? 🤨</h2>
+<p>Microserviço é um conceito que garante que uma aplicação <strong>possa ser dividida</strong> em múltiplos serviços menores (microserviços) que se
+comunicam entre si, tradicionalmente, via APIs Rest (métodos GET/POST/PUT/DELETE do protocolo HTTP + JSON).</p>
+<p>As <strong>principais vantagens</strong> são:</p>
+<ul>
+<li>Cada microserviço é independente garantindo <strong>baixo acoplamento</strong> e possui responsabilidade única garantindo <strong>alta coesão</strong>
+melhorando a manutenção do código e <strong>reuso do software</strong></li>
+<li>Desse modo os <strong>pontos de falhas</strong> tendem a serem isolodados mais facilmente gatarantido a resilência do software. Por outro lado, aumentam-se
+os pontos de falhas que exigem maior esforço no monitoramento para a mitigação efeciente das falhas</li>
+<li>Modelagem com base em <strong>conceitos de negócio</strong> (Domain-Driven Design) evitando uma modelagem falha e baseada puramente em aspectos técnicos</li>
+<li><strong>Autonomia e indepedência</strong> exigem automação no deploy que facilitam a implementação de técnicas de CI/CD vistas no DevOps</li>
+<li>Cada microserviço pode ter sua <strong>própria linguaguem de desenvolvimento</strong>, databases e ferramentas</li>
+<li>Tudo passa a ser orientado por eventos e mensagens entre as partes</li>
+<li>Totalmente aplicável a <strong>escalonar horizontalmente</strong> seu software. Aqui encaixa-se o uso de orquestradores de containers, como Swarm e Kubernetes</li>
+</ul>
+<p>Tudo isso confronta com as <strong>práticas tradicionais de desenvolvimento</strong> que estabelecem um único ponto (famoso monólito) de criação.
+Dificultando a manutenção, concentrando as falhas e diminuindo a resiliência já que a aplicação precisará parar ou reiniciar, por completo caso o
+módulo de upload precise de atualizaçaõ ou tenha dado problema, por exemplo.</p>
+<h2 id="qual-é-dessa-metodologia-aí-">Qual é dessa Metodologia aí? 🤔</h2>
+<p>Ela sintetiza, em 12 fatores, <strong>boas práticas de desenvolvimento</strong> de aplicação web. Ela é, altamente, recomendada para qualquer
+Desenvolvedor que esteja construindo aplicações que rodam como serviço e Engenheiros de Operações que implantam ou administram tais
+aplicações! Recomendações do próprio autor.</p>
+<p>Estes fatores são realmente um ótimo &lsquo;guideline&rsquo; para direcionar a melhor maneira para construir uma aplicação baseada em microserviço, pois
+oferecem maneiras para garantir os <strong>principais pilares dos microserviços</strong>, tais como: independência, resiliência, autonomia, descentralização
+e escalabilidade.</p>
+<p>Sendo assim, os <a href="https://12factor.net/pt_br/">12 fatores</a> são:</p>
+<ol>
+<li><strong>Base de Código</strong> “Codebase”</li>
+</ol>
+<blockquote>
+<p>Uma base de código com rastreamento utilizando controle de revisão</p>
+</blockquote>
+<ol start="2">
+<li><strong>Dependências</strong> “Dependencies”</li>
+</ol>
+<blockquote>
+<p>Declare e isole as dependências</p>
+</blockquote>
+<ol start="3">
+<li><strong>Configurações</strong> “Config”</li>
+</ol>
+<blockquote>
+<p>Armazene as configurações no ambiente</p>
+</blockquote>
+<ol start="4">
+<li><strong>Serviços de Apoio</strong> “Backing Services”</li>
+</ol>
+<blockquote>
+<p>Trate os serviços de apoio, como recursos ligados</p>
+</blockquote>
+<ol start="5">
+<li><strong>Construa, lance, execute</strong> “Build, Run, Release”</li>
+</ol>
+<blockquote>
+<p>Separe estritamente os builds e execute em estágios</p>
+</blockquote>
+<ol start="6">
+<li><strong>Processos</strong> “Stateless Processes”</li>
+</ol>
+<blockquote>
+<p>Execute a aplicação como um ou mais processos que não armazenam estado</p>
+</blockquote>
+<ol start="7">
+<li><strong>Vínculo de porta</strong> “Port Binding”:</li>
+</ol>
+<blockquote>
+<p>Exporte serviços por ligação de porta</p>
+</blockquote>
+<ol start="8">
+<li><strong>Concorrência</strong> &ldquo;Concurrency&rdquo;</li>
+</ol>
+<blockquote>
+<p>Dimensione por um modelo de processo</p>
+</blockquote>
+<ol start="9">
+<li><strong>Descartabilidade</strong> &ldquo;Disposability&rdquo;</li>
+</ol>
+<blockquote>
+<p>Maximizar a robustez com inicialização e desligamento rápido</p>
+</blockquote>
+<ol start="10">
+<li><strong>Dev/prod semelhantes</strong> &ldquo;Dev-Prod Parity&rdquo;</li>
+</ol>
+<blockquote>
+<p>Mantenha o desenvolvimento, teste, produção o mais semelhante possível</p>
+</blockquote>
+<ol start="11">
+<li><strong>Logs</strong></li>
+</ol>
+<blockquote>
+<p>Trate logs como fluxo de eventos</p>
+</blockquote>
+<ol start="12">
+<li><strong>Processos de Admin</strong> &ldquo;Admin Processes&rdquo;</li>
+</ol>
+<blockquote>
+<p>Executar tarefas de administração/gerenciamento como processos pontuais</p>
+</blockquote>
+<h2 id="veja-na-prática-">Veja na prática! 🤘</h2>
+<p>Visão geral do projeto:</p>
+<p><img src="./overview.png" alt=""></p>
+<p><strong>Tecnicamente</strong>, é uma aplicação web PHP em arquitetura de microserviço com <strong>containers Docker</strong> que se conecta via API Restful
+Flask com mapeamento objeto-relacional SQLAlchemy, escrito em Python, com persistência em banco de dados PostgreSQL.</p>
+<p>A fim de garantir que você tenha uma maior absorção do que está sendo apresentado aqui, acesse o <a href="https://github.com/ricardoferreiracosta08/microservice-simple-docker-compose">código completo desse projeto no meu GitHub</a> e acompanhe em detalhes como cada trecho e
+recurso foi adotado tendo como base a Metodologia discutida anteriormente.</p>
+<p><strong>Leia o Readme</strong> para proceder com a execução e veja na prática seu funcionamento!</p>
+<div class="alert success no-icon ">
+  <p>Esse artigo foi criado por conta da aula &ldquo;Microserviço na prática - aplicação web PHP simples conectada via API Restful&rdquo; apresentado no meu curso de Introdução a Docker! Curtiu?
+<a href="http://bit.ly/cursoAprendaDockerdoZero">Eu quero o curso</a></p>
+</div>
+
+
+<div class="alert danger no-icon ">
+  <p>O escopo aqui não é provisionamento e orquestração da aplicação, apenas apresentar práticas de
+desenvolvimento em microserviços usando containers Docker. Por isso, não abordo as diferentes etapas de desenvolvimento!</p>
+</div>
+
+
+<h4 id="1-base-de-código-codebase">1. Base de Código &ldquo;Codebase&rdquo;</h4>
+<p>Esteja sempre centrado no versionamento do código, em diferentes etapas do desenvolvimento integrado e continuado
+(development, staging, production, etc) e ciente de que existe apenas uma base de código por aplicação, mas existirão vários deploys da mesma.</p>
+<p>Acesse toda a base de código desse projeto no meu GitHub <a href="https://github.com/ricardoferreiracosta08/microservice-simple-docker-compose">aqui</a>!</p>
+<h4 id="2-dependências-dependencies">2. Dependências &ldquo;Dependencies&rdquo;</h4>
+<p>No projeto, eu uso o arquivo requirements.txt que usa o gerenciador de pacotes pip3 e o virtualenv do Python.
+Isso mantém declarada e isolada explicitamente, respectivamente, todas as dependências, e suas versões, do projeto.</p>
+<p>Os services API mantêm essa característica.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#8be9fd;font-style:italic">flask</span><span style="color:#ff79c6">==</span>1.0.2
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>flask-sqlalchemy<span style="color:#ff79c6">==</span>2.3.0
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span style="color:#8be9fd;font-style:italic">psycopg2</span><span style="color:#ff79c6">==</span>2.8.4</code></pre></div>
+<h4 id="3-configurações-config">3. Configurações &ldquo;Config&rdquo;</h4>
+<p>Mantenha todas as configurações do ambiente declaradas &ldquo;fora do código&rdquo;. Isso auxilia a administração entre os diversos tipos
+de etapas do desenvolvimento. Evite armazenar as configurações no código como constantes, por exemplo: variáveis de conexão com banco de dados.
+Pois, esse 4º fator exige uma estrita separação entre configuração e código!</p>
+<p>Tendo isso em vista, é possível observar que eu uso os arquivos de configuração de conexão com o banco PostgreSQL explícitos nos arquivos
+database.conf em todos os services que persistem dados. Inclusive, elas são passadas como variáveis de ambiente (ENVs) no docker-compose.yml:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8be9fd;font-style:italic">POSTGRES_USER</span><span style="color:#ff79c6">=</span><span style="color:#8be9fd;font-style:italic">test</span>
+<span style="color:#8be9fd;font-style:italic">POSTGRES_PASSWORD</span><span style="color:#ff79c6">=</span>password
+<span style="color:#8be9fd;font-style:italic">POSTGRES_HOST</span><span style="color:#ff79c6">=</span>localhost
+<span style="color:#8be9fd;font-style:italic">POSTGRES_PORT</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">5432</span>
+<span style="color:#8be9fd;font-style:italic">POSTGRES_DB</span><span style="color:#ff79c6">=</span>books</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#ff79c6">version</span>: <span style="color:#f1fa8c">&#39;3.5&#39;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#ff79c6">services</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>  <span style="color:#ff79c6">database-books</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    <span style="color:#ff79c6">image</span>: postgres:13-alpine
+<span style="display:block;width:100%;background-color:#3d3f4a"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>    <span style="color:#ff79c6">env_file</span>: db-books/database.conf
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>    <span style="color:#ff79c6">volumes</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>      - db_volume-books:/var/lib/postgresql/data
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#6272a4">#rest of code</span></code></pre></div>
+<h4 id="4-serviços-de-apoio-backing-services">4. Serviços de Apoio &ldquo;Backing Services&rdquo;</h4>
+<p>A fim de garantir boa portabilidade e fácil manutenção, trate serviços de apoio, como persistência de dados,
+mensageria e envio de e-mails, como um &ldquo;recurso anexado&rdquo; que facilmente pode ser alterado e não causar grandes impactos ou mudanças de código.
+Tudo isso garante baixo acoplamento ao deploy!</p>
+<p>Sendo assim, no meu caso, atráves do docker-compose, eu consigo anexar e desanexar facilmente os recursos de containers de persistência de dados.
+No caso o service do PostgreSQL. Inclusive, posso alterar de versão ou indicar outro volume de dados que nenhuma mudança de código é exigida:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#ff79c6">version</span>: <span style="color:#f1fa8c">&#39;3.5&#39;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#ff79c6">services</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>  <span style="color:#ff79c6">database-books</span>:
+<span style="display:block;width:100%;background-color:#3d3f4a"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    <span style="color:#ff79c6">image</span>: postgres:13-alpine
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span>    <span style="color:#ff79c6">env_file</span>: db-books/database.conf
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>    <span style="color:#ff79c6">volumes</span>:
+<span style="display:block;width:100%;background-color:#3d3f4a"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>      - db_volume-books:/var/lib/postgresql/data
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#6272a4">#rest of code</span></code></pre></div>
+<h4 id="5-construa-lance-execute-build-run-release">5. Construa, lance, execute &ldquo;Build, Run, Release&rdquo;</h4>
+<p>Esse fator reforça as etapas do desenvolvimento moderno conhecidos como Build, Release e Run stages. Inclusive, automação de deploy.</p>
+<p>Mesmo não sendo escopo do meu projeto, tenho uma base de código (fator 1) que é pré-requisito para esse critério! Veja mais sobre
+<a href="https://12factor.net/pt_br/build-release-run">aqui</a></p>
+<h4 id="6-processos-stateless-processes">6. Processos &ldquo;Stateless Processes&rdquo;</h4>
+<p>Esse fator está no &ldquo;core&rdquo; da arquitetura de microserviços. Ela preconiza que você não deve salvar estado em seus serviços, pois aplicações
+devem executar como um único processo sem armazenar estado. Isso garante a alta coesão e mantém a responsabilidade única!</p>
+<p>&ldquo;Sem armazenar estado&rdquo; está relacionado com a persistência dos dados dos microserviços. No caso de containers Dockers isso é primordial, pois
+containers são voláteis e não armazenam estado (pegou a ideia?). Logo, precisa usar um serviço de apoio stateful (que armazena o seu estado),
+tipicamente uma base de dados.</p>
+<p>No meu caso, simplesmente o fato de ter um container PostgreSQL não garante esse fator. Para tal, foi preciso criar um objeto Docker volume para
+persistir todos os dados de banco:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="display:block;width:100%;background-color:#3d3f4a"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>    <span style="color:#ff79c6">volumes</span>:
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>       - db_volume-books:/var/lib/postgresql/data
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span style="color:#6272a4">#rest of code</span></code></pre></div>
+<h4 id="7-vínculo-de-portas-port-binding">7. Vínculo de Portas &ldquo;Port Binding&rdquo;</h4>
+<p>De acordo com esse fator, a aplicação web deve exportar requisição HTTP como um serviço através da vinculação a uma porta
+e escutar as requisições que chegam na mesma. Dessa maneira, ao vincular portas, um serviço pode se tornar apoio para um outro serviços,
+provendo a URL do microserviço como um identificador de recurso na configuração do microserviço consumidor.</p>
+<p>No meu caso, no microserviço web, no arquivo index.php, eu tive que informar a URL e porta do microserviço da API Restful Flask
+para ele &ldquo;consumir&rdquo; as requisições de saída exibindo os dados na web:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#ff79c6">&lt;?</span>php
+<span style="display:block;width:100%;background-color:#3d3f4a"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span style="color:#8be9fd;font-style:italic">$_ENV</span>[<span style="color:#f1fa8c">&#39;URL_API_BOOKS&#39;</span>] <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;http://microservice_api-books_1:5000/&#34;</span>;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span style="color:#8be9fd;font-style:italic">$_ENV</span>[<span style="color:#f1fa8c">&#39;URL_API_READERS&#39;</span>] <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;http://microservice_api-readers_1:5000/&#34;</span>;
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span style="color:#ff79c6">?&gt;</span>
+</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="display:block;width:100%;background-color:#3d3f4a"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span>    <span style="color:#8be9fd;font-style:italic">$json</span> <span style="color:#ff79c6">=</span> file_get_contents(<span style="color:#8be9fd;font-style:italic">$_ENV</span>[<span style="color:#f1fa8c">&#39;URL_API_BOOKS&#39;</span>]);
+</span></code></pre></div>
+<h4 id="8-concorrência-concurrency">8. Concorrência &ldquo;Concurrency&rdquo;</h4>
+<p>Aplicações web necessitam ser escaláveis horizontalmente. Logo, elas podem ter 1 ou mais instâncias de seus microserviços sendo executadas,
+simultaneamente. Isso aumenta a disponbilidade e concorrência dos processos.</p>
+<p>Como eu estou trabalhando com o docker-compose, ele, por padrão, prepara para um ambiente escalável que pode ser orquestrado no Dokcer Swarm,
+Kubernetes ou outros. Inclusive, ele sufixa todos os services com numerações de 1 a quantidade de réplicas criadas:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">             Name                           Command               State           Ports         
+------------------------------------------------------------------------------------------------
+microservice_api-books_1          /usr/src/app/entrypoint.sh       Up      0.0.0.0:5000-&gt;5000/tcp
+microservice_api-readers_1        /usr/src/app/entrypoint.sh       Up      0.0.0.0:5001-&gt;5000/tcp
+microservice_database-books_1     docker-entrypoint.sh postgres    Up      5432/tcp              
+microservice_database-readers_1   docker-entrypoint.sh postgres    Up      5432/tcp              
+microservice_web_1                docker-php-entrypoint apac ...   Up      0.0.0.0:80-&gt;80/tcp</code></pre></div>
+<h4 id="9-descartabilidade-disposability">9. Descartabilidade &ldquo;Disposability&rdquo;</h4>
+<p>De acordo com esse fator, todas as instâncias de microserviços devem ser &ldquo;descartavéis&rdquo; para iniciar e parar suas execuções rapidamente e sem maiores
+complicações, a qualquer tempo. Mais um motivo dos quais eles devem ser stateless (fator 6). Isso facilita o escalonamento rápido.</p>
+<p>A própria natureza de containers garanti isso!</p>
+<h4 id="10-devprod-semelhantes-dev-prod-parity">10. Dev/prod semelhantes &ldquo;Dev-Prod Parity&rdquo;</h4>
+<p>Manter todas as etapas do desenvolvimento (development, staging,production, etc) mais semalhantes o possível é meta desse fator.
+Entrega e Desenvolvimento contínuos (CD) dependem de uma Integração contínua (CI). Um time de DevOps tende a priorizar por isso.</p>
+<p>Mais, uma vez, o uso de containers, por conta de sua padronização de ambientes em pacotes de imagens, ajuda muito nesse sentido!
+Viva os containers 😂</p>
+<div class="alert success no-icon ">
+  <p>Quer aprender a utilizar e administrar containers Docker? Tenho um curso do zero para você!
+<a href="http://bit.ly/cursoAprendaDockerdoZero">Eu quero o curso agora</a></p>
+</div>
+
+
+<p>Alternativamente, ferramentas de provisionamento declarativo tais como Chef e Puppet combinado com ambientes virtuais leves como
+Vagrant também permitem desenvolvedores rodar ambientes locais que são bem próximos dos ambientes de produção.</p>
+<h4 id="11-logs">11. Logs</h4>
+<p>Logs fazem parte do pacote do monitoramento, tão primordial no universo dos microserviços.
+Além disso, logs são imprescindíveis para debugar e verificar a saúde da aplicação. A partir disso, os logs não devem ser armazenados em
+um storage central, mas sim tratados como fluxos de eventos contínuos que devem capturados e armazenados em service separado.</p>
+<p>No meu cenário simples tenho clareza e acesso aos logs direto da CLI do docker compose. No caso o &ldquo;docker-compose logs&rdquo;:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">web_1   | 192.168.160.1 - - <span style="color:#ff79c6">[</span>11/Nov/2020:14:13:17 +0000<span style="color:#ff79c6">]</span> <span style="color:#f1fa8c">&#34;GET / HTTP/1.1&#34;</span> <span style="color:#bd93f9">200</span> <span style="color:#bd93f9">401</span> <span style="color:#f1fa8c">&#34;-&#34;</span> <span style="color:#f1fa8c">&#34;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36&#34;</span>
+web_1   | 192.168.160.1 - - <span style="color:#ff79c6">[</span>11/Nov/2020:14:13:18 +0000<span style="color:#ff79c6">]</span> <span style="color:#f1fa8c">&#34;GET /favicon.ico HTTP/1.1&#34;</span> <span style="color:#bd93f9">404</span> <span style="color:#bd93f9">487</span> <span style="color:#f1fa8c">&#34;http://localhost/&#34;</span> <span style="color:#f1fa8c">&#34;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36&#34;</span>
+api_1       |  * Serving Flask app <span style="color:#f1fa8c">&#34;api.py&#34;</span>
+api_1       |  * Environment: production
+database_1  | 2020-11-11 16:25:37.316 UTC <span style="color:#ff79c6">[</span>1<span style="color:#ff79c6">]</span> LOG:  listening on IPv4 address <span style="color:#f1fa8c">&#34;0.0.0.0&#34;</span>, port <span style="color:#bd93f9">5432</span>
+database_1  | 2020-11-11 16:25:37.316 UTC <span style="color:#ff79c6">[</span>1<span style="color:#ff79c6">]</span> LOG:  listening on IPv6 address <span style="color:#f1fa8c">&#34;::&#34;</span>, port <span style="color:#bd93f9">5432</span></code></pre></div>
+<h4 id="12-processos-de-admin-admin-processes">12. Processos de Admin &ldquo;Admin Processes&rdquo;</h4>
+<p>Execute tarefas de administração/gerenciamento como processos únicos - tarefas como migração de banco de dados ou execução de scripts únicos
+no ambiente. O objetivo é separar da execução do processo do microserviço de um processo de administração como uma consulta ou update de banco,
+por exemplo.</p>
+<p>No meu caso, eu uso a própria CLI do docker-compose que garante uma execução multiplexada do processo vigente. Isso é a natureza dos containers
+Docker:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-compose <span style="color:#8be9fd;font-style:italic">exec</span> database-books psql -U <span style="color:#8be9fd;font-style:italic">test</span> -p <span style="color:#bd93f9">5432</span> -d books</code></pre></div>
+<h2 id="referências">Referências</h2>
+<ul>
+<li><a href="http://bit.ly/cursoAprendaDockerdoZero">Curso Docker do Zero - Introdução a administração de containers</a></li>
+<li><a href="https://github.com/ricardoferreiracosta08/microservice-simple-docker-compose">GitHub desse projeto</a></li>
+<li><a href="https://12factor.net/pt_br/">The Twelve-Factor App (pt_BR)</a></li>
+<li><a href="https://dev.to/simon_sugob/the-twelve-factor-appa-successful-microservices-guideline-3a1h">The Twelve-Factor App — A Successful Microservices Guideline</a></li>
+<li><a href="https://samnewman.io/books/building_microservices/">Book &ldquo;Building Microservices&rdquo;</a></li>
+<li><a href="https://microservices.io/">Microservice Architecture</a></li>
+<li><a href="https://dev.to/simon_sugob/the-twelve-factor-appa-successful-microservices-guideline-3a1h">The Twelve-Factor App — A Successful Microservices Guideline</a></li>
+<li><a href="https://medium.com/@hmajid2301/implementing-sqlalchemy-with-docker-cb223a8296de">Simple App with Flask, SQLAlchemy and Docker</a></li>
+<li><a href="https://github.com/SwarnimWalavalkar/rest-api-microservice-docker">An example of a RESTful API Deployed on a Docker Container</a></li>
+<li><a href="https://www.bogotobogo.com/DevOps/Docker/Docker-Compose-FlaskREST-Service-Container-and-Apache-Container.php">DOCKER COMPOSE WITH TWO CONTAINERS - FLASK REST API SERVICE CONTAINER AND AN APACHE SERVER CONTAINER</a></li>
+<li><a href="https://realpython.com/flask-connexion-rest-api-part-2/">Python REST APIs With Flask, Connexion, and SQLAlchemy – Part 2</a></li>
+</ul>
+ 
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+    <h2>Gostou do conteúdo?</h2>
+    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor web independente, 
+    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
+
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+    <p>Ah... <strong>quase esquecendo</strong>, <strong><a href="https://app.picpay.com/user/ricardoferreira.tec" target="_blank">
+    aceito um café</a></strong> ☕ </p>
+   
+
+        
+<h3>Contribua</h3>
+
+<strong>Alguma contribuição, crítica ou problema encontrado?</strong> 
+<a href="https://github.com/ricardoferreiracosta08/ricardoferreira.site/tree/master/content/blog" target="_blank">Reporte aqui!</a>
+Basta alterar o arquivo de texto, diretamente no Github e abrir um pull-request!
+
+
+        <br/><br/><br/>
+
+    <div class="centered">
+    <div class="about">
+    <ul>
+      
+        
+          <li>
+            <a href="https://www.linkedin.com/in/ricardo-ferreira-costa" aria-label="LinkedIn"  target="_blank" >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/ricardoferreiracosta08" aria-label="Github"  target="_blank" >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://www.instagram.com/ricardoferreira.tec" aria-label="Instagram"  target="_blank" >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://twitter.com/rferreira_tec" aria-label="Twitter"  target="_blank" >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://youtube.com/c/RicardoFerreiraTecnologia" aria-label="YouTuBe"  target="_blank" >
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://t.me/ricardoferreira_tec" aria-label="Telegram"  target="_blank" >
+              <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+    </ul>
+    </div>
+    </div>
+
+
+        
+      </footer>
+    </article>
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Construído usando Hugo v0.76.5. Hospedado em Netlify</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2021
+         Ricardo Ferreira 
+      
+      
+         · 
+        Promovido por <a href="https://gohugo.io/" target="_blank">Hugo</a> & Tema adaptado de <a target="_blank" href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-151634076-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

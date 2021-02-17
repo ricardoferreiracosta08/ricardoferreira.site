@@ -3,15 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/</loc>
+    <lastmod>2020-11-10T13:24:58-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ricardoferreira.site/blog/</loc>
-    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <lastmod>2020-11-10T13:24:58-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ricardoferreira.site/categories/</loc>
-    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <lastmod>2020-11-10T13:24:58-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -27,15 +34,15 @@
   </url>
   
   <url>
-    <loc>https://ricardoferreira.site/categories/linux/</loc>
-    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <loc>https://ricardoferreira.site/categories/docker/</loc>
+    <lastmod>2020-11-10T13:24:58-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ricardoferreira.site/</loc>
-    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <lastmod>2020-11-10T13:24:58-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -48,6 +55,20 @@
                 hreflang="pt-br"
                 href="https://ricardoferreira.site/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/2020/02/saiba-como-verificar-vida-util-do-seu-disco-no-linux/</loc>
+    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/categories/linux/</loc>
+    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -79,13 +100,6 @@
                 hreflang="pt-br"
                 href="https://ricardoferreira.site/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://ricardoferreira.site/2020/02/saiba-como-verificar-vida-util-do-seu-disco-no-linux/</loc>
-    <lastmod>2020-02-17T16:25:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
@@ -495,13 +509,6 @@
   </url>
   
   <url>
-    <loc>https://ricardoferreira.site/categories/docker/</loc>
-    <lastmod>2019-11-20T15:18:27+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ricardoferreira.site/tags/pgadmin/</loc>
     <lastmod>2019-11-20T15:18:27+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -525,6 +532,12 @@
   <url>
     <loc>https://ricardoferreira.site/tags/wsl/</loc>
     <lastmod>2019-11-05T23:29:33+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardoferreira.site/cursos/discos-particoes-linux/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -558,7 +571,7 @@
   </url>
   
   <url>
-    <loc>https://ricardoferreira.site/cursos/docker-do-zero-online/</loc>
+    <loc>https://ricardoferreira.site/cursos/docker-do-zero/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

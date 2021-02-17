@@ -1,8 +1,22 @@
 <!-- MY CODE -->
-    <h2>Gostou do conteúdo?</h2>
-    <p>{{ i18n "hi_i_am" }} <strong><a href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a></strong>, um desenvolvedor web independente, 
-    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
+<div class="author-box">
+<div class="avatar">
+<img alt="" src="{{ .Site.BaseURL }}{{ .Site.Params.avatarurl }}" class="avatar avatar-96 photo lazyloaded" height="96" width="96"/> </div>
+<div class="author-info">
+<h5 class="author-title" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+<span itemprop="name">{{ .Site.Params.author }}</span>
+</h5>
+<div class="author-summary">
+<p class="author-description">
+{{ .Site.Params.description }}
+</p>
+</div>
+</div>
+</div>
 
+{{ partial "posts/social.html" . }}
+
+    <h2>Gostou do conteúdo?</h2>
     <p><strong>{{ i18n "looking_for_help" }}</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
     Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
 

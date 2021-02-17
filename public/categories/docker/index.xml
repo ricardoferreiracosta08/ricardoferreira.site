@@ -6,7 +6,17 @@
     <description>Recent content in Docker on Ricardo Ferreira</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Wed, 20 Nov 2019 15:18:27 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Nov 2020 13:24:58 -0300</lastBuildDate><atom:link href="https://ricardoferreira.site/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aplicação web em arquitetura de microserviço utilizando Docker 🐳</title>
+      <link>https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/</link>
+      <pubDate>Tue, 10 Nov 2020 13:24:58 -0300</pubDate>
+      
+      <guid>https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/</guid>
+      <description>Tendo em vista a Metodologia &amp;ldquo;The Twelve-Factor App&amp;rdquo;, criada por Adam Wiggins, co-fundador da PaaS Heroku, que preconiza todo software cloud entregue como serviço deve seguir algumas premissas de desenvolvimento que impulsonam o uso da arquitetura de Microserviços, eu apresento uma solução web simples que demonstra na prática o emprego de todos os 12 fatores da Metodologia!
+Por que Microserviço? 🤨 Microserviço é um conceito que garante que uma aplicação possa ser dividida em múltiplos serviços menores (microserviços) que se comunicam entre si, tradicionalmente, via APIs Rest (métodos GET/POST/PUT/DELETE do protocolo HTTP + JSON).</description>
+    </item>
+    
     <item>
       <title>Conexão de banco de dados PostgreSQL em container Docker</title>
       <link>https://ricardoferreira.site/2019/11/conexao-cliente-servidor-de-banco-de-dados-postgresql-em-container-docker/</link>

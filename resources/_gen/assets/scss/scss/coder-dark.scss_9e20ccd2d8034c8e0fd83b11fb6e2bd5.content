@@ -22,6 +22,8 @@ body.colorscheme-dark {
     border: 2px solid #dadada; }
   body.colorscheme-dark .alert {
     color: black !important; }
+  body.colorscheme-dark h5.author-title, body.colorscheme-dark .author-summary p {
+    color: black !important; }
 
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto {
@@ -47,6 +49,8 @@ body.colorscheme-dark {
     body.colorscheme-auto table td, body.colorscheme-auto table th {
       border: 2px solid #dadada; }
     body.colorscheme-auto .alert {
+      color: black !important; }
+    body.colorscheme-auto h5.author-title, body.colorscheme-auto .author-summary p {
       color: black !important; } }
 
 body.colorscheme-dark .content .list ul li .title {
