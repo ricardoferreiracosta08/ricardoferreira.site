@@ -26,21 +26,24 @@
         {{ end }}
         <!-- MY CUSTOM -->
         <!-- INSERT TEXT OR PARTIAL AFTER X PARAGRAPH -->
-        {{ range $index, $element := split .Content "</p>" }}
+<!--        {{ range $index, $element := split .Content "</p>" }}
          {{ $element | safeHTML }}</p>
           {{ if eq $index 2 }}
-           <!-- THE TEXT/CODE YOU WANT TO SHOW HERE (OR A PARTIAL) -->
+           <!-- THE TEXT/CODE YOU WANT TO SHOW HERE (OR A PARTIAL) 
            {{ partial "convertkit_inline_form.html" . }}
           {{ end }}
-        {{ end }}
+        {{ end }}-->
 
 <!--        {{ $content := replace .Content "[ADSENSE]" ( partial "adsense-inarticle.html" .) }}  -->
 <!--        {{ $content := replace .Content "[FORM_CONVERTKIT]" ( partial "convertkit_inline_form.html" .) }}  -->
-<!--         {{ $content | safeHTML }}  -->
+         {{ $content | safeHTML }}  
 <!--        {{ .Content }}  -->
       </div>
 
       <footer>
+       <!-- MY CODE -->
+        {{ partial "convertkit_inline_form.html" . }}
+       <!-- END -->
         {{ partial "posts/series.html" . }}
         {{ partial "posts/disqus.html" . }}
         {{ partial "posts/commento.html" . }}

@@ -1,5 +1,5 @@
-+++ 
-draft: true
+--- 
+draft: false
 date: {{ .Date }}
 title: ""
 subtitle: ""
@@ -14,4 +14,4 @@ tags:
 categories: 
 externalLink: ""
 series:
-+++
+---
