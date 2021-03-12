@@ -3,7 +3,7 @@ draft: false
 date: 2021-03-12T09:31:44-03:00
 title: "Saiba como criar um script shell em 5 passos básicos"
 subtitle: "Um bom começo"
-description: ""
+description: "Vou apresentar uma maneira para escrever um Script Shell Bash seguindo boas práticas que otimizam seu trabalho"
 summary: ""
 slug: "criar-shell-script-bash-linux"
 featured_image: ""
