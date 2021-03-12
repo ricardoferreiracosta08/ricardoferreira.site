@@ -6,7 +6,29 @@
     <description>Recent content in Linux on Ricardo Ferreira</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Mon, 17 Feb 2020 16:25:12 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Mar 2021 09:31:44 -0300</lastBuildDate><atom:link href="https://ricardoferreira.site/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Saiba como criar do zero um script shell em 5 passos básicos</title>
+      <link>https://ricardoferreira.site/2021/03/criar-shell-script-bash-linux/</link>
+      <pubDate>Fri, 12 Mar 2021 09:31:44 -0300</pubDate>
+      
+      <guid>https://ricardoferreira.site/2021/03/criar-shell-script-bash-linux/</guid>
+      <description>01 - Variáveis globais No topo do arquivo, reserve um espaço para definir suas variáveis globais que serão usadas ao longo do script
+Isso é interessante para você ter clareza e distinção das variáveis macros e as regras do negócio
+#### VARIAVEIS ########################################################### remote_ssh=&amp;#34;192.168.122.69&amp;#34; port_ssh=&amp;#34;22&amp;#34; user_ssh=&amp;#34;root&amp;#34; dir_backup_ssh=&amp;#34;/mnt/backups&amp;#34; dir_restore_ssh=&amp;#34;/home/ricardo&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>Boas práticas para deixar seu servidor Linux mais seguro pós instalação</title>
+      <link>https://ricardoferreira.site/2021/02/servidor-linux-mais-seguro-apos-instalacao/</link>
+      <pubDate>Wed, 17 Feb 2021 15:00:38 -0300</pubDate>
+      
+      <guid>https://ricardoferreira.site/2021/02/servidor-linux-mais-seguro-apos-instalacao/</guid>
+      <description>Nenhum sistema é 100% seguro… fato! O Linux não seria exceção dessa regra. Ameaças externas ao sistema sempre vão existir.
+Entretanto, o que deve ser dito é que os riscos que um usuário Linux corre são diferentes comparados a outros sistemas não Unix. Os riscos para um usuário Linux se concentram na maneira como ele usa e mantém o sistema.
+Portanto, seguem algumas recomendações importantes após ter instalado um Servidor Linux:</description>
+    </item>
+    
     <item>
       <title>Como eu verifico a vida útil do meu disco no Linux</title>
       <link>https://ricardoferreira.site/2020/02/saiba-como-verificar-vida-util-do-seu-disco-no-linux/</link>

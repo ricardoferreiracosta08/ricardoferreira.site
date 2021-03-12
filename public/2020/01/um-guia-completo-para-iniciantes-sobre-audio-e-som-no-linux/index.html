@@ -60,7 +60,7 @@
       
         
         
-        <link rel="stylesheet" href="/css/coder-dark.min.354b7f480cbced7eddc22aa3407be7b2531f2c817de41a45a480a366bb95df45.css" integrity="sha256-NUt/SAy87X7dwiqjQHvnslMfLIF95BpFpICjZruV30U=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="/css/coder-dark.min.69d5f91313bb928117d567849ebc76e0d375e8c57a41cf97d08b127adcec7242.css" integrity="sha256-adX5ExO7koEX1WeEnrx24NN16MV6Qc&#43;X0IsSetzsckI=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -70,7 +70,7 @@
       
       
         
-        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="/scss/custom.min.4fa266881b7a676d605b156418ef7f8da1582c8cbb45e742b92e4e5f4cf0d961.css" integrity="sha256-T6JmiBt6Z21gWxVkGO9/jaFYLIy7RedCuS5OX0zw2WE=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -195,8 +195,12 @@
       <div>
         
         
-         
-        <p>Quando se pensa em áudio e som no Linux vem logo a mente ferramentas voltadas para <strong>produção musical</strong> ou profissional da área.</p>
+        
+
+
+
+
+         <p>Quando se pensa em áudio e som no Linux vem logo a mente ferramentas voltadas para <strong>produção musical</strong> ou profissional da área.</p>
 <p>No Linux <strong>há muitos programas</strong> que podem ajudar nas tarefas mais profissionais. Mas, o foco agora é para todos os usuários que queiram entender como funciona o áudio e som no Linux.</p>
 <h2 id="do-começo">Do começo</h2>
 <p>Primeiramente, áudio e som são coisas distintas. Conforme <a href="https://www.dicionarioinformal.com.br/diferenca-entre/%C3%A1udio/som/">Dicionário Informal</a>, áudio se refere a “transmissão ou reprodução eletrônica de um som”. Por outro lado, o som é “qualquer variação de pressão (no ar, na água…) que o ouvido humano possa captar”.</p>
@@ -213,20 +217,7 @@ Por exemplo, um <!-- raw HTML omitted -->gato pode ouvir até 40kHz<!-- raw HTML
 <hr>
 <h4 id="como-meu-computador-gera-som">Como meu computador gera som?</h4>
 <p>Para ouvir o som, você provavelmente usará <strong>fones de ouvido ou alto-falantes</strong>. Dentro deles há cones que são acionados por um eletroímã, fazendo com que eles vibrem em frequências muito precisas. Isso é, basicamente, <strong>como o som é reproduzido</strong>. Embora os fones de ouvido modernos certamente sejam bastante complexos.</p>
-<p>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5245300802542741"
-     data-ad-slot="3200652252"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-</p>
+<p>[ADSENSE]</p>
 <p>Para acionar esse ímã, uma fonte de áudio enviará um sinal analógico (uma forma de onda) por um fio ao driver, fazendo com que ele se mova na frequência dessa forma de onda. Isto é, basicamente, <strong>como funciona a reprodução de áudio</strong> – e não vamos nos aprofundar muito mais do que isso.</p>
 <p><strong>Computadores são digitais</strong> – o que significa que eles não lidam com dados analógico; processadores entendem LIGADO e DESLIGADO; eles não entendem 38.689138% LIGADO e 78.21156% DESLIGADO. Ao <strong>converter um sinal analógico</strong> (como o som) em um digital, utilizamos um <strong><a href="https://pt.wikipedia.org/wiki/Modula%C3%A7%C3%A3o_por_c%C3%B3digo_de_pulsos">formato chamado PCM</a></strong>. Para um PCM ser transformado em um sinal analógico, você <strong>precisa de um DAC</strong> – ou, literalmente, <strong>uma placa de som</strong>. DAC significa ‘Digital to Analog Converter’, ou algumas pessoas o chamam de “Digital Audio Converter / Chip”.</p>
 <p>PCM significa <strong>Pulse-code Modulation</strong>, que é uma maneira de <strong>representar sinais analógicos amostrados em um formato digital</strong>. Imagine pegar uma amostra de uma forma de onda em intervalos regulares e armazenar o valor e, em seguida, arredondar esse valor para um ‘passo’ mais próximo. Isso é PCM. A <strong>precisão do PCM</strong> vem de dois elementos, que não serão escopos do texto, mas que poderão ser lidos mais detalhadamentes <a href="https://www.reddit.com/r/linux/comments/coi4dt/a_complete_guide_of_and_debunking_of_audio_on">AQUI</a>: taxa de amostragem (sampling rate) e profundidade de bits (bit depth).</p>
@@ -241,20 +232,7 @@ Por exemplo, um <!-- raw HTML omitted -->gato pode ouvir até 40kHz<!-- raw HTML
 <p>Este problema foi resolvido há muito tempo com o uso de <strong>alsalib</strong>, mas fazer mixagem em um nível de biblioteca não é uma solução muito boa para o problema. Isso deu origem a servidores de som, dos quais muitos já existiram. Antes do PulseAudio, o <strong>esound</strong> era muito popular, mas tinha muitos problemas, eventualmente foi <strong>sucedido pelo PulseAudio</strong>.</p>
 <h4 id="pulseaudio">PulseAudio</h4>
 <p>Quando você pensa em áudio no Linux, o <strong>PulseAudio</strong> está provavelmente entre as primeiras coisas que você pensa. O PulseAudio NÃO é um driver nem fala com seus drivers. Na verdade, o PulseAudio <strong>só faz duas coisas</strong> que discutiremos em detalhes, posteriormente. O <strong>PulseAudio fala com a ALSA</strong>, assumindo o controle de seu único fluxo de áudio, e permite que <strong>outros aplicativos conversem com o PulseAudio</strong>. O <strong>Pulse é um ‘multiplexador de áudio’</strong>, transformando vários sinais em um através de um processo que é chamado de <strong>mixagem</strong>. A mixagem é um assunto incrivelmente complicado que não vamos falar aqui 🙂</p>
-<p>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5245300802542741"
-     data-ad-slot="3200652252"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-</p>
+<p>[ADSENSE]</p>
 <p>Essas <strong>duas coisas permitem</strong> que você jogue um jogo, ouça música e assista ao YouTube, além de notificações para produzir um som ao mesmo tempo. O PulseAudio é o elemento mais crítico da pilha de sons do Linux. O PulseAudio atualmente é um <strong>software muito estável e sólido</strong>. Se você tem problemas de áudio nos dias de hoje, geralmente é um problema no ALSA ou no seu driver.</p>
 <h2 id="outros-servidores-de-som">Outros servidores de som</h2>
 <p>O PulseAudio não é o único <strong>servidor/daemon de som disponível para o Linux</strong>, embora seja certamente o mais popular e provavelmente o padrão de qualquer distribuição que você esteja usando. O <strong>PulseAudio tornou-se um padrão para o som do Linux</strong> e tem, de longe, a melhor compatibilidade com a maioria dos aplicativos, mas isso não significa que não haja alternativas.</p>
@@ -269,11 +247,15 @@ Por exemplo, um <!-- raw HTML omitted -->gato pode ouvir até 40kHz<!-- raw HTML
 <p>Seus fones de ouvido e amplificadores realmente fazem a maior diferença. Ter um bom par de fones de ouvido emparelhado com um bom amplificador de fone de ouvido dez vezes mais importante do que qualquer outro chip que você tenha no seu PC.</p>
 <p>Por fim, <strong>quebrando alguns mitos.</strong> A qualidade de som do Linux <strong>NÃO é pior</strong> que o Windows. Eles são exatamente os mesmos, o Pulse não funciona tão diferente de como o Windows faz mixagens e reamostragens. E a qualidade de som do Linux <strong>NÃO pode ser melhor</strong> que o Windows. Eles são exatamente os mesmos. Todas as melhorias na qualidade vêm do driver e da sua placa de som, não do servidor de som :/</p>
 <p>Via | Excelente artigo do <a href="https://www.reddit.com/user/_Spell_/">usuário <em>Spell</em></a> publicado no <a href="https://www.reddit.com/r/linux/comments/coi4dt/a_complete_guide_of_and_debunking_of_audio_on/">Reddit</a></p>
- 
+  
 
       </div>
 
       <footer>
+       
+        <script async data-uid="699edba609" src="https://ricardoferreira.ck.page/699edba609/index.js"></script>
+
+       
         
 
 
@@ -282,26 +264,22 @@ Por exemplo, um <!-- raw HTML omitted -->gato pode ouvir até 40kHz<!-- raw HTML
         
         
         
-    <h2>Gostou do conteúdo?</h2>
-    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor web independente, 
-    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
-
-    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
-    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
-
-    <p>Ah... <strong>quase esquecendo</strong>, <strong><a href="https://app.picpay.com/user/ricardoferreira.tec" target="_blank">
-    aceito um café</a></strong> ☕ </p>
-   
-
-        
-<h3>Contribua</h3>
-
-<strong>Alguma contribuição, crítica ou problema encontrado?</strong> 
-<a href="https://github.com/ricardoferreiracosta08/ricardoferreira.site/tree/master/content/blog" target="_blank">Reporte aqui!</a>
-Basta alterar o arquivo de texto, diretamente no Github e abrir um pull-request!
+<div class="author-box">
+<div class="avatar">
+<img alt="" src="https://ricardoferreira.site/images/perfil-02.jpeg" class="avatar avatar-96 photo lazyloaded" height="96" width="96"/> </div>
+<div class="author-info">
+<h5 class="author-title" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+<span itemprop="name">Ricardo Ferreira</span>
+</h5>
+<div class="author-summary">
+<p class="author-description">
+Apaixonado por novas tecnologias, bacharel em Ciência da Computação. Alguns anos na operação, decidi mirar os dados.
+</p>
+</div>
+</div>
+</div>
 
 
-        <br/><br/><br/>
 
     <div class="centered">
     <div class="about">
@@ -359,12 +337,34 @@ Basta alterar o arquivo de texto, diretamente no Github e abrir um pull-request!
     </div>
     </div>
 
+<br/><br/><br/>
+
+
+    <h2>Gostou do conteúdo?</h2>
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+    <p>Ah... <strong>quase esquecendo</strong>, <strong><a href="https://app.picpay.com/user/ricardoferreira.tec" target="_blank">
+    aceito um café</a></strong> ☕ </p>
+   
+
+        
+<h3>Contribua</h3>
+
+<strong>Alguma contribuição, crítica ou problema encontrado?</strong> 
+<a href="https://github.com/ricardoferreiracosta08/ricardoferreira.site/tree/master/content/blog" target="_blank">Reporte aqui!</a>
+Basta alterar o arquivo de texto, diretamente no Github e abrir um pull-request!
+
 
         
       </footer>
     </article>
     
   </section>
+ 
+
+
+<script async data-uid="beebd4e0c4" src="https://ricardoferreira.ck.page/beebd4e0c4/index.js"></script>
 
       </div>
 

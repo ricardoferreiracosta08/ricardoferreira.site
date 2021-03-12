@@ -60,7 +60,7 @@
       
         
         
-        <link rel="stylesheet" href="/css/coder-dark.min.354b7f480cbced7eddc22aa3407be7b2531f2c817de41a45a480a366bb95df45.css" integrity="sha256-NUt/SAy87X7dwiqjQHvnslMfLIF95BpFpICjZruV30U=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="/css/coder-dark.min.69d5f91313bb928117d567849ebc76e0d375e8c57a41cf97d08b127adcec7242.css" integrity="sha256-adX5ExO7koEX1WeEnrx24NN16MV6Qc&#43;X0IsSetzsckI=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -70,7 +70,7 @@
       
       
         
-        <link rel="stylesheet" href="/scss/custom.min.b623b61ecd2a920f62a900dcad494441860839ccfadf66c747fc29f3159eef22.css" integrity="sha256-tiO2Hs0qkg9iqQDcrUlEQYYIOcz632bHR/wp8xWe7yI=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="/scss/custom.min.4fa266881b7a676d605b156418ef7f8da1582c8cbb45e742b92e4e5f4cf0d961.css" integrity="sha256-T6JmiBt6Z21gWxVkGO9/jaFYLIy7RedCuS5OX0zw2WE=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -191,8 +191,12 @@
       <div>
         
         
-         
-        <p>Manipulação de discos ou partições são muito comuns, principalmente quando decide-se ter mais de um sistema instalado na máquina ou criar &ldquo;espaço reservado&rdquo; para determinados arquivos.</p>
+        
+
+
+
+
+         <p>Manipulação de discos ou partições são muito comuns, principalmente quando decide-se ter mais de um sistema instalado na máquina ou criar &ldquo;espaço reservado&rdquo; para determinados arquivos.</p>
 <p>Contudo, alguns detalhes técnicos acabam por confundir muitos usuários que deixam de realizar algumas tarefas desse tipo, por conta disso.</p>
 <p>Sendo assim, resolvi escrever um artigo que &ldquo;deixasse de lado&rdquo; termos, altamente, técnicos, associados a este assunto, e que oferecesse uma leitura mais simples e descomplicada :)</p>
 <h2 id="antes-de-começar"><strong>Antes de começar&hellip;</strong></h2>
@@ -213,20 +217,7 @@
 <p>Diferentemente de sistemas Windows, não existe <strong>nenhuma unidade C ou D</strong> no Linux. Uma referência a um disco rígido no Linux, normalmente, você verá algo como arquivos /dev/sda, /dev/sdb, /dev/sdc, etc.</p>
 <p><img src="../../../images/discos-windows-linux.jpg" alt="discos-windows-linux"></p>
 <p>O nome e pasta <strong>&ldquo;dev&rdquo; é a tradução de dispositivo</strong> e, neste caso, representa um dispositivo de armazenamento em bloco. <strong>O prefixo &ldquo;sd&rdquo;</strong>, do arquivo contido na pasta &ldquo;dev&rdquo;, é a tradução para o driver de armazenamento em massa SCSI (Small Computer System Interface). <strong>Os discos SCSI</strong> são unidades que podem ser HDs (pendrives), unidades de CD-RW e gravadoras de DVD. E a &lsquo;letra&rsquo;, sufixo de &lsquo;sd&rsquo;, indica o número do disco (sda).</p>
-<p>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5245300802542741"
-     data-ad-slot="3200652252"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-</p>
+<p>[ADSENSE]</p>
 <p>De acordo <strong>com a imagem acima</strong>, é mostrado como os discos rígidos são representados no Windows e num sistema Linux. O Windows, no caso, vê um <strong>disco na unidade C:</strong> e outro na <strong>unidade D:</strong> . Já no caso do Linux, ele assume uma abordagem diferente. O primeiro disco rígido detectado por um sistema Linux possui o <strong>rótulo sda</strong> . Em termos numéricos, é o disco rígido 0 (zero, a contagem começa de 0, não 1). O <strong>segundo disco rígido é sdb</strong>, e uma possível terceira unidade, sdc, e assim por diante.</p>
 <h4 id="2-partições">2. PARTIÇÕES</h4>
 <p>Para <strong>instalar um sistema operacional em um disco rígido</strong>, ele deve primeiro ser subdividido em unidades de armazenamento distintas. Em outras palavras, um disco precisa ser particionado (ter partições). Analogamente, a uma pizza com respectivos pedaços :)</p>
@@ -289,20 +280,7 @@ do formato MBR ter sido introduzido junto com o IBM PC DOS 2.0, em março de 198
 <hr>
 <h4 id="5-ponto-de-montagem">5. PONTO DE MONTAGEM</h4>
 <p>No Linux, para acessar um dispositivo de disco é necessário antes <strong>&ldquo;montá-lo&rdquo; em um diretório do sistema</strong> . O processo de montagem consiste em <strong>tornar o dispositivo acessível</strong> para o usuário. Em outras palavras, é preciso informar em qual diretório do sistema determinada partição será &ldquo;configurada&rdquo; :)</p>
-<p>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5245300802542741"
-     data-ad-slot="3200652252"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-</p>
+<p>[ADSENSE]</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <p><strong>Atribuir um ponto de montagem a uma partição</strong> é uma das coisas que vem com a formatação, além de incluir um sistema de arquivos. No Linux, uma partição pode ser montada em um dos vários pontos de montagem tradicionais. Em um sistema Linux, os pontos de montagem mais usados são /, /boot, /home e swap. &lsquo;/&rsquo; é o equivalente Linux da <strong>unidade Windows :C</strong> .</p>
@@ -317,11 +295,15 @@ do formato MBR ter sido introduzido junto com o IBM PC DOS 2.0, em março de 198
 <li><a href="https://www.vivaolinux.com.br/artigos/impressora.php?codigo=4858">Fundamentos do Sistema Linux: Discos e Partições</a></li>
 <li><a href="http://www.guiafoca.org/cgs/guia/intermediario/ch-disc.html">Guia Foca GNU/Linux | Capítulo 5 - Discos e Partições</a></li>
 </ul>
- 
+  
 
       </div>
 
       <footer>
+       
+        <script async data-uid="699edba609" src="https://ricardoferreira.ck.page/699edba609/index.js"></script>
+
+       
         
 
 
@@ -330,26 +312,22 @@ do formato MBR ter sido introduzido junto com o IBM PC DOS 2.0, em março de 198
         
         
         
-    <h2>Gostou do conteúdo?</h2>
-    <p>Olá! Quem escreve aqui é o <strong><a href="https://ricardoferreira.site">Ricardo Ferreira</a></strong>, um desenvolvedor web independente, 
-    administrador de sistemas Linux e solucionador de problemas nato. Mirando a ciência de dados!</p>
-
-    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
-    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
-
-    <p>Ah... <strong>quase esquecendo</strong>, <strong><a href="https://app.picpay.com/user/ricardoferreira.tec" target="_blank">
-    aceito um café</a></strong> ☕ </p>
-   
-
-        
-<h3>Contribua</h3>
-
-<strong>Alguma contribuição, crítica ou problema encontrado?</strong> 
-<a href="https://github.com/ricardoferreiracosta08/ricardoferreira.site/tree/master/content/blog" target="_blank">Reporte aqui!</a>
-Basta alterar o arquivo de texto, diretamente no Github e abrir um pull-request!
+<div class="author-box">
+<div class="avatar">
+<img alt="" src="https://ricardoferreira.site/images/perfil-02.jpeg" class="avatar avatar-96 photo lazyloaded" height="96" width="96"/> </div>
+<div class="author-info">
+<h5 class="author-title" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+<span itemprop="name">Ricardo Ferreira</span>
+</h5>
+<div class="author-summary">
+<p class="author-description">
+Apaixonado por novas tecnologias, bacharel em Ciência da Computação. Alguns anos na operação, decidi mirar os dados.
+</p>
+</div>
+</div>
+</div>
 
 
-        <br/><br/><br/>
 
     <div class="centered">
     <div class="about">
@@ -407,12 +385,34 @@ Basta alterar o arquivo de texto, diretamente no Github e abrir um pull-request!
     </div>
     </div>
 
+<br/><br/><br/>
+
+
+    <h2>Gostou do conteúdo?</h2>
+    <p><strong>Procurando ajuda?</strong> Estou disponível para ser contratado como <a href="/contato/">consultor ou freelancer</a>. 
+    Quer entrar em contato? Dá uma olhada na minha <a href="/contato/">página de contato</a>. Abraços!</p>
+
+    <p>Ah... <strong>quase esquecendo</strong>, <strong><a href="https://app.picpay.com/user/ricardoferreira.tec" target="_blank">
+    aceito um café</a></strong> ☕ </p>
+   
+
+        
+<h3>Contribua</h3>
+
+<strong>Alguma contribuição, crítica ou problema encontrado?</strong> 
+<a href="https://github.com/ricardoferreiracosta08/ricardoferreira.site/tree/master/content/blog" target="_blank">Reporte aqui!</a>
+Basta alterar o arquivo de texto, diretamente no Github e abrir um pull-request!
+
 
         
       </footer>
     </article>
     
   </section>
+ 
+
+
+<script async data-uid="beebd4e0c4" src="https://ricardoferreira.ck.page/beebd4e0c4/index.js"></script>
 
       </div>
 
