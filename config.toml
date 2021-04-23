@@ -237,4 +237,13 @@ pygmentscodefencesguesssyntax = true
             name = "Aulas Semanais | Inscreva-se "
             weight = 5
             url = "https://ricardoferreira.ck.page/aulas-semanais"
+#            post = "shake"
+
+            [[languages.pt-br.menu.main]]
+            name = "Inscrições | TURMA 1 | BOOTCAMP"
+            weight = 6
+            url = "# https://bootcampinfraestrutura.carrd.co/"
             post = "shake"
+
+
+# https://bootcampinfraestrutura.carrd.co/
