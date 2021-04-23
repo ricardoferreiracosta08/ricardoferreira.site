@@ -242,7 +242,7 @@ pygmentscodefencesguesssyntax = true
             [[languages.pt-br.menu.main]]
             name = "Inscrições | TURMA 1 | BOOTCAMP"
             weight = 6
-            url = "# https://bootcampinfraestrutura.carrd.co/"
+            url = "https://bootcampinfraestrutura.carrd.co/"
             post = "shake"
 
 
