@@ -203,7 +203,7 @@ pygmentscodefencesguesssyntax = true
 
         [languages.pt-br.params]
             author = "Ricardo Ferreira"
-            info = "Linux · Código · Infraestrutura"
+            info = "Linux · Infraestrutura · Dados"
 	    description = "Apaixonado por novas tecnologias, bacharel em Ciência da Computação. Alguns anos na operação, decidi mirar os dados."
             keywords = "linux,docker,bpm,dados,bussiness intelligence,bi,sysadmin, tecnologia"
             footercontent = "Construído usando Hugo v0.76.5. Hospedado em Netlify"
@@ -234,7 +234,7 @@ pygmentscodefencesguesssyntax = true
 #            post = "shake"
 
             [[languages.pt-br.menu.main]]
-            name = "Aulas Semanais | Inscreva-se "
+            name = "Aulas GRATUITAS | Inscreva-se "
             weight = 5
             url = "https://ricardoferreira.ck.page/aulas-semanais"
             post = "shake"
