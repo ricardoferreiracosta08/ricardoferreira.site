@@ -236,7 +236,8 @@ pygmentscodefencesguesssyntax = true
             [[languages.pt-br.menu.main]]
             name = "Aulas GRATUITAS | Inscreva-se "
             weight = 5
-            url = "https://ricardoferreira.ck.page/aulas-semanais"
+#            url = "https://ricardoferreira.ck.page/aulas-semanais"
+            url = "https://ricardoferreira.ck.page/aulas-gratuitas"
             post = "shake"
 
             [[languages.pt-br.menu.main]]
