@@ -239,10 +239,10 @@ pygmentscodefencesguesssyntax = true
             url = "https://ricardoferreira.ck.page/aulas-semanais"
             post = "shake"
 
-#            [[languages.pt-br.menu.main]]
-#            name = "Inscrições | TURMA 1 | BOOTCAMP"
-#            weight = 6
-#            url = "https://bootcampinfraestrutura.carrd.co/"
+            [[languages.pt-br.menu.main]]
+            name = "Bootcamp Infraestrutura Open Source"
+            weight = 6
+            url = "https://bootcampinfraestrutura.carrd.co/"
 #            post = "shake"
 
 
