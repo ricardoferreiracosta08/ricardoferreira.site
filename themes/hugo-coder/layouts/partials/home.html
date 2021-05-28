@@ -9,14 +9,15 @@
       <div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" alt="gravatar"></div>
     {{ end }}
     <h1 style="margin: 4px">{{ .Site.Params.author }}</h1>
-    <h6 style="color:crimson; margin: 0">{{ .Site.Params.info }}</h6> <!-- h2 -->
+    <h6 style="color:mediumblue; margin: 0">{{ .Site.Params.info }}</h6> <!-- h2 -->
     <p >{{ .Site.Params.description }}</p>
 
 <!-- HERE - MY CUSTOM -->
     <div id="links">
     {{ with .Site.Menus.main}}
           {{ range sort . }}
-            <a class="link {{ .Post }}" {{ with .Post }}style="background-color: crimson;"{{ end }} href="{{ .URL }}" target="{{ .Parent }}"> {{ .Pre }} {{ .Name }}</a> <!--{{ .URL | relLangURL }}-->
+            <a class="link {{ .Post }}" {{ with .Post }}style="background-color: mediumblue;"{{ end }} href="{{ .URL }}" target="{{ .Parent }}"> {{ .Pre }} {{ .Name }}</a> <!--{{ .URL | relLangURL }}-->
+            <p style="text-align=left">ddd</p>
           {{ end }}
     {{ end }}
     </div>

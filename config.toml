@@ -125,11 +125,11 @@ pygmentscodefencesguesssyntax = true
     icon = "fa fa-twitter"
     weight = 4
     url = "https://twitter.com/rferreira_tec"
-[[params.social]]
-    name = "YouTuBe"
-    icon = "fa fa-youtube"
-    weight = 5
-    url = "https://youtube.com/c/RicardoFerreiraTecnologia"
+#[[params.social]]
+#    name = "YouTuBe"
+#    icon = "fa fa-youtube"
+#    weight = 5
+#    url = "https://youtube.com/c/RicardoFerreiraTecnologia"
 [[params.social]]
     name = "LinkedIn"
     icon = "fa fa-linkedin"
@@ -140,11 +140,11 @@ pygmentscodefencesguesssyntax = true
 #    icon = "fa fa-medium"
 #    weight = 5
 #    url = "https://medium.com/@ricardoferreiracosta"
-[[params.social]]
-    name = "Telegram"
-    icon = "fa fa-telegram"
-    weight = 6
-    url = "https://t.me/ricardoferreira_tec"
+#[[params.social]]
+#    name = "Telegram"
+#    icon = "fa fa-telegram"
+#    weight = 6
+#    url = "https://t.me/ricardoferreira_tec"
 
 [params.rss]
     name = "RSS"
@@ -204,7 +204,7 @@ pygmentscodefencesguesssyntax = true
         [languages.pt-br.params]
             author = "Ricardo Ferreira"
             info = "Linux · Infraestrutura · Dados"
-	    description = "Apaixonado por novas tecnologias, bacharel em Ciência da Computação. Alguns anos na operação, decidi mirar os dados."
+	    description = "Apaixonado por novas tecnologias, Bacharel em Ciência da Computação. Alguns anos na operação, decidi mirar os dados."
             keywords = "linux,docker,bpm,dados,bussiness intelligence,bi,sysadmin, tecnologia"
             footercontent = "Construído usando Hugo v0.76.5. Hospedado em Netlify"
             ctaToHome = "Mais sobre mim"
