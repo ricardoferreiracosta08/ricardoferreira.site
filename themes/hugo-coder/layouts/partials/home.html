@@ -17,7 +17,6 @@
     {{ with .Site.Menus.main}}
           {{ range sort . }}
             <a class="link {{ .Post }}" {{ with .Post }}style="background-color: mediumblue;"{{ end }} href="{{ .URL }}" target="{{ .Parent }}"> {{ .Pre }} {{ .Name }}</a> <!--{{ .URL | relLangURL }}-->
-            <p style="text-align=left">ddd</p>
           {{ end }}
     {{ end }}
     </div>
