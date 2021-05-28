@@ -21,6 +21,11 @@
     color: $fg-color-dark;
   }
 
+  .link {
+    background-color: #FFF;
+    color: #000;
+  }
+
   pre {
     code {
       background-color: inherit;
@@ -55,7 +60,3 @@ body.colorscheme-auto {
   }
 }
 
-.link {
- background-color: #FFF;
- color: #000;
-}
