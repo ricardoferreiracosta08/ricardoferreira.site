@@ -1,3 +1,4 @@
+
 baseurl = "https://ricardoferreira.site"
 title = "Ricardo Ferreira"
 
@@ -154,6 +155,13 @@ pygmentscodefencesguesssyntax = true
     rel = "alternate"
     type = "application/rss+xml"
 
+[[params.curso]]
+   name = "Maratona Infraestrutura Open Source | Inscreva-se gratuitamente "
+   icon = "/images/cover-maratona.png"
+   link = "https://ricardoferreira.ck.page/aulas-gratuitas"
+   desc = "Aulas AO VIVO gratuitas. Oportunidade única para você entrar numa comunidade de Infraestrutura e aprender de maneira objetiva e prática! Junte-se a mais de 200 membros!"
+#   desc = "Acervo de gravações de aulas transmitidas ao vivo. Mais de 30 horas de conteúdo objetivo e prático de tópicos da Infraestrutura Open Source"
+   linecolor = "darkorange"
 
 [languages]
     [languages.en]
@@ -184,11 +192,11 @@ pygmentscodefencesguesssyntax = true
 #            weight = 3
 #            url = "projects/"
 
-            [[languages.en.menu.main]]
-            name = "All my courses online"
-            weight = 3
-            pre = "<i class='fa fa-book'></i>"
-            url = "https://www.udemy.com/user/ricardo-ferreira-costa-2/"
+#            [[languages.en.menu.main]]
+#            name = "All my courses online"
+#            weight = 3
+#            pre = "<i class='fa fa-book'></i>"
+#            url = "https://www.udemy.com/user/ricardo-ferreira-costa-2/"
 
 #            [[languages.en.menu.main]]
 #            name = "Contact me"
@@ -215,16 +223,17 @@ pygmentscodefencesguesssyntax = true
             name = "Opa! Afim de trocar uma ideia?"
             weight = 1
             url = "https://t.me/ricardoferreiracosta"
+            post = "shake"
 
             [[languages.pt-br.menu.main]]
             name = "Blog"
             weight = 2
             url = "blog/"
 
-            [[languages.pt-br.menu.main]]
-            name = "Meus cursos online"
-            weight = 3
-            url = "cursos/"
+#            [[languages.pt-br.menu.main]]
+#            name = "Meus cursos online"
+#            weight = 3
+#            url = "cursos/"
 
 #            [[languages.pt-br.menu.main]]
 #            name = "Mentoria Gratuita | Agende a sua"
@@ -233,12 +242,14 @@ pygmentscodefencesguesssyntax = true
 #            url = "https://calendly.com/ricardoferreira_tec/mentoriagratuita"
 #            post = "shake"
 
-            [[languages.pt-br.menu.main]]
-            name = "Aulas GRATUITAS | Inscreva-se "
-            weight = 5
+#            [[languages.pt-br.menu.main]]
+#            name = "Maratona Infraestrutura Open Source | Inscreva-se"
+#            pre = "/images/cover-maratona.png"
+#            identifier = "Acervo de gravações de aulas transmitidas ao vivo. Mais de 20 horas de conteúdo objetivo e prático de tópicos da Infraestrutura Open Source. Além disso, espaço para entrar numa comunidade focada. 2 Aulas novas por mês!!"
+#            weight = 5
 #            url = "https://ricardoferreira.ck.page/aulas-semanais"
-            url = "https://ricardoferreira.ck.page/aulas-gratuitas"
-            post = "shake"
+#            url = "https://ricardoferreira.ck.page/aulas-gratuitas"
+#            post = "shake"
 
 #            [[languages.pt-br.menu.main]]
 #            name = "Bootcamp Infraestrutura Open Source"

@@ -11,15 +11,26 @@
     <h1 style="margin: 4px">{{ .Site.Params.author }}</h1>
     <h6 style="color:#1565c0; margin: 0">{{ .Site.Params.info }}</h6> <!-- h2 -->
     <p >{{ .Site.Params.description }}</p>
-
 <!-- HERE - MY CUSTOM -->
     <div id="links">
+    {{ with .Site.Params.curso }}
+          {{ range sort . }}
+   <div onclick="window.open('{{ .link }}', '_blank')" style="cursor: pointer; border: 3px solid {{ .linecolor }}; padding:0; margin-bottom: 16px;">
+    <img style="object-fit: cover; width: 100%; height: 200px;" src="{{ .icon }}"/>
+    <h6 style="margin-top:8px; margin-bottom:8px; padding: 16px;">
+     {{ .name }}
+    </h6>
+    <p style="margin-top:0;">{{ .desc }}</p>
+   </div>
+          {{ end }}
+    {{ end }}
+
     {{ with .Site.Menus.main}}
           {{ range sort . }}
             <a class="link {{ .Post }}" {{ with .Post }}style="background-color: mediumblue;"{{ end }} href="{{ .URL }}" target="{{ .Parent }}"> {{ .Pre }} {{ .Name }}</a> <!--{{ .URL | relLangURL }}-->
           {{ end }}
     {{ end }}
-    </div>
+   </div>
 <!-- END -->
 
     {{ with .Site.Params.social }}
