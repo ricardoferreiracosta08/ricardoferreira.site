@@ -32,7 +32,7 @@
 
     {{ with .Site.Menus.main}}
           {{ range sort . }}
-            <a class="link {{ .Post }}" {{ with .Post }}style="background-color: mediumblue;"{{ end }} href="{{ .URL }}" target="{{ .Parent }}"> {{ .Pre }} {{ .Name }}</a> <!--{{ .URL | relLangURL }}-->
+            <a class="link {{ .Post }}" {{ with .Post }}style="background-color: purple;"{{ end }} href="{{ .URL }}" target="{{ .Parent }}"> {{ .Pre }} {{ .Name }}</a> <!--{{ .URL | relLangURL }}-->
           {{ end }}
     {{ end }}
    </div>
