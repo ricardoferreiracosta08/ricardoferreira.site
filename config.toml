@@ -160,13 +160,17 @@ pygmentscodefencesguesssyntax = true
    icon = "/images/cover-maratona.png"
    link = "https://ricardoferreira.ck.page/aulas-gratuitas"
    desc = "Aprenda de maneira objetiva e prática tópicos da Infraestrutura dentro de uma comunidade com mais de 200 membros"
-   linecolor = "#000000"
+   bgcolor = "black"
+   textcolor = "white"
+   linecolor = "black"
 
 [[params.curso]]
    name = "Docker do zero: Introdução a administração de containers"
    icon = "/images/cover-docker-udemy.png"
    link = "http://bit.ly/cursoAprendaDockerdoZero"
    desc = "Aprenda Docker do zero e seja eficiente na entrega dos serviços de TI usando tecnologia de containers"
+   bgcolor = "darkblue"
+   textcolor = "white"
    linecolor = "darkblue"
 
 [languages]
