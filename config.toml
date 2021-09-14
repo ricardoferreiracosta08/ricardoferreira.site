@@ -159,9 +159,10 @@ pygmentscodefencesguesssyntax = true
    name = "Maratona Infraestrutura Open Source"
    icon = "/images/cover-maratona.png"
    link = "https://ricardoferreira.ck.page/aulas-gratuitas"
-   desc = "Aulas AO VIVO gratuitas. Oportunidade única para você entrar numa comunidade, aprender de maneira objetiva e prática tópicos da Infraestrutura! Junte-se a mais de 200 membros!"
+   desc = "Aprenda de maneira objetiva e prática tópicos da Infraestrutura dentro de uma comunidade com mais de 200 membros"
+#   desc = "Aulas AO VIVO gratuitas. Oportunidade única para você entrar numa comunidade, aprender de maneira objetiva e prática tópicos da Infraestrutura! Junte-se a mais de 200 membros!"
 #   desc = "Acervo de gravações de aulas transmitidas ao vivo. Mais de 30 horas de conteúdo objetivo e prático de tópicos da Infraestrutura Open Source"
-   linecolor = "darkorange"
+   linecolor = "#000000"
 
 [languages]
     [languages.en]
