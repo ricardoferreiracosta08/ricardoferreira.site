@@ -13,16 +13,21 @@
     <p >{{ .Site.Params.description }}</p>
 <!-- HERE - MY CUSTOM -->
     <div id="links">
+      
+    {{ if eq .Site.Language.Lang "en" }}
+    <!-- NONE -->
+    {{ else }}
     {{ with .Site.Params.curso }}
           {{ range sort . }}
-   <div onclick="window.open('{{ .link }}', '_blank')" style="cursor: pointer; border: 3px solid {{ .linecolor }}; padding:0; margin-bottom: 16px;">
-    <img style="object-fit: cover; width: 100%; height: 200px;" src="{{ .icon }}"/>
-    <h6 style="margin-top:8px; margin-bottom:8px; padding: 16px;">
-     {{ .name }}
-    </h6>
-    <p style="margin-top:0;">{{ .desc }}</p>
-   </div>
+	   <div onclick="window.open('{{ .link }}', '_blank')" style="cursor: pointer; border: 3px solid {{ .linecolor }}; padding:0; margin-bottom: 16px;">
+	    <img style="object-fit: cover; width: 100%; height: 200px;" src="{{ .icon }}"/>
+	    <h6 style="margin-top:8px; margin-bottom:8px; padding: 16px;">
+	     {{ .name }}
+	    </h6>
+	    <p style="margin-top:0;">{{ .desc }}</p>
+	   </div>
           {{ end }}
+    {{ end }}
     {{ end }}
 
     {{ with .Site.Menus.main}}
