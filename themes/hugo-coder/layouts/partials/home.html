@@ -20,7 +20,7 @@
     {{ with .Site.Params.curso }}
           {{ range sort . }}
 	   <div onclick="window.open('{{ .link }}', '_blank')" style="cursor: pointer; border: 3px solid {{ .linecolor }}; padding:0; margin-bottom: 16px;">
-	    <img style="object-fit: cover; width: 100%; height: 200px;" src="{{ .icon }}"/>
+	    <img style="object-fit: cover; width: 100%; height: 100px;" src="{{ .icon }}"/>
 	    <h6 style="margin-top:8px; margin-bottom:8px; padding: 16px;">
 	     {{ .name }}
 	    </h6>
