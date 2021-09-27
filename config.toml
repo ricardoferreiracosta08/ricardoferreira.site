@@ -155,14 +155,14 @@ pygmentscodefencesguesssyntax = true
     rel = "alternate"
     type = "application/rss+xml"
 
-[[params.curso]]
-   name = "Aprender a aprender: foco na área de TI"
-   icon = "/images/cover-aprender-aprender-TI.png"
-   link = "https://bit.ly/cursoAprender-aprender-TI"
-   desc = "Aprenda técnicas de aprendizagem que irão potencializar seus estudos e tirar você de um ciclo ineficiente de aprendizado"
-   bgcolor = "#035482"
-   textcolor = "white"
-   linecolor = "#035482"
+#[[params.curso]]
+#   name = "Aprender a aprender: foco na área de TI"
+#   icon = "/images/cover-aprender-aprender-TI.png"
+#   link = "https://bit.ly/cursoAprender-aprender-TI"
+#   desc = "Aprenda técnicas de aprendizagem que irão potencializar seus estudos e tirar você de um ciclo ineficiente de aprendizado"
+#   bgcolor = "#035482"
+#   textcolor = "white"
+#   linecolor = "#035482"
 
 [[params.curso]]
    name = "Maratona Infraestrutura Open Source"
