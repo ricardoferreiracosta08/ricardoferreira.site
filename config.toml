@@ -168,10 +168,19 @@ pygmentscodefencesguesssyntax = true
    name = "Maratona Infraestrutura Open Source"
    icon = "/images/cover-maratona.png"
    link = "https://ricardoferreira.ck.page/aulas-gratuitas"
-   desc = "Aprenda de maneira objetiva e prática tópicos da Infraestrutura dentro de uma comunidade com mais de 200 membros"
+   desc = "Aulas ao vivo gratuitas. Comunidade com mais de 200 membros e newsletter diária com tópicos da Infraestrutura"
    bgcolor = "#d76b0a"
    textcolor = "black"
    linecolor = "#d76b0a"
+
+[[params.curso]]
+   name = "ULTRA aulas de tópicos da Infraestrutura"
+   icon = "/images/cover-aprender-aprender-TI.png"
+   link = "https://bit.ly/sairdainerciaagora"
+   desc = "Cada aula, um novo aprendizado! Aprenda de maneira ultra (Teoria base contextualizada + prática direcionada). Acervo de gravações das aulas já transmitidas ao vivo."
+   bgcolor = "#252530"
+   textcolor = "#8D7DFF"
+   linecolor = "#252530"
 
 [[params.curso]]
    name = "Docker do zero: Introdução a administração de containers"
