@@ -3,7 +3,7 @@ draft: false
 date: 2021-12-03T10:41:25-03:00
 title: "Virtualização de Desktop usando Infraestrutura Open Source"
 subtitle: "Gerenciamento centralizado de desktops virtuais"
-description: ""
+description: "Solução VDI open source que permite gerenciamento centralizado de desktops virtuais"
 slug: "virtualizacao-de-desktop-vdi-infraestrutura-open-source/"
 keywords:
   - vdi
@@ -15,7 +15,7 @@ keywords:
   - guacamole
   - desktop
 images:
-  - /2021/12/virtualização-de-desktop-vdi-infraestrutura-open-source/banner.png
+  - /2021/12/virtualizacao-de-desktop-vdi-infraestrutura-open-source/banner.png
 authors:
 tags:
 categories: 
