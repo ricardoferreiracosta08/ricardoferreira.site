@@ -4,7 +4,7 @@ date: 2021-12-03T10:41:25-03:00
 title: "Virtualização de Desktop usando Infraestrutura Open Source"
 subtitle: "Gerenciamento centralizado de desktops virtuais"
 description: ""
-slug: "virtualização-de-desktop-vdi-infraestrutura-open-source/"
+slug: "virtualizacao-de-desktop-vdi-infraestrutura-open-source/"
 keywords:
   - vdi
   - linux
