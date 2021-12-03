@@ -160,16 +160,16 @@ pygmentscodefencesguesssyntax = true
    icon = "/images/cover-aprender-aprender-TI.png"
    link = "https://bit.ly/cursoAprender-aprender-TI"
    desc = "Para tirar você de um ciclo ineficiente de aprendizado, aprenda técnicas de aprendizagem que irão potencializar seus estudos. Focado na área de TI"
-   bgcolor = "#035482"
-   textcolor = "white"
+   bgcolor = "white"
+   textcolor = "black"
    linecolor = "#035482"
 
 [[params.curso]]
-   name = "Maratona Infraestrutura Open Source"
+   name = "Comunidade Infraestrutura Open Source"
    icon = "/images/cover-maratona.png"
    link = "https://ricardoferreira.ck.page/aulas-gratuitas"
-   desc = "Para se manter por dentro, aulas ao vivo gratuitas numa comunidade com mais de 200 membros. Além disso, newsletter diária com tópicos da Infraestrutura. Inscreva-se gratuitamente"
-   bgcolor = "#d76b0a"
+   desc = "Espaço criado para a galera de Infra trocar experiências e aprendizados 🏗 Inscreva-se gratuitamente"
+   bgcolor = "white"
    textcolor = "black"
    linecolor = "#d76b0a"
 
@@ -178,17 +178,17 @@ pygmentscodefencesguesssyntax = true
    icon = "/images/cover-aprender-aprender-TI.png"
    link = "https://bit.ly/sairdainerciaagora"
    desc = "Perdeu as aulas ao vivo? Aprenda de maneira ultra (teoria base contextualizada + prática direcionada) acessando o acervo de gravações das aulas já transmitidas ao vivo."
-   bgcolor = "#252530"
-   textcolor = "#8D7DFF"
-   linecolor = "#252530"
+   bgcolor = "white"
+   textcolor = "black"
+   linecolor = "#8D7DFF"
 
 [[params.curso]]
    name = "Docker do zero: Introdução a administração de containers"
    icon = "/images/cover-docker-udemy.png"
    link = "http://bit.ly/cursoAprendaDockerdoZero"
    desc = "Aprenda Docker do zero e seja eficiente na entrega dos serviços de TI usando tecnologia de containers"
-   bgcolor = "darkblue"
-   textcolor = "white"
+   bgcolor = "white"
+   textcolor = "black"
    linecolor = "darkblue"
 
 [languages]

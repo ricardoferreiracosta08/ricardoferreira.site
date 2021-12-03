@@ -4,9 +4,8 @@ date: {{ .Date }}
 title: ""
 subtitle: ""
 description: ""
-summary: ""
 slug: ""
-featured_image: ""
+#featured_image: ""
 keywords:
 images:
 authors:
