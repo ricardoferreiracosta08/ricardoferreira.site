@@ -1,0 +1,141 @@
+{{ define "main"}}
+
+<!-- checking blog -->
+{{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="pr-lg-4"> <!-- CUSTOm -->
+        <div class="text-center mb-4">
+            <!-- MY CUSTOM -->
+	      {{ if .Params.subtitle }}
+	      <p class="stories-title" style="color: #c80000">
+	       <strong>{{ .Params.subtitle }}</strong>
+	      </p>
+	      {{ end }}
+	    <!-- END -->
+
+          <h3 style="text-align:left" class="h2 mb-4 post-title">{{.Title}}</h3>
+          <ul class="card-meta list-inline" style="text-align:left">
+
+<!-- CUSTOM <li class="list-inline-item">
+              <a href="#!" class="card-meta-author">
+                {{ with .Site.GetPage (.Params.author | urlize | lower) }}
+                <a href="{{.Permalink}}" class="card-meta-author">
+                  {{ partial "image.html" (dict "Src" .Params.image "Size" "26x26" "Class" "w-auto" "Alt" .Title) }}
+                  <span>{{.Title}}</span>
+                </a>
+                {{ end }}
+              </a>
+            </li>
+            <li class="list-inline-item">|</li>
+-->
+            <li class="list-inline-item">
+              <i class="las la-calendar mr-1"></i> <span>{{.PublishDate.Format "02 January 2006"}}</span>
+            </li>
+            <li class="list-inline-item">
+              <i class="las la-clock" aria-hidden="true"></i>
+              {{ .ReadingTime }} minutos
+            </li> 
+         </ul>
+        </div>
+
+        <div class="mb-4"><!-- text-center -->
+          {{ with .Params.image }}
+            {{ partial "image.html" (dict "Src" . "Class" "img-fluid overlay-450 rounded" "Alt" "Post image") }}
+          {{ end }}
+          <figcaption class="text-center" style="color:#ccc">{{ .Params.caption | safeHTML }}</figcaption>
+        </div>
+
+        <div class="content">
+          {{.Content}}
+        </div>
+<!--      </div>
+    </div> -->
+
+    <div class="single-post-meta">
+      <div class="row"><!-- justify-content-center">-->
+        <div class="col-lg-5 col-md-6 text-center text-md-left">
+          <ul class="post-meta-tags list-unstyled list-inline">
+            {{range .Params.tags}}
+            <li class="list-inline-item"><a href="{{`tags` | absURL}}/{{.| urlize}}">{{.}}</a></li>
+            {{end}}
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
+
+          {{- partial "post-share.html" . -}}
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-similer">
+      <div class="row"><!-- justify-content-center">-->
+        <div class="col-lg-10">
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3 class="text-dark font-weight-800 mb-4 pb-2">Recomendo que leia também:</h3>
+            </div>
+            {{ $related := (where site.RegularPages "Section" "blog") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
+              {{ range first 2 $related }}
+            <div class="col-md-6">
+              {{ .Render "post" }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div> 
+  </div> <!-- CUSTOM -->
+
+  <!-- SIDEBAR -->
+         <div class="col-lg-3 mt-4" style="text-align: center">
+          <div class="sticky-sidebar">
+           <!-- WIDGET -->
+           <div class="widget-blocks">
+               <div class="row">
+                  <div class="col-lg-12">
+                    <div class="widget">
+                      <div class="widget-body">
+                         <img loading="lazy" decoding="async"
+                             src="../../{{ .Site.Params.perfil }}" alt="About Me" class="perfil">
+                         <h2 class="font-weight-700 my-3 mb-4 text-center">{{ .Site.Params.Author }}</h2>
+                         <p class="mb-3 pb-2">
+		  		{{ .Site.Params.Minibio }}
+                         </p>
+                         <a href="{{ .Site.BaseURL }}about/" class="btn btn-sm btn-outline-primary">Mais sobre</a>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+           </div>
+           <!-- -->
+          </div>
+         </div>
+  <!-- SIDEBAR -->
+
+    </div>
+  </div>
+</section>
+
+{{ else }}
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="content">
+          {{.Content}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ end }}

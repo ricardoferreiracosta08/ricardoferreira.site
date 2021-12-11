@@ -1,45 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Ricardo Ferreira</title>
-    <link>https://ricardoferreira.site/categories/</link>
-    <description>Recent content in Categories on Ricardo Ferreira</description>
+    <title>Categories on Bookworm - Personal Blog Template</title>
+    <link>https://demo.gethugothemes.com/bookworm-light/categories/</link>
+    <description>Recent content in Categories on Bookworm - Personal Blog Template</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
-    <lastBuildDate>Fri, 12 Mar 2021 09:31:44 -0300</lastBuildDate><atom:link href="https://ricardoferreira.site/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Dec 2021 10:41:25 -0300</lastBuildDate><atom:link href="https://demo.gethugothemes.com/bookworm-light/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Linux</title>
-      <link>https://ricardoferreira.site/categories/linux/</link>
-      <pubDate>Fri, 12 Mar 2021 09:31:44 -0300</pubDate>
+      <title>VDI</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/categories/vdi/</link>
+      <pubDate>Fri, 03 Dec 2021 10:41:25 -0300</pubDate>
       
-      <guid>https://ricardoferreira.site/categories/linux/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/categories/vdi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://ricardoferreira.site/categories/docker/</link>
-      <pubDate>Tue, 10 Nov 2020 13:24:58 -0300</pubDate>
+      <link>https://demo.gethugothemes.com/bookworm-light/categories/docker/</link>
+      <pubDate>Tue, 05 Nov 2019 23:29:33 +0000</pubDate>
       
-      <guid>https://ricardoferreira.site/categories/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Carreira</title>
-      <link>https://ricardoferreira.site/categories/carreira/</link>
-      <pubDate>Sun, 15 Dec 2019 18:35:51 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/categories/carreira/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/categories/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux Descomplicado</title>
-      <link>https://ricardoferreira.site/categories/linuxdescomplicado/</link>
+      <link>https://demo.gethugothemes.com/bookworm-light/categories/linuxdescomplicado/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardoferreira.site/categories/linuxdescomplicado/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/categories/linuxdescomplicado/</guid>
       <description></description>
     </item>
     

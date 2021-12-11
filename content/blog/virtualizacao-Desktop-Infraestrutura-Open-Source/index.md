@@ -1,32 +1,23 @@
 --- 
 draft: false
 date: 2021-12-03T10:41:25-03:00
+tags: ["vdi", "desktop"]
+keywords: ["linux", "vdi", "infraestrutura", "opensource"]
+categories: ["Infraestrutura"]
+seotitle: ""
 title: "Virtualização de Desktop usando Infraestrutura Open Source"
-subtitle: "Gerenciamento centralizado de desktops virtuais"
+subtitle: "Gerenciamento centralizado"
 description: "Solução VDI open source que permite gerenciamento centralizado de desktops virtuais"
+summary: ""
 slug: "virtualizacao-de-desktop-vdi-infraestrutura-open-source/"
-keywords:
-  - vdi
-  - linux
-  - opensource  
-  - flexvdi
-  - proxmox
-  - vdi
-  - guacamole
-  - desktop
-images:
-  - /2021/12/virtualizacao-de-desktop-vdi-infraestrutura-open-source/banner.png
-authors:
-tags:
-categories: 
-  - VDI
-externalLink: ""
-series:
+image: "images/post/2021_12_virtualizacao.jpg"
+seoimage: "images/post/2021_12_virtualizacao.jpg"
+caption: "<a href=\"https://unsplash.com/photos/uyfohHiTxho\" target=\"_blank\">Photo by ThisisEngineering RAEng</a>"
 ---
 
 Hoje, vou trazer uma solução interessante para o negócio que permite o gerenciamento centralizado de desktops virtuais, facilidade de acesso, flexibilidade, maior segurança e mobilidade do usuário
 
-![Alt Text](https://i.imgur.com/g8FvFxB.gif)
+<!--![Alt Text](https://i.imgur.com/g8FvFxB.gif)-->
 
 Basicamente, o VDI (Infraestrutura de desktop virtual) faz uso de máquinas virtuais para fornecer e gerenciar Desktops Virtuais
 

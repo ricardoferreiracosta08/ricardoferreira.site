@@ -1,0 +1,175 @@
+<head>
+  <meta charset="utf-8">
+  {{ "<!-- mobile responsive meta -->" | safeHTML}}
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}">
+  {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+<!--  <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ end }}{{ if .Site.Params.keywords }}, {{ delimit .Site.Params.keywords ", " }}{{ end }}">-->
+<!--  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">  -->
+  <meta name="description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
+  <meta name="keywords" content="{{ (delimit .Keywords ",") | default .Site.Params.keywords  }}">
+
+  <!--
+  Search Engine Crawler Tags
+  -->
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+<!--  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />-->
+
+  <!-- 
+  Title Tags 
+  -->
+{{ if .IsHome -}}
+  <title itemprop="name">{{ .Title }}</title>
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta itemprop="name" content="{{ .Title }}" />
+  <meta name="application-name" content="{{ .Title }}" />
+{{- else if not .Params.seotitle -}}
+  <title itemprop="name">{{ .Title | humanize }} | {{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Title | humanize }} | {{ .Site.Title }}" />
+  <meta name="twitter:title" content="{{ .Title | humanize }} | {{ .Site.Title }}" />
+  <meta itemprop="name" content="{{ .Title | humanize }} | {{ .Site.Title }}" />
+  <meta name="application-name" content="{{ .Title | humanize }} | {{ .Site.Title }}" />
+{{- else -}}
+  <title itemprop="name">{{ .Params.seotitle }} | {{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Params.seotitle }} | {{ .Site.Title }}" />
+  <meta name="twitter:title" content="{{ .Params.seotitle }} | {{ .Site.Title }}" />
+  <meta itemprop="name" content="{{ .Params.seotitle }} | {{ .Site.Title }}" />
+  <meta name="application-name" content="{{ .Params.seotitle }} | {{ .Site.Title }}" />
+{{- end }}
+
+<!-- Meta Social -->
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="twitter:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:locale" content="{{ .Lang }}">
+{{ if .IsPage }}
+  {{ if not .PublishDate.IsZero }}
+    <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05" }}">
+  {{ end }}
+  {{ if not .Lastmod.IsZero }}
+    <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">
+  {{ end }}
+  {{ if not .ExpiryDate.IsZero }}
+    <meta property="article:expiration_time" content="{{ .ExpiryDate.Format "2006-01-02T15:04:05" }}">
+  {{ end }}
+  {{ with .Params.categories }}
+    {{ range $v := . }}
+      <meta property="article:section" content="{{ $v }}">
+    {{ end }}
+  {{ end }}
+  {{ with .Params.tags }}
+    {{ range $v := . }}
+      <meta property="article:tag" content="{{ $v }}">
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<meta name="twitter:card" content="summary_large_image">
+{{ with .Site.Author.twitter }}
+  <meta name="twitter:site" content="@{{ . }}">
+{{ end }}
+{{ if .Params.twitter }}
+  <meta name="twitter:creator" content="@{{ .Params.twitter }}">
+{{ else if .Site.Author.twitter }}
+  <meta name="twitter:creator" content="@{{ .Site.Author.twitter }}">
+{{ end }}
+
+{{ with .Site.Params.fbAppId }}
+  <meta property="fb:app_id" content="{{ . }}">
+{{ end }}
+{{ with .Site.Params.fbAdminIds }}
+  {{ range . }}
+      <meta property="fb:admins" content="{{ . }}">
+  {{ end }}
+{{ end }}
+
+{{ with .Params.imageseo }}
+  <meta property="og:image" content="{{ . | absURL }}">
+  <meta property="twitter:image" content="{{ . | absURL }}">
+{{ end }}
+<!--{{ with .Params.coverImage }}
+  <meta property="og:image" content="{{ . | absURL }}">
+  <meta property="twitter:image" content="{{ . | absURL }}">
+{{ end }}
+{{ with .Params.gallery }}
+  {{ range . }}
+    <meta property="og:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
+    <meta property="twitter:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
+  {{ end }}
+{{ end }}
+-->
+
+<!-- 
+Image Tags
+-->
+{{ if ne .Section "post" -}}
+  <meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
+  <meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
+  <meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />
+{{ end -}}
+
+
+<!-- 
+Link Tags
+-->
+   <base href="{{ .Permalink }}">
+{{ if .Permalink }}
+   <link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
+{{ end }}
+   <meta name="url" content="{{ .Permalink }}" />
+   <meta name="twitter:url" content="{{ .Permalink }}" />
+
+  <!-- Highlight.js -->
+  <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- END -->
+  
+<!--
+  {{ template "_internal/twitter_cards.html" . }}
+  {{ template "_internal/opengraph.html" . }}
+-->
+
+<!--  <meta name="author" content="{{ site.Params.author }}">
+  <meta name="description" content="{{ with .Params.description }} {{.}} {{else}} {{ with site.Params.description }} {{.}} {{end}} {{end}}">
+-->
+
+<!--
+Date Tags
+-->
+  <meta property="og:updated_time" content={{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
+<!-- -->
+
+{{ with .OutputFormats.Get "RSS" }}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+{{ end }}
+
+  {{ with .OutputFormats.Get "RSS" }}
+   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .RelPermalink }}">
+  {{ end }}
+
+  {{ if .Site.Params.enableTwemoji }}
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+  {{ end }}
+
+  <!-- favicon -->
+  {{ partialCached "favicon" . }}
+  <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | relURL }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | relURL }}" sizes="16x16">
+  <link rel="apple-touch-icon" href="{{ .Site.Params.touchicon | default "/images/apple-touch-icon.png" | relURL }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.touchicon | default "/images/apple-touch-icon.png" | relURL }}">
+
+  {{ "<!-- CSS Plugins -->" | safeHTML}}
+  {{ partialCached "style.html" . }}
+  
+</head>
+

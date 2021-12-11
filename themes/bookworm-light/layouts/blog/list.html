@@ -1,0 +1,298 @@
+{{define "main"}}
+
+<!-- HEADER CUSTOM -->
+<section class="banner-creative" style="background-image:url(https://demo.gethugothemes.com/northendlab/images/banner-shape.png)">
+<div class="container">
+<div class="row align-items-center justify-content-between">
+<div class="col-lg-8 mb-4 mb-lg-0 order-1 order-lg-0">
+<h1 class="title"></h1>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 order-0 order-lg-1 mb-5 mb-lg-0">
+<!--<img loading="lazy" class="banner-image img-fluid" src="https://demo.gethugothemes.com/northendlab/images/banner-image.png" alt="Northendlab | Creative Blog Template">-->
+</div>
+</div>
+</div>
+</section>
+<!-- HEADER CUSTOM -->
+
+<!-- -->
+<section class="section-sm">
+    <div class="container"> 
+     <div class="row no-gutters-lg">
+
+       <!-- <div class="col-12">Latest post</div>    -->
+       <div class="col-lg-8 mb-5 mb-lg-0">
+        <div class="row">
+          {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+          {{range $index, $items := $paginator.Pages}}
+          <div class="{{ if (eq $index 0) }}col-12 mb-4{{ else }}col-md-6 mb-4{{ end }}">
+            {{.Render "post"}}
+          </div>
+          {{end}}
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <nav class="mt-4">
+              {{"<!-- pagination -->" | safeHTML }}
+              {{ $paginator := .Paginator }}
+              <!-- Number of links either side of the current page. -->
+              {{ $adjacent_links := 2 }}
+              <!-- $max_links = ($adjacent_links * 2) + 1 -->
+              {{ $max_links := (add (mul $adjacent_links 2) 1) }}
+              <!-- $lower_limit = $adjacent_links + 1 -->
+              {{ $lower_limit := (add $adjacent_links 1) }}
+              <!-- $upper_limit = $paginator.TotalPages - $adjacent_links -->
+              {{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
+              <!-- If there's more than one page. -->
+              {{ if gt $paginator.TotalPages 1 }}
+              <nav class="mb-md-50">
+                <ul class="pagination justify-content-center">
+                  <!-- Previous page. -->
+                  {{ if $paginator.HasPrev }}
+                  <li class="page-item"><a class="page-link rounded" href="{{ $paginator.Prev.URL }}" aria-label="Pagination Arrow">
+                    <i class="las la-angle-left"></i>
+                  </a></li>
+                  {{ end }}
+                  <!-- Page numbers. -->
+                  {{ range $paginator.Pagers }}
+                  {{ $.Scratch.Set "page_number_flag" false }}
+                  <!-- Advanced page numbers. -->
+                  {{ if gt $paginator.TotalPages $max_links }}
+                  <!-- Lower limit pages. -->
+                  <!-- If the user is on a page which is in the lower limit.  -->
+                  {{ if le $paginator.PageNumber $lower_limit }}
+                  <!-- If the current loop page is less than max_links. -->
+                  {{ if le .PageNumber $max_links }}
+                  {{ $.Scratch.Set "page_number_flag" true }}
+                  {{ end }}
+                  <!-- Upper limit pages. -->
+                  <!-- If the user is on a page which is in the upper limit. -->
+                  {{ else if ge $paginator.PageNumber $upper_limit }}
+                  <!-- If the current loop page is greater than total pages minus $max_links -->
+                  {{ if gt .PageNumber (sub $paginator.TotalPages $max_links) }}
+                  {{ $.Scratch.Set "page_number_flag" true }}
+                  {{ end }}
+                  <!-- Middle pages. -->
+                  {{ else }}
+                  {{ if and ( ge .PageNumber (sub $paginator.PageNumber $adjacent_links) ) ( le .PageNumber (add $paginator.PageNumber $adjacent_links) ) }}
+                  {{ $.Scratch.Set "page_number_flag" true }}
+                  {{ end }}
+                  {{ end }}
+                  <!-- Simple page numbers. -->
+                  {{ else }}
+                  {{ $.Scratch.Set "page_number_flag" true }}
+                  {{ end }}
+                  <!-- Output page numbers. -->
+                  {{ if eq ($.Scratch.Get "page_number_flag") true }}
+                  <li class="page-item{{ if eq . $paginator }} active {{ end }}">
+                    <a href="{{ .URL }}" class="page-link rounded">
+                      {{ .PageNumber }}
+                    </a>
+                  </li>
+                  {{ end }}
+                  {{ end }}
+                  <!-- Next page. -->
+                  {{ if $paginator.HasNext }}
+                  <li class="page-item"><a class="page-link rounded" href="{{ $paginator.Next.URL }}" aria-label="Pagination Arrow">
+                    <i class="las la-angle-right"></i>
+                  </a></li>
+                  {{ end }}
+                </ul>
+              </nav>
+              {{ end }}
+            </nav>
+          </div>
+        </div>
+       </div>
+         <!-- SIDEBAR -->
+         <div class="col-lg-4" style="text-align: center">
+
+           <div class="widget-blocks">
+               <div class="row">
+                  <div class="col-lg-12">
+                    <div class="widget">
+                      <div class="widget-body">
+			<h5 class="widget-title"><span>O que mais escrevo por aqui:</span></h5>
+                          <ul class="list-unstyled widget-list taxonomies-list">
+                            {{ range .Site.Taxonomies.categories }}
+			      <li><a class="d-flex" href="{{.Page.Permalink}}"><i class="las la-tags mr-1"></i>{{ .Page.Title }} <!--({{ .Count }})--></a></li>
+			    {{end}}
+                          </ul>
+<!--			  <ul class="list-unstyled widget-list"><li><a href="/bookworm/categories/accessories" class="d-flex">Accessories <small class="ml-auto">(1)</small></a></li><li><a href="/bookworm/categories/food" class="d-flex">Food <small class="ml-auto">(1)</small></a></li><li><a href="/bookworm/categories/lifestyle" class="d-flex">Lifestyle <small class="ml-auto">(4)</small></a></li><li><a href="/bookworm/categories/photography" class="d-flex">Photography <small class="ml-auto">(2)</small></a></li></ul>-->
+                      </div>
+                    </div>
+                  </div>
+               </div>
+           </div>
+
+           <!-- WIDGET <div class="widget-blocks">
+               <div class="row">
+                  <div class="col-lg-12">
+                    <div class="widget">
+                      <div class="widget-body">
+                         <img loading="lazy" decoding="async" 
+                             src="{{ .Site.Params.perfil }}" alt="About Me" class="perfil">
+                         <h2 class="font-weight-700 my-3 mb-4 text-center">{{ .Site.Params.Author }}</h2>
+                         <p class="mb-3 pb-2">Hello, I’m Hootan Safiyari. 
+                         A Content writter, Developer and Story teller. 
+                         Working as a Content writter at CoolTech Agency. Quam nihil …</p>
+                         <a href="https://demo.gethugothemes.com/reporter/about/" 
+                            class="btn btn-sm btn-outline-primary">Know More</a>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+           </div>-->
+
+         </div>
+         <!-- SIDEBAR -->
+         
+         <!--<div class="col-lg-8 mb-5 mb-lg-0">
+            <div class="row">
+               <div class="col-12 mb-4"> Teste 12 . 2
+               </div>
+               <div class="col-md-6 mb-4"> Teste 6
+               </div>
+               <div class="col-md-6 mb-4"> Teste 6
+               </div>
+               <div class="col-12">Teste 12 .3 </div>
+            </div>
+         </div>-->
+         <!-- SIDEBAR
+         <div class="col-lg-4">
+           <div class="widget-blocks">
+               <div class="row">
+                  <div class="col-lg-12">
+                    <div class="widget">
+                      <div class="widget-body">
+                         <img loading="lazy" decoding="async" src="/reporter/images/author_hu0485d2e8fa13233fcc57e27aca4c018d_78828_420x0_resize_q100_h2_box.webp" alt="About Me" class="w-100 author-thumb-sm d-block" width="420" height="256"><h2 class="widget-title my-3">Hootan Safiyari</h2><p class="mb-3 pb-2">Hello, I’m Hootan Safiyari. A Content writter, Developer and Story teller. Working as a Content writter at CoolTech Agency. Quam nihil …</p><a href="https://demo.gethugothemes.com/reporter/about/" class="btn btn-sm btn-outline-primary">Know More</a></div></div></div><div class="col-lg-12 col-md-6"><div class="widget"><h2 class="section-title mb-3">Recommended</h2><div class="widget-body"><div class="widget-list"><article class="card mb-4"><div class="card-image"><div class="post-info"><span class="text-uppercase">1 minutes read</span></div><img loading="lazy" decoding="async" src="/reporter/images/post/post-9_hucc85ebe7dc4f542e1229c0ab10f23918_361394_420x280_fill_q100_h2_box_smart1.webp" alt="Post Thumbnail" class="w-100" width="420" height="280"></div><div class="card-body px-0 pb-1"><h3><a class="post-title post-title-sm" href="https://demo.gethugothemes.com/reporter/articles/travel/post-4/">Portugal and France Now Allow Unvaccinated Tourists</a></h3><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor …</p><div class="content"><a class="read-more-btn" href="/reporter/articles/travel/post-4/">Read Full Article</a></div></div></article><a class="media align-items-center" href="https://demo.gethugothemes.com/reporter/articles/cruises/post-4/"><img loading="lazy" decoding="async" src="/reporter/images/post/post-2_huab157a7c4ddb780fd44cc187010cbb7a_186622_80x80_fill_q100_h2_box_smart1.webp" alt="Post Thumbnail" class="w-100" width="80" height="80"><div class="media-body ml-3"><h3 style="margin-top:-5px">These Are Making It Easier To Visit</h3><p class="mb-0 small">Heading Here is example of hedings. You can use …</p></div></a><a class="media align-items-center" href="https://demo.gethugothemes.com/reporter/articles/cruises/post-3/"><span class="image-fallback image-fallback-xs">No Image Specified</span><div class="media-body ml-3"><h3 style="margin-top:-5px">No Image specified</h3><p class="mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing …</p></div></a><a class="media align-items-center" href="https://demo.gethugothemes.com/reporter/articles/post-5/"><img loading="lazy" decoding="async" src="/reporter/images/post/post-5_hu9b0cb3cc50ec9ae8fb25011d4d5a3624_393731_80x80_fill_q100_h2_box_smart1.webp" alt="Post Thumbnail" class="w-100" width="80" height="80"><div class="media-body ml-3"><h3 style="margin-top:-5px">Perfect For Fashion</h3><p class="mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing …</p></div></a><a class="media align-items-center" href="https://demo.gethugothemes.com/reporter/articles/post-3/"><img loading="lazy" decoding="async" src="/reporter/images/post/post-3_hu486e767bf09fc74182beeb89d64881c7_177914_80x80_fill_q100_h2_box_smart1.webp" alt="Post Thumbnail" class="w-100" width="80" height="80"><div class="media-body ml-3"><h3 style="margin-top:-5px">Record Utra Smooth Video</h3><p class="mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing …</p></div></a></div></div></div></div><div class="col-lg-12 col-md-6"><div class="widget"><h2 class="section-title mb-3">Categories</h2><div class="widget-body"><ul class="widget-list"><li><a href="/reporter/categories/computer">computer<span class="ml-auto">(3)</span></a></li><li><a href="/reporter/categories/cruises">cruises<span class="ml-auto">(2)</span></a></li><li><a href="/reporter/categories/destination">destination<span class="ml-auto">(1)</span></a></li><li><a href="/reporter/categories/internet">internet<span class="ml-auto">(4)</span></a></li><li><a href="/reporter/categories/lifestyle">lifestyle<span class="ml-auto">(2)</span></a></li><li><a href="/reporter/categories/news">news<span class="ml-auto">(5)</span></a></li><li><a href="/reporter/categories/telephone">telephone<span class="ml-auto">(1)</span></a></li><li><a href="/reporter/categories/tips">tips<span class="ml-auto">(1)</span></a></li><li><a href="/reporter/categories/travel">travel<span class="ml-auto">(3)</span></a></li><li><a href="/reporter/categories/website">website<span class="ml-auto">(4)</span></a></li><li><a href="/reporter/categories/website/hugo">hugo<span class="ml-auto">(2)</span></a></li></ul>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+           </div>
+         </div>
+          SIDEBAR -->
+
+     </div>
+    </div>
+</section>
+<!-- -->
+
+
+<!--<section class="section-sm">
+  <div class="container">
+    <div class="row no-gutters justify-content-center">
+      <div class="col-lg-10">
+        <div class="row">
+          {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+          {{range $index, $items := $paginator.Pages}}
+          <div class="{{ if (eq $index 0) }}col-lg-12{{ else }}col-lg-6{{ end }}">
+            {{.Render "post"}}
+          </div>
+          {{end}}
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <nav class="mt-4">
+              {{"<!-- pagination " | safeHTML }}
+              {{ $paginator := .Paginator }}
+              <!-- Number of links either side of the current page. 
+              {{ $adjacent_links := 2 }}
+              <!-- $max_links = ($adjacent_links * 2) + 1 
+              {{ $max_links := (add (mul $adjacent_links 2) 1) }}
+              <!-- $lower_limit = $adjacent_links + 1
+              {{ $lower_limit := (add $adjacent_links 1) }}
+              <!-- $upper_limit = $paginator.TotalPages - $adjacent_links 
+              {{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
+              <!-- If there's more than one page. 
+              {{ if gt $paginator.TotalPages 1 }}
+              <nav class="mb-md-50">
+                <ul class="pagination justify-content-center">
+                  <!-- Previous page. 
+                  {{ if $paginator.HasPrev }}
+                  <li class="page-item"><a class="page-link rounded" href="{{ $paginator.Prev.URL }}" aria-label="Pagination Arrow">
+                    <i class="las la-angle-left"></i>
+                  </a></li>
+                  {{ end }}
+                  <!-- Page numbers. 
+                  {{ range $paginator.Pagers }}
+                  {{ $.Scratch.Set "page_number_flag" false }}
+                  <!-- Advanced page numbers. 
+                  {{ if gt $paginator.TotalPages $max_links }}
+                  <!-- Lower limit pages. 
+                  <!-- If the user is on a page which is in the lower limit.  
+                  {{ if le $paginator.PageNumber $lower_limit }}
+                  <!-- If the current loop page is less than max_links. 
+                  {{ if le .PageNumber $max_links }}
+                  {{ $.Scratch.Set "page_number_flag" true }}
+                  {{ end }}
+                  <!-- Upper limit pages. 
+                  <!-- If the user is on a page which is in the upper limit. 
+                  {{ else if ge $paginator.PageNumber $upper_limit }}
+                  <!-- If the current loop page is greater than total pages minus $max_links 
+                  {{ if gt .PageNumber (sub $paginator.TotalPages $max_links) }}
+                  {{ $.Scratch.Set "page_number_flag" true }}
+                  {{ end }}
+                  <!-- Middle pages. 
+                  {{ else }}
+                  {{ if and ( ge .PageNumber (sub $paginator.PageNumber $adjacent_links) ) ( le .PageNumber (add $paginator.PageNumber $adjacent_links) ) }}
+                  {{ $.Scratch.Set "page_number_flag" true }}
+                  {{ end }}
+                  {{ end }}
+                  <!-- Simple page numbers. 
+                  {{ else }}
+                  {{ $.Scratch.Set "page_number_flag" true }}
+                  {{ end }}
+                  <!-- Output page numbers.
+                  {{ if eq ($.Scratch.Get "page_number_flag") true }}
+                  <li class="page-item{{ if eq . $paginator }} active {{ end }}">
+                    <a href="{{ .URL }}" class="page-link rounded">
+                      {{ .PageNumber }}
+                    </a>
+                  </li>
+                  {{ end }}
+                  {{ end }}
+                  <!-- Next page. 
+                  {{ if $paginator.HasNext }}
+                  <li class="page-item"><a class="page-link rounded" href="{{ $paginator.Next.URL }}" aria-label="Pagination Arrow">
+                    <i class="las la-angle-right"></i>
+                  </a></li>
+                  {{ end }}
+                </ul>
+              </nav>
+              {{ end }}
+            </nav>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+{{ with site.Params.instafeed }}
+{{ if .enable }}
+<section class="mb-5 pb-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center">
+          <p class="font-primary">Our Instagram</p>
+          <h2 class="text-dark font-weight-700"><a href="https://www.instagram.com/{{.instagram_user}}/">@{{.instagram_user}}</a></h2>
+        </div>
+      </div>
+      {{ with .access_token }}
+      <div class="mt-5">
+        <div id="instafeed" class="instagram_feed rounded row no-gutters justify-content-center" data-accessToken="{{.}}"></div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{end}}

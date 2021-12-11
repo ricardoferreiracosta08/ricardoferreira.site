@@ -1,0 +1,65 @@
+{{define "main"}}
+
+<!-- HEADER CUSTOM -->
+<section class="banner-creative" style="background-image:url(https://demo.gethugothemes.com/northendlab/images/banner-shape.png)">
+<div class="container">
+<div class="row align-items-center justify-content-between">
+<div class="col-lg-8 mb-4 mb-lg-0 order-1 order-lg-0">
+<h2><!--class="title"-->Olá, eu sou o Ricardo Ferreira <br/> Aqui, falo sobre <br/> <strong>Linux, Infraestrutura e Dados</strong></h2>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 order-0 order-lg-1 mb-5 mb-lg-0">
+<img loading="lazy" class="banner-image img-fluid perfil" style="width: 200px !important" src="{{ .Site.Params.perfil }}">
+</div>
+</div>
+</div>
+</section>
+<!-- HEADER CUSTOM -->
+
+<section class="section-sm">
+  <div class="container">
+
+      <!--<div class="col-lg-8 text-center">
+        {{ if .Params.caption.enable }}
+        {{ with .Params.caption }}
+	<h3 class="text-dark font-weight-700">{{.title | markdownify}}</h3>
+        {{ end }}
+        {{ end }}
+
+        {{ if .Params.social.enable }}
+        {{ with .Params.social }}
+        <ul class="social-links list-unstyled list-inline mt-4">
+          {{ range .social_links }}
+          <li class="list-inline-item"><a href="{{.link | safeURL}}">
+              <i class="lab {{.icon}}"></i>
+            </a></li>
+          {{end}}
+        </ul>
+        {{ end }}
+        {{ end }}
+
+        <div class="content mt-3">
+          {{.Content}}
+        </div>
+      </div>
+    </div>-->
+    
+    {{ if .Params.what_i_do.enable }}
+    {{ with .Params.what_i_do }}
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="text-dark font-weight-700 mb-5">{{ .title }}</h2>
+        </div>
+        {{ range .item }}
+          <div class="col-lg-4 col-md-6 mt-4 text-center">
+            <i class="{{.icon}} la-3x text-primary mb-4"></i>
+            <h4 class="text-dark font-weight-700 mb-3">{{ .title }}</h4>
+            <p>{{ .description }}</p>
+          </div>
+        {{end}}
+      </div>
+    {{ end }}
+    {{ end }}
+
+</section>
+
+{{end}}

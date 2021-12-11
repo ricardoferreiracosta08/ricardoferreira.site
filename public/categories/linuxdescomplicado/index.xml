@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux Descomplicado on Ricardo Ferreira</title>
-    <link>https://ricardoferreira.site/categories/linuxdescomplicado/</link>
-    <description>Recent content in Linux Descomplicado on Ricardo Ferreira</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language><atom:link href="https://ricardoferreira.site/categories/linuxdescomplicado/index.xml" rel="self" type="application/rss+xml" />
+    <title>Linux Descomplicado on Bookworm - Personal Blog Template</title>
+    <link>https://demo.gethugothemes.com/bookworm-light/categories/linuxdescomplicado/</link>
+    <description>Recent content in Linux Descomplicado on Bookworm - Personal Blog Template</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://demo.gethugothemes.com/bookworm-light/categories/linuxdescomplicado/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

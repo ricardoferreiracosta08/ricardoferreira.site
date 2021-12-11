@@ -1,244 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ricardo Ferreira</title>
-    <link>https://ricardoferreira.site/</link>
-    <description>Recent content on Ricardo Ferreira</description>
+    <title>Bookworm - Personal Blog Template</title>
+    <link>https://demo.gethugothemes.com/bookworm-light/</link>
+    <description>Recent content on Bookworm - Personal Blog Template</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
-    <lastBuildDate>Fri, 12 Mar 2021 09:31:44 -0300</lastBuildDate><atom:link href="https://ricardoferreira.site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Dec 2021 10:41:25 -0300</lastBuildDate><atom:link href="https://demo.gethugothemes.com/bookworm-light/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Saiba como criar do zero um script shell em 5 passos básicos</title>
-      <link>https://ricardoferreira.site/2021/03/criar-shell-script-bash-linux/</link>
-      <pubDate>Fri, 12 Mar 2021 09:31:44 -0300</pubDate>
+      <title>Virtualização de Desktop usando Infraestrutura Open Source</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</link>
+      <pubDate>Fri, 03 Dec 2021 10:41:25 -0300</pubDate>
       
-      <guid>https://ricardoferreira.site/2021/03/criar-shell-script-bash-linux/</guid>
-      <description>01 - Variáveis globais No topo do arquivo, reserve um espaço para definir suas variáveis globais que serão usadas ao longo do script
-Isso é interessante para você ter clareza e distinção das variáveis macros e as regras do negócio
-#### VARIAVEIS ########################################################### remote_ssh=&amp;#34;192.168.122.69&amp;#34; port_ssh=&amp;#34;22&amp;#34; user_ssh=&amp;#34;root&amp;#34; dir_backup_ssh=&amp;#34;/mnt/backups&amp;#34; dir_restore_ssh=&amp;#34;/home/ricardo&amp;#34; </description>
-    </item>
-    
-    <item>
-      <title>Boas práticas para deixar seu servidor Linux mais seguro pós instalação</title>
-      <link>https://ricardoferreira.site/2021/02/servidor-linux-mais-seguro-apos-instalacao/</link>
-      <pubDate>Wed, 17 Feb 2021 15:00:38 -0300</pubDate>
-      
-      <guid>https://ricardoferreira.site/2021/02/servidor-linux-mais-seguro-apos-instalacao/</guid>
-      <description>Nenhum sistema é 100% seguro… fato! O Linux não seria exceção dessa regra. Ameaças externas ao sistema sempre vão existir.
-Entretanto, o que deve ser dito é que os riscos que um usuário Linux corre são diferentes comparados a outros sistemas não Unix. Os riscos para um usuário Linux se concentram na maneira como ele usa e mantém o sistema.
-Portanto, seguem algumas recomendações importantes após ter instalado um Servidor Linux:</description>
-    </item>
-    
-    <item>
-      <title>Aplicação web em arquitetura de microserviço utilizando Docker 🐳</title>
-      <link>https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/</link>
-      <pubDate>Tue, 10 Nov 2020 13:24:58 -0300</pubDate>
-      
-      <guid>https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/</guid>
-      <description>Tendo em vista a Metodologia &amp;ldquo;The Twelve-Factor App&amp;rdquo;, criada por Adam Wiggins, co-fundador da PaaS Heroku, que preconiza todo software cloud entregue como serviço deve seguir algumas premissas de desenvolvimento que impulsonam o uso da arquitetura de Microserviços, eu apresento uma solução web simples que demonstra na prática o emprego de todos os 12 fatores da Metodologia!
-Por que Microserviço? 🤨 Microserviço é um conceito que garante que uma aplicação possa ser dividida em múltiplos serviços menores (microserviços) que se comunicam entre si, tradicionalmente, via APIs Rest (métodos GET/POST/PUT/DELETE do protocolo HTTP + JSON).</description>
-    </item>
-    
-    <item>
-      <title>Como eu verifico a vida útil do meu disco no Linux</title>
-      <link>https://ricardoferreira.site/2020/02/saiba-como-verificar-vida-util-do-seu-disco-no-linux/</link>
-      <pubDate>Mon, 17 Feb 2020 16:25:12 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2020/02/saiba-como-verificar-vida-util-do-seu-disco-no-linux/</guid>
-      <description>Prever quando um disco irá falhar totalmente é quase improvável, pois defeitos podem começar a aparecer por vários motivos; até mesmo pela própria utilização normal do dispositivo.</description>
-    </item>
-    
-    <item>
-      <title>Alguns erros que eu cometi quando comecei a aprender Linux</title>
-      <link>https://ricardoferreira.site/2020/01/erros-que-todo-usuario-linux-cometeu-ao-comecar-aprender-linux/</link>
-      <pubDate>Sun, 26 Jan 2020 22:35:51 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2020/01/erros-que-todo-usuario-linux-cometeu-ao-comecar-aprender-linux/</guid>
-      <description>Todos os erros se concentram no terminal de comandos, pois lá está presente os maiores riscos para o sistema</description>
-    </item>
-    
-    <item>
-      <title>Como eu previno que meus arquivos sejam removidos, acidentalmente, no Linux</title>
-      <link>https://ricardoferreira.site/2020/01/saiba-como-prevenir-que-seus-arquivos-e-pastas-sejam-removidos-ou-modificados-acidentalmente/</link>
-      <pubDate>Wed, 15 Jan 2020 22:35:51 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2020/01/saiba-como-prevenir-que-seus-arquivos-e-pastas-sejam-removidos-ou-modificados-acidentalmente/</guid>
-      <description>Caso você queira prevenir que seus arquivos e pastas sejam removidos ou modificados acidentalmente,  basta você usar ferramentas definidas, por padrão, nos sistemas Linux.</description>
-    </item>
-    
-    <item>
-      <title>Guia completo para iniciantes sobre áudio e som no Linux</title>
-      <link>https://ricardoferreira.site/2020/01/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux/</link>
-      <pubDate>Sun, 12 Jan 2020 17:25:12 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2020/01/um-guia-completo-para-iniciantes-sobre-audio-e-som-no-linux/</guid>
-      <description>No Linux há muitos programas que podem ajudar nas tarefas mais profissionais. Mas, é importante entender como funciona o áudio e som no Linux.</description>
-    </item>
-    
-    <item>
-      <title>Conheça algumas maneiras para restaurar seu sistema Linux em caso de falhas</title>
-      <link>https://ricardoferreira.site/2020/01/conheca-algumas-maneiras-para-restaurar-seu-sistema-linux-em-caso-de-falhas/</link>
-      <pubDate>Sun, 12 Jan 2020 12:25:12 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2020/01/conheca-algumas-maneiras-para-restaurar-seu-sistema-linux-em-caso-de-falhas/</guid>
-      <description>Restaurar um sistema Linux parece algo improvável, já que não é uma função padrão da maiorias das distros Linux.  Por isso, seguem algumas ferramentas e opções que usam snapshots que servem para restaurar seu sistema Linux em caso de falhas.</description>
-    </item>
-    
-    <item>
-      <title>Saiba como, facilmente, ocultar arquivos e pastas no Linux</title>
-      <link>https://ricardoferreira.site/2020/01/saiba-como-facilmente-ocultar-arquivos-e-pastas-no-linux/</link>
-      <pubDate>Fri, 10 Jan 2020 21:25:12 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2020/01/saiba-como-facilmente-ocultar-arquivos-e-pastas-no-linux/</guid>
-      <description>Ocultar um arquivo e pastas no sistema de arquivos do Linux é algo tão simples que nem precisa instalar ou  configurar algo no sistema. Desde dos primórdios do sistema existe um recurso amplamente usado para ocultar arquivos e pastas no Linux.</description>
-    </item>
-    
-    <item>
-      <title>10 coisas que você deve saber caso esteja começando com o Linux</title>
-      <link>https://ricardoferreira.site/2020/01/10-coisas-que-voce-deve-saber-caso-esteja-comecando-com-o-linux/</link>
-      <pubDate>Tue, 07 Jan 2020 15:25:12 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2020/01/10-coisas-que-voce-deve-saber-caso-esteja-comecando-com-o-linux/</guid>
-      <description>Para muitos o começo de tudo sempre é desafiador. Principalmente, por estar prestes a conhecer algo novo.  Em se tratando de &amp;ldquo;um novo&amp;rdquo; sistema operacional, que será usado na sua máquina, não seria diferente.</description>
-    </item>
-    
-    <item>
-      <title>Como criar servidor cloud VPS Linux na DigitalOcean</title>
-      <link>https://ricardoferreira.site/2019/12/como-criar-um-servidor-vps-linux-na-infraestrutura-de-nuvem-da-digitalocean/</link>
-      <pubDate>Mon, 23 Dec 2019 12:25:12 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2019/12/como-criar-um-servidor-vps-linux-na-infraestrutura-de-nuvem-da-digitalocean/</guid>
-      <description>O uso de um servidor VPS é solução indicada caso queira ter mais controle sobre o ambiente alocado.  Usando um servidor VPS na nuvem você passa a ter controle e flexibilidade do recurso usado. Sendo assim,  veja como criar um servidor VPS Linux na infraestrutura de nuvem da DigitalOcean – empresa norte-americana de hospedagem de servidor na nuvem.</description>
-    </item>
-    
-    <item>
-      <title>Tendências para 2020 nas diversas áreas técnicas de TI</title>
-      <link>https://ricardoferreira.site/2019/12/principais-tendencias-para-5-areas-tecnologia-conforme-gartner/</link>
-      <pubDate>Sun, 15 Dec 2019 18:35:51 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2019/12/principais-tendencias-para-5-areas-tecnologia-conforme-gartner/</guid>
-      <description>Diante de tantas habilidades exigidas na área de TI, quais conhecimentos devem ser adquiridos ou aprimorados para o próximo ano que chega? Compartilho, conforme o Gartner, as principais tendências e considerações de planejamento em  5 áreas-chave da tecnologia.</description>
-    </item>
-    
-    <item>
-      <title>O poder e a versatilidade do comando xargs</title>
-      <link>https://ricardoferreira.site/2019/12/o-poder-e-a-versatilidade-do-comando-xargs/</link>
-      <pubDate>Wed, 11 Dec 2019 18:35:51 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2019/12/o-poder-e-a-versatilidade-do-comando-xargs/</guid>
-      <description>Embora todos os comandos do Linux tenham os três fluxos padrão, nem todos aceitam o stdout de outro comando como entrada para sua entrada padrão. Isso significa que você não pode canalizar a entrada para eles. Daí o comando xargs entra na jogada</description>
-    </item>
-    
-    <item>
-      <title>8 dicas que eu uso para aumentar minha produtividade no shell Bash</title>
-      <link>https://ricardoferreira.site/2019/12/aumentar-produtividade-enquanto-usa-o-shell-bash/</link>
-      <pubDate>Mon, 09 Dec 2019 18:00:43 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2019/12/aumentar-produtividade-enquanto-usa-o-shell-bash/</guid>
-      <description>Algumas dicas que podem ser muito úteis para você aumentar sua produtividade ao usar o shell bash. Maneiras para ser mais eficiente em suas tarefas.</description>
-    </item>
-    
-    <item>
-      <title>Guia completo para iniciantes sobre como instalar programas no Linux</title>
-      <link>https://ricardoferreira.site/2019/12/guia-completo-para-iniciantes-sobre-como-instalar-programas-no-linux/</link>
-      <pubDate>Sun, 08 Dec 2019 19:02:55 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2019/12/guia-completo-para-iniciantes-sobre-como-instalar-programas-no-linux/</guid>
-      <description>Muitos usuários desistem por não entenderem ou desconhecerem uma operação simples do sistema&amp;hellip; instalar programas</description>
-    </item>
-    
-    <item>
-      <title>7 comandos Linux que estão &#34;obsoletos&#34; há anos e, provavelmente, você ainda os usa</title>
-      <link>https://ricardoferreira.site/2019/12/ifconfig-e-outros-comandos-linux-de-rede-obsoletos-ha-anos-e-que-ja-possuem-sucessores/</link>
-      <pubDate>Tue, 03 Dec 2019 12:51:56 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2019/12/ifconfig-e-outros-comandos-linux-de-rede-obsoletos-ha-anos-e-que-ja-possuem-sucessores/</guid>
-      <description>Embora ainda funcionais, esses comandos são, realmente, considerados obsoletos e, portanto, devem ser renunciadas em favor de ferramentas mais &amp;ldquo;modernas&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Como compilar e instalar programas Linux distribuídos diretamente pelo código-fonte [tar.gz]</title>
-      <link>https://ricardoferreira.site/2019/12/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz/</link>
-      <pubDate>Mon, 02 Dec 2019 15:18:46 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2019/12/saiba-como-compilar-e-instalar-programas-linux-distribuidos-diretamente-pelo-codigo-fonte-tar-gz/</guid>
-      <description>Hoje em dia, instalar programas no Linux se tornou a coisa mais simples de se fazer no sistema. Dependendo da distribuição Linux, você tem recursos complementares que facilitam ainda mais o processo. Contudo, em muitos momentos você se depara com programas disponibilizados diretamente pelo código-fonte.</description>
-    </item>
-    
-    <item>
-      <title>Guia completo para iniciantes sobre discos e partições no Linux</title>
-      <link>https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/</link>
-      <pubDate>Fri, 29 Nov 2019 18:25:12 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2019/11/guia-completo-para-iniciantes-sobre-discos-e-particoes-no-linux/</guid>
-      <description>Manipulação de discos ou partições são muito comuns, principalmente quando decide-se ter mais de um sistema instalado na máquina ou criar &amp;ldquo;espaço reservado&amp;rdquo; para determinados arquivos.</description>
-    </item>
-    
-    <item>
-      <title>Como carregar módulos no Kernel Linux </title>
-      <link>https://ricardoferreira.site/2019/11/como-carregar-modulos-no-kernel-linux/</link>
-      <pubDate>Wed, 27 Nov 2019 15:16:22 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2019/11/como-carregar-modulos-no-kernel-linux/</guid>
-      <description>Usando o lsmod e a leitura do /proc/filesystems, capturo os módulos carregados no sistema. Com o modprobe carrego o módulo isofs (iso9660), previamente suportado, no meu Kernel LTS 4.19.84-1, disponibilizado no diretório /lib/modules/$(uname -r)/kernel/fs/isofs/.</description>
-    </item>
-    
-    <item>
-      <title>Conexão de banco de dados PostgreSQL em container Docker</title>
-      <link>https://ricardoferreira.site/2019/11/conexao-cliente-servidor-de-banco-de-dados-postgresql-em-container-docker/</link>
-      <pubDate>Wed, 20 Nov 2019 15:18:27 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2019/11/conexao-cliente-servidor-de-banco-de-dados-postgresql-em-container-docker/</guid>
-      <description>Apresento um servidor PostgreSQL em container Docker, em modo de conexão default bridge. Depois, através de um único cliente psql, usar outro container para acessar o container servidor e criar um banco de dados de &amp;ldquo;teste&amp;rdquo;. Por fim, através do cliente desktop pgAdmin, validar esse teste.</description>
+      <guid>https://demo.gethugothemes.com/bookworm-light/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</guid>
+      <description>Hoje, vou trazer uma solução interessante para o negócio que permite o gerenciamento centralizado de desktops virtuais, facilidade de acesso, flexibilidade, maior segurança e mobilidade do usuário</description>
     </item>
     
     <item>
       <title>Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows</title>
-      <link>https://ricardoferreira.site/2019/11/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</link>
+      <link>https://demo.gethugothemes.com/bookworm-light/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</link>
       <pubDate>Tue, 05 Nov 2019 23:29:33 +0000</pubDate>
       
-      <guid>https://ricardoferreira.site/2019/11/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</guid>
       <description>Depois do anúncio do Windows Subystem for Linux (WSL) em 2016, a Microsoft divulga, em 2019, nova versão do subsistema que permite rodar um Kernel Linux direto no Windows, sem recursos de virtualização. E isso impacta direto como containers Docker rodarão no Windows 10.</description>
     </item>
     
     <item>
-      <title>Administração de sistemas Linux - discos e partições</title>
-      <link>https://ricardoferreira.site/cursos/discos-particoes-linux/</link>
+      <title></title>
+      <link>https://demo.gethugothemes.com/bookworm-light/cursos/discos-particoes-linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardoferreira.site/cursos/discos-particoes-linux/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/cursos/discos-particoes-linux/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Contato</title>
-      <link>https://ricardoferreira.site/contato/</link>
+      <title>About</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardoferreira.site/contato/</guid>
-      <description>Agradeço o interesse em falar comigo. Ficarei feliz em ajudar! Se deseja algo mais rápido e informal, sinta-se a vontade para mandar uma mensagem direta no meu Telegram @ricardoferreiracosta. Sem formalidades ou mais delongas, &amp;ldquo;Oi Ricardo, vi seu blog e gostaria de &amp;hellip;&amp;rdquo;
-Mas, meu melhor contato é meu e-mail ricardo.ferreira.costa08@gmail.com . Consigo manter registro e um controle maior das mensagens recebidas. Pois, terei condições de responder mais atenciosiamente.
-Para outros, sinta-se a vontade para olhar meu perfil no Linkedin e acompanhar-me no meu Instagram ou meu Twitter.</description>
+      <guid>https://demo.gethugothemes.com/bookworm-light/about/</guid>
+      <description>A content writer with over 12 years experience working across brand identity, publishing and digital products. Maecenas sit amet purus eget ipsum elementum venenatis.</description>
+    </item>
+    
+    <item>
+      <title>Contato</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/contato/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.gethugothemes.com/bookworm-light/contato/</guid>
+      <description>Agradeço o interesse em falar comigo. Ficarei feliz em ajudar! Se deseja algo mais rápido e informal, sinta-se a vontade para mandar uma mensagem direta no meu Telegram @ricardoferreiracosta.</description>
     </item>
     
     <item>
       <title>Docker do Zero - Introdução a administração de containers</title>
-      <link>https://ricardoferreira.site/cursos/docker-do-zero/</link>
+      <link>https://demo.gethugothemes.com/bookworm-light/cursos/docker-do-zero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardoferreira.site/cursos/docker-do-zero/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/cursos/docker-do-zero/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Licenciamento</title>
-      <link>https://ricardoferreira.site/license/</link>
+      <link>https://demo.gethugothemes.com/bookworm-light/license/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardoferreira.site/license/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/license/</guid>
       <description>Este site está sob licença Creative Commons BY-NC-SA 4.0.
-Você precisa informar a origem e criar conteúdo com a mesma licença para poder usá-lo.
-Leia a Licença na íntegra aqui</description>
+Você precisa informar a origem e criar conteúdo com a mesma licença para poder usá-lo.</description>
     </item>
     
   </channel>

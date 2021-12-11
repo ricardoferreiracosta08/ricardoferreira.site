@@ -1,289 +1,233 @@
-
+######################## default configuration ####################
 baseurl = "https://ricardoferreira.site"
-title = "Ricardo Ferreira"
-
-theme = "hugo-coder"
+title = "Ricardo Ferreira - Linux, Infraestrutura, Dados"
 
 languagecode = "pt-br"
 defaultcontentlanguage = "pt-br"
 
-googleAnalytics = "UA-151634076-1"
+theme = "bookworm-light"
+# post pagination
+paginate = "5"
+# post excerpt
+summaryLength = "20"
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+# disqus short name
+#disqusShortname = "themefisher-template" # get your shortname form here : https://disqus.com
 
-paginate = 5
+############################# Modules ##############################
+[module.hugoVersion]
+extended = true
+min = "0.87.0"
 
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+############################# Image Processing ##############################
+[imaging]
+quality = "95"
 
-# disqusShortname = "yourdiscussshortname"
+############################# Outputs ##############################
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 
-[sitemap]
-  changefreq = "monthly"
-  filename = "sitemap.xml"
-  priority = 0.5
+[markup.goldmark.renderer]
+unsafe= true
 
-# posts - it should rename to same name of content folder
-[permalinks]
-  blog = "/:year/:month/:slug/"
+############################## Plugins ##############################
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/line-awesome/css/line-awesome.min.css"
+[[params.plugins.css]]
+link = "https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&display=swap"
 
-[params.adsense]
- client = "ca-pub-5245300802542741"
- inArticleSlot = "3200652252"
- graficosSlot = "6376166852"
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jquery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+#[[params.plugins.js]]
+#link = "plugins/instagram-feed/instagram-feed.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
 
-# opens external links absolute links in a new window or tab.
-# Blackfriday is a Markdown processor implemented in Go.
-[blackfriday]
-  hrefTargetBlank = true
-  noreferrerLinks = true
-  nofollowLinks = true
+# site variables
+[params.variables]
+#font_primary = "Mulish"
+font_primary = "Merriweather,serif,sans-serif"
+h1 = "64px"
+h1_lg = "52px"
+h1_md = "42px"
+h2 = "38px"
+h2_md = "30px"
+h3 = "30px"
+h3_md = "24px"
+h4 = "24px"
+h5 = "18px"
+h6 = "16px"
+white = "#ffffff"
+black = "#000000"
+dark = "#152035"
+gray = "#747577"
+light = "#FAFAFA"
+color_body = "#212121"
+bg_body = "#FFFFFF"
+font_size_body = "17px"
+font_weight_body = "500"
+line_height_body = "1.8em"
+color_primary = "#476cb3"
+#color_primary = "#01AD9F"
 
+#################### default parameters ################################
 [params]
-    author = "Ricardo Ferreira"
-    description = "More than ten years of expertise in IT, I am passionate about new technologies, bachelor's Computer Science. Nowadays, I keep learning new skills in Data Engineer"
-    keywords = "linux,docker,sysadmin,bussiness intelligence,bi,data science,datascience,technology"
-    info = "Senior Infrastructure and Open source IT"
-    avatarurl = "images/perfil-02.jpeg"
-    #gravatar = "john.doe@example.com"
-    footercontent = "Built using Hugo v0.76.5. Hosted by Netlify."
+perfil = "images/perfil-02.jpeg"
+# assets/images
+logo = "images/logo.png"
+logo_width = "200px"
+favicon = "images/favicon.png"
 
-    # OG_IMAGE
-    images = ["coverpage-FACEBOOK.png"]
+#Ogimage
+ogimage = "images/logo.png"
+# keywords meta
+keywords = "linux, infraestrutura"
+# Meta data
+description = "Apaixonado por novas tecnologias, Bacharel em Ciência da Computação. Atualmente, estou mirando os dados, depois de alguns anos na infraestrutura"
+author = "Ricardo Ferreira"
+minibio = "Bacharel em Ciência da Computação. Atualmente, mirando os dados; depois de alguns anos na Infra"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# search
+search = true
+# main section
+mainSections = ["blog"]
+# copyright
+copyright = "Designed & Developed By [Gethugothemes](https://gethugothemes.com/)"
 
-    dateformat = "2 January 2006"
+# Preloader
+[params.preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
 
-    hideFooter = false
-    hideCredits = false
-    hideCopyright = false
-    since = 2019
+# Instagram feed
+#[params.instafeed]
+#enable = false
+#instagram_user = "bookworm"
+#access_token = "IGQVJYeUk4YWNIY1h4OWZANeS1wRHZARdjJ5QmdueXN2RFR6NF9iYUtfcGp1NmpxZA3RTbnU1MXpDNVBHTzZAMOFlxcGlkVHBKdjhqSnUybERhNWdQSE5hVmtXT013MEhOQVJJRGJBRURn"
 
-    # Git Commit in Footer, uncomment the line below to enable it.
-    # commit = "https://github.com/luizdepra/hugo-coder/tree/"
+# Subscription
+[params.subscription]
+enable = true
+title = "Inscreva-se na minha newsletter periódica"
+subtitle = "Junte-se a mais de 400 assinantes"
 
-    rtl = false
+# mailchimp subsciption
+#mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+#mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+#input_placeholder = "Enter your email"
 
-    # Specify light/dark colorscheme
-    # Supported values:
-    # "auto" (use preference set by browser)
-    # "dark" (dark background, light foreground)
-    # "light" (light background, dark foreground) (default)
-    colorscheme = "auto"
+# cookies
+[params.cookies]
+enable = false
+expire_days = 2
 
-    # Hide the toggle button, along with the associated vertical divider
-    hidecolorschemetoggle = false
 
-    # Series see also post count
-    maxSeeAlsoItems = 5
+############################# Main Menu ########################
+[[menu.main]]
+name = "Blog"
+url = "blog/"
+weight = 1
 
-    # Enable Twemoji
-    enableTwemoji = true
+[[menu.main]]
+name = "Sobre"
+url = "about/"
+weight = 7
+  
+[[menu.main]]
+name = "Contato"
+url = "contact/"
+weight = 8
 
-    # Custom CSS
-    customCSS = []
+[[menu.main]]
+weight = 5
+url = "#"
+name = "Serviços e Consultoria"
+hasChildren = true
 
-    # Custom SCSS
-    customSCSS = ["scss/custom.scss"]
+  [[menu.main]]
+  parent = "Serviços e Consultoria"
+  name = "Linux"
+  url = "author/"
+  weight = 1
+  
+[[menu.main]]
+weight = 6
+url = "#"
+name = "Treinamentos"
+hasChildren = true
 
-    # Custom JS
-    customJS = []
+  [[menu.main]]
+  parent = "Treinamentos"
+  name = "Aprender a aprender"
+  url = "author/"
+  weight = 1
 
-    ctaToHome = "More about me"
+  [[menu.main]]
+  parent = "Treinamentos"
+  name = "Docker do zero"
+  url = "treinamento/docker-do-zero/"
+  weight = 2
 
-# If you want to use fathom(https://usefathom.com) for analytics, add this section
-[params.fathomAnalytics]
-    siteID = "ABCDE"
-    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
-    serverURL = "analytics.example.com"
+  [[menu.main]]
+  parent = "Treinamentos"
+  name = "Elements"
+  weight = 3
+  url = "elements/"
+  
+############################# Footer Menu ########################
+[[menu.footer]]
+name = "About"
+url = "about/"
+weight = 1
 
-# If you want to use plausible(https://plausible.io) for analytics, add this section
-[params.plausibleAnalytics]
-    domain = "example.com"
-    # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
-    serverURL = "analytics.example.com"
+[[menu.footer]]
+name = "Contato"
+url = "contact/"
+weight = 2
 
-# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
-[params.goatCounter]
-    code = "code"
+[[menu.footer]]
+name = "Privacy"
+url = "privacy/"
+weight = 3
 
-[taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
+[[menu.footer]]
+name = "Terms & Conditions"
+url = "terms-conditions/"
+weight = 4
 
-[[params.social]]
-    name = "Github"
-    icon = "fa fa-github"
-    weight = 2
-    url = "https://github.com/ricardoferreiracosta08"
-[[params.social]]
-    name = "Instagram"
-    icon = "fa fa-instagram"
-    weight = 3
-    url = "https://www.instagram.com/ricardoferreira.tec"
-[[params.social]]
-    name = "Twitter"
-    icon = "fa fa-twitter"
-    weight = 4
-    url = "https://twitter.com/rferreira_tec"
+# Social Icons
 #[[params.social]]
-#    name = "YouTuBe"
-#    icon = "fa fa-youtube"
-#    weight = 5
-#    url = "https://youtube.com/c/RicardoFerreiraTecnologia"
+#icon = "lab la-facebook-f" # https://icons8.com/line-awesome
+#url = "https://www.facebook.com/"
+
 [[params.social]]
-    name = "LinkedIn"
-    icon = "fa fa-linkedin"
-    weight = 1
-    url = "https://www.linkedin.com/in/ricardo-ferreira-costa"
-#[[params.social]]
-#    name = "Medium"
-#    icon = "fa fa-medium"
-#    weight = 5
-#    url = "https://medium.com/@ricardoferreiracosta"
-#[[params.social]]
-#    name = "Telegram"
-#    icon = "fa fa-telegram"
-#    weight = 6
-#    url = "https://t.me/ricardoferreira_tec"
+icon = "lab la-discord" # https://icons8.com/line-awesome
+url = "https://discord.gg/N5DAf6nSJG"
 
-[params.rss]
-    name = "RSS"
-    icon = "fa fa-rss"
-    weight = 7
-    url = "https://ricardoferreira.site/index.xml"
-    rel = "alternate"
-    type = "application/rss+xml"
+[[params.social]]
+icon = "lab la-instagram" # https://icons8.com/line-awesome
+url = "https://www.instagram.com/ricardoferreira.tec"
 
-[[params.curso]]
-   name = "Aprender a aprender: foco na área de TI"
-   icon = "/images/cover-aprender-aprender-TI.png"
-   link = "https://bit.ly/cursoAprender-aprender-TI"
-   desc = "Para tirar você de um ciclo ineficiente de aprendizado, aprenda técnicas de aprendizagem que irão potencializar seus estudos. Focado na área de TI"
-   bgcolor = "white"
-   textcolor = "black"
-   linecolor = "#035482"
+[[params.social]]
+icon = "lab la-linkedin-in" # https://icons8.com/line-awesome
+url = "https://www.linkedin.com/in/ricardo-ferreira-costa/"
 
-[[params.curso]]
-   name = "Comunidade Infraestrutura Open Source"
-   icon = "/images/cover-maratona.png"
-   link = "https://ricardoferreira.ck.page/aulas-gratuitas"
-   desc = "Espaço criado para a galera de Infra trocar experiências e aprendizados 🏗 Inscreva-se gratuitamente"
-   bgcolor = "white"
-   textcolor = "black"
-   linecolor = "#d76b0a"
+[[params.social]]
+icon = "lab la-youtube" # https://icons8.com/line-awesome
+url = "https://www.twitter.com/"
 
-[[params.curso]]
-   name = "ULTRA aulas de tópicos da Infraestrutura"
-   icon = "/images/cover-aprender-aprender-TI.png"
-   link = "https://bit.ly/sairdainerciaagora"
-   desc = "Perdeu as aulas ao vivo? Aprenda de maneira ultra (teoria base contextualizada + prática direcionada) acessando o acervo de gravações das aulas já transmitidas ao vivo."
-   bgcolor = "white"
-   textcolor = "black"
-   linecolor = "#8D7DFF"
-
-[[params.curso]]
-   name = "Docker do zero: Introdução a administração de containers"
-   icon = "/images/cover-docker-udemy.png"
-   link = "http://bit.ly/cursoAprendaDockerdoZero"
-   desc = "Aprenda Docker do zero e seja eficiente na entrega dos serviços de TI usando tecnologia de containers"
-   bgcolor = "white"
-   textcolor = "black"
-   linecolor = "darkblue"
-
-[languages]
-    [languages.en]
-        languagename = "English"
-        LanguageDirection = "images/en32.png"
-
-        [languages.en.menu]
-
-#            [[languages.en.menu.main]]
-#            name = "About"
-#            weight = 1
-#            url = "about/"
-
-            [[languages.en.menu.main]]
-            name = "Hi! Would like talk with me?"
-            weight = 1
-            url = "https://t.me/ricardoferreiracosta"
-            pre = "<i class='fa fa-comment'></i>"
-
-            [[languages.en.menu.main]]
-            name = "Blog"
-            weight = 2
-            url = "blog/"
-            pre = "<i class='fa fa-pencil'></i>"
-
-#            [[languages.en.menu.main]]
-#            name = "Projects"
-#            weight = 3
-#            url = "projects/"
-
-#            [[languages.en.menu.main]]
-#            name = "All my courses online"
-#            weight = 3
-#            pre = "<i class='fa fa-book'></i>"
-#            url = "https://www.udemy.com/user/ricardo-ferreira-costa-2/"
-
-#            [[languages.en.menu.main]]
-#            name = "Contact me"
-#            weight = 5
-#            url = "contact/"
-
-
-    [languages.pt-br]
-        languagename = "Português"
-        title = "Ricardo Ferreira"
-        LanguageDirection = "../images/br32.png"
-
-        [languages.pt-br.params]
-            author = "Ricardo Ferreira"
-            info = "Linux · Infraestrutura · Dados"
-	    description = "Apaixonado por novas tecnologias, Bacharel em Ciência da Computação. Alguns anos na operação, decidi mirar os dados."
-            keywords = "linux,docker,bpm,dados,bussiness intelligence,bi,sysadmin, tecnologia"
-            footercontent = "Construído usando Hugo v0.76.5. Hospedado em Netlify"
-            ctaToHome = "Mais sobre mim"
-
-        [languages.pt-br.menu]
-
-            [[languages.pt-br.menu.main]]
-            name = "Opa! Afim de trocar uma ideia?"
-            weight = 1
-            url = "https://t.me/ricardoferreiracosta"
-            post = "shake"
-
-            [[languages.pt-br.menu.main]]
-            name = "Blog"
-            weight = 2
-            url = "blog/"
-
-#            [[languages.pt-br.menu.main]]
-#            name = "Meus cursos online"
-#            weight = 3
-#            url = "cursos/"
-
-#            [[languages.pt-br.menu.main]]
-#            name = "Mentoria Gratuita | Agende a sua"
-#            weight = 5
-#            pre = "<i class='fa fa-calendar'></i>"
-#            url = "https://calendly.com/ricardoferreira_tec/mentoriagratuita"
-#            post = "shake"
-
-#            [[languages.pt-br.menu.main]]
-#            name = "Maratona Infraestrutura Open Source | Inscreva-se"
-#            pre = "/images/cover-maratona.png"
-#            identifier = "Acervo de gravações de aulas transmitidas ao vivo. Mais de 20 horas de conteúdo objetivo e prático de tópicos da Infraestrutura Open Source. Além disso, espaço para entrar numa comunidade focada. 2 Aulas novas por mês!!"
-#            weight = 5
-#            url = "https://ricardoferreira.ck.page/aulas-semanais"
-#            url = "https://ricardoferreira.ck.page/aulas-gratuitas"
-#            post = "shake"
-
-#            [[languages.pt-br.menu.main]]
-#            name = "Bootcamp Infraestrutura Open Source"
-#            weight = 6
-#            url = "https://bootcampinfraestrutura.carrd.co/"
-#            post = "shake"
-
-
-# https://bootcampinfraestrutura.carrd.co/
+[[params.social]]
+icon = "lab la-twitter" # https://icons8.com/line-awesome
+url = "https://www.twitter.com/"

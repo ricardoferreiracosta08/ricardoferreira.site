@@ -1,16 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	
-	<sitemap>
-	   	<loc>https://ricardoferreira.site/en/sitemap.xml</loc>
-		
-	</sitemap>
-	
-	<sitemap>
-	   	<loc>https://ricardoferreira.site/pt-br/sitemap.xml</loc>
-		
-	   	<lastmod>2021-03-12T09:31:44-03:00</lastmod>
-		
-	</sitemap>
-	
-</sitemapindex>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/blog/</loc>
+    <lastmod>2021-12-03T10:41:25-03:00</lastmod>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/</loc>
+    <lastmod>2021-12-03T10:41:25-03:00</lastmod>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/categories/</loc>
+    <lastmod>2021-12-03T10:41:25-03:00</lastmod>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/categories/vdi/</loc>
+    <lastmod>2021-12-03T10:41:25-03:00</lastmod>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</loc>
+    <lastmod>2021-12-03T10:41:25-03:00</lastmod>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</loc>
+    <lastmod>2019-11-05T23:29:33+00:00</lastmod>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/categories/docker/</loc>
+    <lastmod>2019-11-05T23:29:33+00:00</lastmod>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/tags/</loc>
+    <lastmod>2019-11-05T23:29:33+00:00</lastmod>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/tags/wsl/</loc>
+    <lastmod>2019-11-05T23:29:33+00:00</lastmod>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/cursos/discos-particoes-linux/</loc>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/about/</loc>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/contato/</loc>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/cursos/docker-do-zero/</loc>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/license/</loc>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/categories/linuxdescomplicado/</loc>
+  </url><url>
+    <loc>https://demo.gethugothemes.com/bookworm-light/cursos/</loc>
+  </url>
+</urlset>

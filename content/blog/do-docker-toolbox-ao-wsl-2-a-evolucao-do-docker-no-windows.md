@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows
+date: 2019-11-05T23:29:33.000Z
 seotitle: Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows
 subtitle: Um breve histórico
 description: >-
@@ -11,29 +12,18 @@ summary: >-
   direto no Windows, sem recursos de virtualização. E isso impacta direto como
   containers Docker rodarão no Windows 10.
 slug: do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows
-date: 2019-11-05T23:29:33.000Z
-#image
-thumbnailImage: "https://lh3.googleusercontent.com/OV9ErVPl4iIQyLv4QYSeLlRokB9pZqExKOA0SgzAd31CyVshdUt9SQSPl3BlTs-8rJJ08ScxcJPd7-ptEOIgbt0vrGBamijIziaxpMe7QPuoJqQmu9uEW-5evYM2MPa3rt9WDrl9Y5SQ-N4LvOHyYBT_HQEPWN331ULXNTIA1kLcKPF4yKbsV4rAYKz-utn_1mpniK4gVD7RjHnLac1lrqAVCCoCKPkbrGUda_K5YcNplJ5om6CCbibovnv6rYS5eq2fzcxBmd4r2bXSZ_-x4uKWS7GMRQxAr2lHoG-bioLoOFNdg4HI7Fw733cR1iDmA2PqHqLyQetkYzPVKUzUjwS8LruyhAI9kMhWFQra7k4n5wFb_aXGjV_3iFTpuiOu7tmMgJhb6f7B2urwJ1MfJGSfmuR4Wg_W56RpPQtCZ53083fV9lQwjfmXofFMp08rZz3kuqjPdAkbzVYf_O6bPi8Sf0sFWYfo0YFNdz_fjMjJ0O75RX3lMkLRvJNtudu_oIIo0DGaAR9xRQA240gtQM9MmatxqBHiCXx2lTcZ-DGMnzErEW19BmCqIYh2pE7SA77r5B-qvYWedxG6EaMd59p06WEMPXDqOhSWkB8-Sdqd9gD5BsGpkFCxqOYj9M_jA-BYUDr6trDQxP1lRFBJyhJbeK23jgQOiMCN271MhLwsRejcdjKLVbw=w900-h507-no"
-thumbnailImagePosition: left
-coverImage: "https://lh3.googleusercontent.com/vNyV4uGOjuAWfK1FVMWAxb_L8cY-ajprKnb3kPsHlEtaiKcWAyUsw-TDvzRREkDux2CfOYrGo06cS_vUQ19o-YHPk0DPEhbDMFl51ZXyoCREb6XJ5h67n0O0RLZeWXndkSgJ0oc2YnV775tMXKg_rVSuQZPk0FDJeUZ2LWy97gsTt4Mfj5WjeXdBSgsBPEkaqazQfOx2sK15PCQDM3WG3OI-Cih2q5x-Ytm4j_8pkKaPSk_GgBJjTNKnUeSfZOUq8t_zgE5yiTHy5tqTVWsTm1uYriPdIdIUbYRSsIyb3SfNrkj3_8HBAqmoH8khewWemlpz3pHSn7oQlJoZlVt5zTyO7oNqGVS8b_yDpcunlnFFz3dXQGDDkvmdUwuS9Rn5VRQEvpI8kmO63rPit8os456dBeNAr1Xo0l26JhhgZnr0APcMB_RrO-K66pR6UWPxLpfOOVqNFt7jjE1-BrfZN2E1yImleNsUUz7Qu3k6ZbkpBRCL-9g_biQ6qci-7a73hS-1pjLeeTXljmOmSKIJ68_7bt9-eIgaVUJFHB63_7S0MLYkOfNnror7LUygGlM49yZTfQdxjXWmGsbNGh_q9zO95TszWkgs-P-cptClVmMPT-pbiKeCuGIXn1RFYoeXZfBS5l71DfsKuCwegxmT12p5CrsxS6DBUPNYT829fh0xe3cXMOcQIQI=w712-h950-no"
-coverCaption: Foto de Micah Boswell no Unsplash
-coverSize: partial
-# somente se nao tiver thumb definido - ==> autoThumbnailImage: true
-categories:
-  - Docker
-
-tags:
-  - wsl
-keywords:
-  - wsl
-  - container
-  - windows
-  - docker
+image: "images/post/2019_05_windows-10-docker.jpg"
+#imageSEO
+imageSEO: "images/post/2019_05_windows-10-docker.jpg"
+caption: '<a href="https://unsplash.com/photos/SInhLTQouEk">Photo by Dominik Lückmann</a>'
+categories: ["Docker"]
+tags: ["docker"]
+keywords: ["wsl", "docker", "linux"]
 ---
 
 Depois do anúncio do Windows Subystem for Linux (WSL) em 2016, a Microsoft divulga, em 2019, nova versão do subsistema que permite rodar um Kernel Linux direto no Windows, sem recursos de virtualização. E isso impacta direto como [**containers Docker**](https://www.udemy.com/course/docker-introducao-a-administracao-de-containers/) rodarão no Windows 10.
 
-## Contextualizando
+### Contextualizando
 
 Primeiro suporte ao Docker no Windows se deu pelo [Docker Toolbox](https://docs.docker.com/toolbox/overview/), obsoleto e substituído pelo [Docker for Windows](https://docs.docker.com/docker-for-windows/). Ambos, rodando em máquina virtual (VM) com suporte via VirtualBox e Hyper-V, respectivamente.
 
@@ -46,7 +36,7 @@ Então, chegamos ao WSL 2, lançado em junho de 2019 na versão Preview Build 18
 **Recomendo que leia:**\
 [WSL 2 – entenda a nova versão do subsistema que permite rodar um Kernel Linux no Windows 10](https://www.linuxdescomplicado.com.br/2019/06/wsl-2-entenda-a-nova-versao-do-subsistema-que-permite-rodar-um-kernel-linux-no-windows.html)
 
-## Docker no Windows
+### Docker no Windows
 
 Para a Docker, conforme [publicação oficial](https://engineering.docker.com/2019/06/docker-hearts-wsl-2/), essa abordagem é arquitetonicamente muito próxima do que é feito com o LinuxKit e o Hyper-V hoje, com o benefício adicional de ser mais leve e mais integrado ao Windows do que o Docker pode fornecer sozinho.
 
@@ -57,7 +47,7 @@ Para eles, o WSL 2 veio facilitar a intraoperabilidade do Docker com o Windows, 
 > The Docker daemon runs well on it with great performance, and the time it takes from a cold boot to have dockerd running in WSL 2 is around 2 seconds on our developer machines. We are very excited about this technology, and we are happy to announce that we are working on a new version of Docker Desktop leveraging WSL 2, with a public preview in July. It will make the Docker experience for developing with containers even greater, unlock new capabilities, and because WSL 2 works on Windows 10 Home edition, so will Docker Desktop.\
 > Via _[Docker hearts WSL 2](https://engineering.docker.com/2019/06/docker-hearts-wsl-2/)_
 
-## O Futuro
+### O Futuro
 
 Como o WSL 2 ainda está em preview, a Docker já planeja substituir a VM do Hyper-V, suportado no Docker for Windows, por um pacote de integração que fornecerá os recursos já existentes, contudo com suporte nativo ao WSL 2. Este pacote de integração conterá os componentes necessários para executar o Docker e o Kubernetes, bem como as ferramentas CLI usadas para interagir com esses componentes no WSL 2. Em seguida, poderemos introduzir um novo recurso com os espaços de trabalho do Docker Desktop: Linux.
 

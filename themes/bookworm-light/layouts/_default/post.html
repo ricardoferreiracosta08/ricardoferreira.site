@@ -1,0 +1,33 @@
+<article class="card post-card">
+
+  {{if .Params.image}}
+  <a href="{{.Permalink}}">
+    <div class="card-image">
+     <div class="post-info">
+      <span class="text-uppercase">{{.PublishDate.Format "02 Jan, 2006"}}</span>
+      {{range .Params.tags}}
+       <span class="text-uppercase">{{.}}</span>
+       <!--<li class="list-inline-item"><a href="{{site.BaseURL}}tags/{{.| urlize}}">{{.}}</a></li>-->
+      {{end}}
+     </div>                                                     <!-- h-auto -->  
+     {{ partial "image.html" (dict "Src" .Params.image "Class" "w-100 overlay-200 rounded" "Alt" .Title) }}
+    </div>
+  </a>
+  {{end}}
+  <div class="card-body">
+      <!-- MY CUSTOM -->
+      {{ if .Params.subtitle }}
+      <p class="stories-title" style="color: #c80000">
+       <strong>{{ .Params.subtitle }}</strong>
+      </p>
+      {{ end }}
+      <!-- END -->
+    <h3 class="mb-3">
+      <a class="post-title" href="{{.Permalink}}">{{.Title}}</a>
+    </h3>
+<!-- CUSTOM -->
+<!--<p>{{ .Plain | truncate 150 }}</p> -->
+    <p>{{ .Description }}</p>
+<!--    <a href="{{.Permalink}}" aria-label="More on {{.Title}}">Read More <i class="las la-angle-right"></i></a> -->
+  </div>
+</article>

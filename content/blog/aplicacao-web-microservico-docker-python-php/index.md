@@ -17,10 +17,13 @@ keywords:
  - sqlalchemy
  - postgresql
 featured_image: ""
+image: "images/post/2020_11_microservico.jpg"
+seoimage: "images/post/2020_11_microservico.jpg"
+caption: '<a href="https://unsplash.com/photos/qC2n6RQU4Vw">Photo by UX Indonesia</a>'
 images:
   - /2020/11/aplicacao-web-microservico-docker-python-php/overview.png
 authors:
-tags:
+tags: ["docker", "api"]
 categories:
   - Docker
 externalLink: ""
@@ -31,7 +34,7 @@ Tendo em vista a **Metodologia "The Twelve-Factor App"**, criada por Adam Wiggin
 que preconiza todo software cloud entregue como serviço deve seguir algumas premissas de desenvolvimento que **impulsonam o uso da arquitetura
 de Microserviços**, eu apresento uma solução web simples que demonstra na prática o emprego de todos os 12 fatores da Metodologia!
 
-## Por que Microserviço? 🤨
+### Por que Microserviço? 🤨
 
 Microserviço é um conceito que garante que uma aplicação **possa ser dividida** em múltiplos serviços menores (microserviços) que se 
 comunicam entre si, tradicionalmente, via APIs Rest (métodos GET/POST/PUT/DELETE do protocolo HTTP + JSON).
@@ -52,7 +55,7 @@ Tudo isso confronta com as **práticas tradicionais de desenvolvimento** que est
 Dificultando a manutenção, concentrando as falhas e diminuindo a resiliência já que a aplicação precisará parar ou reiniciar, por completo caso o 
 módulo de upload precise de atualizaçaõ ou tenha dado problema, por exemplo.
 
-## Qual é dessa Metodologia aí? 🤔
+### Qual é dessa Metodologia aí? 🤔
 
 Ela sintetiza, em 12 fatores, **boas práticas de desenvolvimento** de aplicação web. Ela é, altamente, recomendada para qualquer 
 Desenvolvedor que esteja construindo aplicações que rodam como serviço e Engenheiros de Operações que implantam ou administram tais 
@@ -64,32 +67,32 @@ e escalabilidade.
 
 Sendo assim, os [12 fatores](https://12factor.net/pt_br/) são:
 
-1. **Base de Código** “Codebase”
+#### 1. **Base de Código** “Codebase”
 > Uma base de código com rastreamento utilizando controle de revisão
-2. **Dependências** “Dependencies”
+#### 2. **Dependências** “Dependencies”
 > Declare e isole as dependências
-3. **Configurações** “Config”
+#### 3. **Configurações** “Config”
 > Armazene as configurações no ambiente
-4. **Serviços de Apoio** “Backing Services”
+#### 4. **Serviços de Apoio** “Backing Services”
 > Trate os serviços de apoio, como recursos ligados
-5. **Construa, lance, execute** “Build, Run, Release”
+#### 5. **Construa, lance, execute** “Build, Run, Release”
 > Separe estritamente os builds e execute em estágios
-6. **Processos** “Stateless Processes”
+#### 6. **Processos** “Stateless Processes”
 > Execute a aplicação como um ou mais processos que não armazenam estado
-7. **Vínculo de porta** “Port Binding”: 
+#### 7. **Vínculo de porta** “Port Binding”: 
 > Exporte serviços por ligação de porta
-8. **Concorrência** "Concurrency"
+#### 8. **Concorrência** "Concurrency"
 > Dimensione por um modelo de processo
-9. **Descartabilidade** "Disposability"
+#### 9. **Descartabilidade** "Disposability"
 > Maximizar a robustez com inicialização e desligamento rápido
-10. **Dev/prod semelhantes** "Dev-Prod Parity"
+#### 10. **Dev/prod semelhantes** "Dev-Prod Parity"
 > Mantenha o desenvolvimento, teste, produção o mais semelhante possível
-11. **Logs** 
+#### 11. **Logs** 
 > Trate logs como fluxo de eventos
-12. **Processos de Admin** "Admin Processes"
+#### 12. **Processos de Admin** "Admin Processes"
 > Executar tarefas de administração/gerenciamento como processos pontuais
 
-## Veja na prática! 🤘
+### Veja na prática! 🤘
 
 Visão geral do projeto:
 
@@ -112,6 +115,7 @@ Esse artigo foi criado por conta da aula "Microserviço na prática - aplicaçã
 O escopo aqui não é provisionamento e orquestração da aplicação, apenas apresentar práticas de 
 desenvolvimento em microserviços usando containers Docker. Por isso, não abordo as diferentes etapas de desenvolvimento!
 {{< /alert >}}
+<br/>
 
 #### 1. Base de Código "Codebase"
 Esteja sempre centrado no versionamento do código, em diferentes etapas do desenvolvimento integrado e continuado 
@@ -270,10 +274,12 @@ Vagrant também permitem desenvolvedores rodar ambientes locais que são bem pr�
 #### 11. Logs
 
 Logs fazem parte do pacote do monitoramento, tão primordial no universo dos microserviços.
-Além disso, logs são imprescindíveis para debugar e verificar a saúde da aplicação. A partir disso, os logs não devem ser armazenados em 
-um storage central, mas sim tratados como fluxos de eventos contínuos que devem capturados e armazenados em service separado.
+Além disso, logs são imprescindíveis para debugar e verificar a saúde da aplicação. A partir disso, os logs não devem ser armazenados em  
+arquivo de log de sistema, mas sim tratados como fluxos de eventos contínuos que devem capturados e armazenados em sistema separado. Por
+exemplo, a stack ELK ou Graylog.
 
-No meu cenário simples tenho clareza e acesso aos logs direto da CLI do docker compose. No caso o "docker-compose logs":
+No meu cenário simples tenho clareza e acesso contínuo aos logs direto da CLI do docker compose. No caso, um recurso nativo do Docker,
+ o "docker-compose logs":
 
 {{< highlight bash "style=dracula" >}}
 web_1   | 192.168.160.1 - - [11/Nov/2020:14:13:17 +0000] "GET / HTTP/1.1" 200 401 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36"
@@ -297,7 +303,7 @@ Docker:
 docker-compose exec database-books psql -U test -p 5432 -d books
 {{< /highlight >}}
 
-## Referências
+### Referências
 
 + [Curso Docker do Zero - Introdução a administração de containers](http://bit.ly/cursoAprendaDockerdoZero)
 + [GitHub desse projeto](https://github.com/ricardoferreiracosta08/microservice-simple-docker-compose)

@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on Ricardo Ferreira</title>
-    <link>https://ricardoferreira.site/categories/docker/</link>
-    <description>Recent content in Docker on Ricardo Ferreira</description>
+    <title>Docker on Bookworm - Personal Blog Template</title>
+    <link>https://demo.gethugothemes.com/bookworm-light/categories/docker/</link>
+    <description>Recent content in Docker on Bookworm - Personal Blog Template</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
-    <lastBuildDate>Tue, 10 Nov 2020 13:24:58 -0300</lastBuildDate><atom:link href="https://ricardoferreira.site/categories/docker/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Aplicação web em arquitetura de microserviço utilizando Docker 🐳</title>
-      <link>https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/</link>
-      <pubDate>Tue, 10 Nov 2020 13:24:58 -0300</pubDate>
-      
-      <guid>https://ricardoferreira.site/2020/11/aplicacao-web-microservico-docker-python-php/</guid>
-      <description>Tendo em vista a Metodologia &amp;ldquo;The Twelve-Factor App&amp;rdquo;, criada por Adam Wiggins, co-fundador da PaaS Heroku, que preconiza todo software cloud entregue como serviço deve seguir algumas premissas de desenvolvimento que impulsonam o uso da arquitetura de Microserviços, eu apresento uma solução web simples que demonstra na prática o emprego de todos os 12 fatores da Metodologia!
-Por que Microserviço? 🤨 Microserviço é um conceito que garante que uma aplicação possa ser dividida em múltiplos serviços menores (microserviços) que se comunicam entre si, tradicionalmente, via APIs Rest (métodos GET/POST/PUT/DELETE do protocolo HTTP + JSON).</description>
-    </item>
-    
-    <item>
-      <title>Conexão de banco de dados PostgreSQL em container Docker</title>
-      <link>https://ricardoferreira.site/2019/11/conexao-cliente-servidor-de-banco-de-dados-postgresql-em-container-docker/</link>
-      <pubDate>Wed, 20 Nov 2019 15:18:27 +0000</pubDate>
-      
-      <guid>https://ricardoferreira.site/2019/11/conexao-cliente-servidor-de-banco-de-dados-postgresql-em-container-docker/</guid>
-      <description>Apresento um servidor PostgreSQL em container Docker, em modo de conexão default bridge. Depois, através de um único cliente psql, usar outro container para acessar o container servidor e criar um banco de dados de &amp;ldquo;teste&amp;rdquo;. Por fim, através do cliente desktop pgAdmin, validar esse teste.</description>
-    </item>
-    
+    <lastBuildDate>Tue, 05 Nov 2019 23:29:33 +0000</lastBuildDate><atom:link href="https://demo.gethugothemes.com/bookworm-light/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows</title>
-      <link>https://ricardoferreira.site/2019/11/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</link>
+      <link>https://demo.gethugothemes.com/bookworm-light/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</link>
       <pubDate>Tue, 05 Nov 2019 23:29:33 +0000</pubDate>
       
-      <guid>https://ricardoferreira.site/2019/11/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</guid>
       <description>Depois do anúncio do Windows Subystem for Linux (WSL) em 2016, a Microsoft divulga, em 2019, nova versão do subsistema que permite rodar um Kernel Linux direto no Windows, sem recursos de virtualização. E isso impacta direto como containers Docker rodarão no Windows 10.</description>
     </item>
     

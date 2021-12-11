@@ -1,7 +1,8 @@
 ---
-title: "Meus Cursos "
+title: "Meus Cursos"
 #name: "linuxdescomplicado"
 description: Lista de cursos.
 ---
 <!-- CONTENT -->
 
+aa
