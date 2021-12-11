@@ -1,71 +1,91 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bookworm - Personal Blog Template</title>
-    <link>https://demo.gethugothemes.com/bookworm-light/</link>
-    <description>Recent content on Bookworm - Personal Blog Template</description>
+    <title>Ricardo Ferreira - Linux, Infraestrutura, Dados</title>
+    <link>https://ricardoferreira.site/</link>
+    <description>Recent content on Ricardo Ferreira - Linux, Infraestrutura, Dados</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Dec 2021 10:41:25 -0300</lastBuildDate><atom:link href="https://demo.gethugothemes.com/bookworm-light/index.xml" rel="self" type="application/rss+xml" />
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 03 Dec 2021 10:41:25 -0300</lastBuildDate><atom:link href="https://ricardoferreira.site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Virtualização de Desktop usando Infraestrutura Open Source</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</link>
+      <link>https://ricardoferreira.site/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</link>
       <pubDate>Fri, 03 Dec 2021 10:41:25 -0300</pubDate>
       
-      <guid>https://demo.gethugothemes.com/bookworm-light/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</guid>
+      <guid>https://ricardoferreira.site/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</guid>
       <description>Hoje, vou trazer uma solução interessante para o negócio que permite o gerenciamento centralizado de desktops virtuais, facilidade de acesso, flexibilidade, maior segurança e mobilidade do usuário</description>
     </item>
     
     <item>
+      <title>Aplicação web em arquitetura de microserviço utilizando Docker 🐳</title>
+      <link>https://ricardoferreira.site/blog/aplicacao-web-microservico-docker-python-php/</link>
+      <pubDate>Tue, 10 Nov 2020 13:24:58 -0300</pubDate>
+      
+      <guid>https://ricardoferreira.site/blog/aplicacao-web-microservico-docker-python-php/</guid>
+      <description>Tendo em vista a Metodologia &amp;ldquo;The Twelve-Factor App&amp;rdquo;, criada por Adam Wiggins, co-fundador da PaaS Heroku, que preconiza todo software cloud entregue como serviço deve seguir algumas premissas de desenvolvimento que impulsonam o uso da arquitetura de Microserviços, eu apresento uma solução web simples que demonstra na prática o emprego de todos os 12 fatores da Metodologia!</description>
+    </item>
+    
+    <item>
       <title>Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</link>
+      <link>https://ricardoferreira.site/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</link>
       <pubDate>Tue, 05 Nov 2019 23:29:33 +0000</pubDate>
       
-      <guid>https://demo.gethugothemes.com/bookworm-light/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</guid>
+      <guid>https://ricardoferreira.site/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</guid>
       <description>Depois do anúncio do Windows Subystem for Linux (WSL) em 2016, a Microsoft divulga, em 2019, nova versão do subsistema que permite rodar um Kernel Linux direto no Windows, sem recursos de virtualização. E isso impacta direto como containers Docker rodarão no Windows 10.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://demo.gethugothemes.com/bookworm-light/cursos/discos-particoes-linux/</link>
+      <link>https://ricardoferreira.site/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://demo.gethugothemes.com/bookworm-light/cursos/discos-particoes-linux/</guid>
+      <guid>https://ricardoferreira.site/about/</guid>
+      <description>Tenho +12 anos de experiência na área de operações e infraestrutura de TI. E passagem na gestão de TI.
+Como maneira de me manter em constante aprendizado, sempre compartilho meu conhecimento através de cursos, aulas ao vivo e em comunidades de tecnologia.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ricardoferreira.site/treinamento/discos-particoes-linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/treinamento/discos-particoes-linux/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://demo.gethugothemes.com/bookworm-light/about/</guid>
-      <description>A content writer with over 12 years experience working across brand identity, publishing and digital products. Maecenas sit amet purus eget ipsum elementum venenatis.</description>
-    </item>
-    
-    <item>
       <title>Contato</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/contato/</link>
+      <link>https://ricardoferreira.site/contato/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://demo.gethugothemes.com/bookworm-light/contato/</guid>
+      <guid>https://ricardoferreira.site/contato/</guid>
       <description>Agradeço o interesse em falar comigo. Ficarei feliz em ajudar! Se deseja algo mais rápido e informal, sinta-se a vontade para mandar uma mensagem direta no meu Telegram @ricardoferreiracosta.</description>
     </item>
     
     <item>
       <title>Docker do Zero - Introdução a administração de containers</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/cursos/docker-do-zero/</link>
+      <link>https://ricardoferreira.site/treinamento/docker-do-zero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://demo.gethugothemes.com/bookworm-light/cursos/docker-do-zero/</guid>
+      <guid>https://ricardoferreira.site/treinamento/docker-do-zero/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Licenciamento</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/license/</link>
+      <title>Elements</title>
+      <link>https://ricardoferreira.site/elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://demo.gethugothemes.com/bookworm-light/license/</guid>
+      <guid>https://ricardoferreira.site/elements/</guid>
+      <description>Heading example Here is example of hedings. You can use this heading by following markdownify rules. For example: use # for heading 1 and use ###### for heading 6.</description>
+    </item>
+    
+    <item>
+      <title>Licenciamento</title>
+      <link>https://ricardoferreira.site/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/license/</guid>
       <description>Este site está sob licença Creative Commons BY-NC-SA 4.0.
 Você precisa informar a origem e criar conteúdo com a mesma licença para poder usá-lo.</description>
     </item>

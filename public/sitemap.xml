@@ -2,45 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/blog/</loc>
+    <loc>https://ricardoferreira.site/</loc>
     <lastmod>2021-12-03T10:41:25-03:00</lastmod>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/</loc>
+    <loc>https://ricardoferreira.site/blog/</loc>
     <lastmod>2021-12-03T10:41:25-03:00</lastmod>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/categories/</loc>
+    <loc>https://ricardoferreira.site/categories/</loc>
     <lastmod>2021-12-03T10:41:25-03:00</lastmod>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/categories/vdi/</loc>
+    <loc>https://ricardoferreira.site/tags/desktop/</loc>
     <lastmod>2021-12-03T10:41:25-03:00</lastmod>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</loc>
+    <loc>https://ricardoferreira.site/categories/infraestrutura/</loc>
     <lastmod>2021-12-03T10:41:25-03:00</lastmod>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</loc>
+    <loc>https://ricardoferreira.site/tags/</loc>
+    <lastmod>2021-12-03T10:41:25-03:00</lastmod>
+  </url><url>
+    <loc>https://ricardoferreira.site/tags/vdi/</loc>
+    <lastmod>2021-12-03T10:41:25-03:00</lastmod>
+  </url><url>
+    <loc>https://ricardoferreira.site/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</loc>
+    <lastmod>2021-12-03T10:41:25-03:00</lastmod>
+  </url><url>
+    <loc>https://ricardoferreira.site/tags/api/</loc>
+    <lastmod>2020-11-10T13:24:58-03:00</lastmod>
+  </url><url>
+    <loc>https://ricardoferreira.site/blog/aplicacao-web-microservico-docker-python-php/</loc>
+    <lastmod>2020-11-10T13:24:58-03:00</lastmod>
+  </url><url>
+    <loc>https://ricardoferreira.site/categories/docker/</loc>
+    <lastmod>2020-11-10T13:24:58-03:00</lastmod>
+  </url><url>
+    <loc>https://ricardoferreira.site/tags/docker/</loc>
+    <lastmod>2020-11-10T13:24:58-03:00</lastmod>
+  </url><url>
+    <loc>https://ricardoferreira.site/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</loc>
     <lastmod>2019-11-05T23:29:33+00:00</lastmod>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/categories/docker/</loc>
-    <lastmod>2019-11-05T23:29:33+00:00</lastmod>
+    <loc>https://ricardoferreira.site/about/</loc>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/tags/</loc>
-    <lastmod>2019-11-05T23:29:33+00:00</lastmod>
+    <loc>https://ricardoferreira.site/treinamento/discos-particoes-linux/</loc>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/tags/wsl/</loc>
-    <lastmod>2019-11-05T23:29:33+00:00</lastmod>
+    <loc>https://ricardoferreira.site/contato/</loc>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/cursos/discos-particoes-linux/</loc>
+    <loc>https://ricardoferreira.site/treinamento/docker-do-zero/</loc>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/about/</loc>
+    <loc>https://ricardoferreira.site/elements/</loc>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/contato/</loc>
+    <loc>https://ricardoferreira.site/license/</loc>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/cursos/docker-do-zero/</loc>
+    <loc>https://ricardoferreira.site/categories/linuxdescomplicado/</loc>
   </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/license/</loc>
-  </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/categories/linuxdescomplicado/</loc>
-  </url><url>
-    <loc>https://demo.gethugothemes.com/bookworm-light/cursos/</loc>
+    <loc>https://ricardoferreira.site/treinamento/</loc>
   </url>
 </urlset>

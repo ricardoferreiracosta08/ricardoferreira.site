@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vdi on Ricardo Ferreira - Linux, Infraestrutura, Dados</title>
+    <link>https://ricardoferreira.site/tags/vdi/</link>
+    <description>Recent content in vdi on Ricardo Ferreira - Linux, Infraestrutura, Dados</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 03 Dec 2021 10:41:25 -0300</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/vdi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Virtualização de Desktop usando Infraestrutura Open Source</title>
+      <link>https://ricardoferreira.site/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</link>
+      <pubDate>Fri, 03 Dec 2021 10:41:25 -0300</pubDate>
+      
+      <guid>https://ricardoferreira.site/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</guid>
+      <description>Hoje, vou trazer uma solução interessante para o negócio que permite o gerenciamento centralizado de desktops virtuais, facilidade de acesso, flexibilidade, maior segurança e mobilidade do usuário</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meus Cursos on Ricardo Ferreira - Linux, Infraestrutura, Dados</title>
+    <link>https://ricardoferreira.site/treinamento/</link>
+    <description>Recent content in Meus Cursos on Ricardo Ferreira - Linux, Infraestrutura, Dados</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language><atom:link href="https://ricardoferreira.site/treinamento/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://ricardoferreira.site/treinamento/discos-particoes-linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/treinamento/discos-particoes-linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker do Zero - Introdução a administração de containers</title>
+      <link>https://ricardoferreira.site/treinamento/docker-do-zero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/treinamento/docker-do-zero/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

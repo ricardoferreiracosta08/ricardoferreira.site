@@ -1,10 +1,10 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify -t hugo-coder --ignoreCache"
+command = "hugo --gc --minify -t bookworm-light --ignoreCache"
 
 [context.production.environment]
-# BEFORE 0.59.0
-HUGO_VERSION = "0.74.3"
+# BEFORE 0.74.3
+HUGO_VERSION = "0.83.1"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Ricardo Ferreira - Linux, Infraestrutura, Dados</title>
+    <link>https://ricardoferreira.site/tags/docker/</link>
+    <description>Recent content in docker on Ricardo Ferreira - Linux, Infraestrutura, Dados</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Tue, 10 Nov 2020 13:24:58 -0300</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aplicação web em arquitetura de microserviço utilizando Docker 🐳</title>
+      <link>https://ricardoferreira.site/blog/aplicacao-web-microservico-docker-python-php/</link>
+      <pubDate>Tue, 10 Nov 2020 13:24:58 -0300</pubDate>
+      
+      <guid>https://ricardoferreira.site/blog/aplicacao-web-microservico-docker-python-php/</guid>
+      <description>Tendo em vista a Metodologia &amp;ldquo;The Twelve-Factor App&amp;rdquo;, criada por Adam Wiggins, co-fundador da PaaS Heroku, que preconiza todo software cloud entregue como serviço deve seguir algumas premissas de desenvolvimento que impulsonam o uso da arquitetura de Microserviços, eu apresento uma solução web simples que demonstra na prática o emprego de todos os 12 fatores da Metodologia!</description>
+    </item>
+    
+    <item>
+      <title>Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows</title>
+      <link>https://ricardoferreira.site/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</link>
+      <pubDate>Tue, 05 Nov 2019 23:29:33 +0000</pubDate>
+      
+      <guid>https://ricardoferreira.site/blog/do-docker-toolbox-ao-wsl-2-a-evolucao-do-docker-no-windows/</guid>
+      <description>Depois do anúncio do Windows Subystem for Linux (WSL) em 2016, a Microsoft divulga, em 2019, nova versão do subsistema que permite rodar um Kernel Linux direto no Windows, sem recursos de virtualização. E isso impacta direto como containers Docker rodarão no Windows 10.</description>
+    </item>
+    
+  </channel>
+</rss>

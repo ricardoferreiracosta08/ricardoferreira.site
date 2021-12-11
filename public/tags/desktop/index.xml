@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>desktop on Ricardo Ferreira</title>
+    <title>desktop on Ricardo Ferreira - Linux, Infraestrutura, Dados</title>
     <link>https://ricardoferreira.site/tags/desktop/</link>
-    <description>Recent content in desktop on Ricardo Ferreira</description>
+    <description>Recent content in desktop on Ricardo Ferreira - Linux, Infraestrutura, Dados</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 12 Jan 2020 12:25:12 +0000</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/desktop/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Dec 2021 10:41:25 -0300</lastBuildDate><atom:link href="https://ricardoferreira.site/tags/desktop/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Conheça algumas maneiras para restaurar seu sistema Linux em caso de falhas</title>
-      <link>https://ricardoferreira.site/2020/01/conheca-algumas-maneiras-para-restaurar-seu-sistema-linux-em-caso-de-falhas/</link>
-      <pubDate>Sun, 12 Jan 2020 12:25:12 +0000</pubDate>
+      <title>Virtualização de Desktop usando Infraestrutura Open Source</title>
+      <link>https://ricardoferreira.site/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</link>
+      <pubDate>Fri, 03 Dec 2021 10:41:25 -0300</pubDate>
       
-      <guid>https://ricardoferreira.site/2020/01/conheca-algumas-maneiras-para-restaurar-seu-sistema-linux-em-caso-de-falhas/</guid>
-      <description>Restaurar um sistema Linux parece algo improvável, já que não é uma função padrão da maiorias das distros Linux.  Por isso, seguem algumas ferramentas e opções que usam snapshots que servem para restaurar seu sistema Linux em caso de falhas.</description>
+      <guid>https://ricardoferreira.site/blog/virtualizacao-de-desktop-vdi-infraestrutura-open-source/</guid>
+      <description>Hoje, vou trazer uma solução interessante para o negócio que permite o gerenciamento centralizado de desktops virtuais, facilidade de acesso, flexibilidade, maior segurança e mobilidade do usuário</description>
     </item>
     
   </channel>
