@@ -35,16 +35,23 @@ what_i_do:
   item:
   - title: "Blog"
     icon: "las la-pen-nib"
-    description: "Purus eget ipsum elementum venenatis, quis rutrum mi semper nonpurus eget ipsum elementum venenatis."
+    description: "Minhas publicações contêm tudo que estudo e aplico constantemente na minha carreira de Tecnologia"
+    textlink: "Lista de publicações"
+    link: "/blog"
     
   - title: "Serviços e Consultoria"
     icon: "las la-money-bill-wave"
-    description: "Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis."
+    description: "Procurando ajuda? Estou disponível para prestar serviços como consultor ou freelancer. Consulte o meu catálogo de serviços"
+    textlink: "Catálogo de serviços"
+    link: "#"
     
   - title: "Treinamentos"
     icon: "las la-chalkboard-teacher"
-    description: "Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis."
- 
+    description: "Adquira novas habilidades com meus treinamentos baseados na prática do dia-a-dia. Consulte catálogo completo."
+    textlink: "Catálogo de treinamentos"
+    link: "#" 
+
+
 ---
 Tenho +12 anos de experiência na área de operações e infraestrutura de TI. E passagem na gestão de TI. 
 
