@@ -83,6 +83,8 @@ color_primary = "#476cb3"
 
 #################### default parameters ################################
 [params]
+# images/banner-shape.png
+banner_background = "https://demo.gethugothemes.com/northendlab/images/banner-shape.png"
 perfil = "images/perfil-02.jpeg"
 # assets/images
 logo = "images/logo.png"
