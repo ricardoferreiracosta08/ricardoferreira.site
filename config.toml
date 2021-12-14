@@ -164,7 +164,7 @@ hasChildren = true
   [[menu.main]]
   parent = "Serviços e Consultoria"
   name = "Linux"
-  url = "author/"
+  url = "#"
   weight = 1
   
 [[menu.main]]
@@ -176,7 +176,7 @@ hasChildren = true
   [[menu.main]]
   parent = "Treinamentos"
   name = "Aprender a aprender"
-  url = "author/"
+  url = "#"
   weight = 1
 
   [[menu.main]]

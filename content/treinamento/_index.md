@@ -2,10 +2,9 @@
 title: "Meus Treinamentos"
 #name: "linuxdescomplicado"
 description: Lista de treinamentos.
+image: "images/banner_treinamentos.png"
 ---
 <!-- CONTENT -->
-
-***"Ensinar ainda é a melhor maneira de aprender!"***
 
 Há mais de 10 anos leciono em cursos de Tecnologia prezando sempre por conteúdo 
 bem explicado, contextualizado e objetivo. Pois, trago comigo um espírito empreendedor 
