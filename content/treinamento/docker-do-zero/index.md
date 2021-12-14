@@ -12,13 +12,13 @@ info:
   info_details:
   - desc: "Modalidade"
     value: "Gravado"
-    icon: "las la-school"
+    icon: "las la-chalkboard-teacher"
   - desc: "Duração"
     value: "7,5 horas"
     icon: "las la-play-circle"
   - desc: "Nível"
     value: "Iniciante"
-    icon: "las la-level-up-alt"
+    icon: "las la-user-graduate"
   - desc: "Avaliação"
     value: "4.78"
     icon: "las la-star"
@@ -28,6 +28,16 @@ will_learn:
    learn_topics:
    - learn: "Compreenderá os componentes da plataforma Docker"
    - learn: "Executará e gerenciará containers Docker usando imagens existentes"
+   - learn: "Compreenderá o conceito de containers, microserviços e imagens"
+   - learn: "Implementará diversos casos de uso para a realidade de um profissional de TI"
+
+who:
+   enable: true
+   who_topics:
+   - who: "Administradores de sistemas - SysAdmin Ops"
+   - who: "Desenvolvedores de sistemas - Dev"
+   - who: "Profissionais e estudantes de cursos de Tecnologia da Informação"
+   - who: "Entusiastas e usuários do Linux"
 
 image: images/treinamento/docker-do-zero/cover.jpg
 ---
@@ -36,11 +46,11 @@ Este curso é **introdutório a plataforma Docker**, garante melhor compreensão
 funcionamento e suas as vantagens. É altamente recomendado para quem não
 sabe nada sobre e **deseja sair do zero**.
 
-O curso aborda, detalhadamente, as principais funções (Docker Registry,
+O **curso aborda**, detalhadamente, as principais funções (Docker Registry,
 Docker Objects, Docker Network e Docker Volume) do Docker para você manter seus serviços
-em um ambiente padronizado, escalável, configurável e extensível. Muito indicado para quem trabalha a nível da operação!
+em um ambiente padronizado, escalável, configurável e extensível. Muito indicado para quem trabalha a **nível da operação**!
 
-A metodologia adotada é baseada numa didática diferenciada e em práticas regulares,
+A **metodologia de ensino** adotada é baseada numa didática diferenciada com práticas regulares,
 ao longo do curso, para reforçar o entendimento e hands-on reais na última
 parte para garantir compreensão total do assunto.
 

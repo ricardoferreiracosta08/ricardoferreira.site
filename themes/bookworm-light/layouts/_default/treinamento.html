@@ -36,9 +36,9 @@
         </div>
       </div>
 
-      <div class="row col-lg-10 col-sm-12 mb-4">      
+      <div class="row col-lg-10 col-sm-12 mb-1">      
       <div class="col-lg-6 col-sm-12 mb-5">
-       <h4 class="font-weight-700">O que você aprenderá:</h4>
+       <h4 class="font-weight-700 mb-4">O que você aprenderá:</h4>
         {{ if .Params.will_learn.enable }}
         {{ with .Params.will_learn }}
        <ul class="list-unstyled">
@@ -50,12 +50,33 @@
         {{ end }} 
       </div>
       <div class="col-lg-6 col-sm-12 mb-5">
-       <h4 class="font-weight-700">Para quem é este curso:</h4>
+       <h4 class="font-weight-700 mb-4">Para quem é este curso:</h4>
+       {{ if .Params.who.enable }}
+       {{ with .Params.who }}
        <ul class="list-unstyled">
-        <li><i class="las la-chevron-circle-right"></i></li>
+          {{ range .who_topics }}
+	   <li><i class="las la-chevron-circle-right"></i> {{ .who }}</li>
+          {{ end }}
        </ul>
+       {{ end }}
+       {{ end }}
       </div>
       </div>
+
+     {{ if .Params.info.enable }}
+     {{ with .Params.info }}
+      <div class="row col-lg-12 justify-content-center mb-5">
+        {{ range .info_details }}
+          <div class="col-lg-3 col-md-6 mt-4 text-center">
+            <i class="{{.icon}} la-3x text-primary mb-4"></i>
+            <h4 class="text-dark font-weight-700 mb-3">{{ .desc }}</h4>
+            <p>{{ .value }}</p>
+          </div>
+        {{end}}
+      </div>
+    {{ end }}
+    {{ end }}
+
 
       <div class="col-lg-10 col-sm-12"> 
        <a target="_blank" href="{{ .Params.externallink }}" class="btn btn-block btn-primary"><strong>ADQUIRIR CURSO COMPLETO</strong></a>
