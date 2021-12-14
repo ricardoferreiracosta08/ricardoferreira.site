@@ -50,7 +50,9 @@
         </div>
 
         <div class="content">
-          {{.Content}}
+          <!--{{.Content}} -->
+          {{ $content := replace .Content "[TREINAMENTO]" ( partial "treinamento-in-article.html" .) }}
+          {{ $content | safeHTML }}
         </div>
 <!--      </div>
     </div> -->
@@ -65,7 +67,6 @@
           </ul>
         </div>
         <div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
-
           {{- partial "post-share.html" . -}}
         </div>
       </div>
@@ -78,7 +79,7 @@
             <div class="col-12">
               <h3 class="text-dark font-weight-800 mb-4 pb-2">Recomendo que leia também:</h3>
             </div>
-            {{ $related := (where site.RegularPages "Section" "blog") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
+              {{ $related := (where site.RegularPages "Section" "blog") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
               {{ range first 2 $related }}
             <div class="col-md-6">
               {{ .Render "post" }}

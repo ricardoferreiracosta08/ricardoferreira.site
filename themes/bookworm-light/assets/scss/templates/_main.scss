@@ -260,3 +260,13 @@
   object-fit: cover; 
   height: 200px;
 }
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}

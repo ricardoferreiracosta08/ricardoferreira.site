@@ -1,5 +1,8 @@
 ---
 title: Docker do Zero - Introdução a administração de containers
+title_mkt: Excelente curso de Docker
+desc_mkt: "Excelente curso, além dos ensinamentos, o curso propõe desafios no qual engrandece o aprendizado.
+           Conteúdos muito bem explicados e o professor muito bom na didática - Luiz Paulo Barboza D."
 layout: "treinamento"
 summary: >-
    Ganhe tempo e seja eficiente na entrega dos serviços de TI usando tecnologia de containers

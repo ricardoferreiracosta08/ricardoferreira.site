@@ -51,6 +51,8 @@ Para eles, o WSL 2 veio facilitar a intraoperabilidade do Docker com o Windows, 
 
 Como o WSL 2 ainda está em preview, a Docker já planeja substituir a VM do Hyper-V, suportado no Docker for Windows, por um pacote de integração que fornecerá os recursos já existentes, contudo com suporte nativo ao WSL 2. Este pacote de integração conterá os componentes necessários para executar o Docker e o Kubernetes, bem como as ferramentas CLI usadas para interagir com esses componentes no WSL 2. Em seguida, poderemos introduzir um novo recurso com os espaços de trabalho do Docker Desktop: Linux.
 
+[TREINAMENTO]
+
 Além disso, com a **integração do WSL 2**, você ainda terá interação maior com programas Linux em execução no WSL. Isso tem um grande impacto para os desenvolvedores que trabalham em projetos voltados para um ambiente Linux.
 
 ![runwsl-1024x876](../../../images/runwsl-1024x876.gif)

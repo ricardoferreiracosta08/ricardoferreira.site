@@ -173,6 +173,8 @@ Tudo isso garante baixo acoplamento ao deploy!
 Sendo assim, no meu caso, atráves do docker-compose, eu consigo anexar e desanexar facilmente os recursos de containers de persistência de dados. 
 No caso o service do PostgreSQL. Inclusive, posso alterar de versão ou indicar outro volume de dados que nenhuma mudança de código é exigida:
 
+[TREINAMENTO]
+
 {{< highlight yaml "linenos=inline,lines=inline,hl_lines=4 7,linenostart=1,style=dracula" >}}
 version: '3.5'
 services:
