@@ -7,6 +7,19 @@ link: /treinamento/docker-do-zero/
 externallink: "http://bit.ly/cursoAprendaDockerdoZero"
 #textlink: "Quero aprender Docker"
 
+testimony:
+  enable: true
+  testimony_details:
+  - who: "Leonardo E."
+    text: "Ótimo curso sobre docker, bem acima da qualidade de outros cursos encontrados na plataforma. 
+          A última parte ficou meio confusa de entender, mas no geral, esse curso vale muito a pena."
+  - who: "Luiz Paulo Barboza D."
+    text: "Excelente curso, além dos ensinamentos, o curso propõe desafios no qual engrandece o aprendizado. 
+          Conteúdos muito bem explicados e o professor muito bom na didática"
+  - who: "Ygor de Souza L."
+    text: "Professo com uma didática excelente. Domina bem o conteúdo abordado.
+          O curso vale muito a pena. Nunca tinha estudado Docker / containers e o curso me deu uma visão ampla sobre o assunto."
+
 info:
   enable: true
   info_details:
