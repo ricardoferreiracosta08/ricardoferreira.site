@@ -49,7 +49,7 @@ what_i_do:
     icon: "las la-chalkboard-teacher"
     description: "Adquira novas habilidades com meus treinamentos baseados na prática do dia-a-dia. Consulte catálogo completo."
     textlink: "Catálogo de treinamentos"
-    link: "#" 
+    link: "/treinamento" 
 
 
 ---
