@@ -1,9 +1,13 @@
 
-    {{ $related := (where site.RegularPages "Section" "treinamento")  }}
+<!-- args -->
+<!--{{$keyword := .keyword1}}-->
+    									<!-- if page equal keyword -->
+<!--    {{ $related := (where site.RegularPages "Section" "treinamento") | intersect (where site.Pages ".Params.keyword" "==" $keyword) }}-->
+    {{ $related := (where site.RegularPages "Section" "treinamento") }}
     {{ range last 1 $related }}
 
     <!-- Box treinamento -->
-     <small><i>Anúncio</i></small>
+     <small><i>Treinamento {{$keyword}}</i></small>
      <div class="row breadcrumb">
        <div class="col-lg-3">
           {{ with .Params.image }}

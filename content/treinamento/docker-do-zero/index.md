@@ -1,4 +1,5 @@
 ---
+keyword: Docker
 title: Docker do Zero - Introdução a administração de containers
 title_mkt: Excelente curso de Docker
 desc_mkt: "Excelente curso, além dos ensinamentos, o curso propõe desafios no qual engrandece o aprendizado.

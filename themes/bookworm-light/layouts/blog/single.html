@@ -50,8 +50,11 @@
         </div>
 
         <div class="content">
-          <!--{{.Content}} -->
-          {{ $content := replace .Content "[TREINAMENTO]" ( partial "treinamento-in-article.html" .) }}
+          <!--{{.Content}} --> 					<!-- parameters pass variables on dict treinamentos -->
+          {{ $content := replace .Content "[TREINAMENTO]" ( partial "treinamento-in-article.html" ) }}
+<!--                                                                 (dict "treinamentos" . "keyword1" "Docker" 
+          										"keyword2" "Ansible")) 
+          }}-->
           {{ $content | safeHTML }}
         </div>
 <!--      </div>
