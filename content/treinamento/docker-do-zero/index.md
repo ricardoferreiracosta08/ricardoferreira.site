@@ -43,6 +43,7 @@ will_learn:
    - learn: "Executará e gerenciará containers Docker usando imagens existentes"
    - learn: "Compreenderá o conceito de containers, microserviços e imagens"
    - learn: "Implementará diversos casos de uso para a realidade de um profissional de TI"
+   - learn: "E mais..."
 
 who:
    enable: true
