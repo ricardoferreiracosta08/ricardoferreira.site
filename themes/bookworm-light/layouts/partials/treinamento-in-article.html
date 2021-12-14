@@ -1,0 +1,20 @@
+
+    {{ $related := (where site.RegularPages "Section" "treinamento")  }}
+    {{ range last 1 $related }}
+
+    <!-- Box treinamento -->
+     <small><i>Anúncio</i></small>
+     <div class="row breadcrumb">
+       <div class="col-lg-3">
+          {{ with .Params.image }}
+           {{ partial "image.html" (dict "Src" . "Class" "img-fluid rounded overlay-200"  "Alt" "Post image") }}
+          {{ end }}
+       </div>
+       <div class="col-lg-9">
+        <h4>{{ .Params.title_mkt }}</h4>
+	<p>"<i>{{ .Params.desc_mkt }}</i>"</p>
+        <a class="btn btn-primary btn-block" style="color: #FFF" href="{{ .Params.link }}">Quero mais informações</a>
+       </div>
+     </div>
+    <!-- Box treinamento -->
+    {{ end }}
