@@ -89,6 +89,7 @@ banner_background = "images/banner-shape.png"
 
 # assets/images
 perfil = "images/perfil-02.jpeg"
+logo_text = "RICARDO FERREIRA"
 logo = "images/logo.png"
 logo_width = "200px"
 favicon = "images/favicon.png"
