@@ -152,7 +152,7 @@ weight = 7
   
 [[menu.main]]
 name = "Contato"
-url = "contact/"
+url = "contato/"
 weight = 8
 
 [[menu.main]]

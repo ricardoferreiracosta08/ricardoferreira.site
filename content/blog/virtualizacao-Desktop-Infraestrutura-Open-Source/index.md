@@ -23,6 +23,8 @@ Basicamente, o VDI (Infraestrutura de desktop virtual) faz uso de máquinas virt
 
 Em resumo, é uma tecnologia que hospeda os sistemas numa infra central e os disponibiliza acesso desktop para os usuários
 
+[TREINAMENTO]
+
 Com 3 elementos base em sua estrutura:
 - Virtualização + NAS
 - Broker

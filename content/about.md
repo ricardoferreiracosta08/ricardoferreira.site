@@ -19,7 +19,7 @@ social:
  # - link: "https://www.twitter.com/"
  #   icon: "lab la-twitter"
     
-  - link: "https://www.linkedin.com/"
+  - link: "https://www.linkedin.com/in/ricardo-ferreira-costa/"
     icon: "lab la-linkedin-in"
     
   - link: "https://github.com/ricardoferreiracosta08"

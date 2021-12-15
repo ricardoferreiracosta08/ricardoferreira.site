@@ -1,9 +1,8 @@
 
 <!-- args -->
-<!--{{$keyword := .keyword1}}-->
+{{$keyword := .keyword}}
     									<!-- if page equal keyword -->
-<!--    {{ $related := (where site.RegularPages "Section" "treinamento") | intersect (where site.Pages ".Params.keyword" "==" $keyword) }}-->
-    {{ $related := (where site.RegularPages "Section" "treinamento") }}
+    {{ $related := (where site.RegularPages "Section" "treinamento") | intersect (where site.Pages ".Params.keyword" "==" $keyword) }}
     {{ range last 1 $related }}
 
     <!-- Box treinamento -->

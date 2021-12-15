@@ -50,12 +50,15 @@
         </div>
 
         <div class="content">
-          <!--{{.Content}} --> 					<!-- parameters pass variables on dict treinamentos -->
-          {{ $content := replace .Content "[TREINAMENTO]" ( partial "treinamento-in-article.html" ) }}
-<!--                                                                 (dict "treinamentos" . "keyword1" "Docker" 
-          										"keyword2" "Ansible")) 
-          }}-->
-          {{ $content | safeHTML }}
+          <!--{{.Content}} -->						<!-- parameters pass variables on dict treinamento -->
+          {{ if in .Params.tags "docker" }} <!-- ANUNCIO PERSONALIZADO -->
+            {{ $content := replace .Content "[TREINAMENTO]" ( partial "treinamento-in-article.html" (dict "treinamento" . "keyword" "Docker" ))}}
+            {{ $content | safeHTML }}
+          {{ end }}
+
+          <!-- DEFAULT -->
+          {{ $content := replace .Content "[TREINAMENTO]" ( partial "divulgacaoservicos-in-article.html") }}
+          {{ $content | safeHTML }} <!-- DEFAULT -->
         </div>
 <!--      </div>
     </div> -->
