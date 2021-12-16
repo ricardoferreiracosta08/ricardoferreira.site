@@ -54,8 +54,8 @@
           {{ if in .Params.tags "docker" }} <!-- ANUNCIO PERSONALIZADO -->
             {{ $content := replace .Content "[TREINAMENTO]" ( partial "treinamento-in-article.html" (dict "treinamento" . "keyword" "Docker" ))}}
             {{ $content | safeHTML }}
-          {{ else if in .Params.tags "ansible"}}
-            {{ $content := replace .Content "[TREINAMENTO]" ( partial "treinamento-in-article.html" (dict "treinamento" . "keyword" "Ansible" ))}}
+          {{ else if in .Params.tags "redes"}}
+            {{ $content := replace .Content "[TREINAMENTO]" ( partial "treinamento-in-article.html" (dict "treinamento" . "keyword" "Redes" ))}}
             {{ $content | safeHTML }}
 	  {{ else }}
             <!-- DEFAULT -->

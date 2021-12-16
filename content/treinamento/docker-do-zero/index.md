@@ -9,7 +9,7 @@ summary: >-
    Ganhe tempo e seja eficiente na entrega dos serviços de TI usando tecnologia de containers
 link: /treinamento/docker-do-zero/
 externallink: "http://bit.ly/cursoAprendaDockerdoZero"
-#textlink: "Quero aprender Docker"
+textlink: "Quero aprender Docker"
 
 testimony:
   enable: true
@@ -28,7 +28,7 @@ info:
   enable: true
   info_details:
   - desc: "Modalidade"
-    value: "Gravado"
+    value: "Cuso Gravado"
     icon: "las la-chalkboard-teacher"
   - desc: "Duração"
     value: "7,5 horas"

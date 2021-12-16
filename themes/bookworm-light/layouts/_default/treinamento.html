@@ -60,7 +60,7 @@
         {{ end }} 
       </div>
       <div class="col-lg-6 col-sm-12 mb-5">
-       <h4 class="font-weight-700 mb-4">Para quem é este curso:</h4>
+       <h4 class="font-weight-700 mb-4">Para quem é este treinamento:</h4>
        {{ if .Params.who.enable }}
        {{ with .Params.who }}
        <ul class="list-unstyled">
@@ -89,7 +89,7 @@
 
 
       <div class="col-lg-10 col-sm-12"> 
-       <a target="_blank" href="{{ .Params.externallink }}" class="btn btn-block btn-primary"><strong>ADQUIRIR CURSO COMPLETO</strong></a>
+       <a target="_blank" href="{{ .Params.externallink }}" class="btn btn-block btn-primary"><strong>{{ .Params.textlink | upper}}</strong></a>
       </div>
  
    </div>
