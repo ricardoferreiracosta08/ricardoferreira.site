@@ -69,8 +69,6 @@ Feito isso, vamos usar o **projeto ncat**, mantido pelos criadores do nmap, e li
 sudo apt install nmap
 {{< /highlight >}}
 
-[TREINAMENTO]
-
 No servidor, execute:
 
 {{< highlight bash "style=dracula" >}}
@@ -106,4 +104,4 @@ Comenta aqui em embaixo qual seria outra maneira para resolver esse mesmo desafi
 
 Simbora!!
 
-Tenho uma SUPER AULA completa que mostra na prática os fundamentos de redes no Linux. Forma quase 2h de pura imersão nesse fundamento tão importante para que área técnica de TI
+[TREINAMENTO]

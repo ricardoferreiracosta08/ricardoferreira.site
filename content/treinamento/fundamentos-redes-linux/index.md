@@ -2,11 +2,12 @@
 keyword: Redes
 title: Fundamentos Redes usando o Linux
 title_mkt: Conteúdo exclusivo liberado! 
-desc_mkt: "Tudo para você avançar nos estudos, colocar em prática seu conhecimento e sair da inércia em relação ao fundamentos do modelo TCP/IP"
+desc_mkt: "Tenho uma SUPER AULA completa que mostra na prática os fundamentos de redes no Linux. São quase 2h de pura imersão nesse fundamento tão importante para que área técnica de TI."
+# Tudo para você avançar nos estudos, colocar em prática seu conhecimento e sair da inércia em relação ao fundamentos do modelo TCP/IP
 layout: "treinamento"
 summary: >-
-   Tudo para você avançar nos estudos, colocar em prática seu conhecimento e sair da inércia em relação ao fundamentos
-   do modelo TCP/IP
+    "Tudo para você avançar nos estudos, colocar em prática seu conhecimento e sair da inércia em relação ao fundamentos
+    do modelo TCP/IP"
 link: /treinamento/fundamentos-redes-linux/
 externallink: "https://bit.ly/pagamento-aula-redes-linux"
 textlink: "Quero aprender os fundamentos de redes no Linux"
