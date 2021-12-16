@@ -6,8 +6,8 @@ desc_mkt: "Tenho uma SUPER AULA completa que mostra na prática os fundamentos d
 # Tudo para você avançar nos estudos, colocar em prática seu conhecimento e sair da inércia em relação ao fundamentos do modelo TCP/IP
 layout: "treinamento"
 summary: >-
-    "Tudo para você avançar nos estudos, colocar em prática seu conhecimento e sair da inércia em relação ao fundamentos
-    do modelo TCP/IP"
+    Tudo para você avançar nos estudos, colocar em prática seu conhecimento e sair da inércia em relação aos fundamentos
+    do modelo TCP/IP
 link: /treinamento/fundamentos-redes-linux/
 externallink: "https://bit.ly/pagamento-aula-redes-linux"
 textlink: "Quero aprender os fundamentos de redes no Linux"
