@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows
+key: docker
 date: 2019-11-05T23:29:33.000Z
 seotitle: Do Docker Toolbox ao WSL 2 - a Evolução do Docker no Windows
 subtitle: Um breve histórico

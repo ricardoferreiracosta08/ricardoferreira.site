@@ -54,11 +54,15 @@
           {{ if in .Params.tags "docker" }} <!-- ANUNCIO PERSONALIZADO -->
             {{ $content := replace .Content "[TREINAMENTO]" ( partial "treinamento-in-article.html" (dict "treinamento" . "keyword" "Docker" ))}}
             {{ $content | safeHTML }}
+          {{ else if in .Params.tags "ansible"}}
+            {{ $content := replace .Content "[TREINAMENTO]" ( partial "treinamento-in-article.html" (dict "treinamento" . "keyword" "Ansible" ))}}
+            {{ $content | safeHTML }}
+	  {{ else }}
+            <!-- DEFAULT -->
+            {{ $content := replace .Content "[TREINAMENTO]" ( partial "divulgacaoservicos-in-article.html") }}
+            {{ $content | safeHTML }} <!-- DEFAULT -->
           {{ end }}
 
-          <!-- DEFAULT -->
-          {{ $content := replace .Content "[TREINAMENTO]" ( partial "divulgacaoservicos-in-article.html") }}
-          {{ $content | safeHTML }} <!-- DEFAULT -->
         </div>
 <!--      </div>
     </div> -->

@@ -1,9 +1,9 @@
 
 <!-- args -->
 {{$keyword := .keyword}}
-    									<!-- if page equal keyword -->
+    								<!-- if page equal keyword on content/treinamento/docker-do-zer/index.md-->
     {{ $related := (where site.RegularPages "Section" "treinamento") | intersect (where site.Pages ".Params.keyword" "==" $keyword) }}
-    {{ range last 1 $related }}
+    {{ range first 1 $related }}
 
     <!-- Box treinamento -->
      <small><i>Treinamento {{$keyword}}</i></small>
