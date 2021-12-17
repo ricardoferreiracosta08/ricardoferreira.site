@@ -89,10 +89,6 @@
   {{ end }}
 {{ end }}
 
-{{ with .Params.imageseo }}
-  <meta property="og:image" content="{{ . | absURL }}">
-  <meta property="twitter:image" content="{{ . | absURL }}">
-{{ end }}
 <!--{{ with .Params.coverImage }}
   <meta property="og:image" content="{{ . | absURL }}">
   <meta property="twitter:image" content="{{ . | absURL }}">
@@ -108,13 +104,22 @@
 <!-- 
 Image Tags
 -->
-{{ if ne .Section "post" -}}
+{{ if ne .Section "blog" -}}
   <meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
   <meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
   <meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
   <meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />
+{{ else if .Params.seoimage}}
+  <meta itemprop="image" content="{{ .Params.seoimage | absURL }}" />
+  <meta property="og:image" content="{{ .Params.seoimage | absURL }}" />
+  <meta name="twitter:image" content="{{ .Params.seoimage | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Params.seoimage | absURL }}" />  
+{{ else }}
+  <meta itemprop="image" content="{{ .Params.image | absURL }}" />
+  <meta property="og:image" content="{{ .Params.image | absURL }}" />
+  <meta name="twitter:image" content="{{ .Params.image | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Params.image | absURL }}" />
 {{ end -}}
-
 
 <!-- 
 Link Tags

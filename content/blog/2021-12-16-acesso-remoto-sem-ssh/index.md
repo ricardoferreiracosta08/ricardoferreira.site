@@ -12,7 +12,7 @@ slug: "acesso-remoto-sem-ssh-linux-redes"
 # assets/images/post folder
 image: "images/post/2021-12-acessoremoto_semssh.jpeg"
 # static/images folder
-seoimage: ""
+seoimage: "images/2021-12-acessoremoto_semssh.jpeg"
 caption: '<a href="https://unsplash.com/photos/ljNJn0ommQ8" target=_blank">Photo by Stephen Leonardi</a>'
 tags: ["linux", "redes"]
 # seo meta
