@@ -13,6 +13,8 @@
   {{ block "main" . }}{{ end }}
   {{ partialCached "footer.html" . }}
   {{ partialCached "script.html" . }}
+  <!--CUSTOM -->
+  {{ partial "disqus-counter" . }}
 </body>
 
 </html>
