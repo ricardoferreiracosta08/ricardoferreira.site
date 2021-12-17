@@ -100,9 +100,7 @@
           <div class="row mt-3">
             <div class="col-12">
 		{{ if .Site.DisqusShortname }}
-		 <div id="disqus_thread">
-		  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		 </div>
+                   {{ partial "disqus.html" }}
                 {{ end }}
             </div>
           </div>
