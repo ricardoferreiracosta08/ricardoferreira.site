@@ -8,7 +8,7 @@ description: >-
 summary: "a"
 subtitle: "Parece coisa de outro mundo. Mas, não é"
 seotitle: "Como acessar um servidor remoto, via linha de comando, sem SSH?"
-slug: ""
+slug: "acesso-remoto-sem-ssh-linux-redes"
 # assets/images/post folder
 image: "images/post/2021-12-acessoremoto_semssh.jpeg"
 # static/images folder
