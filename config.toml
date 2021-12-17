@@ -13,7 +13,7 @@ summaryLength = "20"
 # google analytics
 #googleAnalytics = "" # example : UA-123-45
 # disqus short name
-#disqusShortname = "themefisher-template" # get your shortname form here : https://disqus.com
+disqusShortname = "ricardoferreira" # get your shortname form here : https://disqus.com
 
 ############################# Modules ##############################
 [module.hugoVersion]

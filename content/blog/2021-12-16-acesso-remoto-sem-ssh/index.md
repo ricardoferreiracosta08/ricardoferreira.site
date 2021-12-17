@@ -6,7 +6,7 @@ description: >-
   Mostro como, sem um cliente/servidor SSH, por quaisquer motivos, você pode acessar 
   remotamente um servidor Linux tendo a base do modelo TCP/IP sólida
 summary: "a"
-subtitle: "Gosta de um desafio, né?"
+subtitle: "Parece coisa de outro mundo. Mas, não é"
 seotitle: "Como acessar um servidor remoto, via linha de comando, sem SSH?"
 slug: ""
 # assets/images/post folder
@@ -56,7 +56,9 @@ Pegou a ideia?
 
 ### Mão na massa
 
-> Essa dica é para fins didáticos
+{{< alert warning >}}
+Use essa dica para fins didáticos
+{{< /alert >}}
 
 Aqui, vou te mostrar como, sem um cliente/servidor SSH, por quaisquer motivos, você poderá acessar remotamente um destino tendo a base sólida e a ferramenta correta nas mãos
 
