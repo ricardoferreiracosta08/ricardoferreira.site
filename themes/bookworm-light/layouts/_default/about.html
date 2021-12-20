@@ -40,6 +40,27 @@
         </div>
       </div>
     </div>
+
+    {{ if .Params.my_certs.enable }}
+    {{ with .Params.my_certs }}
+    <div class="section-sm pb-0">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="text-dark font-weight-700 mb-5">{{ .title }}</h3>
+        </div>
+        {{ range .item }}
+          <div class="col-lg-4 col-md-6 mt-4 text-center">
+            <img loading="lazy" decoding="async" src="{{ .icon }}" alt="{{ .title }}" width="150" height="150" class="img-fluid rounded mb-4">
+            <h4 class="text-dark font-weight-700 mb-3">{{ .title }}</h4>
+            <!--<p>{{ .description }}</p>-->
+            <a target="_blank" href="{{ .link }}" class="btn btn-sm btn-outline-primary">{{ .textlink }}</a>
+          </div>
+        {{end}}
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+
     
     {{ if .Params.what_i_do.enable }}
     {{ with .Params.what_i_do }}
@@ -60,6 +81,7 @@
     </div>
     {{ end }}
     {{ end }}
+
   </div>
 </section>
 

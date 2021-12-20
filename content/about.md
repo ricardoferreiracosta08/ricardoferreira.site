@@ -51,6 +51,20 @@ what_i_do:
     textlink: "Catálogo de treinamentos"
     link: "/treinamento" 
 
+# badges_certifications
+my_certs:
+  title: "Principais certificações"
+  enable: true
+  item:
+  - title: "Docker Essentials"
+    icon: "../images/badges/Docker_Essentials_-_ISDN.png"
+    description: "Badge, emitido pela IBM, atesta que sei como executar contêineres do Docker Hub, criar contêineres do Docker e 
+                 como resolver problemas básicos de orquestração (reconciliação, dimensionamento, alta disponibilidade, descoberta de serviço). 
+                 Inclsuvie, entende as melhores práticas para usar DockerFiles e os fundamentos de como usar ferramentas como o IBM 
+                 Cloud Kubernetes Service."
+    textlink: "Verificar"
+    link: "https://www.credly.com/badges/6f8059d4-0fdb-4975-9e2c-f01f0e633ba0"
+    
 ---
 Tenho +12 anos de experiência na área de operações e infraestrutura de TI. E passagem na gestão de TI. 
 
