@@ -175,6 +175,10 @@ Date Tags
 
   {{ "<!-- CSS Plugins -->" | safeHTML}}
   {{ partialCached "style.html" . }}
+ 
+  {{ if .Site.GoogleAnalytics }}
+      {{ partial "google_analytics.html" . }}
+  {{ end }}
   
 </head>
 
