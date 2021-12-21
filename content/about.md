@@ -66,7 +66,8 @@ my_certs:
     link: "https://www.credly.com/badges/6f8059d4-0fdb-4975-9e2c-f01f0e633ba0"
     
 ---
-Tenho +12 anos de experiência na área de operações e infraestrutura de TI. E passagem na gestão de TI. 
+Tenho +12 anos de experiência na área de operações e infraestrutura de TI, onde trabalhei de ponta a ponta com redes, virtualização e serviços. 
+Além disso, tenho passagem na gestão de TI. 
 
 Como maneira de me manter em constante aprendizado, sempre compartilho meu conhecimento através de cursos, aulas ao vivo e 
 em comunidades de tecnologia. Inclusive, planejo usar todo meu background e atuar no mundo dos dados.
