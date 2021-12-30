@@ -16,10 +16,11 @@ que busca constantemente pelo conhecimento e solução de problemas.
 - Especialista em implantação de redes LAN
 - Especialista Infraestrutura Open Source
 
+
 **Principais Certificações:**
 
 - OCI Oracle Cloud Infrastructure Foundations 2021 Certified Associate [1Z0-1085-21]
-- 
+- Docker Essentials: A Developer Introduction by IBM
 
 ---
 
