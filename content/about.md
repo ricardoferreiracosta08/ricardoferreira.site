@@ -64,6 +64,10 @@ my_certs:
                  Cloud Kubernetes Service."
     textlink: "Verificar"
     link: "https://www.credly.com/badges/6f8059d4-0fdb-4975-9e2c-f01f0e633ba0"
+  - title: "OCI Foundations 2021 Certified Associate"
+    icon: "../images/badges/50_Oracle_Cloud_Infrastructure-FOUNDATION.jpg"
+    textlink: "Verificar"
+    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=67EECEA8CB7F0C6B87687D431724D5BD37961B6241C2099ECB487643CE179230"
     
 ---
 Tenho +12 anos de experiência na área de operações e infraestrutura de TI, onde trabalhei de ponta a ponta com redes, virtualização e serviços. 

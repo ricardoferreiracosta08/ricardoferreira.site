@@ -10,11 +10,16 @@ Há mais de 10 anos leciono em cursos de Tecnologia prezando sempre por conteúd
 bem explicado, contextualizado e objetivo. Pois, trago comigo um espírito empreendedor 
 que busca constantemente pelo conhecimento e solução de problemas. 
 
-**Títulos e certificações:**
+**Qualificações:**
 
 - Bacharel em Ciência da Computação
 - Especialista em implantação de redes LAN
 - Especialista Infraestrutura Open Source
+
+**Principais Certificações:**
+
+- OCI Oracle Cloud Infrastructure Foundations 2021 Certified Associate [1Z0-1085-21]
+- 
 
 ---
 
