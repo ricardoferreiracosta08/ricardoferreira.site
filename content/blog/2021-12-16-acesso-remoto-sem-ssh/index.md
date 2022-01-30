@@ -57,7 +57,7 @@ Pegou a ideia?
 ### Mão na massa
 
 {{< alert warning >}}
-Use essa dica para fins didáticos
+Use essa dica para fins didáticos. Pois, o risco de falhas de segurança são altos por conta do poder da ferramenta!
 {{< /alert >}}
 
 Aqui, vou te mostrar como, sem um cliente/servidor SSH, por quaisquer motivos, você poderá acessar remotamente um destino tendo a base sólida e a ferramenta correta nas mãos
@@ -90,11 +90,19 @@ No cliente, execute:
 ncat IP-SERVIDOR 50000
 {{< /highlight >}}
 
+Para cancelar as operações cliente/servidor, em ambos os cenários, use CTRL+C, separadamente, para encerrar os processos. 
+Para remover a ferramenta, após os testes:
+
+{{< highlight bash "style=dracula" >}}
+sudo apt remove nmap
+{{< /highlight >}}
+
 ---
 
 ### Considerações Finais
 
-O ncat instalado no servidor é visto como uma falha de segurança, devido a possibilidade de exploração de Shell reverso. 
+O ncat instalado no servidor é visto como uma falha de segurança, devido a possibilidade de exploração de Shell reverso. Por isso, remova-o
+imediatamente após o uso.
 
 Por isso, meu foco foi apenas te mostrar que sabendo bem os fundamentos de redes, você aumenta suas chances de resolver um desafio dessa natureza.
 
