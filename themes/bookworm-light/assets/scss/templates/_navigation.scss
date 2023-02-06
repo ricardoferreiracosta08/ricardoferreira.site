@@ -11,7 +11,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: $white;
+  background-color: $bg_body;
   padding: 50px 0 20px;
   transition: .25s ease;
 
@@ -66,7 +66,7 @@ header {
     .nav-link {
       font-size: 18px;
       font-weight: 700;
-      color: $dark !important;
+      color: $color_primary !important;
       padding: 15px !important;
 
       &:hover {

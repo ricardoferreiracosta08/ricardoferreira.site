@@ -78,3 +78,4 @@ em comunidades de tecnologia. Inclusive, planejo usar todo meu background e atua
 
 Por isso, aqui escrevo tudo que estudo e aplico constantemente na minha carreira de Tecnologia. Ofereço um bom nível prático, desde áreas
 que já trabalho há algum tempo, como Linux, Infraestrutura e afins; como meus novos aprendizados análise de dados e engenharia de dados.
+

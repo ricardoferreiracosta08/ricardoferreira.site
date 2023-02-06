@@ -1,7 +1,7 @@
 
 <!-- args -->
 {{$keyword := .keyword}}
-    								<!-- if page equal keyword on content/treinamento/docker-do-zer/index.md-->
+<!-- if page equal keyword on content/treinamento/docker-do-zer/index.md-->
     {{ $related := (where site.RegularPages "Section" "treinamento") | intersect (where site.Pages ".Params.keyword" "==" $keyword) }}
     {{ range first 1 $related }}
 

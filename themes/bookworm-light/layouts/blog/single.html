@@ -53,7 +53,7 @@
         </div>
 
         <div class="content">
-          <!--{{.Content}} -->						<!-- parameters pass variables on dict treinamento -->
+          <!--{{.Content}} -->	<!-- parameters pass variables on dict treinamento -->
           {{ if in .Params.tags "docker" }} <!-- ANUNCIO PERSONALIZADO -->
             {{ $content := replace .Content "[TREINAMENTO]" ( partial "treinamento-in-article.html" (dict "treinamento" . "keyword" "Docker" ))}}
             {{ $content | safeHTML }}
@@ -127,7 +127,7 @@
                       <div class="widget-body">
                          <img loading="lazy" decoding="async"
                              src="../../{{ .Site.Params.perfil }}" alt="About Me" class="perfil">
-                         <h2 class="font-weight-700 my-3 mb-4 text-center">{{ .Site.Params.Author }}</h2>
+                         <h3 class="font-weight-700 my-3 mb-4 text-center">{{ .Site.Params.Author }}</h3>
                          <p class="mb-3 pb-2">
 		  		{{ .Site.Params.Minibio }}
                          </p>

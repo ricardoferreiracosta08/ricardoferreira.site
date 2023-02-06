@@ -1,6 +1,6 @@
 ####################### default configuration ####################
 baseurl = "https://ricardoferreira.site"
-title = "Ricardo Ferreira - Linux, Infraestrutura, Dados"
+title = "Ricardo Ferreira - Soluções Open Source para Infraestrutura"
 
 languagecode = "pt-br"
 defaultcontentlanguage = "pt-br"
@@ -19,6 +19,10 @@ disqusShortname = "ricardoferreira" # get your shortname form here : https://dis
 [module.hugoVersion]
 extended = true
 min = "0.87.0"
+
+############################ All Texts ################################
+[params.pageindex]
+title = "Soluções Open Source para Infraestrutura"
 
 ############################# Image Processing ##############################
 [imaging]
@@ -56,8 +60,13 @@ link = "plugins/search/search.js"
 
 # site variables
 [params.variables]
-#font_primary = "Mulish"
-font_primary = "Merriweather,serif,sans-serif"
+color_body = "#333333"
+bg_body = "#FFFFFF"
+color_primary = "#152035"
+
+font_primary = "Mulish"
+#font_primary = "Merriweather,serif,sans-serif"
+#font_primary = "Manrope,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
 h1 = "64px"
 h1_lg = "52px"
 h1_md = "42px"
@@ -73,12 +82,10 @@ black = "#000000"
 dark = "#152035"
 gray = "#747577"
 light = "#FAFAFA"
-color_body = "#212121"
-bg_body = "#FFFFFF"
 font_size_body = "17px"
 font_weight_body = "500"
 line_height_body = "1.8em"
-color_primary = "#476cb3"
+#color_primary = "#476cb3"
 #color_primary = "#01AD9F"
 
 #################### default parameters ################################
@@ -97,11 +104,12 @@ favicon = "images/favicon.png"
 #Ogimage
 ogimage = "images/logo.png"
 # keywords meta
-keywords = "linux, infraestrutura"
+keywords = "linux, infraestrutura, open source"
 # Meta data
 description = "Apaixonado por novas tecnologias, Bacharel em Ciência da Computação. Atualmente, estou mirando os dados, depois de alguns anos na infraestrutura"
 author = "Ricardo Ferreira"
-minibio = "Bacharel em Ciência da Computação. Atualmente, mirando os dados; depois de alguns anos na Infra"
+#minibio = "Bacharel em Ciência da Computação. Atualmente, mirando os dados; depois de alguns anos na Infra"
+minibio = "Especialista em Soluções Open Source para Infraestrutura de TI"
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 # search
@@ -116,11 +124,6 @@ copyright = "Designed & Developed By [Gethugothemes](https://gethugothemes.com/)
 enable = false
 preloader = "" # use jpg, png, svg or gif format.
 
-# Instagram feed
-#[params.instafeed]
-#enable = false
-#instagram_user = "bookworm"
-#access_token = "IGQVJYeUk4YWNIY1h4OWZANeS1wRHZARdjJ5QmdueXN2RFR6NF9iYUtfcGp1NmpxZA3RTbnU1MXpDNVBHTzZAMOFlxcGlkVHBKdjhqSnUybERhNWdQSE5hVmtXT013MEhOQVJJRGJBRURn"
 
 # Subscription
 [params.subscription]
@@ -236,3 +239,12 @@ url = "https://www.twitter.com/"
 [[params.social]]
 icon = "lab la-twitter" # https://icons8.com/line-awesome
 url = "https://www.twitter.com/"
+
+############################## Disabled #######################
+
+# Instagram feed
+#[params.instafeed]
+#enable = false
+#instagram_user = "bookworm"
+#access_token = "IGQVJYeUk4YWNIY1h4OWZANeS1wRHZARdjJ5QmdueXN2RFR6NF9iYUtfcGp1NmpxZA3RTbnU1MXpDNVBHTzZAMOFlxcGlkVHBKdjhqSnUybERhNWdQSE5hVmtXT013MEhOQVJJRGJBRURn"
+
